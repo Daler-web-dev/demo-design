@@ -1,0 +1,108 @@
+'use client';
+
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { Send, CheckCircle, ArrowLeft } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
+import { COURSES } from '@/translations';
+
+export default function Enroll() {
+  const { t, lang } = useLanguage();
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setSubmitted(true);
+    }, 1500);
+  };
+
+  if (submitted) {
+    return (
+      <div className="min-h-[80vh] flex items-center justify-center p-4">
+        <div className="max-w-md w-full text-center bg-white p-12 rounded-[3rem] shadow-2xl border border-gray-50 animate-in zoom-in duration-500">
+          <div className="w-24 h-24 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-8">
+            <CheckCircle className="w-12 h-12" />
+          </div>
+          <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">{t.enrollForm.success}</h2>
+          <p className="text-gray-500 mb-10">We have received your application. Our counselor will contact you shortly to schedule your trial lesson.</p>
+          <Link href="/" className="inline-flex items-center text-brand-600 font-bold hover:underline">
+            <ArrowLeft className="w-5 h-5 mr-2" />
+            Back to Home
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-[90vh] py-16 px-4 flex flex-col items-center justify-center bg-gray-50">
+      <div className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-[3rem] shadow-2xl overflow-hidden border border-gray-100">
+        <div className="p-10 md:p-16 flex flex-col justify-center">
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">{t.enrollForm.title}</h1>
+          <p className="text-lg text-gray-500 mb-10 leading-relaxed">{t.enrollForm.subtitle}</p>
+
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label className="block text-sm font-bold text-gray-700 mb-2">{t.enrollForm.name}</label>
+              <input
+                required
+                type="text"
+                placeholder="John Doe"
+                className="w-full bg-gray-50 border-gray-100 rounded-2xl py-4 px-6 focus:ring-2 focus:ring-brand-500 transition-all text-gray-900 outline-none"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-bold text-gray-700 mb-2">{t.enrollForm.phone}</label>
+              <input
+                required
+                type="tel"
+                placeholder="+998 (__) ___-__-__"
+                className="w-full bg-gray-50 border-gray-100 rounded-2xl py-4 px-6 focus:ring-2 focus:ring-brand-500 transition-all text-gray-900 outline-none"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-bold text-gray-700 mb-2">{t.enrollForm.course}</label>
+              <select className="w-full bg-gray-50 border-gray-100 rounded-2xl py-4 px-6 focus:ring-2 focus:ring-brand-500 transition-all text-gray-900 outline-none appearance-none">
+                {COURSES.map(c => (
+                  <option key={c.id} value={c.id}>{c.title[lang]}</option>
+                ))}
+              </select>
+            </div>
+
+            <button
+              disabled={loading}
+              className={`w-full py-5 bg-brand-900 text-white rounded-2xl font-bold text-xl hover:bg-brand-800 transition-all flex items-center justify-center shadow-lg ${loading ? 'opacity-70 cursor-not-allowed' : 'hover:-translate-y-1'}`}
+            >
+              {loading ? (
+                <div className="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+              ) : (
+                <>
+                  {t.enrollForm.submit}
+                  <Send className="ml-3 w-5 h-5" />
+                </>
+              )}
+            </button>
+          </form>
+        </div>
+
+        <div className="hidden lg:block relative">
+          <img src="https://picsum.photos/seed/enroll1/800/1000" alt="Join us" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-brand-900/10 backdrop-blur-[2px]"></div>
+          <div className="absolute bottom-12 left-12 right-12 bg-white/90 backdrop-blur p-8 rounded-3xl">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-brand-900 rounded-full flex items-center justify-center text-white font-bold text-xl">&quot;</div>
+              <div className="font-bold text-gray-900">Nodira, IELTS Student</div>
+            </div>
+            <p className="text-gray-600 italic leading-relaxed">
+              &quot;Starting my journey here was the best decision for my academic future. The atmosphere is truly motivating!&quot;
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
