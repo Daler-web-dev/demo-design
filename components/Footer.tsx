@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Instagram, Facebook, Send } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -12,6 +13,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 mb-20">
           <div>
+            <Link href="/" className="inline-block mb-10">
+              <div className="relative w-40 h-40 rounded-xl overflow-hidden">
+                <Image src="/logo-colorfull.png" alt="Polyglot" fill className="object-contain" sizes="160px" />
+              </div>
+            </Link>
             <h2 className="text-7xl font-display font-black mb-10 leading-[0.9] tracking-tighter">THE FUTURE <br />SPEAKS <span className="text-indigo-500">ENGLISH.</span></h2>
             <div className="flex space-x-4">
               <div className="p-4 bg-white/5 rounded-2xl hover:bg-gold transition-colors group cursor-pointer">

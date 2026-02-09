@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageSquare, Send, X, Sparkles, Bot } from 'lucide-react';
+import { Send, X, Sparkles, Bot } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function GeminiAdvisor() {

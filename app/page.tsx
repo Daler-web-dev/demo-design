@@ -76,31 +76,36 @@ export default function Home() {
 	];
 
 	return (
-		<div className="relative overflow-x-hidden">
-			<div className="gradient-blur w-[600px] h-[600px] bg-indigo-500/20 top-[-200px] right-[-200px]"></div>
-			<div className="gradient-blur w-[400px] h-[400px] bg-gold/10 bottom-[-100px] left-[-200px]"></div>
+		<div className="relative overflow-x-hidden overflow-y-hidden">
+			<div className="gradient-blur gradient-blur-hero w-[600px] h-[600px] bg-indigo-500/20 top-[-200px] right-[-200px]"></div>
+			<div className="gradient-blur gradient-blur-hero w-[400px] h-[400px] bg-gold/10 bottom-[-100px] left-[-200px] [animation-delay:_-4s]"></div>
 
-			<section className="pt-40 pb-24 lg:pt-60 lg:pb-40">
+			<section className="min-h-screen pt-40 pb-24 lg:pt-60 lg:pb-40 relative flex flex-col justify-center">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="flex flex-col items-center text-center">
-						<div className="inline-flex items-center space-x-2 px-6 py-2 bg-obsidian text-white rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-10 animate-pulse-slow">
+						<div className="hero-badge-in hero-delay-0 inline-flex items-center space-x-2 px-6 py-2 bg-obsidian text-white rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-10 animate-pulse-slow">
 							<Zap className="w-3 h-3 text-gold" />
 							<span>{t.hero.badge}</span>
 						</div>
-						<h1 className="text-[12vw] lg:text-[11rem] font-display font-black leading-[0.8] tracking-tighter text-obsidian uppercase mb-12">
-							Bolder.
-							<br />
-							<span className="text-outline">Better.</span>
-							<br />
-							<span className="text-indigo-600">Fluent.</span>
+						<h1 className="text-[12vw] lg:text-[11rem] font-display font-black leading-[0.8] tracking-tighter text-obsidian uppercase mb-8 overflow-hidden">
+							<span className="hero-line hero-delay-1 block">
+								Bolder.
+							</span>
+							<span className="hero-line hero-delay-2 block text-outline">
+								Better.
+							</span>
+							<span className="hero-line hero-delay-3 block text-indigo-600">
+								Fluent.
+							</span>
 						</h1>
-						<p className="text-xl md:text-2xl text-slate-500 max-w-3xl leading-relaxed mb-16 font-medium">
+						<div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent mb-12 hero-line-draw hero-delay-line" />
+						<p className="hero-subtitle-in hero-delay-4 text-xl md:text-2xl text-slate-500 max-w-3xl leading-relaxed mb-16 font-medium tracking-normal">
 							{t.hero.subtitle}
 						</p>
-						<div className="flex flex-col sm:flex-row items-center gap-6">
+						<div className="hero-cta-in hero-delay-5 flex flex-col sm:flex-row items-center gap-6">
 							<Link
 								href="/enroll"
-								className="w-64 py-6 bg-obsidian text-white rounded-2xl font-black text-xl hover:bg-indigo-600 transition-all flex items-center justify-center group shadow-2xl"
+								className="hero-btn-shine w-64 py-6 bg-obsidian text-white rounded-2xl font-black text-xl hover:bg-indigo-600 transition-all flex items-center justify-center group shadow-2xl hover:shadow-indigo-500/20"
 							>
 								{t.nav.enroll}
 								<ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
@@ -110,7 +115,15 @@ export default function Home() {
 									<img
 										key={i}
 										src={`https://i.pravatar.cc/100?u=${i + 10}`}
-										className="w-12 h-12 rounded-full border-4 border-white shadow-lg"
+										className={`hero-avatar-pop w-12 h-12 rounded-full border-4 border-white shadow-lg ${
+											i === 1
+												? "hero-delay-avatar-1"
+												: i === 2
+													? "hero-delay-avatar-2"
+													: i === 3
+														? "hero-delay-avatar-3"
+														: "hero-delay-avatar-4"
+										}`}
 										alt=""
 									/>
 								))}
@@ -124,7 +137,7 @@ export default function Home() {
 			</section>
 
 			{/* 2. HALL OF FAME (REDESIGNED) */}
-			<section className="py-32 bg-obsidian text-white relative overflow-hidden">
+			<section className="min-h-fit py-32 bg-obsidian text-white relative overflow-hidden">
 				{/* Animated Background Text */}
 				<div className="absolute top-1/2 left-0 w-full text-[20vw] font-black text-white/5 whitespace-nowrap -translate-y-1/2 select-none pointer-events-none uppercase tracking-tighter italic">
 					{lang === "RU"
@@ -257,7 +270,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="py-40 bg-white">
+			<section className="min-h-fit py-40 bg-white">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="flex flex-col md:flex-row justify-between items-end mb-24 pb-12">
 						<div>
@@ -352,7 +365,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="py-32 px-6">
+			<section className="min-h-fit py-32 px-6">
 				<div className="max-w-7xl mx-auto">
 					<div className="grid lg:grid-cols-2 gap-20 items-center">
 						<div>
@@ -399,7 +412,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="py-40 bg-slate-50 relative overflow-hidden">
+			<section className="min-h-fit py-40 bg-slate-50 relative overflow-hidden">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="grid lg:grid-cols-12 gap-16 items-center">
 						<div className="lg:col-span-5">
@@ -486,7 +499,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="py-40 bg-white">
+			<section className="min-h-fit py-40 bg-white">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="text-center mb-32">
 						<h2 className="text-7xl md:text-9xl font-display font-black text-obsidian leading-none tracking-tighter uppercase mb-6">
@@ -522,7 +535,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="py-40 bg-obsidian text-white">
+			<section className="min-h-fit py-40 bg-obsidian text-white">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="flex flex-col lg:flex-row justify-between items-start mb-24">
 						<h2 className="text-7xl md:text-9xl font-display font-black leading-[0.8] tracking-tighter uppercase mb-10">
@@ -573,7 +586,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="py-40 bg-slate-50">
+			<section className="min-h-fit py-40 bg-slate-50">
 				<div className="max-w-4xl mx-auto px-6">
 					<div className="text-center mb-24">
 						<h2 className="text-6xl font-display font-black text-obsidian uppercase tracking-tighter leading-none mb-6">
@@ -617,7 +630,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="py-32 px-6">
+			<section className="min-h-screen py-32 px-6 flex flex-col justify-center">
 				<div className="max-w-7xl mx-auto bg-indigo-600 rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden">
 					<div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
 					<h2 className="text-5xl md:text-[8rem] font-display font-black text-white leading-none tracking-tighter mb-16 relative z-10">

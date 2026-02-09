@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import {
@@ -11,6 +11,8 @@ import {
 import { useLanguage } from '@/context/LanguageContext';
 import { COURSES } from '@/translations';
 
+const SCROLL_THRESHOLD = 400;
+
 export default function CourseDetail() {
   const params = useParams();
   const router = useRouter();
@@ -18,12 +20,21 @@ export default function CourseDetail() {
   const { t, lang } = useLanguage();
   const [activeModule, setActiveModule] = useState<number | null>(0);
   const [scrolled, setScrolled] = useState(false);
+  const lastScrolled = useRef(false);
 
   const course = COURSES.find(c => c.id === id);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 400);
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      const now = window.scrollY > SCROLL_THRESHOLD;
+      if (lastScrolled.current !== now) {
+        lastScrolled.current = now;
+        setScrolled(now);
+      }
+    };
+    lastScrolled.current = window.scrollY > SCROLL_THRESHOLD;
+    setScrolled(lastScrolled.current);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
