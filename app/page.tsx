@@ -88,7 +88,7 @@ export default function Home() {
 							<Zap className="w-3 h-3 text-gold" />
 							<span>{t.hero.badge}</span>
 						</div>
-						<h1 className="text-[12vw] lg:text-[11rem] font-display font-black leading-[0.8] tracking-tighter text-obsidian uppercase mb-8 overflow-hidden">
+						<h1 className="text-[clamp(3rem,16vw,8rem)] lg:text-[11rem] font-display font-black leading-[0.8] tracking-tighter text-obsidian uppercase mb-8 overflow-hidden">
 							<span className="hero-line hero-delay-1 block">
 								Bolder.
 							</span>
