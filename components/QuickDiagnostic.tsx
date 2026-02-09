@@ -55,18 +55,17 @@ const QuickDiagnostic: React.FC = () => {
 						<div className="flex items-center space-x-4 mb-6">
 							<Zap className="w-8 h-8 text-gold group-hover:text-indigo-600 transition-colors" />
 							<span className="text-xs font-black uppercase tracking-widest opacity-40">
-								60 Seconds
+								{t.diagnostic.quickCardTime}
 							</span>
 						</div>
 						<h4 className="text-3xl font-black uppercase tracking-tight mb-4">
-							Quick Diagnostic
+							{t.diagnostic.quickCardTitle}
 						</h4>
 						<p className="opacity-60 font-medium mb-8">
-							Fast AI assessment of your speaking comfort and
-							basic goals.
+							{t.diagnostic.quickCardDesc}
 						</p>
 						<div className="flex items-center font-black uppercase text-xs tracking-widest">
-							Start Now{" "}
+							{t.diagnostic.quickCardCta}{" "}
 							<ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" />
 						</div>
 					</button>
@@ -78,18 +77,17 @@ const QuickDiagnostic: React.FC = () => {
 						<div className="flex items-center space-x-4 mb-6">
 							<Clock className="w-8 h-8 text-white group-hover:text-obsidian transition-colors" />
 							<span className="text-xs font-black uppercase tracking-widest opacity-80">
-								30 Minutes
+								{t.diagnostic.deepCardTime}
 							</span>
 						</div>
 						<h4 className="text-3xl font-black uppercase tracking-tight mb-4">
-							Deep Audit
+							{t.diagnostic.deepCardTitle}
 						</h4>
 						<p className="opacity-80 font-medium mb-8">
-							Full professional academic testing with grammar,
-							vocabulary and logic.
+							{t.diagnostic.deepCardDesc}
 						</p>
 						<div className="flex items-center font-black uppercase text-xs tracking-widest">
-							Go To Exam{" "}
+							{t.diagnostic.deepCardCta}{" "}
 							<ChevronRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform" />
 						</div>
 					</Link>
