@@ -64,6 +64,74 @@ export const translations: Record<Language, any> = {
       course: 'Preferred Program',
       submit: 'Send Application',
       success: 'Welcome Aboard!'
+    },
+    diagnostic: {
+      title: 'Quick Diagnostic',
+      subtitle: 'Find out your real language level in 60 seconds.',
+      startBtn: 'Start Test',
+      nextBtn: 'Next Question',
+      calculating: 'Analyzing data...',
+      resultTitle: 'Diagnostic Complete',
+      recommendation: 'Recommended program:',
+      retake: 'Retake Test',
+      questions: [
+        {
+          q: 'How would you describe your comfort when communicating?',
+          options: [
+            { a: 'I use single words and gestures', score: 1 },
+            { a: 'I can communicate in daily life, but complex topics are difficult', score: 2 },
+            { a: 'I speak freely but sometimes make grammar mistakes', score: 3 },
+            { a: 'I use English professionally every day', score: 4 }
+          ]
+        },
+        {
+          q: 'Which sentence is grammatically correct?',
+          options: [
+            { a: 'I have seen him yesterday', score: 1 },
+            { a: 'I saw him yesterday', score: 3 },
+            { a: 'I seen him yesterday', score: 0 }
+          ]
+        },
+        {
+          q: 'What is your main learning goal?',
+          options: [
+            { a: 'Academic (IELTS / University admission)', score: 5 },
+            { a: 'Career growth / Business negotiations', score: 4 },
+            { a: 'Personal development / Travel', score: 2 }
+          ]
+        }
+      ]
+    },
+    deepAudit: {
+      backgroundWord: 'AUDIT',
+      titleWord: 'Neural',
+      titleHighlight: 'Deep Audit.',
+      subtitle: 'Full 30-minute professional assessment from Polyglot HQ. Cover grammar, lexical resource, and linguistic logic.',
+      timeLabel: 'Time Limit',
+      timeValue: '30 MIN',
+      standardsLabel: 'Standards',
+      standardsValue: 'CEFR STDR',
+      accuracyLabel: 'Accuracy',
+      accuracyValue: '98% ACC.',
+      startBtn: 'Start Full Exam',
+      questionLabel: 'Question',
+      back: 'Back',
+      next: 'Next',
+      finishBtn: 'Finish & Analyze',
+      completeBadge: 'Audit Complete',
+      yourLabel: 'Your',
+      standingLabel: 'Standing.',
+      metricsTitle: 'Diagnostic Metrics',
+      levelLabel: 'Level',
+      retakeBtn: 'Retake Audit',
+      systemRecLabel: 'System Recommendation',
+      readyForLabel: 'Ready for',
+      reserveSpotBtn: 'Reserve Spot',
+      levels: {
+        beginner: 'Beginner (A1)',
+        intermediate: 'Intermediate (B1-B2)',
+        advanced: 'Advanced (C1)'
+      }
     }
   },
   RU: {
@@ -128,6 +196,74 @@ export const translations: Record<Language, any> = {
       course: 'Предпочтительная программа',
       submit: 'Отправить заявку',
       success: 'Добро пожаловать!'
+    },
+    diagnostic: {
+      title: 'Диагностика',
+      subtitle: 'Узнайте свой реальный уровень языка за 60 секунд.',
+      startBtn: 'Начать тест',
+      nextBtn: 'Следующий вопрос',
+      calculating: 'Анализ данных...',
+      resultTitle: 'Диагностика завершена',
+      recommendation: 'Рекомендуемая программа:',
+      retake: 'Пройти снова',
+      questions: [
+        {
+          q: 'Как бы вы описали свой комфорт при общении?',
+          options: [
+            { a: 'Использую отдельные слова и жесты', score: 1 },
+            { a: 'Могу общаться в быту, но сложные темы даются с трудом', score: 2 },
+            { a: 'Говорю свободно, но иногда делаю грамматические ошибки', score: 3 },
+            { a: 'Использую английский профессионально каждый день', score: 4 }
+          ]
+        },
+        {
+          q: 'Какое предложение грамматически верно?',
+          options: [
+            { a: 'I have seen him yesterday', score: 1 },
+            { a: 'I saw him yesterday', score: 3 },
+            { a: 'I seen him yesterday', score: 0 }
+          ]
+        },
+        {
+          q: 'Какова ваша основная цель обучения?',
+          options: [
+            { a: 'Академическая (IELTS / Поступление в ВУЗ)', score: 5 },
+            { a: 'Карьерный рост / Бизнес-переговоры', score: 4 },
+            { a: 'Личное развитие / Путешествия', score: 2 }
+          ]
+        }
+      ]
+    },
+    deepAudit: {
+      backgroundWord: 'АУДИТ',
+      titleWord: 'Нейро',
+      titleHighlight: 'Глубокий аудит.',
+      subtitle: 'Полная 30-минутная профессиональная оценка от Polyglot. Грамматика, лексика и языковая логика.',
+      timeLabel: 'Лимит времени',
+      timeValue: '30 МИН',
+      standardsLabel: 'Стандарты',
+      standardsValue: 'CEFR',
+      accuracyLabel: 'Точность',
+      accuracyValue: '98%',
+      startBtn: 'Начать полный тест',
+      questionLabel: 'Вопрос',
+      back: 'Назад',
+      next: 'Далее',
+      finishBtn: 'Завершить и анализировать',
+      completeBadge: 'Аудит завершён',
+      yourLabel: 'Ваш',
+      standingLabel: 'результат.',
+      metricsTitle: 'Показатели диагностики',
+      levelLabel: 'Уровень',
+      retakeBtn: 'Пройти снова',
+      systemRecLabel: 'Рекомендация системы',
+      readyForLabel: 'Вам подойдёт',
+      reserveSpotBtn: 'Записаться',
+      levels: {
+        beginner: 'Начальный (A1)',
+        intermediate: 'Средний (B1-B2)',
+        advanced: 'Продвинутый (C1)'
+      }
     }
   }
 };

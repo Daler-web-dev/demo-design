@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { COURSES } from "@/translations";
+import QuickDiagnostic from "@/components/QuickDiagnostic";
 
 export default function Home() {
 	const { t, lang } = useLanguage();
@@ -362,6 +363,13 @@ export default function Home() {
 							);
 						})}
 					</div>
+				</div>
+			</section>
+
+			{/* QUICK DIAGNOSTIC SECTION (COMPONENTIZED) */}
+			<section className="py-32 bg-obsidian text-white relative overflow-hidden">
+				<div className="max-w-5xl mx-auto px-6 relative z-10">
+					<QuickDiagnostic />
 				</div>
 			</section>
 
