@@ -70,18 +70,12 @@ export default function Home() {
 		"kids-genius": Rocket,
 	};
 
-	const achievementImages = [
-		"https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=800",
-		"https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800",
-		"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800",
-	];
-
 	return (
 		<div className="relative overflow-x-hidden overflow-y-hidden">
 			<div className="gradient-blur gradient-blur-hero w-[600px] h-[600px] bg-indigo-500/20 top-[-200px] right-[-200px]"></div>
 			<div className="gradient-blur gradient-blur-hero w-[400px] h-[400px] bg-gold/10 bottom-[-100px] left-[-200px] [animation-delay:_-4s]"></div>
 
-			<section className="min-h-screen pt-40 pb-24 lg:pt-60 lg:pb-40 relative flex flex-col justify-center">
+			<section className="min-h-screen pt-40 pb-24 lg:pt-28 lg:pb-40 relative flex flex-col justify-center">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="flex flex-col items-center text-center">
 						<div className="hero-badge-in hero-delay-0 inline-flex items-center space-x-2 px-6 py-2 bg-obsidian text-white rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-10 animate-pulse-slow">
@@ -137,13 +131,12 @@ export default function Home() {
 				</div>
 			</section>
 
-			{/* 2. HALL OF FAME (REDESIGNED) */}
+			{/* 2. OUR PRIDE — TEACHERS WITH IELTS 9 */}
 			<section className="min-h-fit py-32 bg-obsidian text-white relative overflow-hidden">
-				{/* Animated Background Text */}
 				<div className="absolute top-1/2 left-0 w-full text-[20vw] font-black text-white/5 whitespace-nowrap -translate-y-1/2 select-none pointer-events-none uppercase tracking-tighter italic">
 					{lang === "RU"
-						? "ЧЕМПИОНЫ • ЧЕМПИОНЫ • ЧЕМПИОНЫ"
-						: "CHAMPIONS • CHAMPIONS • CHAMPIONS"}
+						? "IELTS 9 • IELTS 9 • IELTS 9"
+						: "IELTS 9 • IELTS 9 • IELTS 9"}
 				</div>
 
 				<div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -152,9 +145,7 @@ export default function Home() {
 							<div className="flex items-center space-x-3 mb-6">
 								<Medal className="w-6 h-6 text-gold" />
 								<span className="text-xs font-black uppercase tracking-[0.4em] text-gold">
-									{lang === "RU"
-										? "РЕЗУЛЬТАТЫ"
-										: "THE HALL OF FAME"}
+									{t.results.badge}
 								</span>
 							</div>
 							<h2 className="text-6xl md:text-8xl lg:text-9xl font-display font-black leading-none italic uppercase tracking-tighter">
@@ -163,74 +154,84 @@ export default function Home() {
 							<p className="text-xl md:text-2xl text-slate-400 font-medium mt-6 max-w-lg leading-relaxed">
 								{t.results.subtitle}
 							</p>
+							<p className="text-base md:text-lg text-gold font-bold max-w-lg">
+								{t.results.uniqueClaim}
+							</p>
 						</div>
 						<div className="hidden lg:flex items-center space-x-4 pb-4">
 							<div className="text-right">
 								<div className="text-4xl font-black text-gold">
-									8.0+
+									6
 								</div>
 								<div className="text-[10px] font-black uppercase tracking-widest text-slate-500">
-									Average IELTS Score
+									{t.results.teachersStat}
 								</div>
 							</div>
 							<div className="h-16 w-px bg-white/10 mx-6"></div>
+							<div className="text-right">
+								<div className="text-4xl font-black text-gold">
+									IELTS 9
+								</div>
+								<div className="text-[10px] font-black uppercase tracking-widest text-slate-500">
+									{t.results.maxBandLabel}
+								</div>
+							</div>
 							<Trophy className="w-16 h-16 text-gold animate-pulse" />
 						</div>
 					</div>
 
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-						{t.results.scores.map((res: any, idx: number) => (
-							<div key={idx} className="group relative">
-								{/* Image Container with Hover Effect */}
-								<div className="relative aspect-[3/4] rounded-[3.5rem] overflow-hidden shadow-2xl transition-all duration-700 group-hover:-translate-y-4 group-hover:shadow-gold/10">
-									<img
-										src={achievementImages[idx]}
-										alt={res.name}
-										className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
-									/>
+					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8">
+						{t.results.teachers.map(
+							(
+								teacher: { name: string; image: string },
+								idx: number,
+							) => (
+								<div key={idx} className="group relative">
+									<div className="relative aspect-[3/4] rounded-[3.5rem] overflow-hidden shadow-2xl transition-all duration-700 group-hover:-translate-y-4 group-hover:shadow-gold/10">
+										<img
+											src={`/niners/${teacher.image}`}
+											alt={teacher.name}
+											className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
+										/>
+										<div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-90" />
 
-									{/* Overlays */}
-									<div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent opacity-80"></div>
+										<div className="absolute top-4 left-4 md:top-6 md:left-6">
+											<div className="bg-white/10 backdrop-blur-xl border border-white/20 px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-[1.5rem] flex flex-col items-center shadow-2xl group-hover:bg-gold transition-colors duration-500">
+												<span className="text-2xl md:text-4xl font-black tracking-tighter group-hover:text-obsidian">
+													9
+												</span>
+												<span className="text-[7px] md:text-[8px] font-black uppercase tracking-widest opacity-60 group-hover:text-obsidian">
+													{t.results.scoreLabel}
+												</span>
+											</div>
+										</div>
 
-									{/* Score Badge - Top Left */}
-									<div className="absolute top-8 left-8">
-										<div className="bg-white/10 backdrop-blur-xl border border-white/20 px-6 py-4 rounded-[2rem] flex flex-col items-center shadow-2xl group-hover:bg-gold transition-colors duration-500">
-											<span className="text-5xl font-black tracking-tighter group-hover:text-obsidian">
-												{res.score}
-											</span>
-											<span className="text-[8px] font-black uppercase tracking-widest opacity-60 group-hover:text-obsidian">
-												OVERALL BAND
-											</span>
+										<div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
+											<div className="flex items-center space-x-2 mb-2">
+												<Award className="w-4 h-4 md:w-5 md:h-5 text-gold group-hover:rotate-12 transition-transform" />
+												<span className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] text-gold">
+													{t.results.roleLabel}
+												</span>
+											</div>
+											<h3 className="text-2xl md:text-3xl font-display font-black leading-none uppercase tracking-tighter group-hover:text-gold transition-colors">
+												{teacher.name}
+											</h3>
 										</div>
 									</div>
-
-									{/* Details - Bottom */}
-									<div className="absolute bottom-10 left-10 right-10">
-										<div className="flex items-center space-x-3 mb-4">
-											<Award className="w-5 h-5 text-gold group-hover:rotate-12 transition-transform" />
-											<span className="text-[10px] font-black uppercase tracking-[0.3em] text-gold">
-												{res.result}
-											</span>
-										</div>
-										<h3 className="text-4xl font-display font-black leading-none uppercase tracking-tighter mb-2 group-hover:text-gold transition-colors">
-											{res.name}
-										</h3>
-										<div className="flex justify-between items-center pt-4 border-t border-white/10">
-											<span className="text-[10px] font-black uppercase tracking-widest text-slate-400">
-												{lang === "RU"
-													? "Выпускник"
-													: "Alumnus"}{" "}
-												{res.year}
-											</span>
-											<ArrowUpRight className="w-5 h-5 text-white/40 group-hover:text-gold transition-colors" />
-										</div>
-									</div>
+									<div className="absolute -z-10 -bottom-4 -right-4 w-full h-full border border-white/5 rounded-[3.5rem] group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-700" />
 								</div>
+							),
+						)}
+					</div>
 
-								{/* Decorative Elements for the Card */}
-								<div className="absolute -z-10 -bottom-6 -right-6 w-full h-full border border-white/5 rounded-[3.5rem] group-hover:translate-x-4 group-hover:translate-y-4 transition-transform duration-700"></div>
-							</div>
-						))}
+					<div className="mt-16 text-center">
+						<Link
+							href="/team"
+							className="inline-flex items-center gap-3 px-10 py-5 bg-white/5 border border-white/10 rounded-2xl font-black uppercase tracking-widest text-sm text-white hover:bg-gold hover:text-obsidian hover:border-gold transition-all duration-300"
+						>
+							{t.results.viewAllStaff}
+							<ArrowRight className="w-5 h-5" />
+						</Link>
 					</div>
 
 					{/* Stats Bar at bottom of section */}
