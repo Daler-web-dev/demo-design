@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
-import Link from "next/link";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import {
   Clock,
   BrainCircuit,
@@ -11,134 +10,133 @@ import {
   ChevronLeft,
   RotateCcw,
   Award,
-  Zap,
-  ArrowRight,
+  Loader2,
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
-import { COURSES } from "@/translations";
 
-const DEEP_TEST_DATA = {
-  time: 1800000,
-  questions: [
-    {
-      id: 1,
-      question: "I ____ got a computer but I've got a tablet.",
-      answers: [
-        { id: 1, title: "don't", examination: false },
-        { id: 2, title: "'ve", examination: false },
-        { id: 3, title: "haven't", examination: true },
-      ],
-    },
-    {
-      id: 2,
-      question:
-        "Sue: I love Rita Ora! _____ her? Mike: No. I prefer Ed Sheeran.",
-      answers: [
-        { id: 1, title: "Do you like", examination: true },
-        { id: 2, title: "Are you like", examination: false },
-        { id: 3, title: "Does you like", examination: false },
-      ],
-    },
-    {
-      id: 3,
-      question:
-        "Marie: _____ play a musical instrument, John? John: Yes. I play the piano.",
-      answers: [
-        { id: 1, title: "Can you", examination: true },
-        { id: 2, title: "Do you can", examination: false },
-        { id: 3, title: "Are you", examination: false },
-      ],
-    },
-    {
-      id: 4,
-      question: "Where ______ your parents live?",
-      answers: [
-        { id: 1, title: "is", examination: false },
-        { id: 2, title: "does", examination: false },
-        { id: 3, title: "do", examination: true },
-      ],
-    },
-    {
-      id: 5,
-      question:
-        "I _____ English at the moment. I'm doing my homework.",
-      answers: [
-        { id: 1, title: "don't study", examination: false },
-        { id: 2, title: "not studying", examination: false },
-        { id: 3, title: "am not studying", examination: true },
-      ],
-    },
-  ],
-};
+/** Данные теста с API (без правильных ответов) */
+interface TestData {
+  time: number;
+  questions: { id: number; question: string; answers: { id: number; title: string }[] }[];
+}
+
+const STORAGE_KEY = "polyglot_deep_test_contact";
+const DEFAULT_TIME_MS = 30 * 60 * 1000;
 
 const DeepAudit: React.FC = () => {
-  const { lang, t } = useLanguage();
-  const [stage, setStage] = useState<"intro" | "active" | "result">("intro");
+  const { t } = useLanguage();
+  const [stage, setStage] = useState<"intro" | "form" | "active" | "result">("intro");
   const [currentIdx, setCurrentIdx] = useState(0);
   const [userAnswers, setUserAnswers] = useState<Record<number, number>>({});
-  const [timeLeft, setTimeLeft] = useState(DEEP_TEST_DATA.time);
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const [timeLeft, setTimeLeft] = useState(DEFAULT_TIME_MS);
+  const [contactData, setContactData] = useState({ name: "", phone: "" });
+  const [testData, setTestData] = useState<TestData | null>(null);
+  const [testLoadError, setTestLoadError] = useState(false);
+  const sentToTelegramRef = useRef(false);
 
+  // Загрузка сохранённых контактов из localStorage (один раз при монтировании)
   useEffect(() => {
-    if (stage === "active" && timeLeft > 0) {
-      timerRef.current = setInterval(() => {
-        setTimeLeft((prev) => {
-          if (prev <= 1000) {
-            if (timerRef.current) clearInterval(timerRef.current);
-            setStage("result");
-            return 0;
-          }
-          return prev - 1000;
-        });
-      }, 1000);
+    if (typeof window === "undefined") return;
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw) as { name?: string; phone?: string };
+        if (parsed && (parsed.name || parsed.phone)) {
+          setContactData({
+            name: typeof parsed.name === "string" ? parsed.name : "",
+            phone: typeof parsed.phone === "string" ? parsed.phone : "",
+          });
+        }
+      }
+    } catch {
+      // ignore
     }
+  }, []);
+
+  // Загрузка теста с сервера при входе на шаг «форма» (контент только с API, без правильных ответов)
+  useEffect(() => {
+    if (stage !== "form") return;
+    let cancelled = false;
+    setTestLoadError(false);
+    fetch("/api/deep-test")
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to load test");
+        return res.json();
+      })
+      .then((data: TestData) => {
+        if (!cancelled) setTestData(data);
+      })
+      .catch(() => {
+        if (!cancelled) setTestLoadError(true);
+      });
     return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
+      cancelled = true;
     };
   }, [stage]);
 
-  const selectAnswer = (qId: number, aId: number) => {
-    setUserAnswers((prev) => ({ ...prev, [qId]: aId }));
+  // Предупреждение при обновлении/закрытии вкладки во время формы или теста
+  useEffect(() => {
+    if (stage !== "form" && stage !== "active") return;
+    const handler = (e: BeforeUnloadEvent) => {
+      e.preventDefault();
+      e.returnValue = "";
+      return "";
+    };
+    window.addEventListener("beforeunload", handler);
+    return () => window.removeEventListener("beforeunload", handler);
+  }, [stage]);
 
-    if (currentIdx < DEEP_TEST_DATA.questions.length - 1) {
-      setTimeout(() => {
-        setCurrentIdx((prev) => prev + 1);
-      }, 400);
-    }
-  };
+  // Отправка контактов в Telegram после прохождения
+  useEffect(() => {
+    if (stage !== "result" || !contactData.name.trim() || !contactData.phone.trim() || sentToTelegramRef.current)
+      return;
+    sentToTelegramRef.current = true;
+    fetch("/api/deep-test-notify", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: contactData.name.trim(),
+        phone: contactData.phone.trim(),
+        answers: userAnswers,
+      }),
+    }).catch((err) => console.error("Deep test notify failed:", err));
+  }, [stage, contactData.name, contactData.phone, userAnswers]);
 
-  const nextQuestion = () => {
-    if (currentIdx < DEEP_TEST_DATA.questions.length - 1) {
-      setCurrentIdx(currentIdx + 1);
-    }
-  };
+  // Таймер только в шаге «тест»; очистка при размонтировании или смене шага
+  useEffect(() => {
+    if (stage !== "active" || timeLeft <= 0) return;
+    const id = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1000) {
+          setStage("result");
+          return 0;
+        }
+        return prev - 1000;
+      });
+    }, 1000);
+    return () => clearInterval(id);
+  }, [stage]);
 
-  const prevQuestion = () => {
-    if (currentIdx > 0) {
-      setCurrentIdx(currentIdx - 1);
-    }
-  };
+  const questions = testData?.questions ?? [];
+  const questionsCount = questions.length;
 
-  const calculateResult = () => {
-    let correct = 0;
-    DEEP_TEST_DATA.questions.forEach((q) => {
-      const correctA = q.answers.find((a) => a.examination);
-      if (correctA && userAnswers[q.id] === correctA.id) correct++;
-    });
-    const percentage =
-      (correct / DEEP_TEST_DATA.questions.length) * 100;
-    let levelKey: "beginner" | "intermediate" | "advanced" = "beginner";
-    let recId = "kids-genius";
-    if (percentage > 80) {
-      levelKey = "advanced";
-      recId = "ielts-elite";
-    } else if (percentage > 50) {
-      levelKey = "intermediate";
-      recId = "business-mastery";
-    }
-    const level = t.deepAudit.levels[levelKey];
-    return { correct, level, recId, percentage };
-  };
+  const selectAnswer = useCallback(
+    (qId: number, aId: number) => {
+      setUserAnswers((prev) => ({ ...prev, [qId]: aId }));
+      if (currentIdx < questionsCount - 1) {
+        setTimeout(() => setCurrentIdx((prev) => prev + 1), 400);
+      }
+    },
+    [currentIdx, questionsCount]
+  );
+
+  const nextQuestion = useCallback(() => {
+    if (currentIdx < questionsCount - 1) setCurrentIdx(currentIdx + 1);
+  }, [currentIdx, questionsCount]);
+
+  const prevQuestion = useCallback(() => {
+    if (currentIdx > 0) setCurrentIdx(currentIdx - 1);
+  }, [currentIdx]);
 
   const formatTime = (ms: number) => {
     const min = Math.floor(ms / 60000);
@@ -185,7 +183,7 @@ const DeepAudit: React.FC = () => {
           </div>
         </div>
         <button
-          onClick={() => setStage("active")}
+          onClick={() => setStage("form")}
           className="px-16 py-8 bg-gold text-obsidian rounded-[2rem] font-black text-2xl hover:bg-white hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-gold/20 uppercase tracking-tighter"
         >
           {t.deepAudit.startBtn}
@@ -194,11 +192,99 @@ const DeepAudit: React.FC = () => {
     );
   }
 
+  if (stage === "form") {
+    const handleFormSubmit = (e: React.FormEvent) => {
+      e.preventDefault();
+      if (!testData) return;
+      const name = (e.currentTarget.querySelector('[name="name"]') as HTMLInputElement)?.value?.trim() ?? "";
+      const phone = (e.currentTarget.querySelector('[name="phone"]') as HTMLInputElement)?.value?.trim() ?? "";
+      if (!name || !phone) return;
+      setContactData({ name, phone });
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({ name, phone }));
+      } catch {
+        // ignore
+      }
+      setTimeLeft(testData.time);
+      setStage("active");
+    };
+    return (
+      <div className="animate-fade-up py-12 max-w-xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-display font-black leading-tight mb-3 uppercase tracking-tight">
+          {t.deepAudit.formTitle}
+        </h2>
+        <p className="text-slate-400 mb-10 text-lg">
+          {t.deepAudit.formSubtitle}
+        </p>
+        {testLoadError && (
+          <p className="mb-6 p-4 rounded-2xl bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
+            {t.deepAudit.formLoadError}
+          </p>
+        )}
+        <p className="text-slate-500 text-sm mb-6">
+          {t.deepAudit.leaveWarning}
+        </p>
+        <form onSubmit={handleFormSubmit} className="space-y-6">
+          <div>
+            <label className="block text-xs font-black uppercase tracking-widest text-slate-400 mb-2">
+              {t.deepAudit.formNameLabel}
+            </label>
+            <input
+              name="name"
+              type="text"
+              required
+              defaultValue={contactData.name}
+              placeholder={t.deepAudit.formNamePlaceholder}
+              className="w-full bg-white/5 border border-white/10 rounded-2xl py-5 px-6 text-white placeholder:text-slate-500 focus:ring-2 focus:ring-gold focus:border-gold outline-none transition-all"
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-black uppercase tracking-widest text-slate-400 mb-2">
+              {t.deepAudit.formPhoneLabel}
+            </label>
+            <input
+              name="phone"
+              type="tel"
+              required
+              defaultValue={contactData.phone}
+              placeholder={t.deepAudit.formPhonePlaceholder}
+              className="w-full bg-white/5 border border-white/10 rounded-2xl py-5 px-6 text-white placeholder:text-slate-500 focus:ring-2 focus:ring-gold focus:border-gold outline-none transition-all"
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={!testData || testLoadError}
+            className="w-full px-16 py-6 bg-gold text-obsidian rounded-[2rem] font-black text-xl hover:bg-white hover:scale-[1.02] active:scale-95 transition-all shadow-2xl shadow-gold/20 uppercase tracking-tighter disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          >
+            {!testData && !testLoadError ? (
+              <>
+                <Loader2 className="w-5 h-5 animate-spin" />
+                {t.deepAudit.formLoading}
+              </>
+            ) : (
+              t.deepAudit.formContinueBtn
+            )}
+          </button>
+        </form>
+      </div>
+    );
+  }
+
   if (stage === "active") {
-    const q = DEEP_TEST_DATA.questions[currentIdx];
-    const isLast = currentIdx === DEEP_TEST_DATA.questions.length - 1;
-    const canFinish =
-      Object.keys(userAnswers).length === DEEP_TEST_DATA.questions.length;
+    if (!questionsCount) {
+      return (
+        <div className="animate-fade-up py-20 text-center">
+          <Loader2 className="w-12 h-12 animate-spin text-gold mx-auto mb-4" />
+          <p className="text-slate-400">{t.deepAudit.formLoading}</p>
+        </div>
+      );
+    }
+    const q = questions[currentIdx];
+    if (!q) {
+      return null;
+    }
+    const isLast = currentIdx === questionsCount - 1;
+    const canFinish = Object.keys(userAnswers).length === questionsCount;
 
     return (
       <div className="animate-fade-up py-10">
@@ -208,7 +294,7 @@ const DeepAudit: React.FC = () => {
               {currentIdx + 1}
             </div>
             <span className="text-xs font-black uppercase tracking-widest opacity-40">
-              {t.deepAudit.questionLabel} {currentIdx + 1} / {DEEP_TEST_DATA.questions.length}
+              {t.deepAudit.questionLabel} {currentIdx + 1} / {questionsCount}
             </span>
           </div>
           <div className="flex items-center space-x-3 bg-white/5 px-6 py-3 rounded-2xl border border-white/10">
@@ -222,6 +308,9 @@ const DeepAudit: React.FC = () => {
             </span>
           </div>
         </div>
+        <p className="text-slate-500 text-xs mb-8">
+          {t.deepAudit.leaveWarning}
+        </p>
 
         <h2 className="text-4xl md:text-5xl font-display font-black leading-tight mb-12 uppercase tracking-tight">
           {q.question}
@@ -294,9 +383,6 @@ const DeepAudit: React.FC = () => {
     );
   }
 
-  const result = calculateResult();
-  const recommendedCourse = COURSES.find((c) => c.id === result.recId);
-
   return (
     <div className="animate-reveal py-10">
       <div className="text-center mb-20">
@@ -304,99 +390,28 @@ const DeepAudit: React.FC = () => {
           <Award className="w-4 h-4" />
           <span>{t.deepAudit.completeBadge}</span>
         </div>
-        <h2 className="text-7xl md:text-9xl font-display font-black leading-none tracking-tighter uppercase mb-6">
-          {t.deepAudit.yourLabel}
-          <br />
-          <span className="text-outline-white">{t.deepAudit.standingLabel}</span>
+        <h2 className="text-5xl md:text-7xl font-display font-black leading-none tracking-tighter uppercase mb-6">
+          {t.deepAudit.resultSuccessTitle}
         </h2>
+        <p className="text-xl md:text-2xl text-slate-400 font-medium max-w-xl mx-auto">
+          {t.deepAudit.resultSuccessSubtitle}
+        </p>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-10 items-stretch max-w-6xl mx-auto">
-        {/* Metrics Card */}
-        <div className="bg-white/5 border border-white/10 rounded-[4rem] p-12 flex flex-col justify-between backdrop-blur-sm">
-          <div>
-            <div className="text-xs font-black uppercase tracking-[0.4em] text-slate-500 mb-10">
-              {t.deepAudit.metricsTitle}
-            </div>
-            <div className="space-y-12">
-              <div>
-                <div className="flex justify-between items-end mb-4">
-                  <span className="text-4xl font-black uppercase tracking-tighter">
-                    {t.deepAudit.levelLabel}
-                  </span>
-                  <span className="text-gold font-bold">{result.level}</span>
-                </div>
-                <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-indigo-600 transition-all duration-1000"
-                    style={{ width: `${result.percentage}%` }}
-                  />
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between items-end mb-4">
-                  <span className="text-4xl font-black uppercase tracking-tighter">
-                    {t.deepAudit.accuracyLabel}
-                  </span>
-                  <span className="text-gold font-bold">
-                    {result.percentage.toFixed(1)}%
-                  </span>
-                </div>
-                <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-gold transition-all duration-1000"
-                    style={{ width: `${result.percentage}%` }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mt-20 flex gap-4">
-            <button
-              onClick={() => {
-                setStage("intro");
-                setCurrentIdx(0);
-                setTimeLeft(DEEP_TEST_DATA.time);
-                setUserAnswers({});
-              }}
-              className="flex-grow py-6 border border-white/10 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-white/5 flex items-center justify-center transition-colors group"
-            >
-              <RotateCcw className="mr-2 w-4 h-4 group-hover:rotate-180 transition-transform duration-500" />{" "}
-              {t.deepAudit.retakeBtn}
-            </button>
-          </div>
-        </div>
-
-        {/* Recommendation Card */}
-        {recommendedCourse && (
-          <div className="bg-indigo-600 rounded-[4rem] p-12 text-white shadow-2xl relative overflow-hidden group">
-            <div className="relative z-10">
-              <span className="text-white/40 font-black uppercase tracking-[0.4em] text-[10px] mb-10 block">
-                {t.deepAudit.systemRecLabel}
-              </span>
-              <h3 className="text-5xl font-display font-black uppercase tracking-tighter leading-none mb-10">
-                {t.deepAudit.readyForLabel}
-                <br />
-                {recommendedCourse.title[lang]}.
-              </h3>
-              <div className="p-8 bg-white/10 backdrop-blur-xl border border-white/10 rounded-[2.5rem] mb-12">
-                <p className="font-medium text-lg leading-relaxed opacity-90">
-                  {recommendedCourse.description[lang]}
-                </p>
-              </div>
-              <Link
-                href={`/courses/${recommendedCourse.id}`}
-                className="inline-flex items-center px-12 py-7 bg-white text-obsidian rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-gold transition-all hover:scale-105 active:scale-95"
-              >
-                {t.deepAudit.reserveSpotBtn} <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </div>
-            <Zap
-              strokeWidth={1}
-              className="absolute -bottom-10 -right-10 w-64 h-64 text-white/5 group-hover:scale-110 transition-transform duration-1000"
-            />
-          </div>
-        )}
+      <div className="max-w-md mx-auto">
+        <button
+          onClick={() => {
+            sentToTelegramRef.current = false;
+            setStage("intro");
+            setCurrentIdx(0);
+            setTimeLeft(testData?.time ?? DEFAULT_TIME_MS);
+            setUserAnswers({});
+          }}
+          className="w-full py-6 border border-white/10 rounded-2xl font-black uppercase tracking-widest text-xs hover:bg-white/5 flex items-center justify-center transition-colors group"
+        >
+          <RotateCcw className="mr-2 w-4 h-4 group-hover:rotate-180 transition-transform duration-500" />{" "}
+          {t.deepAudit.retakeBtn}
+        </button>
       </div>
     </div>
   );

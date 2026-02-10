@@ -11,13 +11,26 @@ export default function Enroll() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    const form = e.currentTarget;
+    const name = (form.querySelector('[name="name"]') as HTMLInputElement)?.value?.trim() ?? '';
+    const phone = (form.querySelector('[name="phone"]') as HTMLInputElement)?.value?.trim() ?? '';
+    const courseId = (form.querySelector('[name="course"]') as HTMLSelectElement)?.value ?? '';
+    const courseTitle = COURSES.find((c) => c.id === courseId)?.title[lang] ?? courseId;
+    try {
+      await fetch('/api/enroll-notify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, course: courseTitle }),
+      });
+    } catch (err) {
+      console.error('Enroll notify failed:', err);
+    } finally {
       setLoading(false);
       setSubmitted(true);
-    }, 1500);
+    }
   };
 
   if (submitted) {
@@ -49,6 +62,7 @@ export default function Enroll() {
             <div>
               <label className="block text-sm font-bold text-gray-700 mb-2">{t.enrollForm.name}</label>
               <input
+                name="name"
                 required
                 type="text"
                 placeholder="John Doe"
@@ -58,6 +72,7 @@ export default function Enroll() {
             <div>
               <label className="block text-sm font-bold text-gray-700 mb-2">{t.enrollForm.phone}</label>
               <input
+                name="phone"
                 required
                 type="tel"
                 placeholder="+998 (__) ___-__-__"
@@ -66,7 +81,7 @@ export default function Enroll() {
             </div>
             <div>
               <label className="block text-sm font-bold text-gray-700 mb-2">{t.enrollForm.course}</label>
-              <select className="w-full bg-gray-50 border-gray-100 rounded-2xl py-4 px-6 focus:ring-2 focus:ring-brand-500 transition-all text-gray-900 outline-none appearance-none">
+              <select name="course" className="w-full bg-gray-50 border-gray-100 rounded-2xl py-4 px-6 focus:ring-2 focus:ring-brand-500 transition-all text-gray-900 outline-none appearance-none">
                 {COURSES.map(c => (
                   <option key={c.id} value={c.id}>{c.title[lang]}</option>
                 ))}
