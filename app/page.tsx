@@ -83,7 +83,7 @@ export default function Home() {
 							<span>{t.hero.badge}</span>
 						</div>
 						<h1 className="text-[clamp(3rem,16vw,8rem)] lg:text-[11rem] font-display font-black leading-[0.8] tracking-tighter text-obsidian uppercase mb-8 overflow-hidden">
-							<span className="hero-line hero-delay-1 block">
+							<span className="hero-line hero-delay-1 block text-gold">
 								Bolder.
 							</span>
 							<span className="hero-line hero-delay-2 block text-outline">
@@ -148,7 +148,7 @@ export default function Home() {
 									{t.results.badge}
 								</span>
 							</div>
-							<h2 className="text-6xl md:text-8xl lg:text-9xl font-display font-black leading-none italic uppercase tracking-tighter">
+							<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.95] italic uppercase tracking-tighter break-words max-w-full">
 								{t.results.title}
 							</h2>
 							<p className="text-xl md:text-2xl text-slate-400 font-medium mt-6 max-w-lg leading-relaxed">
@@ -276,7 +276,7 @@ export default function Home() {
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="flex flex-col md:flex-row justify-between items-end mb-24 pb-12">
 						<div>
-							<h2 className="text-7xl lg:text-9xl font-display font-black leading-none uppercase tracking-tighter">
+							<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.95] uppercase tracking-tighter break-words max-w-full">
 								The
 								<br />
 								Programs.
@@ -368,8 +368,8 @@ export default function Home() {
 			</section>
 
 			{/* QUICK DIAGNOSTIC SECTION (COMPONENTIZED) */}
-			<section className="py-32 bg-obsidian text-white relative overflow-hidden">
-				<div className="max-w-5xl mx-auto px-6 relative z-10">
+			<section className="py-16 md:py-32 bg-obsidian text-white relative overflow-hidden">
+				<div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 overflow-x-hidden">
 					<QuickDiagnostic />
 				</div>
 			</section>
@@ -378,7 +378,7 @@ export default function Home() {
 				<div className="max-w-7xl mx-auto">
 					<div className="grid lg:grid-cols-2 gap-20 items-center">
 						<div>
-							<h2 className="text-6xl md:text-7xl font-display font-black text-obsidian leading-none mb-10">
+							<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-obsidian leading-[0.95] mb-10 break-words max-w-full">
 								{t.branches.title}
 							</h2>
 							<p className="text-xl text-slate-500 mb-12">
@@ -429,7 +429,7 @@ export default function Home() {
 								<ShieldCheck className="w-4 h-4" />
 								<span>The Methodology</span>
 							</div>
-							<h2 className="text-6xl md:text-8xl font-display font-black leading-[0.9] text-obsidian uppercase mb-12">
+							<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-black leading-[0.95] text-obsidian uppercase mb-12 break-words max-w-full">
 								UNCOMPROMISING
 								<br />
 								<span className="text-outline">STANDARDS.</span>
@@ -511,7 +511,7 @@ export default function Home() {
 			<section className="min-h-fit py-40 bg-white">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="text-center mb-32">
-						<h2 className="text-7xl md:text-9xl font-display font-black text-obsidian leading-none tracking-tighter uppercase mb-6">
+						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black text-obsidian leading-[0.95] tracking-tighter uppercase mb-6 break-words max-w-full">
 							{t.methodology.title}
 						</h2>
 						<p className="text-xl text-slate-400 font-bold max-w-2xl mx-auto">
@@ -544,50 +544,50 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="min-h-fit py-40 bg-obsidian text-white">
-				<div className="max-w-7xl mx-auto px-6">
-					<div className="flex flex-col lg:flex-row justify-between items-start mb-24">
-						<h2 className="text-7xl md:text-9xl font-display font-black leading-[0.8] tracking-tighter uppercase mb-10">
+			<section className="min-h-fit py-16 md:py-40 bg-obsidian text-white">
+				<div className="max-w-7xl mx-auto px-4 sm:px-6">
+					<div className="flex flex-col lg:flex-row justify-between items-start mb-12 md:mb-24 gap-6 lg:gap-0">
+						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.95] md:leading-[0.8] tracking-tighter uppercase break-words max-w-full">
 							{t.lifestyle.title}
 						</h2>
-						<p className="text-xl text-slate-400 font-bold max-w-sm">
+						<p className="text-base sm:text-lg md:text-xl text-slate-400 font-bold max-w-sm">
 							{t.lifestyle.subtitle}
 						</p>
 					</div>
-					<div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px] md:h-[600px]">
-						<div className="md:col-span-2 md:row-span-2 bg-indigo-600 rounded-[3.5rem] p-12 relative overflow-hidden group">
-							<Coffee className="absolute top-10 right-10 w-20 h-20 opacity-10 group-hover:scale-125 transition-transform" />
-							<h4 className="text-5xl font-black mb-6 uppercase tracking-tighter leading-tight mt-auto">
+					<div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-3 sm:gap-4 md:h-[600px]">
+						<div className="md:col-span-2 md:row-span-2 bg-indigo-600 rounded-[2rem] sm:rounded-[3.5rem] p-8 sm:p-12 relative overflow-hidden group min-h-[200px] md:min-h-0">
+							<Coffee className="absolute top-6 right-6 sm:top-10 sm:right-10 w-16 h-16 sm:w-20 sm:h-20 opacity-10 group-hover:scale-125 transition-transform" />
+							<h4 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 md:mb-6 uppercase tracking-tighter leading-tight mt-auto">
 								Polyglot Hub
 							</h4>
-							<p className="text-indigo-100 text-lg">
+							<p className="text-indigo-100 text-base sm:text-lg max-w-md">
 								Our central campuses feature coffee zones and
 								collaborative lounges for relaxed practice.
 							</p>
-							<div className="absolute bottom-10 left-10 px-6 py-2 bg-white/20 rounded-full font-bold text-xs">
+							<div className="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 px-4 py-1.5 sm:px-6 sm:py-2 bg-white/20 rounded-full font-bold text-[10px] sm:text-xs">
 								COMMUNITY FIRST
 							</div>
 						</div>
-						<div className="md:col-span-2 bg-slate-900 rounded-[3.5rem] p-12 flex flex-col justify-between group">
+						<div className="md:col-span-2 bg-slate-900 rounded-[2rem] sm:rounded-[3.5rem] p-6 sm:p-12 flex flex-col justify-between group min-h-[140px] md:min-h-0">
 							<div className="flex justify-between items-start">
-								<PlayCircle className="w-12 h-12 text-gold" />
+								<PlayCircle className="w-8 h-8 sm:w-12 sm:h-12 text-gold shrink-0" />
 								<span className="text-[10px] font-black uppercase tracking-widest text-slate-500">
 									Every Friday
 								</span>
 							</div>
-							<h4 className="text-4xl font-black uppercase tracking-tighter">
+							<h4 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tighter mt-4 md:mt-0">
 								{t.lifestyle.items[1].title}
 							</h4>
 						</div>
-						<div className="bg-slate-800 rounded-[3rem] p-8 flex flex-col justify-between group hover:bg-indigo-500 transition-colors">
-							<BookOpen className="w-8 h-8 text-indigo-400 group-hover:text-white" />
-							<h4 className="text-xl font-black uppercase tracking-tighter">
+						<div className="bg-slate-800 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group hover:bg-indigo-500 transition-colors min-h-[120px] md:min-h-0">
+							<BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-400 group-hover:text-white shrink-0" />
+							<h4 className="text-lg sm:text-xl font-black uppercase tracking-tighter mt-2 md:mt-0">
 								{t.lifestyle.items[2].title}
 							</h4>
 						</div>
-						<div className="bg-white text-obsidian rounded-[3rem] p-8 flex flex-col justify-between group">
-							<Users className="w-8 h-8 text-indigo-600" />
-							<h4 className="text-xl font-black uppercase tracking-tighter">
+						<div className="bg-white text-obsidian rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group min-h-[120px] md:min-h-0">
+							<Users className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-600 shrink-0" />
+							<h4 className="text-lg sm:text-xl font-black uppercase tracking-tighter mt-2 md:mt-0">
 								{t.lifestyle.items[0].title}
 							</h4>
 						</div>
@@ -598,7 +598,7 @@ export default function Home() {
 			<section className="min-h-fit py-40 bg-slate-50">
 				<div className="max-w-4xl mx-auto px-6">
 					<div className="text-center mb-24">
-						<h2 className="text-6xl font-display font-black text-obsidian uppercase tracking-tighter leading-none mb-6">
+						<h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-obsidian uppercase tracking-tighter leading-[0.95] mb-6 break-words max-w-full">
 							{t.faq.title}
 						</h2>
 						<div className="w-20 h-2 bg-indigo-600 mx-auto rounded-full"></div>
@@ -642,7 +642,7 @@ export default function Home() {
 			<section className="min-h-screen py-32 px-6 flex flex-col justify-center">
 				<div className="max-w-7xl mx-auto bg-indigo-600 rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden">
 					<div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
-					<h2 className="text-5xl md:text-[8rem] font-display font-black text-white leading-none tracking-tighter mb-16 relative z-10">
+					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[8rem] font-display font-black text-white leading-[0.95] tracking-tighter mb-16 relative z-10 break-words max-w-full px-2">
 						STOP DREAMING. <br />
 						START SPEAKING.
 					</h2>
