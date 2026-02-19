@@ -54,11 +54,11 @@ export default function Home() {
 			case "Kids":
 			default:
 				return {
-					bg: "bg-[#050510]", // Deep dark
+					bg: "bg-brand-900", // Deep blue (brand)
 					text: "text-white",
-					tag: "bg-white text-slate-900",
-					accent: "text-indigo-400",
-					glow: "bg-indigo-600/30",
+					tag: "bg-white text-brand-800",
+					accent: "text-indigo-300",
+					glow: "bg-indigo-500/30",
 				};
 		}
 	};
@@ -72,21 +72,21 @@ export default function Home() {
 
 	return (
 		<div className="relative overflow-x-hidden overflow-y-hidden">
-			<div className="gradient-blur gradient-blur-hero w-[600px] h-[600px] bg-indigo-500/20 top-[-200px] right-[-200px]"></div>
-			<div className="gradient-blur gradient-blur-hero w-[400px] h-[400px] bg-gold/10 bottom-[-100px] left-[-200px] [animation-delay:_-4s]"></div>
+			<div className="gradient-blur gradient-blur-hero w-[600px] h-[600px] bg-indigo-500/35 top-[-200px] right-[-200px]"></div>
+			<div className="gradient-blur gradient-blur-hero w-[400px] h-[400px] bg-gold/25 bottom-[-100px] left-[-200px] [animation-delay:_-4s]"></div>
 
-			<section className="min-h-screen pt-40 pb-24 lg:pt-28 lg:pb-40 relative flex flex-col justify-center">
+			<section className="min-h-screen pt-40 pb-24 lg:pt-28 lg:pb-40 relative flex flex-col justify-center bg-gradient-to-b from-brand-50/40 to-transparent">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="flex flex-col items-center text-center">
-						<div className="hero-badge-in hero-delay-0 inline-flex items-center space-x-2 px-6 py-2 bg-obsidian text-white rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-10 animate-pulse-slow">
+						<div className="hero-badge-in hero-delay-0 inline-flex items-center space-x-2 px-6 py-2 bg-indigo-600 text-white rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-10 animate-pulse-slow">
 							<Zap className="w-3 h-3 text-gold" />
 							<span>{t.hero.badge}</span>
 						</div>
-						<h1 className="text-[clamp(3rem,16vw,8rem)] lg:text-[11rem] font-display font-black leading-[0.8] tracking-tighter text-obsidian uppercase mb-8 overflow-hidden">
+						<h1 className="text-[clamp(3rem,16vw,8rem)] lg:text-[11rem] font-display font-black leading-[0.8] tracking-tighter text-brand-800 uppercase mb-8 overflow-hidden">
 							<span className="hero-line hero-delay-1 block text-gold">
 								Bolder.
 							</span>
-							<span className="hero-line hero-delay-2 block text-outline">
+							<span className="hero-line hero-delay-2 block text-outline-brand">
 								Better.
 							</span>
 							<span className="hero-line hero-delay-3 block text-indigo-600">
@@ -94,13 +94,13 @@ export default function Home() {
 							</span>
 						</h1>
 						<div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent mb-12 hero-line-draw hero-delay-line" />
-						<p className="hero-subtitle-in hero-delay-4 text-xl md:text-2xl text-slate-500 max-w-3xl leading-relaxed mb-16 font-medium tracking-normal">
+						<p className="hero-subtitle-in hero-delay-4 text-xl md:text-2xl text-indigo-600/80 max-w-3xl leading-relaxed mb-16 font-medium tracking-normal">
 							{t.hero.subtitle}
 						</p>
 						<div className="hero-cta-in hero-delay-5 flex flex-col sm:flex-row items-center gap-6">
 							<Link
 								href="/enroll"
-								className="hero-btn-shine w-64 py-6 bg-obsidian text-white rounded-2xl font-black text-xl hover:bg-indigo-600 transition-all flex items-center justify-center group shadow-2xl hover:shadow-indigo-500/20"
+								className="hero-btn-shine w-64 py-6 bg-indigo-600 text-white rounded-2xl font-black text-xl hover:bg-indigo-500 hover:shadow-indigo-400/30 transition-all flex items-center justify-center group shadow-2xl shadow-indigo-500/25"
 							>
 								{t.nav.enroll}
 								<ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
@@ -132,7 +132,7 @@ export default function Home() {
 			</section>
 
 			{/* 2. OUR PRIDE — TEACHERS WITH IELTS 9 */}
-			<section className="min-h-fit py-32 bg-obsidian text-white relative overflow-hidden">
+			<section className="min-h-fit py-32 bg-gradient-to-br from-brand-800 via-brand-900 to-indigo-900 text-white relative overflow-hidden">
 				<div className="absolute top-1/2 left-0 w-full text-[20vw] font-black text-white/5 whitespace-nowrap -translate-y-1/2 select-none pointer-events-none uppercase tracking-tighter italic">
 					{lang === "RU"
 						? "IELTS 9 • IELTS 9 • IELTS 9"
@@ -193,14 +193,14 @@ export default function Home() {
 											alt={teacher.name}
 											className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
 										/>
-										<div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/30 to-transparent opacity-90" />
+										<div className="absolute inset-0 bg-gradient-to-t from-brand-900 via-brand-800/50 to-transparent opacity-90" />
 
 										<div className="absolute top-4 left-4 md:top-6 md:left-6">
 											<div className="bg-white/10 backdrop-blur-xl border border-white/20 px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-[1.5rem] flex flex-col items-center shadow-2xl group-hover:bg-gold transition-colors duration-500">
-												<span className="text-2xl md:text-4xl font-black tracking-tighter group-hover:text-obsidian">
+												<span className="text-2xl md:text-4xl font-black tracking-tighter group-hover:text-brand-900">
 													9
 												</span>
-												<span className="text-[7px] md:text-[8px] font-black uppercase tracking-widest opacity-60 group-hover:text-obsidian">
+												<span className="text-[7px] md:text-[8px] font-black uppercase tracking-widest opacity-60 group-hover:text-brand-900">
 													{t.results.scoreLabel}
 												</span>
 											</div>
@@ -227,7 +227,7 @@ export default function Home() {
 					<div className="mt-16 text-center">
 						<Link
 							href="/team"
-							className="inline-flex items-center gap-3 px-10 py-5 bg-white/5 border border-white/10 rounded-2xl font-black uppercase tracking-widest text-sm text-white hover:bg-gold hover:text-obsidian hover:border-gold transition-all duration-300"
+							className="inline-flex items-center gap-3 px-10 py-5 bg-white/5 border border-white/10 rounded-2xl font-black uppercase tracking-widest text-sm text-white hover:bg-gold hover:text-brand-900 hover:border-gold transition-all duration-300"
 						>
 							{t.results.viewAllStaff}
 							<ArrowRight className="w-5 h-5" />
@@ -272,22 +272,26 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="min-h-fit py-40 bg-white">
+			<section className="min-h-fit py-40 bg-brand-50">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="flex flex-col md:flex-row justify-between items-end mb-24 pb-12">
 						<div>
-							<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.95] uppercase tracking-tighter break-words max-w-full">
+							<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-4">
+								<span className="w-8 h-0.5 bg-gold" />
+								COURSES
+							</div>
+							<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.95] uppercase tracking-tighter break-words max-w-full text-brand-800">
 								The
 								<br />
 								Programs.
 							</h2>
-							<p className="text-xl text-slate-400 font-bold mt-6">
+							<p className="text-xl text-indigo-600/80 font-bold mt-6">
 								Engineered for absolute fluency.
 							</p>
 						</div>
 						<Link
 							href="/courses"
-							className="text-lg font-black text-indigo-600 hover:text-obsidian flex items-center group transition-colors"
+							className="text-lg font-black text-indigo-600 hover:text-brand-700 flex items-center group transition-colors"
 						>
 							Full Catalog{" "}
 							<ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-2 transition-transform" />
@@ -368,29 +372,33 @@ export default function Home() {
 			</section>
 
 			{/* QUICK DIAGNOSTIC SECTION (COMPONENTIZED) */}
-			<section className="py-16 md:py-32 bg-obsidian text-white relative overflow-hidden">
+			<section className="py-16 md:py-32 bg-gradient-to-br from-brand-800 to-brand-900 text-white relative overflow-hidden">
 				<div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 overflow-x-hidden">
 					<QuickDiagnostic />
 				</div>
 			</section>
 
-			<section className="min-h-fit py-32 px-6">
+			<section className="min-h-fit py-32 px-6 bg-white">
 				<div className="max-w-7xl mx-auto">
 					<div className="grid lg:grid-cols-2 gap-20 items-center">
 						<div>
-							<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-obsidian leading-[0.95] mb-10 break-words max-w-full">
+							<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
+								<span className="w-8 h-0.5 bg-gold" />
+								LOCATIONS
+							</div>
+							<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-brand-800 leading-[0.95] mb-10 break-words max-w-full">
 								{t.branches.title}
 							</h2>
-							<p className="text-xl text-slate-500 mb-12">
+							<p className="text-xl text-indigo-600/80 mb-12">
 								{t.branches.subtitle}
 							</p>
 							<div className="grid grid-cols-2 gap-4">
 								{t.branches.list.map((b: string, i: number) => (
 									<div
 										key={i}
-										className="flex items-center space-x-3 p-4 bg-slate-50 rounded-2xl border border-slate-100 font-bold hover:bg-indigo-50 transition-colors cursor-default"
+										className="flex items-center space-x-3 p-4 bg-brand-50 rounded-2xl border border-brand-200/50 font-bold text-indigo-700 hover:bg-brand-100 transition-colors cursor-default"
 									>
-										<MapPin className="w-5 h-5 text-indigo-600" />
+										<MapPin className="w-5 h-5 text-indigo-600 shrink-0" />
 										<span>{b}</span>
 									</div>
 								))}
@@ -421,18 +429,18 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="min-h-fit py-40 bg-slate-50 relative overflow-hidden">
+			<section className="min-h-fit py-40 bg-brand-50 relative overflow-hidden">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="grid lg:grid-cols-12 gap-16 items-center">
 						<div className="lg:col-span-5">
 							<div className="inline-flex items-center space-x-3 text-indigo-600 font-black uppercase tracking-[0.4em] text-[10px] mb-8">
-								<ShieldCheck className="w-4 h-4" />
+								<ShieldCheck className="w-4 h-4 text-gold" />
 								<span>The Methodology</span>
 							</div>
-							<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-black leading-[0.95] text-obsidian uppercase mb-12 break-words max-w-full">
+							<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-black leading-[0.95] text-brand-800 uppercase mb-12 break-words max-w-full">
 								UNCOMPROMISING
 								<br />
-								<span className="text-outline">STANDARDS.</span>
+								<span className="text-outline-brand">STANDARDS.</span>
 							</h2>
 							<div className="space-y-12">
 								{[
@@ -450,11 +458,11 @@ export default function Home() {
 									},
 								].map((item, i) => (
 									<div key={i} className="flex gap-6 group">
-										<span className="text-3xl font-black text-indigo-200 group-hover:text-indigo-600 transition-colors">
+										<span className="text-3xl font-black text-indigo-400 group-hover:text-indigo-600 transition-colors">
 											0{i + 1}
 										</span>
 										<div>
-											<h4 className="text-2xl font-black text-obsidian mb-2 uppercase tracking-tight">
+											<h4 className="text-2xl font-black text-brand-800 mb-2 uppercase tracking-tight">
 												{item.title}
 											</h4>
 											<p className="text-slate-500 font-medium leading-relaxed max-w-sm">
@@ -483,7 +491,7 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="space-y-6">
-								<div className="bg-obsidian p-10 rounded-[3rem] text-white shadow-2xl">
+								<div className="bg-brand-700 p-10 rounded-[3rem] text-white shadow-2xl">
 									<Globe className="w-10 h-10 mb-6 text-indigo-400" />
 									<h5 className="text-2xl font-black leading-tight uppercase tracking-tighter">
 										Global <br />
@@ -499,7 +507,7 @@ export default function Home() {
 								</div>
 							</div>
 							<div className="absolute top-1/2 -right-12 translate-x-1/2 -translate-y-1/2 hidden lg:block">
-								<span className="text-[10rem] font-black text-slate-200/50 select-none pointer-events-none rotate-90 inline-block uppercase tracking-tighter">
+								<span className="text-[10rem] font-black text-brand-200/60 select-none pointer-events-none rotate-90 inline-block uppercase tracking-tighter">
 									EST 2012
 								</span>
 							</div>
@@ -511,10 +519,15 @@ export default function Home() {
 			<section className="min-h-fit py-40 bg-white">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="text-center mb-32">
-						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black text-obsidian leading-[0.95] tracking-tighter uppercase mb-6 break-words max-w-full">
+						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
+							<span className="w-8 h-0.5 bg-gold mx-auto" />
+							HOW IT WORKS
+							<span className="w-8 h-0.5 bg-gold mx-auto" />
+						</div>
+						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black text-brand-800 leading-[0.95] tracking-tighter uppercase mb-6 break-words max-w-full">
 							{t.methodology.title}
 						</h2>
-						<p className="text-xl text-slate-400 font-bold max-w-2xl mx-auto">
+						<p className="text-xl text-indigo-600/80 font-bold max-w-2xl mx-auto">
 							{t.methodology.subtitle}
 						</p>
 					</div>
@@ -526,9 +539,9 @@ export default function Home() {
 							) => (
 								<div
 									key={i}
-									className="p-12 bg-slate-50 rounded-[3.5rem] hover:bg-indigo-600 hover:text-white transition-all duration-500 group"
+									className="p-12 bg-brand-50 rounded-[3.5rem] border-2 border-transparent hover:bg-indigo-600 hover:border-indigo-500 hover:text-white transition-all duration-500 group"
 								>
-									<div className="text-4xl font-black opacity-20 mb-10 group-hover:opacity-100 transition-opacity">
+									<div className="text-4xl font-black text-indigo-300 mb-10 group-hover:text-white group-hover:opacity-100 transition-all">
 										0{i + 1}
 									</div>
 									<h4 className="text-3xl font-black mb-6 uppercase tracking-tighter leading-none">
@@ -544,7 +557,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="min-h-fit py-16 md:py-40 bg-obsidian text-white">
+			<section className="min-h-fit py-16 md:py-40 bg-gradient-to-br from-brand-800 via-brand-900 to-indigo-900 text-white">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6">
 					<div className="flex flex-col lg:flex-row justify-between items-start mb-12 md:mb-24 gap-6 lg:gap-0">
 						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.95] md:leading-[0.8] tracking-tighter uppercase break-words max-w-full">
@@ -568,7 +581,7 @@ export default function Home() {
 								COMMUNITY FIRST
 							</div>
 						</div>
-						<div className="md:col-span-2 bg-slate-900 rounded-[2rem] sm:rounded-[3.5rem] p-6 sm:p-12 flex flex-col justify-between group min-h-[140px] md:min-h-0">
+						<div className="md:col-span-2 bg-brand-800 rounded-[2rem] sm:rounded-[3.5rem] p-6 sm:p-12 flex flex-col justify-between group min-h-[140px] md:min-h-0">
 							<div className="flex justify-between items-start">
 								<PlayCircle className="w-8 h-8 sm:w-12 sm:h-12 text-gold shrink-0" />
 								<span className="text-[10px] font-black uppercase tracking-widest text-slate-500">
@@ -579,14 +592,14 @@ export default function Home() {
 								{t.lifestyle.items[1].title}
 							</h4>
 						</div>
-						<div className="bg-slate-800 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group hover:bg-indigo-500 transition-colors min-h-[120px] md:min-h-0">
+						<div className="bg-brand-700 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group hover:bg-indigo-500 transition-colors min-h-[120px] md:min-h-0">
 							<BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-400 group-hover:text-white shrink-0" />
 							<h4 className="text-lg sm:text-xl font-black uppercase tracking-tighter mt-2 md:mt-0">
 								{t.lifestyle.items[2].title}
 							</h4>
 						</div>
-						<div className="bg-white text-obsidian rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group min-h-[120px] md:min-h-0">
-							<Users className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-600 shrink-0" />
+						<div className="bg-gold/20 text-brand-900 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group border border-gold/30 min-h-[120px] md:min-h-0">
+							<Users className="w-6 h-6 sm:w-8 sm:h-8 text-gold shrink-0" />
 							<h4 className="text-lg sm:text-xl font-black uppercase tracking-tighter mt-2 md:mt-0">
 								{t.lifestyle.items[0].title}
 							</h4>
@@ -595,20 +608,25 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="min-h-fit py-40 bg-slate-50">
+			<section className="min-h-fit py-40 bg-brand-50">
 				<div className="max-w-4xl mx-auto px-6">
 					<div className="text-center mb-24">
-						<h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-obsidian uppercase tracking-tighter leading-[0.95] mb-6 break-words max-w-full">
+						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-4">
+							<span className="w-8 h-0.5 bg-gold" />
+							FAQ
+							<span className="w-8 h-0.5 bg-gold" />
+						</div>
+						<h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-brand-800 uppercase tracking-tighter leading-[0.95] mb-6 break-words max-w-full">
 							{t.faq.title}
 						</h2>
-						<div className="w-20 h-2 bg-indigo-600 mx-auto rounded-full"></div>
+						<div className="w-24 h-1 bg-gradient-to-r from-gold via-indigo-600 to-gold mx-auto rounded-full"></div>
 					</div>
 					<div className="space-y-4">
 						{t.faq.questions.map(
 							(faq: { q: string; a: string }, i: number) => (
 								<div
 									key={i}
-									className="bg-white rounded-[2rem] border border-slate-200 overflow-hidden transition-all"
+									className="bg-white rounded-[2rem] border-2 border-brand-200/60 overflow-hidden transition-all hover:border-indigo-400/60"
 								>
 									<button
 										onClick={() =>
@@ -616,13 +634,13 @@ export default function Home() {
 												activeFaq === i ? null : i,
 											)
 										}
-										className="w-full p-8 flex justify-between items-center text-left hover:bg-slate-50 transition-colors"
+										className="w-full p-8 flex justify-between items-center text-left hover:bg-brand-50/50 transition-colors"
 									>
-										<span className="text-xl font-black uppercase tracking-tight text-obsidian">
+										<span className="text-xl font-black uppercase tracking-tight text-brand-800">
 											{faq.q}
 										</span>
 										<ChevronDown
-											className={`w-6 h-6 transition-transform duration-500 ${activeFaq === i ? "rotate-180" : ""}`}
+											className={`w-6 h-6 transition-all duration-500 ${activeFaq === i ? "rotate-180 text-indigo-600" : "text-slate-400"}`}
 										/>
 									</button>
 									<div
@@ -639,8 +657,8 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="min-h-screen py-32 px-6 flex flex-col justify-center">
-				<div className="max-w-7xl mx-auto bg-indigo-600 rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden">
+			<section className="min-h-screen py-32 px-6 flex flex-col justify-center bg-gradient-to-b from-transparent via-brand-50/30 to-transparent">
+				<div className="max-w-7xl mx-auto bg-gradient-to-br from-indigo-600 via-indigo-600 to-brand-700 rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden shadow-2xl shadow-indigo-500/20">
 					<div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
 					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[8rem] font-display font-black text-white leading-[0.95] tracking-tighter mb-16 relative z-10 break-words max-w-full px-2">
 						STOP DREAMING. <br />
@@ -648,7 +666,7 @@ export default function Home() {
 					</h2>
 					<Link
 						href="/enroll"
-						className="inline-flex bg-white text-obsidian px-16 py-8 rounded-[2.5rem] font-black text-3xl hover:bg-gold hover:text-white transition-all transform hover:scale-105 active:scale-95 relative z-10 shadow-2xl"
+						className="inline-flex bg-white text-brand-800 px-16 py-8 rounded-[2.5rem] font-black text-3xl hover:bg-gold hover:text-white transition-all transform hover:scale-105 active:scale-95 relative z-10 shadow-2xl"
 					>
 						Book Free Lesson
 					</Link>

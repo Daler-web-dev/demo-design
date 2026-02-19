@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #ffffff;
+  background-color: #fafbff;
   color: #020617;
   overflow-x: hidden;
 }
@@ -41,6 +41,11 @@ body {
 
 .text-outline {
   -webkit-text-stroke: 1px #020617;
+  color: transparent;
+}
+
+.text-outline-brand {
+  -webkit-text-stroke: 1px #121a4d;
   color: transparent;
 }
 
