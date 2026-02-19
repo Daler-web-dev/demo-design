@@ -6,9 +6,7 @@ import Link from "next/link";
 import {
 	ArrowRight,
 	Trophy,
-	Star,
 	Users,
-	MapPin,
 	Globe,
 	ArrowUpRight,
 	ShieldCheck,
@@ -27,6 +25,7 @@ import {
 import { useLanguage } from "@/context/LanguageContext";
 import { COURSES } from "@/translations";
 import QuickDiagnostic from "@/components/QuickDiagnostic";
+import BranchLocations from "@/components/BranchLocations";
 
 export default function Home() {
 	const { t, lang } = useLanguage();
@@ -378,56 +377,12 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="min-h-fit py-32 px-6 bg-white">
-				<div className="max-w-7xl mx-auto">
-					<div className="grid lg:grid-cols-2 gap-20 items-center">
-						<div>
-							<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
-								<span className="w-8 h-0.5 bg-gold" />
-								LOCATIONS
-							</div>
-							<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-brand-800 leading-[0.95] mb-10 break-words max-w-full">
-								{t.branches.title}
-							</h2>
-							<p className="text-xl text-indigo-600/80 mb-12">
-								{t.branches.subtitle}
-							</p>
-							<div className="grid grid-cols-2 gap-4">
-								{t.branches.list.map((b: string, i: number) => (
-									<div
-										key={i}
-										className="flex items-center space-x-3 p-4 bg-brand-50 rounded-2xl border border-brand-200/50 font-bold text-indigo-700 hover:bg-brand-100 transition-colors cursor-default"
-									>
-										<MapPin className="w-5 h-5 text-indigo-600 shrink-0" />
-										<span>{b}</span>
-									</div>
-								))}
-							</div>
-						</div>
-						<div className="relative">
-							<div className="absolute inset-0 bg-indigo-600 rounded-[4rem] rotate-3 -z-10 opacity-10"></div>
-							<img
-								src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000"
-								className="w-full h-auto rounded-[3.5rem] shadow-2xl"
-								alt="Students in Campus"
-							/>
-							<div className="absolute -bottom-8 -right-8 bg-white p-8 rounded-3xl shadow-2xl border border-slate-100 flex items-center space-x-4">
-								<div className="w-16 h-16 bg-gold rounded-2xl flex items-center justify-center">
-									<Star className="text-white fill-current w-8 h-8" />
-								</div>
-								<div>
-									<div className="text-2xl font-black">
-										4.9/5
-									</div>
-									<div className="text-xs font-bold text-slate-400 uppercase tracking-widest">
-										Global Review Rating
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<BranchLocations
+				title={t.branches.title}
+				subtitle={t.branches.subtitle}
+				mapRouteText={t.branches.mapRouteText}
+				lang={lang}
+			/>
 
 			<section className="min-h-fit py-40 bg-brand-50 relative overflow-hidden">
 				<div className="max-w-7xl mx-auto px-6">

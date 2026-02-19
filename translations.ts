@@ -57,6 +57,7 @@ export const translations: Record<Language, any> = {
 		branches: {
 			title: "Closest to You",
 			subtitle: "A network of 8 high-tech campuses across Samarkand.",
+			mapRouteText: "Build route",
 			list: [
 				"Registan Center",
 				"Siyob Campus",
@@ -309,6 +310,7 @@ export const translations: Record<Language, any> = {
 			title: "Мы всегда рядом",
 			subtitle:
 				"Сеть из 8 высокотехнологичных кампусов по всему Самарканду.",
+			mapRouteText: "Составить маршрут",
 			list: [
 				"Регистан Центр",
 				"Сиёб Кампус",
