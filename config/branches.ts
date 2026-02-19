@@ -55,6 +55,12 @@ export const BRANCHES: Branch[] = [
 		image: "/locations/qorasuv.jpeg",
 	},
 	{
+		id: "chinese",
+		nameEn: "Chinese Branch",
+		nameRu: "Китайский филиал",
+		image: "/locations/polyglot_chinese.jpeg",
+	},
+	{
 		id: "urgut",
 		nameEn: "Urgut ...Coming Soon",
 		nameRu: "Ургут ...скоро",
