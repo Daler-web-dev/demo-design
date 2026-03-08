@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Send, CheckCircle, ArrowLeft } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
-import { COURSES } from '@/translations';
+
+const BRANCHES = ['Gagarina', 'Gelion', 'Vokzal', 'Marhabo', 'Sadriddin Ayniy', 'Qorasuv', 'Oqmachit'];
 
 export default function Enroll() {
   const { t, lang } = useLanguage();
@@ -17,13 +18,12 @@ export default function Enroll() {
     const form = e.currentTarget;
     const name = (form.querySelector('[name="name"]') as HTMLInputElement)?.value?.trim() ?? '';
     const phone = (form.querySelector('[name="phone"]') as HTMLInputElement)?.value?.trim() ?? '';
-    const courseId = (form.querySelector('[name="course"]') as HTMLSelectElement)?.value ?? '';
-    const courseTitle = COURSES.find((c) => c.id === courseId)?.title[lang] ?? courseId;
+    const branch = (form.querySelector('[name="branch"]') as HTMLSelectElement)?.value ?? '';
     try {
       await fetch('/api/enroll-notify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, phone, course: courseTitle }),
+        body: JSON.stringify({ name, phone, branch }),
       });
     } catch (err) {
       console.error('Enroll notify failed:', err);
@@ -80,10 +80,11 @@ export default function Enroll() {
               />
             </div>
             <div>
-              <label className="block text-sm font-bold text-gray-700 mb-2">{t.enrollForm.course}</label>
-              <select name="course" className="w-full bg-gray-50 border-gray-100 rounded-2xl py-4 px-6 focus:ring-2 focus:ring-brand-500 transition-all text-gray-900 outline-none appearance-none">
-                {COURSES.map(c => (
-                  <option key={c.id} value={c.id}>{c.title[lang]}</option>
+              <label className="block text-sm font-bold text-gray-700 mb-2">{t.enrollForm.branch}</label>
+              <select name="branch" required className="w-full bg-gray-50 border-gray-100 rounded-2xl py-4 px-6 focus:ring-2 focus:ring-brand-500 transition-all text-gray-900 outline-none appearance-none">
+                <option value="">—</option>
+                {BRANCHES.map(b => (
+                  <option key={b} value={b}>{b}</option>
                 ))}
               </select>
             </div>

@@ -13,10 +13,10 @@ export async function POST(request: Request) {
 		}
 
 		const body = await request.json();
-		const { name, phone, course } = body as {
+		const { name, phone, branch } = body as {
 			name?: string;
 			phone?: string;
-			course?: string;
+			branch?: string;
 		};
 
 		if (!name?.trim() || !phone?.trim()) {
@@ -32,8 +32,8 @@ export async function POST(request: Request) {
 			`👤 *Имя:* ${name.trim()}`,
 			`📞 *Телефон:* ${phone.trim()}`,
 		];
-		if (course?.trim()) {
-			lines.push("", `📚 *Курс:* ${course.trim()}`);
+		if (branch?.trim()) {
+			lines.push("", `📍 *Филиал:* ${branch.trim()}`);
 		}
 		lines.push("", "_Ожидает обратного звонка для записи на пробный урок._");
 		const text = lines.join("\n");
