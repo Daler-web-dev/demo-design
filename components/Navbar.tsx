@@ -71,11 +71,11 @@ export default function Navbar() {
 								priority
 							/>
 						</div>
-						<span
+						{/* <span
 							className={`text-2xl font-display font-black tracking-tighter ${scrolled ? "text-white" : "text-obsidian"}`}
 						>
 							POLYGLOT
-						</span>
+						</span> */}
 					</Link>
 
 					<div className="hidden md:flex items-center space-x-10">

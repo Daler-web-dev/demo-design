@@ -74,32 +74,46 @@ export default function Home() {
 			<div className="gradient-blur gradient-blur-hero w-[600px] h-[600px] bg-indigo-500/35 top-[-200px] right-[-200px]"></div>
 			<div className="gradient-blur gradient-blur-hero w-[400px] h-[400px] bg-gold/25 bottom-[-100px] left-[-200px] [animation-delay:_-4s]"></div>
 
-			<section className="min-h-screen pt-40 pb-24 lg:pt-28 lg:pb-40 relative flex flex-col justify-center bg-gradient-to-b from-brand-50/40 to-transparent">
-				<div className="max-w-7xl mx-auto px-6">
+			<section className="max-h-[96vh] relative flex flex-col justify-center overflow-hidden rounded-3xl m-3">
+				{/* Hero full-height image + soft blur toward text */}
+				<div className="absolute inset-0 -z-10">
+					<img
+						src="https://polyglot-school.uz/_next/image?url=%2Fimages%2Foffices%2Fphoto-25.webp&w=2048&q=75"
+						alt=""
+						className="h-full w-full"
+						loading="lazy"
+						decoding="async"
+					/>
+					{/* Central blur / fade around text with soft edges */}
+					<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,1)_0%,rgba(255,255,255,0.95)_28%,rgba(255,255,255,0.75)_52%,rgba(255,255,255,0.4)_70%,transparent_100%)] backdrop-blur-sm" />
+					<div className="absolute inset-0 bg-gradient-to-b from-white/75 via-brand-50/55 to-white/90" />
+					<div className="absolute inset-0 bg-gradient-to-r from-brand-900/20 via-transparent to-indigo-600/10" />
+				</div>
+
+				<div className="max-w-7xl mx-auto px-6 relative pt-32 pb-12 lg:pt-32 lg:pb-16">
 					<div className="flex flex-col items-center text-center">
-						<div className="hero-badge-in hero-delay-0 inline-flex items-center space-x-2 px-6 py-2 bg-indigo-600 text-white rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-10 animate-pulse-slow">
+						<div className="hero-badge-in hero-delay-0 inline-flex items-center space-x-2 px-5 py-1.5 bg-indigo-600 text-white rounded-full text-[10px] font-black uppercase tracking-[0.28em] mb-8 animate-pulse-slow">
 							<Zap className="w-3 h-3 text-gold" />
 							<span>{t.hero.badge}</span>
 						</div>
-						<h1 className="text-[clamp(3rem,16vw,8rem)] lg:text-[11rem] font-display font-black leading-[0.8] tracking-tighter text-brand-800 uppercase mb-8 overflow-hidden">
+						<h1 className="text-[clamp(2.5rem,12vw,6.75rem)] lg:text-[9.25rem] font-display font-black leading-[0.82] tracking-tighter text-brand-800 uppercase mb-6 overflow-hidden">
 							<span className="hero-line hero-delay-1 block text-gold">
-								Bolder.
+								LEARN.
 							</span>
 							<span className="hero-line hero-delay-2 block text-outline-brand">
-								Better.
+								LISTEN.
 							</span>
 							<span className="hero-line hero-delay-3 block text-indigo-600">
-								Fluent.
+								SPEAK.
 							</span>
 						</h1>
-						<div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent mb-12 hero-line-draw hero-delay-line" />
-						<p className="hero-subtitle-in hero-delay-4 text-xl md:text-2xl text-indigo-600/80 max-w-3xl leading-relaxed mb-16 font-medium tracking-normal">
+						{/* <p className="hero-subtitle-in hero-delay-4 text-xl md:text-2xl text-indigo-600/80 max-w-3xl leading-relaxed mb-16 font-medium tracking-normal">
 							{t.hero.subtitle}
-						</p>
-						<div className="hero-cta-in hero-delay-5 flex flex-col sm:flex-row items-center gap-6">
+						</p> */}
+						<div className="hero-cta-in hero-delay-5 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
 							<Link
 								href="/enroll"
-								className="hero-btn-shine w-64 py-6 bg-indigo-600 text-white rounded-2xl font-black text-xl hover:bg-indigo-500 hover:shadow-indigo-400/30 transition-all flex items-center justify-center group shadow-2xl shadow-indigo-500/25"
+								className="hero-btn-shine w-56 sm:w-64 py-5 bg-indigo-600 text-white rounded-2xl font-black text-lg sm:text-xl hover:bg-indigo-500 hover:shadow-indigo-400/30 transition-all flex items-center justify-center group shadow-2xl shadow-indigo-500/25"
 							>
 								{t.nav.enroll}
 								<ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
@@ -109,7 +123,7 @@ export default function Home() {
 									<img
 										key={i}
 										src={`https://i.pravatar.cc/100?u=${i + 10}`}
-										className={`hero-avatar-pop w-12 h-12 rounded-full border-4 border-white shadow-lg ${
+										className={`hero-avatar-pop w-10 h-10 sm:w-12 sm:h-12 rounded-full border-4 border-white shadow-lg ${
 											i === 1
 												? "hero-delay-avatar-1"
 												: i === 2
@@ -121,7 +135,7 @@ export default function Home() {
 										alt=""
 									/>
 								))}
-								<div className="pl-6 text-sm font-bold text-slate-400">
+								<div className="pl-5 text-xs sm:text-sm font-bold text-slate-400">
 									Join 15,000+ Alumni
 								</div>
 							</div>
@@ -395,7 +409,9 @@ export default function Home() {
 							<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-black leading-[0.95] text-brand-800 uppercase mb-12 break-words max-w-full">
 								UNCOMPROMISING
 								<br />
-								<span className="text-outline-brand">STANDARDS.</span>
+								<span className="text-outline-brand">
+									STANDARDS.
+								</span>
 							</h2>
 							<div className="space-y-12">
 								{[
