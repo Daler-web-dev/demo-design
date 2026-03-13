@@ -352,136 +352,6 @@ export default function Home() {
 				lang={lang}
 			/>
 
-			{/* <section className="min-h-fit py-40 bg-brand-50 relative overflow-hidden">
-				<div className="max-w-7xl mx-auto px-6">
-					<div className="grid lg:grid-cols-12 gap-16 items-center">
-						<div className="lg:col-span-5">
-							<div className="inline-flex items-center space-x-3 text-indigo-600 font-black uppercase tracking-[0.4em] text-[10px] mb-8">
-								<ShieldCheck className="w-4 h-4 text-gold" />
-								<span>The Methodology</span>
-							</div>
-							<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-display font-black leading-[0.95] text-brand-800 uppercase mb-12 break-words max-w-full">
-								UNCOMPROMISING
-								<br />
-								<span className="text-outline-brand">
-									STANDARDS.
-								</span>
-							</h2>
-							<div className="space-y-12">
-								{[
-									{
-										title: "Oxford Authorized Syllabus",
-										desc: "Direct access to official international curriculum, audited every semester.",
-									},
-									{
-										title: "The Native Protocol",
-										desc: "Speaking-first approach developed by linguistic experts from London and Toronto.",
-									},
-									{
-										title: "Hyper-Growth Tracking",
-										desc: "A proprietary digital ecosystem to track every word, mistake, and breakthrough.",
-									},
-								].map((item, i) => (
-									<div key={i} className="flex gap-6 group">
-										<span className="text-3xl font-black text-indigo-400 group-hover:text-indigo-600 transition-colors">
-											0{i + 1}
-										</span>
-										<div>
-											<h4 className="text-2xl font-black text-brand-800 mb-2 uppercase tracking-tight">
-												{item.title}
-											</h4>
-											<p className="text-slate-500 font-medium leading-relaxed max-w-sm">
-												{item.desc}
-											</p>
-										</div>
-									</div>
-								))}
-							</div>
-						</div>
-						<div className="lg:col-span-7 grid grid-cols-2 gap-6 relative">
-							<div className="space-y-6 pt-12">
-								<div className="rounded-[3rem] overflow-hidden aspect-[3/4] shadow-2xl relative group">
-									<img
-										src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800"
-										className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-										alt="Learning"
-									/>
-								</div>
-								<div className="bg-indigo-600 p-10 rounded-[3rem] text-white shadow-2xl">
-									<Sparkles className="w-10 h-10 mb-6 text-gold" />
-									<h5 className="text-2xl font-black leading-tight uppercase tracking-tighter">
-										Gold Certification <br />
-										Network.
-									</h5>
-								</div>
-							</div>
-							<div className="space-y-6">
-								<div className="bg-brand-700 p-10 rounded-[3rem] text-white shadow-2xl">
-									<Globe className="w-10 h-10 mb-6 text-indigo-400" />
-									<h5 className="text-2xl font-black leading-tight uppercase tracking-tighter">
-										Global <br />
-										Alumni Link.
-									</h5>
-								</div>
-								<div className="rounded-[3rem] overflow-hidden aspect-[3/4] shadow-2xl relative group">
-									<img
-										src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800"
-										className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-										alt="Students"
-									/>
-								</div>
-							</div>
-							<div className="absolute top-1/2 -right-12 translate-x-1/2 -translate-y-1/2 hidden lg:block">
-								<span className="text-[10rem] font-black text-brand-200/60 select-none pointer-events-none rotate-90 inline-block uppercase tracking-tighter">
-									EST 2012
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> */}
-
-			<section className="min-h-fit py-40 bg-white">
-				<div className="max-w-7xl mx-auto px-6">
-					<div className="text-center mb-32">
-						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
-							<span className="w-8 h-0.5 bg-gold mx-auto" />
-							HOW IT WORKS
-							<span className="w-8 h-0.5 bg-gold mx-auto" />
-						</div>
-						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black text-brand-800 leading-[0.95] tracking-tighter uppercase mb-6 break-words max-w-full">
-							{t.methodology.title}
-						</h2>
-						<p className="text-xl text-indigo-600/80 font-bold max-w-2xl mx-auto">
-							{t.methodology.subtitle}
-						</p>
-					</div>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-						{t.methodology.steps.map(
-							(
-								step: { title: string; desc: string },
-								i: number,
-							) => (
-								<div
-									key={i}
-									className="p-12 bg-brand-50 rounded-[3.5rem] border-2 border-transparent hover:bg-indigo-600 hover:border-indigo-500 hover:text-white transition-all duration-500 group"
-								>
-									<div className="text-4xl font-black text-indigo-300 mb-10 group-hover:text-white group-hover:opacity-100 transition-all">
-										0{i + 1}
-									</div>
-									<h4 className="text-3xl font-black mb-6 uppercase tracking-tighter leading-none">
-										{step.title}
-									</h4>
-									<p className="text-slate-500 font-medium group-hover:text-indigo-100 transition-colors leading-relaxed">
-										{step.desc}
-									</p>
-								</div>
-							),
-						)}
-					</div>
-				</div>
-			</section>
-
 			<section className="min-h-fit py-16 md:py-40 bg-gradient-to-br from-brand-800 via-brand-900 to-indigo-900 text-white">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6">
 					<div className="flex flex-col lg:flex-row justify-between items-start mb-12 md:mb-24 gap-6 lg:gap-0">
@@ -529,6 +399,47 @@ export default function Home() {
 								{t.lifestyle.items[0].title}
 							</h4>
 						</div>
+					</div>
+				</div>
+			</section>
+
+			<section className="min-h-fit py-40 bg-white">
+				<div className="max-w-7xl mx-auto px-6">
+					<div className="text-center mb-32">
+						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
+							<span className="w-8 h-0.5 bg-gold mx-auto" />
+							HOW IT WORKS
+							<span className="w-8 h-0.5 bg-gold mx-auto" />
+						</div>
+						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black text-brand-800 leading-[0.95] tracking-tighter uppercase mb-6 break-words max-w-full">
+							{t.methodology.title}
+						</h2>
+						<p className="text-xl text-indigo-600/80 font-bold max-w-2xl mx-auto">
+							{t.methodology.subtitle}
+						</p>
+					</div>
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+						{t.methodology.steps.map(
+							(
+								step: { title: string; desc: string },
+								i: number,
+							) => (
+								<div
+									key={i}
+									className="p-12 bg-brand-50 rounded-[3.5rem] border-2 border-transparent hover:bg-indigo-600 hover:border-indigo-500 hover:text-white transition-all duration-500 group"
+								>
+									<div className="text-4xl font-black text-indigo-300 mb-10 group-hover:text-white group-hover:opacity-100 transition-all">
+										0{i + 1}
+									</div>
+									<h4 className="text-3xl font-black mb-6 uppercase tracking-tighter leading-none">
+										{step.title}
+									</h4>
+									<p className="text-slate-500 font-medium group-hover:text-indigo-100 transition-colors leading-relaxed">
+										{step.desc}
+									</p>
+								</div>
+							),
+						)}
 					</div>
 				</div>
 			</section>
