@@ -13,7 +13,8 @@ const config: Config = {
         display: ['Outfit', 'sans-serif'],
       },
       colors: {
-        obsidian: '#020617',
+        // primary dark = brand-900 (no black, logo-aligned)
+        obsidian: '#0d1233',
         // Фирменный оранжевый из логотипа
         gold: '#F59220',
         surface: '#f8fafc',

@@ -85,7 +85,7 @@ export default function GeminiAdvisor() {
                 <div className={`max-w-[85%] p-3 rounded-2xl text-sm ${
                   m.role === 'user'
                     ? 'bg-brand-900 text-white rounded-tr-none'
-                    : 'bg-white text-gray-700 shadow-sm border border-gray-100 rounded-tl-none'
+                    : 'bg-white text-brand-800 shadow-sm border border-gray-100 rounded-tl-none'
                 }`}>
                   {m.text}
                 </div>

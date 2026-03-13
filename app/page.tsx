@@ -38,7 +38,7 @@ export default function Home() {
 				return {
 					bg: "bg-[#C6F1E7]", // Mint green
 					text: "text-[#1A2E35]",
-					tag: "bg-white text-slate-900",
+					tag: "bg-white text-brand-900",
 					accent: "text-emerald-500/80",
 					glow: "bg-emerald-400/20",
 				};
@@ -46,7 +46,7 @@ export default function Home() {
 				return {
 					bg: "bg-[#D6E9FF]", // Sky blue
 					text: "text-[#0F172A]",
-					tag: "bg-white text-slate-900",
+					tag: "bg-white text-brand-900",
 					accent: "text-blue-500/80",
 					glow: "bg-blue-400/20",
 				};

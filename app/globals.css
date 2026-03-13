@@ -6,7 +6,7 @@
 
 body {
   background-color: #fafbff;
-  color: #020617;
+  color: #0d1233;
   overflow-x: hidden;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .text-outline {
-  -webkit-text-stroke: 1px #020617;
+  -webkit-text-stroke: 1px #0d1233;
   color: transparent;
 }
 

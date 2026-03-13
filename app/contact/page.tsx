@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <div className="bg-white min-h-screen">
       <section className="py-20 px-4 bg-gray-50 text-center">
-        <h1 className="text-5xl font-display font-bold text-gray-900 mb-4">{t.nav.contact}</h1>
+        <h1 className="text-5xl font-display font-bold text-brand-900 mb-4">{t.nav.contact}</h1>
         <p className="text-xl text-gray-500">We are always here to help you start your journey.</p>
       </section>
 
@@ -23,7 +23,7 @@ export default function Contact() {
                   <MapPin className="w-7 h-7" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Location</h3>
+                  <h3 className="text-2xl font-bold text-brand-900 mb-2">Location</h3>
                   <p className="text-lg text-gray-500 leading-relaxed">
                     {t.footer.address}<br />
                     Samarkand, Uzbekistan 140100
@@ -36,7 +36,7 @@ export default function Contact() {
                   <Phone className="w-7 h-7" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Phone</h3>
+                  <h3 className="text-2xl font-bold text-brand-900 mb-2">Phone</h3>
                   <p className="text-lg text-gray-500">+998 66 123 45 67</p>
                   <p className="text-lg text-gray-500">+998 90 987 65 43</p>
                 </div>
@@ -47,7 +47,7 @@ export default function Contact() {
                   <Mail className="w-7 h-7" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Email</h3>
+                  <h3 className="text-2xl font-bold text-brand-900 mb-2">Email</h3>
                   <p className="text-lg text-gray-500">hello@polyglot-school.uz</p>
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function Contact() {
                   <Clock className="w-7 h-7" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Hours</h3>
+                  <h3 className="text-2xl font-bold text-brand-900 mb-2">Hours</h3>
                   <p className="text-lg text-gray-500">Mon - Sat: 09:00 - 20:00</p>
                   <p className="text-lg text-gray-500">Sunday: Closed</p>
                 </div>
@@ -79,13 +79,13 @@ export default function Contact() {
       <section className="py-24 bg-gray-50 px-4">
         <div className="max-w-4xl mx-auto bg-white rounded-[3rem] p-10 md:p-16 shadow-xl text-center">
           <MessageSquare className="w-12 h-12 text-brand-600 mx-auto mb-6" />
-          <h2 className="text-3xl font-display font-bold text-gray-900 mb-4">Have specific questions?</h2>
+          <h2 className="text-3xl font-display font-bold text-brand-900 mb-4">Have specific questions?</h2>
           <p className="text-lg text-gray-500 mb-10">Send us a message and we&apos;ll reply within 24 hours.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://t.me/polyglot" className="bg-brand-900 text-white px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center">
               Message on Telegram
             </a>
-            <a href="mailto:info@polyglot.uz" className="bg-gray-100 text-gray-900 px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center">
+            <a href="mailto:info@polyglot.uz" className="bg-gray-100 text-brand-900 px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center">
               Send an Email
             </a>
           </div>

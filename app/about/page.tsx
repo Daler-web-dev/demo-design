@@ -11,7 +11,7 @@ export default function About() {
     <div className="bg-white">
       <section className="py-24 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-gray-900 mb-8">Our Mission</h1>
+          <h1 className="text-5xl md:text-7xl font-display font-bold text-brand-900 mb-8">Our Mission</h1>
           <p className="text-2xl text-gray-500 leading-relaxed">
             Since 2012, Polyglot School has been dedicated to breaking language barriers and empowering citizens of Samarkand to communicate with the world.
           </p>
@@ -31,7 +31,7 @@ export default function About() {
                 <div className="w-20 h-20 bg-brand-50 text-brand-600 rounded-3xl flex items-center justify-center mx-auto mb-6 transform hover:rotate-6 transition-transform">
                   <v.icon className="w-10 h-10" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{v.title}</h3>
+                <h3 className="text-2xl font-bold text-brand-900 mb-4">{v.title}</h3>
                 <p className="text-gray-500">{v.desc}</p>
               </div>
             ))}
@@ -64,7 +64,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-display font-bold text-gray-900 mb-8">Modern Campus</h2>
+              <h2 className="text-4xl font-display font-bold text-brand-900 mb-8">Modern Campus</h2>
               <p className="text-xl text-gray-500 leading-relaxed mb-10">
                 Our learning center in Samarkand is equipped with the latest technology to make learning engaging. Interactive boards, dedicated speaking clubs, and a modern library are at your service.
               </p>
