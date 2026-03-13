@@ -26,6 +26,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { COURSES } from "@/translations";
 import QuickDiagnostic from "@/components/QuickDiagnostic";
 import BranchLocations from "@/components/BranchLocations";
+import PrestigeSection from "@/components/PrestigeSection";
 
 export default function Home() {
 	const { t, lang } = useLanguage();
@@ -144,12 +145,12 @@ export default function Home() {
 				</div>
 			</section>
 
+			<PrestigeSection />
+
 			{/* 2. OUR PRIDE — TEACHERS WITH IELTS 9 */}
 			<section className="min-h-fit py-32 bg-gradient-to-br from-brand-800 via-brand-900 to-indigo-900 text-white relative overflow-hidden">
 				<div className="absolute top-1/2 left-0 w-full text-[20vw] font-black text-white/5 whitespace-nowrap -translate-y-1/2 select-none pointer-events-none uppercase tracking-tighter italic">
-					{lang === "RU"
-						? "IELTS 9 • IELTS 9 • IELTS 9"
-						: "IELTS 9 • IELTS 9 • IELTS 9"}
+					IELTS 9 • IELTS 9 • IELTS 9
 				</div>
 
 				<div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -200,30 +201,19 @@ export default function Home() {
 								idx: number,
 							) => (
 								<div key={idx} className="group relative">
-									<div className="relative aspect-[3/4] rounded-[3.5rem] overflow-hidden shadow-2xl transition-all duration-700 group-hover:-translate-y-4 group-hover:shadow-gold/10">
+									<div className="relative">
 										<img
 											src={`/niners/${teacher.image}`}
 											alt={teacher.name}
-											className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
+											className="w-full h-full object-cover"
 										/>
 										<div className="absolute inset-0 bg-gradient-to-t from-brand-900 via-brand-800/50 to-transparent opacity-90" />
-
-										<div className="absolute top-4 left-4 md:top-6 md:left-6">
-											<div className="bg-white/10 backdrop-blur-xl border border-white/20 px-3 py-2 md:px-5 md:py-3 rounded-xl md:rounded-[1.5rem] flex flex-col items-center shadow-2xl group-hover:bg-gold transition-colors duration-500">
-												<span className="text-2xl md:text-4xl font-black tracking-tighter group-hover:text-brand-900">
-													9
-												</span>
-												<span className="text-[7px] md:text-[8px] font-black uppercase tracking-widest opacity-60 group-hover:text-brand-900">
-													{t.results.scoreLabel}
-												</span>
-											</div>
-										</div>
 
 										<div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
 											<div className="flex items-center space-x-2 mb-2">
 												<Award className="w-4 h-4 md:w-5 md:h-5 text-gold group-hover:rotate-12 transition-transform" />
 												<span className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] text-gold">
-													{t.results.roleLabel}
+													teacher
 												</span>
 											</div>
 											<h3 className="text-2xl md:text-3xl font-display font-black leading-none uppercase tracking-tighter group-hover:text-gold transition-colors">
@@ -246,42 +236,6 @@ export default function Home() {
 							<ArrowRight className="w-5 h-5" />
 						</Link>
 					</div>
-
-					{/* Stats Bar at bottom of section */}
-					{/* <div className="mt-32 pt-20 border-t border-white/5 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-						<div>
-							<div className="text-5xl font-display font-black text-white mb-2 tracking-tighter italic">
-								95%
-							</div>
-							<div className="text-[10px] font-black uppercase tracking-widest text-slate-500">
-								Success Rate
-							</div>
-						</div>
-						<div>
-							<div className="text-5xl font-display font-black text-white mb-2 tracking-tighter italic">
-								1.2K+
-							</div>
-							<div className="text-[10px] font-black uppercase tracking-widest text-slate-500">
-								IELTS 7.5+ Achievers
-							</div>
-						</div>
-						<div>
-							<div className="text-5xl font-display font-black text-white mb-2 tracking-tighter italic">
-								100%
-							</div>
-							<div className="text-[10px] font-black uppercase tracking-widest text-slate-500">
-								Certified Staff
-							</div>
-						</div>
-						<div>
-							<div className="text-5xl font-display font-black text-white mb-2 tracking-tighter italic">
-								#1
-							</div>
-							<div className="text-[10px] font-black uppercase tracking-widest text-slate-500">
-								Ranking in Region
-							</div>
-						</div>
-					</div> */}
 				</div>
 			</section>
 
@@ -398,7 +352,7 @@ export default function Home() {
 				lang={lang}
 			/>
 
-			<section className="min-h-fit py-40 bg-brand-50 relative overflow-hidden">
+			{/* <section className="min-h-fit py-40 bg-brand-50 relative overflow-hidden">
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="grid lg:grid-cols-12 gap-16 items-center">
 						<div className="lg:col-span-5">
@@ -485,7 +439,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 
 			<section className="min-h-fit py-40 bg-white">
 				<div className="max-w-7xl mx-auto px-6">
