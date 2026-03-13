@@ -1,7 +1,10 @@
 import React from "react";
 import { Award, ShieldCheck, Star } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const PrestigeSection = () => {
+	const { t } = useLanguage();
+
 	return (
 		<section
 			id="prestige-section"
@@ -22,24 +25,22 @@ const PrestigeSection = () => {
 							<div className="flex items-center space-x-4 mb-10">
 								<div className="h-[1px] w-16 bg-gold"></div>
 								<span className="text-gold text-xs font-black uppercase tracking-[0.6em]">
-									Official Ranking 2024
+									{t.prestige.badge}
 								</span>
 							</div>
 
 							<h2 className="text-[10vw] lg:text-[6rem] font-display font-black leading-[0.85] tracking-tighter text-brand-800 uppercase mb-8">
-								NUMBER <br />
-								<span className="text-gold">ONE.</span>
+								{t.prestige.numberWord} <br />
+								<span className="text-gold">
+									{t.prestige.oneWord}
+								</span>
 							</h2>
 
 							<div className="max-w-2xl">
 								<p className="text-xl md:text-2xl text-slate-500 font-medium leading-snug tracking-tight">
-									Officially recognized as the{" "}
-									<span className="text-brand-800">
-										Best Performing Learning Center
-									</span>{" "}
-									in Uzbekistan by{" "}
-									<span className="text-gold">
-										IDP Uzbekistan.
+									{t.prestige.descriptionBeforeHighlight}
+									<span className="text-gold font-bold">
+										{t.prestige.descriptionHighlight}
 									</span>
 								</p>
 							</div>
@@ -72,12 +73,12 @@ const PrestigeSection = () => {
 										</div>
 										<div className="text-center px-6">
 											<p className="text-xs md:text-sm font-black uppercase tracking-[0.28em] text-gold mb-2">
-												Polyglot School
+												{t.prestige.videoBadge}
 											</p>
 											<p className="text-sm md:text-base font-medium text-indigo-50">
-												Watch the story behind
-												Uzbekistan&apos;s leading
-												language school.
+												{t.prestige.videoTitleLine1}
+												<br />
+												{t.prestige.videoTitleLine2}
 											</p>
 										</div>
 									</button>

@@ -15,6 +15,17 @@ export const translations: Record<Language, any> = {
 			subtitle:
 				"Premium education for the global-minded. Oxford-certified standards across 8 locations in Samarkand.",
 		},
+		prestige: {
+			badge: "Official Ranking 2024",
+			numberWord: "NUMBER",
+			oneWord: "ONE.",
+			descriptionBeforeHighlight:
+				"Officially recognized as the Best Performing Learning Center in ",
+			descriptionHighlight: "Uzbekistan by IDP Uzbekistan.",
+			videoBadge: "Polyglot School",
+			videoTitleLine1: "Watch the story behind",
+			videoTitleLine2: "Uzbekistan's leading language school.",
+		},
 		results: {
 			badge: "THE TEAM",
 			title: "Our Pride",
@@ -266,6 +277,17 @@ export const translations: Record<Language, any> = {
 			title: "Создай свое будущее через английский",
 			subtitle:
 				"Премиальное образование мирового уровня. Оксфордские стандарты в 8 филиалах по всему Самарканду.",
+		},
+		prestige: {
+			badge: "Официальный рейтинг 2024",
+			numberWord: "НОМЕР",
+			oneWord: "ПЕРВЫЙ.",
+			descriptionBeforeHighlight:
+				"Официально признан Лучшим языковым центром ",
+			descriptionHighlight: "Узбекистана по версии IDP Uzbekistan.",
+			videoBadge: "Polyglot School",
+			videoTitleLine1: "Узнайте историю",
+			videoTitleLine2: "ведущей языковой школы Узбекистана.",
 		},
 		results: {
 			badge: "КОМАНДА",
