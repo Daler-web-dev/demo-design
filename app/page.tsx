@@ -408,7 +408,7 @@ export default function Home() {
 					<div className="text-center mb-32">
 						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
 							<span className="w-8 h-0.5 bg-gold mx-auto" />
-							HOW IT WORKS
+							WHY CHOOSE US
 							<span className="w-8 h-0.5 bg-gold mx-auto" />
 						</div>
 						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black text-brand-800 leading-[0.95] tracking-tighter uppercase mb-6 break-words max-w-full">
@@ -426,15 +426,15 @@ export default function Home() {
 							) => (
 								<div
 									key={i}
-									className="p-12 bg-brand-50 rounded-[3.5rem] border-2 border-transparent hover:bg-indigo-600 hover:border-indigo-500 hover:text-white transition-all duration-500 group"
+									className="p-12 bg-gold rounded-[3.5rem] border-2 border-gold text-brand-900 hover:bg-gold/90 hover:border-gold hover:text-brand-900 transition-all duration-500 group"
 								>
-									<div className="text-4xl font-black text-indigo-300 mb-10 group-hover:text-white group-hover:opacity-100 transition-all">
+									<div className="text-4xl font-black text-brand-900 mb-10 group-hover:text-brand-900 group-hover:opacity-100 transition-all">
 										0{i + 1}
 									</div>
 									<h4 className="text-3xl font-black mb-6 uppercase tracking-tighter leading-none">
 										{step.title}
 									</h4>
-									<p className="text-slate-500 font-medium group-hover:text-indigo-100 transition-colors leading-relaxed">
+									<p className="text-brand-900/80 font-medium group-hover:text-brand-900 transition-colors leading-relaxed">
 										{step.desc}
 									</p>
 								</div>
@@ -444,25 +444,25 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="min-h-fit py-40 bg-brand-50">
-				<div className="max-w-4xl mx-auto px-6">
+			<section className="min-h-fit py-40 bg-brand-900">
+				<div className="max-w-4xl mx-auto px-6 text-white">
 					<div className="text-center mb-24">
 						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-4">
 							<span className="w-8 h-0.5 bg-gold" />
 							FAQ
 							<span className="w-8 h-0.5 bg-gold" />
 						</div>
-						<h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-brand-800 uppercase tracking-tighter leading-[0.95] mb-6 break-words max-w-full">
+						<h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-white uppercase tracking-tighter leading-[0.95] mb-6 break-words max-w-full">
 							{t.faq.title}
 						</h2>
-						<div className="w-24 h-1 bg-gradient-to-r from-gold via-indigo-600 to-gold mx-auto rounded-full"></div>
+						<div className="w-24 h-1 bg-gradient-to-r from-gold via-brand-800 to-gold mx-auto rounded-full"></div>
 					</div>
 					<div className="space-y-4">
 						{t.faq.questions.map(
 							(faq: { q: string; a: string }, i: number) => (
 								<div
 									key={i}
-									className="bg-white rounded-[2rem] border-2 border-brand-200/60 overflow-hidden transition-all hover:border-indigo-400/60"
+									className="group bg-brand-800 rounded-[2rem] border-2 border-brand-700 overflow-hidden transition-all hover:border-gold/80 hover:bg-brand-800/90"
 								>
 									<button
 										onClick={() =>
@@ -470,19 +470,27 @@ export default function Home() {
 												activeFaq === i ? null : i,
 											)
 										}
-										className="w-full p-8 flex justify-between items-center text-left hover:bg-brand-50/50 transition-colors"
+										className="w-full p-8 flex justify-between items-center text-left transition-colors"
 									>
-										<span className="text-xl font-black uppercase tracking-tight text-brand-800">
+										<span className="text-xl font-black uppercase tracking-tight text-white group-hover:text-gold">
 											{faq.q}
 										</span>
 										<ChevronDown
-											className={`w-6 h-6 transition-all duration-500 ${activeFaq === i ? "rotate-180 text-indigo-600" : "text-slate-400"}`}
+											className={`w-6 h-6 transition-all duration-500 ${
+												activeFaq === i
+													? "rotate-180 text-gold"
+													: "text-gold/60"
+											}`}
 										/>
 									</button>
 									<div
-										className={`transition-all duration-500 ease-in-out ${activeFaq === i ? "max-h-96 opacity-100 p-8 pt-0" : "max-h-0 opacity-0"}`}
+										className={`transition-all duration-500 ease-in-out ${
+											activeFaq === i
+												? "max-h-96 opacity-100 p-8 pt-0"
+												: "max-h-0 opacity-0"
+										}`}
 									>
-										<p className="text-slate-500 font-medium text-lg leading-relaxed">
+										<p className="text-indigo-100 font-medium text-lg leading-relaxed">
 											{faq.a}
 										</p>
 									</div>
