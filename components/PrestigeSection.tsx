@@ -1,9 +1,17 @@
-import React from "react";
-import { Award, ShieldCheck, Star } from "lucide-react";
+import React, { useRef, useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const PrestigeSection = () => {
 	const { t } = useLanguage();
+	const [isPlaying, setIsPlaying] = useState(false);
+	const videoRef = useRef<HTMLVideoElement | null>(null);
+
+	const handlePlay = () => {
+		setIsPlaying(true);
+		if (videoRef.current) {
+			videoRef.current.play();
+		}
+	};
 
 	return (
 		<section
@@ -54,34 +62,47 @@ const PrestigeSection = () => {
 
 							<div className="relative z-10 overflow-hidden rounded-[3rem] border border-brand-100 bg-brand-900 shadow-2xl">
 								<div className="aspect-video w-full relative">
-									{/* Placeholder thumbnail until real video is connected */}
-									<img
-										src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&q=80&w=1200"
-										alt="Polyglot School campus"
-										className="h-full w-full object-cover opacity-80"
+									<video
+										ref={videoRef}
+										className="h-full w-full object-cover"
+										poster="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&q=80&w=1200"
+										src="/videos/polyglot-story.mp4"
+										controls={isPlaying}
 									/>
-									<div className="absolute inset-0 bg-gradient-to-tr from-brand-900/70 via-brand-900/30 to-transparent" />
 
-									<button
-										type="button"
-										className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-white"
-									>
-										<div className="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/15 backdrop-blur-md border border-white/40 shadow-[0_18px_45px_rgba(0,0,0,0.4)] hover:scale-105 transition-transform">
-											<div className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-gold shadow-[0_12px_30px_rgba(212,175,55,0.5)]">
-												<span className="ml-1 inline-block w-0 h-0 border-t-[10px] border-b-[10px] border-l-[16px] border-t-transparent border-b-transparent border-l-white" />
-											</div>
-										</div>
-										<div className="text-center px-6">
-											<p className="text-xs md:text-sm font-black uppercase tracking-[0.28em] text-gold mb-2">
-												{t.prestige.videoBadge}
-											</p>
-											<p className="text-sm md:text-base font-medium text-indigo-50">
-												{t.prestige.videoTitleLine1}
-												<br />
-												{t.prestige.videoTitleLine2}
-											</p>
-										</div>
-									</button>
+									{!isPlaying && (
+										<>
+											<div className="absolute inset-0 bg-gradient-to-tr from-brand-900/70 via-brand-900/30 to-transparent" />
+
+											<button
+												type="button"
+												onClick={handlePlay}
+												className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-white"
+											>
+												<div className="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/15 backdrop-blur-md border border-white/40 shadow-[0_18px_45px_rgba(0,0,0,0.4)] hover:scale-105 transition-transform">
+													<div className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-gold shadow-[0_12px_30px_rgba(212,175,55,0.5)]">
+														<span className="ml-1 inline-block w-0 h-0 border-t-[10px] border-b-[10px] border-l-[16px] border-t-transparent border-b-transparent border-l-white" />
+													</div>
+												</div>
+												<div className="text-center px-6">
+													<p className="text-xs md:text-sm font-black uppercase tracking-[0.28em] text-gold mb-2">
+														{t.prestige.videoBadge}
+													</p>
+													<p className="text-sm md:text-base font-medium text-indigo-50">
+														{
+															t.prestige
+																.videoTitleLine1
+														}
+														<br />
+														{
+															t.prestige
+																.videoTitleLine2
+														}
+													</p>
+												</div>
+											</button>
+										</>
+									)}
 								</div>
 							</div>
 						</div>
