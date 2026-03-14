@@ -266,27 +266,37 @@ export default function Home() {
 					</div>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-						{COURSES.map((course) => {
-							const theme = getCardTheme(course.category);
+						{[
+							{ value: "Kids", label: t.courses.filters.kids },
+							{ value: "Teens", label: t.courses.filters.teens },
+							{
+								value: "Adults",
+								label: t.courses.filters.adults,
+							},
+							{ value: "IELTS", label: t.courses.filters.ielts },
+						].map((category) => {
+							const sampleCourse = COURSES.find(
+								(c) => c.category === category.value,
+							);
+							if (!sampleCourse) return null;
+
+							const theme = getCardTheme(sampleCourse.category);
 							const CourseIcon =
-								courseIcons[course.id] || Sparkles;
+								courseIcons[sampleCourse.id] || Sparkles;
+
 							return (
 								<Link
-									href={`/courses/${course.id}`}
-									key={course.id}
+									href={`/courses?category=${category.value}`}
+									key={category.value}
 									className={`${theme.bg} ${theme.text} group relative p-10 rounded-[2.5rem] flex flex-col transition-all duration-700 hover:-translate-y-4 hover:shadow-2xl overflow-hidden aspect-square`}
 								>
 									{/* TOP SECTION: Meta Header */}
 									<div className="relative z-30 mb-auto">
 										<h4 className="text-2xl font-black leading-tight uppercase tracking-tighter mb-1">
-											{course.category === "IELTS"
-												? lang === "RU"
-													? "Английский для IELTS"
-													: "IELTS Mastery"
-												: course.title[lang]}
+											{category.label}
 										</h4>
 										<p className="text-xs font-black opacity-50 uppercase tracking-widest">
-											{course.duration[lang]}
+											{sampleCourse.duration[lang]}
 										</p>
 									</div>
 
@@ -311,16 +321,16 @@ export default function Home() {
 											className={`inline-block px-2.5 py-1 mb-4 ${theme.tag} text-[10px] font-black uppercase tracking-widest rounded shadow-sm`}
 										>
 											{lang === "RU"
-												? "ПРОГРАММА"
-												: "TRACK"}
+												? "Категория"
+												: "Category"}
 										</span>
 										<h3 className="text-4xl md:text-5xl font-display font-black leading-[1] uppercase tracking-tighter mb-2">
-											{course.title[lang]}
+											{category.label}
 										</h3>
 										<p className="text-xs font-bold opacity-60">
 											{lang === "RU"
-												? "Базовый и продвинутый уровни"
-												: "From Foundation to Fluency"}
+												? "Подберите программу под свой уровень"
+												: "See all programs for this track"}
 										</p>
 									</div>
 
