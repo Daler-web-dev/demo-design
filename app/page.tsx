@@ -364,40 +364,77 @@ export default function Home() {
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-3 sm:gap-4 md:h-[600px]">
 						<div className="md:col-span-2 md:row-span-2 bg-indigo-600 rounded-[2rem] sm:rounded-[3.5rem] p-8 sm:p-12 relative overflow-hidden group min-h-[200px] md:min-h-0">
-							<Coffee className="absolute top-6 right-6 sm:top-10 sm:right-10 w-16 h-16 sm:w-20 sm:h-20 opacity-10 group-hover:scale-125 transition-transform" />
-							<h4 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 md:mb-6 uppercase tracking-tighter leading-tight mt-auto">
-								Polyglot Hub
-							</h4>
-							<p className="text-indigo-100 text-base sm:text-lg max-w-md">
-								Our central campuses feature coffee zones and
-								collaborative lounges for relaxed practice.
-							</p>
-							<div className="absolute bottom-6 left-6 sm:bottom-10 sm:left-10 px-4 py-1.5 sm:px-6 sm:py-2 bg-white/20 rounded-full font-bold text-[10px] sm:text-xs">
-								COMMUNITY FIRST
+							<img
+								src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=1600"
+								alt="Polyglot Hub lounge"
+								className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
+								loading="lazy"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-tr from-brand-900/80 via-brand-900/40 to-transparent pointer-events-none" />
+							<div className="relative z-10 flex flex-col h-full">
+								<Coffee className="absolute top-6 right-6 sm:top-10 sm:right-10 w-16 h-16 sm:w-20 sm:h-20 opacity-40 group-hover:scale-125 transition-transform" />
+								<h4 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 md:mb-6 uppercase tracking-tighter leading-tight mt-auto">
+									Polyglot Hub
+								</h4>
+								<p className="text-indigo-100 text-base sm:text-lg max-w-md">
+									Our central campuses feature coffee zones and collaborative lounges
+									for relaxed conversation practice with mentors and peers.
+								</p>
+								<div className="mt-6 sm:mt-8 px-4 py-1.5 sm:px-6 sm:py-2 bg-white/15 rounded-full font-bold text-[10px] sm:text-xs tracking-[0.25em] uppercase inline-flex items-center gap-2">
+									<span className="w-2 h-2 rounded-full bg-gold" />
+									COMMUNITY FIRST
+								</div>
 							</div>
 						</div>
-						<div className="md:col-span-2 bg-brand-800 rounded-[2rem] sm:rounded-[3.5rem] p-6 sm:p-12 flex flex-col justify-between group min-h-[140px] md:min-h-0">
-							<div className="flex justify-between items-start">
-								<PlayCircle className="w-8 h-8 sm:w-12 sm:h-12 text-gold shrink-0" />
-								<span className="text-[10px] font-black uppercase tracking-widest text-slate-500">
-									Every Friday
-								</span>
+						<div className="md:col-span-2 bg-brand-800 rounded-[2rem] sm:rounded-[3.5rem] p-6 sm:p-12 flex flex-col justify-between group min-h-[140px] md:min-h-0 relative overflow-hidden">
+							<img
+								src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&q=80&w=1600"
+								alt="Cinema night at Polyglot"
+								className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
+								loading="lazy"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-tr from-brand-900/70 via-brand-900/40 to-transparent pointer-events-none" />
+							<div className="relative z-10">
+								<div className="flex justify-between items-start">
+									<PlayCircle className="w-8 h-8 sm:w-12 sm:h-12 text-gold shrink-0" />
+									<span className="text-[10px] font-black uppercase tracking-widest text-slate-200">
+										Every Friday
+									</span>
+								</div>
+								<h4 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tighter mt-4 md:mt-0">
+									{t.lifestyle.items[1].title}
+								</h4>
 							</div>
-							<h4 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tighter mt-4 md:mt-0">
-								{t.lifestyle.items[1].title}
-							</h4>
 						</div>
-						<div className="bg-brand-700 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group hover:bg-indigo-500 transition-colors min-h-[120px] md:min-h-0">
-							<BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-400 group-hover:text-white shrink-0" />
-							<h4 className="text-lg sm:text-xl font-black uppercase tracking-tighter mt-2 md:mt-0">
-								{t.lifestyle.items[2].title}
-							</h4>
+						<div className="bg-brand-700 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group hover:bg-indigo-500 transition-colors min-h-[120px] md:min-h-0 relative overflow-hidden">
+							<img
+								src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=1200"
+								alt="Polyglot library and study space"
+								className="absolute inset-0 w-full h-full object-cover opacity-18 pointer-events-none"
+								loading="lazy"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-brand-900/40 to-transparent pointer-events-none" />
+							<div className="relative z-10">
+								<BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-400 group-hover:text-white shrink-0" />
+								<h4 className="text-lg sm:text-xl font-black uppercase tracking-tighter mt-2 md:mt-0">
+									{t.lifestyle.items[2].title}
+								</h4>
+							</div>
 						</div>
-						<div className="bg-gold/20 text-brand-900 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group border border-gold/30 min-h-[120px] md:min-h-0">
-							<Users className="w-6 h-6 sm:w-8 sm:h-8 text-gold shrink-0" />
-							<h4 className="text-lg sm:text-xl font-black uppercase tracking-tighter mt-2 md:mt-0">
-								{t.lifestyle.items[0].title}
-							</h4>
+						<div className="bg-gold/20 text-brand-900 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group border border-gold/30 min-h-[120px] md:min-h-0 relative overflow-hidden">
+							<img
+								src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&q=80&w=1200"
+								alt="Speaking club at Polyglot"
+								className="absolute inset-0 w-full h-full object-cover opacity-22 pointer-events-none"
+								loading="lazy"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 via-brand-900/20 to-transparent pointer-events-none" />
+							<div className="relative z-10">
+								<Users className="w-6 h-6 sm:w-8 sm:h-8 text-gold shrink-0" />
+								<h4 className="text-lg sm:text-xl font-black uppercase tracking-tighter mt-2 md:mt-0">
+									{t.lifestyle.items[0].title}
+								</h4>
+							</div>
 						</div>
 					</div>
 				</div>
