@@ -1,4 +1,5 @@
-import { Language, Course, CourseModule, CourseTeacher } from "./types";
+import { BookOpen, Target, Smile, Globe, Globe2, Feather } from "lucide-react";
+import { Language, Course } from "./types";
 
 export const translations: Record<Language, any> = {
 	EN: {
@@ -47,22 +48,83 @@ export const translations: Record<Language, any> = {
 		},
 		staffPage: {
 			title: "Our Team",
-			subtitle: "Meet the people who make Polyglot the leading language school in Samarkand.",
+			subtitle:
+				"Meet the people who make Polyglot the leading language school in Samarkand.",
 			sectionNiners: "IELTS 9 — Our Pride",
 			sectionTeam: "Teaching Team",
 			roleLabel: "Teacher",
 			scoreLabel: "IELTS 9",
 			allTeachers: [
-				{ nameEn: "Angus", nameRu: "Ангус", image: "Angus.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Jasur", nameRu: "Жасур", image: "Jasur.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Nazira", nameRu: "Назира", image: "NAZIRA.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Otabek", nameRu: "Отабек", image: "Otabek.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Shahzoda", nameRu: "Шахзода", image: "SHAHZODA.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Tesni", nameRu: "Тесни", image: "Tesni.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Javokhir", nameRu: "Жавохир", image: "Javokhir.jpeg", folder: "team", ielts9: false },
-				{ nameEn: "Nodir", nameRu: "Нодир", image: "Nodir.jpeg", folder: "team", ielts9: false },
-				{ nameEn: "Shahrukh", nameRu: "Шахрух", image: "Shahrukh.jpeg", folder: "team", ielts9: false },
-				{ nameEn: "Siyovush", nameRu: "Сиёвуш", image: "Siyovush.jpeg", folder: "team", ielts9: false },
+				{
+					nameEn: "Angus",
+					nameRu: "Ангус",
+					image: "Angus.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Jasur",
+					nameRu: "Жасур",
+					image: "Jasur.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Nazira",
+					nameRu: "Назира",
+					image: "NAZIRA.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Otabek",
+					nameRu: "Отабек",
+					image: "Otabek.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Shahzoda",
+					nameRu: "Шахзода",
+					image: "SHAHZODA.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Tesni",
+					nameRu: "Тесни",
+					image: "Tesni.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Javokhir",
+					nameRu: "Жавохир",
+					image: "Javokhir.jpeg",
+					folder: "team",
+					ielts9: false,
+				},
+				{
+					nameEn: "Nodir",
+					nameRu: "Нодир",
+					image: "Nodir.jpeg",
+					folder: "team",
+					ielts9: false,
+				},
+				{
+					nameEn: "Shahrukh",
+					nameRu: "Шахрух",
+					image: "Shahrukh.jpeg",
+					folder: "team",
+					ielts9: false,
+				},
+				{
+					nameEn: "Siyovush",
+					nameRu: "Сиёвуш",
+					image: "Siyovush.jpeg",
+					folder: "team",
+					ielts9: false,
+				},
 			],
 		},
 		branches: {
@@ -137,15 +199,6 @@ export const translations: Record<Language, any> = {
 		ai: {
 			trigger: "AI Advisor",
 			placeholder: "What is your current level?",
-		},
-		courses: {
-			filters: {
-				all: "All",
-				kids: "Kids",
-				teens: "Teens",
-				adults: "Adults",
-				ielts: "IELTS",
-			},
 		},
 		enrollForm: {
 			title: "Join Polyglot Network",
@@ -239,7 +292,8 @@ export const translations: Record<Language, any> = {
 			formPhoneLabel: "Phone",
 			formPhonePlaceholder: "+998 (__) ___-__-__",
 			formContinueBtn: "Continue to test",
-			leaveWarning: "If you refresh the page or go back, your progress will be lost. Are you sure?",
+			leaveWarning:
+				"If you refresh the page or go back, your progress will be lost. Are you sure?",
 			formLoading: "Loading test…",
 			formLoadError: "Failed to load test. Please refresh the page.",
 			questionLabel: "Question",
@@ -310,22 +364,83 @@ export const translations: Record<Language, any> = {
 		},
 		staffPage: {
 			title: "Наша команда",
-			subtitle: "Люди, которые делают Polyglot ведущей языковой школой Самарканда.",
+			subtitle:
+				"Люди, которые делают Polyglot ведущей языковой школой Самарканда.",
 			sectionNiners: "IELTS 9 — Наша гордость",
 			sectionTeam: "Преподавательский состав",
 			roleLabel: "Преподаватель",
 			scoreLabel: "IELTS 9",
 			allTeachers: [
-				{ nameEn: "Angus", nameRu: "Ангус", image: "Angus.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Jasur", nameRu: "Жасур", image: "Jasur.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Nazira", nameRu: "Назира", image: "NAZIRA.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Otabek", nameRu: "Отабек", image: "Otabek.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Shahzoda", nameRu: "Шахзода", image: "SHAHZODA.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Tesni", nameRu: "Тесни", image: "Tesni.jpeg", folder: "niners", ielts9: true },
-				{ nameEn: "Javokhir", nameRu: "Жавохир", image: "Javokhir.jpeg", folder: "team", ielts9: false },
-				{ nameEn: "Nodir", nameRu: "Нодир", image: "Nodir.jpeg", folder: "team", ielts9: false },
-				{ nameEn: "Shahrukh", nameRu: "Шахрух", image: "Shahrukh.jpeg", folder: "team", ielts9: false },
-				{ nameEn: "Siyovush", nameRu: "Сиёвуш", image: "Siyovush.jpeg", folder: "team", ielts9: false },
+				{
+					nameEn: "Angus",
+					nameRu: "Ангус",
+					image: "Angus.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Jasur",
+					nameRu: "Жасур",
+					image: "Jasur.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Nazira",
+					nameRu: "Назира",
+					image: "NAZIRA.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Otabek",
+					nameRu: "Отабек",
+					image: "Otabek.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Shahzoda",
+					nameRu: "Шахзода",
+					image: "SHAHZODA.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Tesni",
+					nameRu: "Тесни",
+					image: "Tesni.jpeg",
+					folder: "niners",
+					ielts9: true,
+				},
+				{
+					nameEn: "Javokhir",
+					nameRu: "Жавохир",
+					image: "Javokhir.jpeg",
+					folder: "team",
+					ielts9: false,
+				},
+				{
+					nameEn: "Nodir",
+					nameRu: "Нодир",
+					image: "Nodir.jpeg",
+					folder: "team",
+					ielts9: false,
+				},
+				{
+					nameEn: "Shahrukh",
+					nameRu: "Шахрух",
+					image: "Shahrukh.jpeg",
+					folder: "team",
+					ielts9: false,
+				},
+				{
+					nameEn: "Siyovush",
+					nameRu: "Сиёвуш",
+					image: "Siyovush.jpeg",
+					folder: "team",
+					ielts9: false,
+				},
 			],
 		},
 		branches: {
@@ -402,15 +517,6 @@ export const translations: Record<Language, any> = {
 		ai: {
 			trigger: "AI Консультант",
 			placeholder: "Какой у вас сейчас уровень?",
-		},
-		courses: {
-			filters: {
-				all: "Все",
-				kids: "Дети",
-				teens: "Подростки",
-				adults: "Взрослые",
-				ielts: "IELTS",
-			},
 		},
 		enrollForm: {
 			title: "Присоединяйтесь к Polyglot",
@@ -494,13 +600,15 @@ export const translations: Record<Language, any> = {
 			accuracyValue: "98%",
 			startBtn: "Начать полный тест",
 			formTitle: "Ваши контактные данные",
-			formSubtitle: "Мы используем их, чтобы перезвонить вам после теста.",
+			formSubtitle:
+				"Мы используем их, чтобы перезвонить вам после теста.",
 			formNameLabel: "Имя",
 			formNamePlaceholder: "Иван Иванов",
 			formPhoneLabel: "Телефон",
 			formPhonePlaceholder: "+998 (__) ___-__-__",
 			formContinueBtn: "Перейти к тесту",
-			leaveWarning: "Если вы обновите страницу или уйдёте назад, прогресс обнулится. Продолжить?",
+			leaveWarning:
+				"Если вы обновите страницу или уйдёте назад, прогресс обнулится. Продолжить?",
 			formLoading: "Загрузка теста…",
 			formLoadError: "Не удалось загрузить тест. Обновите страницу.",
 			questionLabel: "Вопрос",
@@ -527,224 +635,694 @@ export const translations: Record<Language, any> = {
 	},
 };
 
+export const COURSE_CATEGORIES = [
+	{
+		value: "General English",
+		label: "General_English",
+		icon: BookOpen,
+		duration: "From Beginning to Fluency",
+	},
+	{
+		value: "IELTS Intensive",
+		label: "IELTS_Intensive",
+		icon: Target,
+		duration: "From Intermediate to Advanced",
+	},
+	{
+		value: "English kids",
+		label: "English_kids",
+		icon: Smile,
+		duration: "From Foundation to Beginner",
+	},
+	{
+		value: "Подготовка к CEFR/DTM",
+		label: "Подготовка_к_CEFR/DTM",
+		icon: Globe,
+		duration: "From Foundation to Fluency",
+	},
+	{
+		value: "Подготовка к TOEFL",
+		label: "Подготовка_к_TOEFL",
+		icon: Globe2,
+		duration: "From Intermediate to Advanced",
+	},
+	{
+		value: "Подготовка к Duolingo",
+		label: "Подготовка_к_Duolingo",
+		icon: Feather,
+		duration: "From Intermediate to Advanced",
+	},
+];
+
 export const COURSES: Course[] = [
 	{
-		id: "ielts-elite",
-		title: { EN: "IELTS Elite 7.5+", RU: "IELTS Elite 7.5+" },
+		id: "b1-pre-intermediate",
+		image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+		title: {
+			EN: "B1 Pre Intermediate",
+			RU: "B1 Pre-Intermediate",
+		},
+
 		description: {
-			EN: "Intensive protocol for maximum results.",
-			RU: "Интенсивный протокол для максимальных результатов.",
+			EN: "Build confident communication and solid grammar foundation.",
+			RU: "Развитие уверенного общения и прочной грамматической базы.",
 		},
-		longDescription: {
-			EN: "An elite preparation track for ambitious candidates seeking band 7.5 and above. Includes full mock exams, individual feedback, and high-frequency vocabulary training.",
-			RU: "Элитный курс подготовки для амбициозных кандидатов, стремящихся к баллу 7.5 и выше. Включает полные пробные экзамены, индивидуальную обратную связь и обучение высокочастотной лексике.",
+
+		level: "B1",
+
+		duration: {
+			EN: "2 Months (40 lessons)",
+			RU: "2 месяца (40 занятий)",
 		},
-		category: "IELTS",
-		level: "Advanced",
-		duration: { EN: "12 Weeks", RU: "12 Недель" },
-		target: {
-			EN: "Students & Professionals",
-			RU: "Студенты и профессионалы",
-		},
-		price: { EN: "$120/mo", RU: "1,500,000 сум/мес" },
+		category: "General_English",
+
 		outcomes: {
 			EN: [
-				"Master all 4 IELTS modules",
-				"Overcome speaking anxiety",
-				"Learn high-level academic structures",
-				"Speed reading techniques",
+				"Use advanced grammar structures in speech and writing",
+				"Participate in discussions and debates",
+				"Write structured essays and formal letters",
+				"Prepare for the national B2 certificate exam",
 			],
 			RU: [
-				"Освоение всех 4 модулей IELTS",
-				"Преодоление страха говорения",
-				"Изучение академических структур высокого уровня",
-				"Техники быстрого чтения",
+				"Свободно использовать сложную грамматику в речи и письме",
+				"Участвовать в обсуждениях и конструктивных спорах",
+				"Писать структурированные эссе и формальные письма",
+				"Подготовиться к национальному экзамену уровня B2",
 			],
 		},
-		image: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=800",
+
 		modules: [
 			{
 				title: {
-					EN: "Foundation & Strategy",
-					RU: "Основа и стратегия",
+					EN: "Month 1",
+					RU: "1-й месяц",
 				},
+
 				description: {
-					EN: "Understanding the exam format, scoring criteria, and building your personalized study plan.",
-					RU: "Формат экзамена, критерии оценки и построение персонального плана подготовки.",
+					EN: "Focus on core grammar and everyday vocabulary.",
+					RU: "Углубление в базовую грамматику и повседневную лексику.",
 				},
-			},
-			{
-				title: {
-					EN: "Listening & Reading Mastery",
-					RU: "Аудирование и чтение",
-				},
-				description: {
-					EN: "Techniques for note-taking, time management, and tackling all question types across both modules.",
-					RU: "Конспектирование, тайм-менеджмент и работа со всеми типами заданий.",
-				},
-			},
-			{
-				title: {
-					EN: "Writing & Speaking Excellence",
-					RU: "Письмо и говорение",
-				},
-				description: {
-					EN: "Essay structures, coherent arguments, and fluent speaking with real-time feedback from experts.",
-					RU: "Структура эссе, аргументация и беглая речь с обратной связью от экспертов.",
-				},
+
+				lessons: [
+					{
+						title: {
+							EN: "Present Simple vs Present Continuous",
+							RU: "Present Simple vs Present Continuous",
+						},
+						activity: {
+							EN: "Reading: Multiple Choice Questions",
+							RU: "Чтение: тест с вариантами ответа",
+						},
+					},
+
+					{
+						title: {
+							EN: "Articles",
+							RU: "Артикли",
+						},
+						activity: {
+							EN: "Speaking: Family arguments / information role-plays",
+							RU: "Говорение: семейные дискуссии и ролевые игры",
+						},
+					},
+
+					{
+						title: {
+							EN: "Past Simple",
+							RU: "Past Simple",
+						},
+						activity: {
+							EN: "Telling stories related to crime",
+							RU: "Рассказы на тему преступлений",
+						},
+					},
+
+					{
+						title: {
+							EN: "Past Continuous",
+							RU: "Past Continuous",
+						},
+						activity: {
+							EN: "Writing: Understanding the evaluation",
+							RU: "Письмо: понимание критериев оценки",
+						},
+					},
+
+					{
+						title: {
+							EN: "Quantifiers",
+							RU: "Quantifiers",
+						},
+						activity: {
+							EN: "Talking about social networks",
+							RU: "Обсуждение социальных сетей",
+						},
+					},
+
+					{
+						title: {
+							EN: "Relative Pronouns",
+							RU: "Относительные местоимения",
+						},
+						activity: {
+							EN: "Discussing definitions",
+							RU: "Обсуждение определений",
+						},
+					},
+
+					{
+						title: {
+							EN: "Present Perfect (ever / never / for / since)",
+							RU: "Present Perfect (ever / never / for / since)",
+						},
+						activity: {
+							EN: "Understanding first aid",
+							RU: "Понимание темы первой помощи",
+						},
+					},
+
+					{
+						title: {
+							EN: "Present Perfect vs Past Simple",
+							RU: "Present Perfect vs Past Simple",
+						},
+						activity: {
+							EN: "Writing: Content and style",
+							RU: "Письмо: содержание и стиль",
+						},
+					},
+
+					{
+						title: {
+							EN: "Comparative & Superlative Adjectives",
+							RU: "Сравнительные и превосходные степени",
+						},
+						activity: {
+							EN: "Writing: Opinions about TV and films",
+							RU: "Письмо: мнение о фильмах и ТВ",
+						},
+					},
+
+					{
+						title: {
+							EN: "Modifying adjectives / too & enough",
+							RU: "Модификаторы прилагательных",
+						},
+						activity: {
+							EN: "Speaking: Negotiations",
+							RU: "Говорение: переговоры",
+						},
+					},
+
+					{
+						title: {
+							EN: "Presentation",
+							RU: "Презентация",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+
+					{
+						title: {
+							EN: "Going to / Will / May / Might",
+							RU: "Going to / Will / May / Might",
+						},
+						activity: {
+							EN: "Talking about your future",
+							RU: "Разговор о будущем",
+						},
+					},
+
+					{
+						title: {
+							EN: "Zero & First Conditional",
+							RU: "Zero и First Conditional",
+						},
+						activity: {
+							EN: "Writing: Formal exam letter",
+							RU: "Письмо: формальное письмо для экзамена",
+						},
+					},
+
+					{
+						title: {
+							EN: "Modals of obligation / prohibition / advice",
+							RU: "Модальные глаголы обязательства и совета",
+						},
+						activity: {
+							EN: "Writing a CV",
+							RU: "Написание CV",
+						},
+					},
+
+					{
+						title: {
+							EN: "Second Conditional",
+							RU: "Second Conditional",
+						},
+						activity: {
+							EN: "Speaking: Giving advice",
+							RU: "Говорение: советы",
+						},
+					},
+
+					{
+						title: {
+							EN: "Past Perfect / Used to",
+							RU: "Past Perfect / Used to",
+						},
+						activity: {
+							EN: "Reporting past activities",
+							RU: "Описание прошлых событий",
+						},
+					},
+
+					{
+						title: {
+							EN: "Gerunds vs Infinitives",
+							RU: "Gerunds vs Infinitives",
+						},
+						activity: {
+							EN: "Discussing friendship interests",
+							RU: "Обсуждение интересов в дружбе",
+						},
+					},
+
+					{
+						title: {
+							EN: "Reported Speech: Statements",
+							RU: "Косвенная речь: утверждения",
+						},
+						activity: {
+							EN: "Reading: Referencing exercise",
+							RU: "Чтение: упражнение на вставку предложений",
+						},
+					},
+
+					{
+						title: {
+							EN: "Reported Speech: Questions",
+							RU: "Косвенная речь: вопросы",
+						},
+						activity: {
+							EN: "Listening: Completing notes",
+							RU: "Аудирование: заполнение заметок",
+						},
+					},
+
+					{
+						title: {
+							EN: "Passive Voice (Present Simple)",
+							RU: "Passive Voice (Present Simple)",
+						},
+						activity: {
+							EN: "Speaking: Importance of the internet",
+							RU: "Говорение: значение интернета",
+						},
+					},
+
+					{
+						title: {
+							EN: "Passive Voice (Other tenses)",
+							RU: "Passive Voice (другие времена)",
+						},
+						activity: {
+							EN: "Speculating about photos",
+							RU: "Обсуждение фотографий",
+						},
+					},
+
+					{
+						title: {
+							EN: "Presentation",
+							RU: "Презентация",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+
+					{
+						title: {
+							EN: "Review Lesson",
+							RU: "Повторение",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+					{
+						title: {
+							EN: "Head Teacher Workshop",
+							RU: "Мастер-класс старшего преподавателя",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+				],
 			},
 		],
 		teacher: {
-			name: "Alexander Wright",
-			role: {
-				EN: "Senior IELTS Instructor",
-				RU: "Старший инструктор IELTS",
-			},
+			name: "Emily Johnson",
 			bio: {
-				EN: "Former British Council examiner with 12+ years of experience. Specializes in helping students achieve band 7.5 and above.",
-				RU: "Экзаменатор British Council с опытом 12+ лет. Специализация — балл 7.5 и выше.",
+				EN: "Lead Instructor",
+				RU: "Главный преподаватель",
 			},
-			image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800",
+			image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
 		},
 	},
 	{
-		id: "business-mastery",
-		title: { EN: "Business English", RU: "Бизнес Английский" },
+		id: "b1-plus-intermediate",
+
+		image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+
+		title: {
+			EN: "B1+ Intermediate",
+			RU: "B1+ Intermediate",
+		},
+
 		description: {
-			EN: "Corporate communication and negotiation.",
-			RU: "Корпоративное общение и переговоры.",
+			EN: "Develop advanced grammar and argumentative speaking skills.",
+			RU: "Развитие продвинутой грамматики и навыков аргументированной речи.",
 		},
-		longDescription: {
-			EN: "Master the language of global commerce. This course focuses on professional presentations, emails, networking, and high-stakes negotiation techniques.",
-			RU: "Освойте язык глобальной коммерции. Этот курс фокусируется на профессиональных презентациях, электронной почте, нетворкинге и техниках ведения важных переговоров.",
+
+		level: "B1+",
+
+		duration: {
+			EN: "2 Months (40 lessons)",
+			RU: "2 месяца (40 занятий)",
 		},
-		category: "Adults",
-		level: "Intermediate",
-		duration: { EN: "6 Months", RU: "6 Месяцев" },
-		target: { EN: "Corporate Employees", RU: "Корпоративные сотрудники" },
-		price: { EN: "$90/mo", RU: "1,100,000 сум/мес" },
+
+		category: "General_English",
+
 		outcomes: {
 			EN: [
-				"Professional email writing",
-				"Effective meeting participation",
-				"Business vocabulary expansion",
-				"Cross-cultural communication",
+				"Use advanced grammar structures in speech and writing",
+				"Participate in discussions and debates",
+				"Write structured essays and formal letters",
+				"Prepare for the national B2 certificate exam",
 			],
 			RU: [
-				"Профессиональная переписка",
-				"Эффективное участие в совещаниях",
-				"Расширение бизнес-лексики",
-				"Межкультурная коммуникация",
+				"Свободно использовать сложную грамматику в речи и письме",
+				"Участвовать в обсуждениях и конструктивных спорах",
+				"Писать структурированные эссе и формальные письма",
+				"Подготовиться к национальному экзамену уровня B2",
 			],
 		},
-		image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800",
+
 		modules: [
 			{
 				title: {
-					EN: "Corporate Communication",
-					RU: "Корпоративная коммуникация",
+					EN: "Month 1",
+					RU: "1-й месяц",
 				},
+
 				description: {
-					EN: "Emails, meetings, and presentations in a professional context with role-plays and case studies.",
-					RU: "Письма, совещания и презентации в профессиональном контексте с ролевыми играми.",
+					EN: "Develop advanced grammar and argumentative speaking skills.",
+					RU: "Развитие продвинутой грамматики и навыков аргументированной речи.",
 				},
-			},
-			{
-				title: {
-					EN: "Negotiation & Networking",
-					RU: "Переговоры и нетворкинг",
-				},
-				description: {
-					EN: "Language and strategies for high-stakes negotiations and building international networks.",
-					RU: "Язык и стратегии для важных переговоров и международного нетворкинга.",
-				},
-			},
-			{
-				title: { EN: "Industry Fluency", RU: "Отраслевая лексика" },
-				description: {
-					EN: "Sector-specific vocabulary and scenarios: finance, tech, and international trade.",
-					RU: "Отраслевая лексика и сценарии: финансы, IT и международная торговля.",
-				},
+
+				lessons: [
+					{
+						title: {
+							EN: "Present Simple vs Present Continuous",
+							RU: "Present Simple vs Present Continuous",
+						},
+						activity: {
+							EN: "Reading: True / False / Not Given",
+							RU: "Чтение: True / False / Not Given",
+						},
+					},
+
+					{
+						title: {
+							EN: "State and Action Verbs",
+							RU: "State and Action Verbs",
+						},
+						activity: {
+							EN: "Listening: Matching information, Speaking: Describing people",
+							RU: "Аудирование: сопоставление информации, Говорение: описание людей",
+						},
+					},
+
+					{
+						title: {
+							EN: "Past Simple / Past Continuous / Past Perfect",
+							RU: "Past Simple / Past Continuous / Past Perfect",
+						},
+						activity: {
+							EN: "Speaking: Exchanging information",
+							RU: "Говорение: обмен информацией",
+						},
+					},
+
+					{
+						title: {
+							EN: "Used to / Would",
+							RU: "Used to / Would",
+						},
+						activity: {
+							EN: "Speaking: Discussing life in the past",
+							RU: "Говорение: обсуждение жизни в прошлом",
+						},
+					},
+
+					{
+						title: {
+							EN: "Present Perfect",
+							RU: "Present Perfect",
+						},
+						activity: {
+							EN: "Listening: Podcast",
+							RU: "Аудирование: подкаст",
+						},
+					},
+
+					{
+						title: {
+							EN: "Present Perfect Continuous",
+							RU: "Present Perfect Continuous",
+						},
+						activity: {
+							EN: "Writing: Explaining statistics for Writing Task 1",
+							RU: "Письмо: объяснение статистики (Writing Task 1)",
+						},
+					},
+
+					{
+						title: {
+							EN: "Future Forms",
+							RU: "Future Forms",
+						},
+						activity: {
+							EN: "Writing: A recipe",
+							RU: "Письмо: рецепт",
+						},
+					},
+
+					{
+						title: {
+							EN: "Future Continuous & Future Perfect",
+							RU: "Future Continuous и Future Perfect",
+						},
+						activity: {
+							EN: "Speaking: Recipe discussion",
+							RU: "Говорение: обсуждение рецепта",
+						},
+					},
+
+					{
+						title: {
+							EN: "Modals of Obligation / Prohibition / Advice / Permission",
+							RU: "Модальные глаголы: обязанность, запрет, совет, разрешение",
+						},
+						activity: {
+							EN: "Writing: Formal letter of application",
+							RU: "Письмо: формальное письмо-заявка",
+						},
+					},
+
+					{
+						title: {
+							EN: "Zero, First, Second Conditionals",
+							RU: "Zero, First, Second Conditionals",
+						},
+						activity: {
+							EN: "Speaking: Talking about school projects",
+							RU: "Говорение: обсуждение школьных проектов",
+						},
+					},
+
+					{
+						title: {
+							EN: "Presentation",
+							RU: "Презентация",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+
+					{
+						title: {
+							EN: "Passive Voice / Have Something Done",
+							RU: "Passive Voice / Have Something Done",
+						},
+						activity: {
+							EN: "Speaking: Brainstorming with the team",
+							RU: "Говорение: мозговой штурм в команде",
+						},
+					},
+
+					{
+						title: {
+							EN: "Gerunds and Infinitives",
+							RU: "Gerunds and Infinitives",
+						},
+						activity: {
+							EN: "Writing: For-and-against essay",
+							RU: "Письмо: эссе «за и против»",
+						},
+					},
+
+					{
+						title: {
+							EN: "Defining Relative Clauses",
+							RU: "Defining Relative Clauses",
+						},
+						activity: {
+							EN: "Reading and analyzing a magazine article",
+							RU: "Чтение и анализ журнальной статьи",
+						},
+					},
+
+					{
+						title: {
+							EN: "Non-defining Relative Clauses",
+							RU: "Non-defining Relative Clauses",
+						},
+						activity: {
+							EN: "Speaking: Debate (superstitions and rituals)",
+							RU: "Говорение: дебаты (суеверия и ритуалы)",
+						},
+					},
+
+					{
+						title: {
+							EN: "Reported Speech: Statements",
+							RU: "Косвенная речь: утверждения",
+						},
+						activity: {
+							EN: "Speaking: Film feedback",
+							RU: "Говорение: отзыв о фильме",
+						},
+					},
+
+					{
+						title: {
+							EN: "Reported Speech: Questions & Commands",
+							RU: "Косвенная речь: вопросы и команды",
+						},
+						activity: {
+							EN: "Writing: Instructions",
+							RU: "Письмо: инструкции",
+						},
+					},
+
+					{
+						title: {
+							EN: "Modal Verbs of Speculation and Deduction",
+							RU: "Модальные глаголы предположения",
+						},
+						activity: {
+							EN: "Speaking: Conspiracy theories discussion",
+							RU: "Говорение: обсуждение теорий заговора",
+						},
+					},
+
+					{
+						title: {
+							EN: "Third Conditional",
+							RU: "Third Conditional",
+						},
+						activity: {
+							EN: "Writing: A story",
+							RU: "Письмо: рассказ",
+						},
+					},
+
+					{
+						title: {
+							EN: "Indeterminate Pronouns",
+							RU: "Неопределённые местоимения",
+						},
+						activity: {
+							EN: "Speaking: Clothes shop dialogue",
+							RU: "Говорение: диалог в магазине одежды",
+						},
+					},
+
+					{
+						title: {
+							EN: "So / Such / I wish / If only",
+							RU: "So / Such / I wish / If only",
+						},
+						activity: {
+							EN: "Writing: Formal letter of complaint",
+							RU: "Письмо: формальная жалоба",
+						},
+					},
+
+					{
+						title: {
+							EN: "Presentation",
+							RU: "Презентация",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+
+					{
+						title: {
+							EN: "Review Lesson",
+							RU: "Повторение",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+
+					{
+						title: {
+							EN: "Head Teacher Workshop",
+							RU: "Мастер-класс старшего преподавателя",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+				],
 			},
 		],
 		teacher: {
-			name: "Maria Chen",
-			role: {
-				EN: "Business English Lead",
-				RU: "Руководитель направления Business English",
-			},
+			name: "Emily Johnson",
 			bio: {
-				EN: "Ex-Management Consultant with CELTA and 10+ years training executives across Asia and Europe.",
-				RU: "Бывший консультант по менеджменту, CELTA, 10+ лет обучения руководителей в Азии и Европе.",
+				EN: "Lead Instructor",
+				RU: "Главный преподаватель",
 			},
-			image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
-		},
-	},
-	{
-		id: "kids-genius",
-		title: { EN: "Genius Kids", RU: "Genius Kids (Дети)" },
-		description: {
-			EN: "Future leaders start from age 6.",
-			RU: "Будущие лидеры начинают с 6 лет.",
-		},
-		longDescription: {
-			EN: "A playful yet structured approach to early language learning. We use games, songs, and interactive storytelling to build a natural affinity for English.",
-			RU: "Игровой, но структурированный подход к раннему изучению языка. Мы используем игры, песни и интерактивное повествование, чтобы создать естественную тягу к английскому языку.",
-		},
-		category: "Kids",
-		level: "Beginner",
-		duration: { EN: "Academic Year", RU: "Академический год" },
-		target: { EN: "Children aged 6-12", RU: "Дети 6-12 лет" },
-		price: { EN: "$60/mo", RU: "800,000 сум/мес" },
-		outcomes: {
-			EN: [
-				"Basic conversational phrases",
-				"Alphabet and phonics mastery",
-				"Confidence in speaking",
-				"Curiosity about world cultures",
-			],
-			RU: [
-				"Базовые разговорные фразы",
-				"Освоение алфавита и фонетики",
-				"Уверенность в речи",
-				"Любознательность к мировым культурам",
-			],
-		},
-		image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800",
-		modules: [
-			{
-				title: { EN: "Hello World", RU: "Привет, мир" },
-				description: {
-					EN: "First words, greetings, and simple introductions through games and songs.",
-					RU: "Первые слова, приветствия и простые представления через игры и песни.",
-				},
-			},
-			{
-				title: { EN: "Sounds & Letters", RU: "Звуки и буквы" },
-				description: {
-					EN: "Phonics, alphabet mastery, and reading simple words with interactive activities.",
-					RU: "Фонетика, алфавит и чтение простых слов в интерактивной форме.",
-				},
-			},
-			{
-				title: { EN: "Stories & Play", RU: "Истории и игры" },
-				description: {
-					EN: "Storytelling, role-play, and creative projects to build confidence in speaking.",
-					RU: "Сторителлинг, ролевые игры и творческие проекты для уверенной речи.",
-				},
-			},
-		],
-		teacher: {
-			name: "Emma Thompson",
-			role: {
-				EN: "Kids Program Director",
-				RU: "Директор детской программы",
-			},
-			bio: {
-				EN: "Certified in early childhood education and drama. Makes every lesson an adventure for young learners.",
-				RU: "Сертификаты в дошкольном образовании и театре. Каждый урок — приключение для детей.",
-			},
-			image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800",
+			image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
 		},
 	},
 ];

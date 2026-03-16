@@ -23,7 +23,7 @@ import {
 	Award,
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
-import { COURSES } from "@/translations";
+import { COURSE_CATEGORIES, COURSES } from "@/translations";
 import QuickDiagnostic from "@/components/QuickDiagnostic";
 import BranchLocations from "@/components/BranchLocations";
 import PrestigeSection from "@/components/PrestigeSection";
@@ -35,7 +35,15 @@ export default function Home() {
 	// Helper to map themes to course cards based on category
 	const getCardTheme = (category: string) => {
 		switch (category) {
-			case "IELTS":
+			case "General_English":
+				return {
+					bg: "bg-[#FFF9EE]", // Soft gold
+					text: "text-[#2C2A1F]",
+					tag: "bg-white text-brand-900",
+					accent: "text-amber-500/80",
+					glow: "bg-amber-400/20",
+				};
+			case "IELTS_Intensive":
 				return {
 					bg: "bg-[#C6F1E7]", // Mint green
 					text: "text-[#1A2E35]",
@@ -43,15 +51,38 @@ export default function Home() {
 					accent: "text-emerald-500/80",
 					glow: "bg-emerald-400/20",
 				};
-			case "Adults":
+			case "English_kids":
 				return {
-					bg: "bg-[#D6E9FF]", // Sky blue
-					text: "text-[#0F172A]",
+					bg: "bg-[#F5E4FF]", // Soft purple
+					text: "text-[#2C1F3A]",
 					tag: "bg-white text-brand-900",
-					accent: "text-blue-500/80",
-					glow: "bg-blue-400/20",
+					accent: "text-fuchsia-500/80",
+					glow: "bg-fuchsia-400/20",
 				};
-			case "Kids":
+			case "Подготовка_к_CEFR/DTM":
+				return {
+					bg: "bg-[#E8F7FF]", // Light sky
+					text: "text-[#10233E]",
+					tag: "bg-white text-brand-900",
+					accent: "text-sky-500/80",
+					glow: "bg-sky-400/20",
+				};
+			case "Подготовка_к_TOEFL":
+				return {
+					bg: "bg-[#FFF3E9]", // Peach
+					text: "text-[#3B2B1D]",
+					tag: "bg-white text-brand-900",
+					accent: "text-orange-500/80",
+					glow: "bg-orange-400/20",
+				};
+			case "Подготовка_к_Duolingo":
+				return {
+					bg: "bg-[#E6FFEB]", // Fresh green
+					text: "text-[#1D3A20]",
+					tag: "bg-white text-brand-900",
+					accent: "text-emerald-500/80",
+					glow: "bg-emerald-400/20",
+				};
 			default:
 				return {
 					bg: "bg-brand-900", // Deep blue (brand)
@@ -61,13 +92,6 @@ export default function Home() {
 					glow: "bg-indigo-500/30",
 				};
 		}
-	};
-
-	// Icon mapping for a creative, high-end look
-	const courseIcons: Record<string, any> = {
-		"ielts-elite": Target,
-		"business-mastery": Briefcase,
-		"kids-genius": Rocket,
 	};
 
 	return (
@@ -266,37 +290,23 @@ export default function Home() {
 					</div>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-						{[
-							{ value: "Kids", label: t.courses.filters.kids },
-							{ value: "Teens", label: t.courses.filters.teens },
-							{
-								value: "Adults",
-								label: t.courses.filters.adults,
-							},
-							{ value: "IELTS", label: t.courses.filters.ielts },
-						].map((category) => {
-							const sampleCourse = COURSES.find(
-								(c) => c.category === category.value,
-							);
-							if (!sampleCourse) return null;
-
-							const theme = getCardTheme(sampleCourse.category);
-							const CourseIcon =
-								courseIcons[sampleCourse.id] || Sparkles;
+						{COURSE_CATEGORIES.map((category: any) => {
+							const theme = getCardTheme(category.label);
+							const CourseIcon = category.icon;
 
 							return (
 								<Link
-									href={`/courses?category=${category.value}`}
+									href={`/courses?category=${category.label}`}
 									key={category.value}
 									className={`${theme.bg} ${theme.text} group relative p-10 rounded-[2.5rem] flex flex-col transition-all duration-700 hover:-translate-y-4 hover:shadow-2xl overflow-hidden aspect-square`}
 								>
 									{/* TOP SECTION: Meta Header */}
 									<div className="relative z-30 mb-auto">
 										<h4 className="text-2xl font-black leading-tight uppercase tracking-tighter mb-1">
-											{category.label}
+											{category.value}
 										</h4>
 										<p className="text-xs font-black opacity-50 uppercase tracking-widest">
-											{sampleCourse.duration[lang]}
+											{category.duration}
 										</p>
 									</div>
 
@@ -317,21 +327,21 @@ export default function Home() {
 
 									{/* BOTTOM SECTION: Main Course Identity */}
 									<div className="relative z-30">
-										<span
-											className={`inline-block px-2.5 py-1 mb-4 ${theme.tag} text-[10px] font-black uppercase tracking-widest rounded shadow-sm`}
-										>
-											{lang === "RU"
-												? "Категория"
-												: "Category"}
-										</span>
 										<h3 className="text-4xl md:text-5xl font-display font-black leading-[1] uppercase tracking-tighter mb-2">
-											{category.label}
+											{category.value}
 										</h3>
 										<p className="text-xs font-bold opacity-60">
 											{lang === "RU"
 												? "Подберите программу под свой уровень"
 												: "See all programs for this track"}
 										</p>
+										{/* <span
+											className={`hidden hover:inline-block px-2.5 py-1 mb-4 ${theme.tag} text-[10px] font-black uppercase tracking-widest rounded shadow-sm`}
+										>
+											{lang === "RU"
+												? "Посмотреть все программы"
+												: "Explore this track"}
+										</span> */}
 									</div>
 
 									{/* Aesthetic Noise & Light Grain */}
@@ -387,8 +397,10 @@ export default function Home() {
 									Polyglot Hub
 								</h4>
 								<p className="text-indigo-100 text-base sm:text-lg max-w-md">
-									Our central campuses feature coffee zones and collaborative lounges
-									for relaxed conversation practice with mentors and peers.
+									Our central campuses feature coffee zones
+									and collaborative lounges for relaxed
+									conversation practice with mentors and
+									peers.
 								</p>
 								<div className="mt-6 sm:mt-8 px-4 py-1.5 sm:px-6 sm:py-2 bg-white/15 rounded-full font-bold text-[10px] sm:text-xs tracking-[0.25em] uppercase inline-flex items-center gap-2">
 									<span className="w-2 h-2 rounded-full bg-gold" />

@@ -37,12 +37,16 @@ export default function Footer() {
 							>
 								<Instagram className="w-6 h-6 group-hover:text-obsidian" />
 							</a>
-							<div className="p-4 bg-white/5 rounded-2xl hover:bg-gold transition-colors group cursor-pointer">
+							{/* <div className="p-4 bg-white/5 rounded-2xl hover:bg-gold transition-colors group cursor-pointer">
 								<Facebook className="w-6 h-6 group-hover:text-obsidian" />
-							</div>
-							<div className="p-4 bg-white/5 rounded-2xl hover:bg-gold transition-colors group cursor-pointer">
+							</div> */}
+							<a
+								href="https://t.me/polyglot_language_school"
+								target="_blank"
+								className="p-4 bg-white/5 rounded-2xl hover:bg-gold transition-colors group cursor-pointer"
+							>
 								<Send className="w-6 h-6 group-hover:text-obsidian" />
-							</div>
+							</a>
 						</div>
 					</div>
 					<div className="grid grid-cols-2 gap-10">
@@ -81,13 +85,19 @@ export default function Footer() {
 							<h4 className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 mb-8">
 								Headquarters
 							</h4>
-							<p className="font-bold text-lg mb-4">
-								Universitet Blvd 77, <br />
-								Samarkand, UZ
-							</p>
-							<p className="text-indigo-400 font-black">
-								+998 66 123 45 67
-							</p>
+							<a
+								href="tel:+998557053030"
+								className="text-indigo-400 font-black"
+							>
+								+998 (55) 705 30 30
+							</a>{" "}
+							<br />
+							<a
+								href="tel:+998905033030"
+								className="text-indigo-400 font-black"
+							>
+								+998 (90) 503 30 30
+							</a>
 						</div>
 					</div>
 				</div>

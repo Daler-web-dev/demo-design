@@ -1,30 +1,19 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Search, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
-import { COURSES } from "@/translations";
+import { COURSE_CATEGORIES, COURSES } from "@/translations";
 
-export default function Courses() {
-	const { t, lang } = useLanguage();
+function CoursesContent() {
+	const { lang } = useLanguage();
 	const searchParams = useSearchParams();
 	const categoryFromUrl = searchParams.get("category");
 
-	const [filter, setFilter] = useState("All");
+	const [filter, setFilter] = useState(categoryFromUrl || "All");
 	const [search, setSearch] = useState("");
-
-	useEffect(() => {
-		if (
-			categoryFromUrl &&
-			["Kids", "Teens", "Adults", "IELTS"].includes(categoryFromUrl)
-		) {
-			setFilter(categoryFromUrl);
-		} else {
-			setFilter("All");
-		}
-	}, [categoryFromUrl]);
 
 	const filteredCourses = COURSES.filter((course) => {
 		const matchesFilter = filter === "All" || course.category === filter;
@@ -33,14 +22,6 @@ export default function Courses() {
 			.includes(search.toLowerCase());
 		return matchesFilter && matchesSearch;
 	});
-
-	const categories = [
-		{ name: t.courses.filters.all, value: "All" },
-		{ name: t.courses.filters.kids, value: "Kids" },
-		{ name: t.courses.filters.teens, value: "Teens" },
-		{ name: t.courses.filters.adults, value: "Adults" },
-		{ name: t.courses.filters.ielts, value: "IELTS" },
-	];
 
 	return (
 		<div className="bg-white min-h-screen pt-48 pb-32">
@@ -52,17 +33,20 @@ export default function Courses() {
 					</h1>
 					<div className="flex flex-col md:flex-row md:items-center justify-between gap-8 border-t-2 border-brand-900 pt-10">
 						<div className="flex flex-wrap gap-3">
-							{categories.map((cat) => (
+							{[
+								{ value: "ALL", label: "All" },
+								...COURSE_CATEGORIES,
+							].map((cat) => (
 								<button
 									key={cat.value}
-									onClick={() => setFilter(cat.value)}
+									onClick={() => setFilter(cat.label)}
 									className={`px-8 py-3 rounded-2xl text-sm font-black uppercase tracking-widest transition-all ${
-										filter === cat.value
+										filter === cat.label
 											? "bg-brand-900 text-white"
 											: "bg-brand-50 text-brand-400 hover:bg-brand-100"
 									}`}
 								>
-									{cat.name}
+									{cat.value}
 								</button>
 							))}
 						</div>
@@ -86,10 +70,10 @@ export default function Courses() {
 							key={course.id}
 							className="group block"
 						>
-							<div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden mb-8 shadow-xl">
+							<div className="relative aspect-[5/5] rounded-[3rem] overflow-hidden mb-8 shadow-xl">
 								<img
 									src={course.image}
-									className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+									className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
 									alt={course.title[lang]}
 								/>
 								<div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all"></div>
@@ -102,9 +86,9 @@ export default function Courses() {
 									<h3 className="text-4xl font-display font-black leading-tight mb-4 group-hover:text-brand-900">
 										{course.title[lang]}
 									</h3>
-									<div className="text-2xl font-black text-brand-900/40">
+									{/* <div className="text-2xl font-black text-brand-900/40">
 										{course.price[lang]}
-									</div>
+									</div> */}
 								</div>
 								<div className="w-16 h-16 rounded-full border-2 border-brand-100 flex items-center justify-center group-hover:bg-brand-900 group-hover:text-white transition-all">
 									<ArrowUpRight className="w-8 h-8" />
@@ -115,5 +99,13 @@ export default function Courses() {
 				</div>
 			</div>
 		</div>
+	);
+}
+
+export default function Courses() {
+	return (
+		<Suspense fallback={<div>Loading...</div>}>
+			<CoursesContent />
+		</Suspense>
 	);
 }
