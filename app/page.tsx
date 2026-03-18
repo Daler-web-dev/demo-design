@@ -7,18 +7,12 @@ import {
 	ArrowRight,
 	Trophy,
 	Users,
-	Globe,
 	ArrowUpRight,
-	ShieldCheck,
 	Zap,
-	Sparkles,
 	ChevronDown,
 	BookOpen,
 	Coffee,
 	PlayCircle,
-	Target,
-	Briefcase,
-	Rocket,
 	Medal,
 	Award,
 } from "lucide-react";
@@ -169,7 +163,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<PrestigeSection />
+			<PrestigeSection lang={lang} />
 
 			{/* 2. OUR PRIDE — TEACHERS WITH IELTS 9 */}
 			<section className="min-h-fit py-32 bg-gradient-to-br from-brand-800 via-brand-900 to-indigo-900 text-white relative overflow-hidden">

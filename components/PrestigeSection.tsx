@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 
-const PrestigeSection = () => {
+const PrestigeSection = ({ lang }: { lang: string }) => {
 	const { t } = useLanguage();
 	const [isPlaying, setIsPlaying] = useState(false);
 	const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -11,6 +11,11 @@ const PrestigeSection = () => {
 		if (videoRef.current) {
 			videoRef.current.play();
 		}
+	};
+
+	const videoURL = {
+		RU: "https://www.youtube.com/embed/wn-h1-9ofwg",
+		EN: "https://www.youtube.com/embed/hYLCpAvfkrA",
 	};
 
 	return (
@@ -54,7 +59,6 @@ const PrestigeSection = () => {
 							</div>
 						</div>
 					</div>
-
 					{/* Right Column - Video Player Placeholder */}
 					<div className="lg:col-span-5">
 						<div className="relative">
@@ -62,13 +66,21 @@ const PrestigeSection = () => {
 
 							<div className="relative z-10 overflow-hidden rounded-[3rem] border border-brand-100 bg-brand-900 shadow-2xl">
 								<div className="aspect-video w-full relative">
-									<video
-										ref={videoRef}
-										className="h-full w-full object-cover"
-										poster="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&q=80&w=1200"
-										src="/videos/polyglot-story.mp4"
-										controls={isPlaying}
-									/>
+									{isPlaying ? (
+										<iframe
+											className="h-full w-full object-cover"
+											src={videoURL[lang as "EN" | "RU"]}
+											title="YouTube video player"
+											frameBorder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowFullScreen
+										/>
+									) : (
+										<img
+											className="h-full w-full object-cover"
+											src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&q=80&w=1200"
+										/>
+									)}
 
 									{!isPlaying && (
 										<>
