@@ -676,8 +676,964 @@ export const COURSE_CATEGORIES = [
 
 export const COURSES: Course[] = [
 	{
+		id: "azero-pre-elementary",
+
+		image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=800&q=80",
+
+		title: {
+			EN: "Azero Pre-Elementary",
+			RU: "Azero Pre-Elementary",
+		},
+
+		description: {
+			EN: "A foundational course focusing on basic descriptions, reading unfamiliar words, and building a 700+ word vocabulary.",
+			RU: "Базовый курс, сфокусированный на простых описаниях, чтении незнакомых слов и формировании словарного запаса в 700+ слов.",
+		},
+
+		level: "Azero",
+
+		duration: {
+			EN: "2 Months (40 lessons)",
+			RU: "2 месяца (40 занятий)",
+		},
+
+		outcomes: {
+			EN: [
+				"Confidently write and read even unfamiliar words ",
+				"Describe surroundings and people at a basic level ",
+				"Use a minimum of 700+ words in English ",
+				"Express thoughts in writing through letters ",
+				"Potential to skip A1+ and move to A2 with 85%+ final test score (for ages 15+)",
+			],
+			RU: [
+				"Уверенно писать и читать даже незнакомые слова ",
+				"На базовом уровне описывать что и кто находится рядом ",
+				"Использовать минимум 700 слов на английском языке ",
+				"Письменно излагать свои мысли в письме кому-либо ",
+				"Возможность перейти на А2 (минуя А1+) при результате теста 85%+ (для 15+)",
+			],
+		},
+
+		category: "English_kids",
+
+		modules: [
+			{
+				title: {
+					EN: "Month 1 & 2 Curriculum",
+					RU: "Учебная программа 1-го и 2-го месяца",
+				},
+
+				description: {
+					EN: "24 lessons with the main teacher, plus sessions with assistants and international instructors. ",
+					RU: "24 занятия с основным учителем, а также уроки с ассистентами и иностранными преподавателями. ",
+				},
+
+				lessons: [
+					{
+						title: {
+							EN: "Present Simple 'to be' (Singular)",
+							RU: "Present Simple с 'to be' (ед. число)",
+						},
+						activity: {
+							EN: "Speaking: Presenting a friend ",
+							RU: "Говорение: Представление друга ",
+						},
+					},
+					{
+						title: {
+							EN: "Describing Jobs & Greetings",
+							RU: "Описание профессий и приветствия",
+						},
+						activity: {
+							EN: "Speaking: Word stress intonation ",
+							RU: "Говорение: Ударение в словах и интонация ",
+						},
+					},
+					{
+						title: {
+							EN: "Present Simple 'to be' (Plural)",
+							RU: "Present Simple с 'to be' (мн. число)",
+						},
+						activity: {
+							EN: "Speaking: Favorite musician ",
+							RU: "Говорение: Любимый музыкант ",
+						},
+					},
+					{
+						title: { EN: "Wh- questions", RU: "Wh- вопросы" },
+						activity: {
+							EN: "Speaking: Exchanging information [cite: 31]",
+							RU: "Говорение: Обмен информацией [cite: 31]",
+						},
+					},
+					{
+						title: {
+							EN: "Nouns & Demonstrative Pronouns",
+							RU: "Существительные и указательные местоимения",
+						},
+						activity: {
+							EN: "Speaking: Conversation at a cloakroom [cite: 32]",
+							RU: "Говорение: Разговор в гардеробе [cite: 32]",
+						},
+					},
+					{
+						title: {
+							EN: "Has got / Have got",
+							RU: "Конструкция Has got / Have got",
+						},
+						activity: {
+							EN: "Speaking: Family members [cite: 33]",
+							RU: "Говорение: Члены семьи [cite: 33]",
+						},
+					},
+					{
+						title: {
+							EN: "Present Simple (Action/Plural)",
+							RU: "Present Simple (Действие/Мн. число)",
+						},
+						activity: {
+							EN: "Listening and Speaking about daily routines [cite: 34]",
+							RU: "Аудирование и говорение о распорядке дня [cite: 34]",
+						},
+					},
+					{
+						title: {
+							EN: "Present Simple Questions",
+							RU: "Вопросы в Present Simple",
+						},
+						activity: {
+							EN: "Reading and Speaking about animals [cite: 35]",
+							RU: "Чтение и говорение о животных [cite: 35]",
+						},
+					},
+					{
+						title: {
+							EN: "Present Simple (Action/Singular)",
+							RU: "Present Simple (Действие/Ед. число)",
+						},
+						activity: {
+							EN: "Speaking: Free time [cite: 36]",
+							RU: "Говорение: Свободное время [cite: 36]",
+						},
+					},
+					{
+						title: {
+							EN: "Adverbs of Frequency",
+							RU: "Наречия частоты",
+						},
+						activity: {
+							EN: "Reading and talking about Eating Habits [cite: 37]",
+							RU: "Чтение и обсуждение привычек в еде [cite: 37]",
+						},
+					},
+					{
+						title: {
+							EN: "There is/are; some and any",
+							RU: "There is/are; some и any",
+						},
+						activity: {
+							EN: "Describing city [cite: 38]",
+							RU: "Описание города [cite: 38]",
+						},
+					},
+					{
+						title: {
+							EN: "Is there / Are there",
+							RU: "Вопросы Is there / Are there",
+						},
+						activity: {
+							EN: "Renting a place [cite: 39]",
+							RU: "Аренда жилья [cite: 39]",
+						},
+					},
+					{
+						title: {
+							EN: "Modal verb: Can/Can't",
+							RU: "Модальный глагол Can/Can't",
+						},
+						activity: {
+							EN: "Class survey about abilities [cite: 40]",
+							RU: "Опрос класса о способностях [cite: 40]",
+						},
+					},
+					{
+						title: {
+							EN: "Possessive 's",
+							RU: "Притяжательный падеж 's",
+						},
+						activity: {
+							EN: "Listening and talking about a talented person [cite: 41]",
+							RU: "Аудирование и разговор о талантливом человеке [cite: 41]",
+						},
+					},
+					{
+						title: {
+							EN: "Present Continuous",
+							RU: "Present Continuous",
+						},
+						activity: {
+							EN: "Describing picture and finding difference [cite: 41]",
+							RU: "Описание картинки и поиск отличий [cite: 41]",
+						},
+					},
+					{
+						title: {
+							EN: "Adjective Order",
+							RU: "Порядок прилагательных",
+						},
+						activity: {
+							EN: "Talking about clothes [cite: 41]",
+							RU: "Разговор об одежде [cite: 41]",
+						},
+					},
+					{
+						title: {
+							EN: "Past Simple: was/were",
+							RU: "Past Simple: was/were",
+						},
+						activity: {
+							EN: "Questions about famous person [cite: 42]",
+							RU: "Вопросы о знаменитости [cite: 42]",
+						},
+					},
+					{
+						title: {
+							EN: "Past Simple: Regular Verbs",
+							RU: "Past Simple: правильные глаголы",
+						},
+						activity: {
+							EN: "Quiz about Famous person [cite: 42]",
+							RU: "Квиз о знаменитости [cite: 42]",
+						},
+					},
+					{
+						title: {
+							EN: "Past Simple: Irregular Verbs",
+							RU: "Past Simple: неправильные глаголы",
+						},
+						activity: {
+							EN: "Things to describe the world [cite: 42]",
+							RU: "Описание мира [cite: 42]",
+						},
+					},
+					{
+						title: {
+							EN: "Past Simple Questions",
+							RU: "Вопросы в Past Simple",
+						},
+						activity: {
+							EN: "Asking about past experience of peers [cite: 42]",
+							RU: "Вопросы сверстникам о прошлом опыте [cite: 42]",
+						},
+					},
+					{
+						title: {
+							EN: "Preferences (like/love/hate)",
+							RU: "Предпочтения (like/love/hate)",
+						},
+						activity: {
+							EN: "Activities in free time [cite: 42]",
+							RU: "Занятия в свободное время [cite: 42]",
+						},
+					},
+					{
+						title: {
+							EN: "Object Pronouns",
+							RU: "Объектные местоимения",
+						},
+						activity: {
+							EN: "Finding out a superfan [cite: 43]",
+							RU: "Поиск суперфаната [cite: 43]",
+						},
+					},
+					{
+						title: {
+							EN: "Nouns & Travel",
+							RU: "Существительные и путешествия",
+						},
+						activity: {
+							EN: "Countable and uncountable nouns (Bad journey experience) [cite: 44]",
+							RU: "Исчисляемые/неисчисляемые (опыт плохой поездки) [cite: 44]",
+						},
+					},
+					{
+						title: {
+							EN: "Present Continuous (Future)",
+							RU: "Present Continuous (Будущее)",
+						},
+						activity: {
+							EN: "Planning a dream holiday [cite: 44]",
+							RU: "Планирование идеального отпуска [cite: 44]",
+						},
+					},
+				],
+			},
+		],
+
+		teacher: {
+			name: "Emily Johnson",
+			bio: {
+				EN: "Lead Instructor",
+				RU: "Главный преподаватель",
+			},
+			image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+		},
+	},
+	{
+		id: "a1-plus-beginner",
+
+		image: "https://plus.unsplash.com/premium_photo-1770548404170-6e7cbaabf0bf?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+		title: {
+			EN: "A1+ Beginner",
+			RU: "A1+ Beginner",
+		},
+
+		description: {
+			EN: "Develop listening skills, basic life descriptions, and expand vocabulary to 2000+ words.",
+			RU: "Развитие навыков аудирования, базовое описание повседневной жизни и расширение словаря до 2000+ слов.",
+		},
+
+		level: "A1+",
+
+		duration: {
+			EN: "2 Months (40 lessons)",
+			RU: "2 месяца (40 занятий)",
+		},
+
+		outcomes: {
+			EN: [
+				"Improve English listening comprehension ",
+				"Describe daily life and others at a basic level ",
+				"Use a minimum of 2000+ English words ",
+				"Express thoughts in writing (letters and online) ",
+			],
+			RU: [
+				"Развитие английского на слух ",
+				"На базовом уровне описывать свою повседневную жизнь и других ",
+				"Использовать минимум +2000 слов на английском языке ",
+				"Письменно излагать свои мысли в письме и онлайн ",
+			],
+		},
+
+		category: "General_English",
+
+		modules: [
+			{
+				title: {
+					EN: "Course Curriculum",
+					RU: "Учебная программа",
+				},
+				description: {
+					EN: "Comprehensive 24-lesson program with main teachers, assistants, and international instructors[cite: 8, 9, 10].",
+					RU: "Комплексная программа из 24 занятий с основным учителем, ассистентами и иностранными преподавателями[cite: 8, 9, 10].",
+				},
+				lessons: [
+					{
+						title: {
+							EN: "Starter Unit: Basics",
+							RU: "Starter Unit: Основы",
+						},
+						activity: {
+							EN: "Alphabet, Colours, Numbers, Days of the week, Months ",
+							RU: "Алфавит, цвета, числа, дни недели, месяцы ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 1: To be",
+							RU: "Урок 1: Глагол to be",
+						},
+						activity: {
+							EN: "Reading/Speaking: Talking about hobby (affirmative and negative) ",
+							RU: "Чтение/Говорение: Хобби (утверждение и отрицание) ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 2: Possession",
+							RU: "Урок 2: Владение",
+						},
+						activity: {
+							EN: "Listening/Writing: Describing a picture, Have/has got, possessive adjectives ",
+							RU: "Аудирование/Письмо: Описание картинки, Have/has got, притяжательные прилагательные ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 3: Describing People",
+							RU: "Урок 3: Описание людей",
+						},
+						activity: {
+							EN: "Reading/Speaking: Possessive 's, regular and irregular nouns ",
+							RU: "Чтение/Говорение: Притяжательный падеж 's, правильные и неправильные существительные ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 4: Questions & Articles",
+							RU: "Урок 4: Вопросы и артикли",
+						},
+						activity: {
+							EN: "Writing: School planner, Wh-questions, demonstrative pronouns, articles ",
+							RU: "Письмо: Школьный планер, Wh-вопросы, указательные местоимения, артикли ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 5: Present Simple I",
+							RU: "Урок 5: Present Simple I",
+						},
+						activity: {
+							EN: "Listening: True/False/Not mentioned (Affirmative/Negative) ",
+							RU: "Аудирование: True/False/Not mentioned (Утверждение/Отрицание) ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 6: Present Simple II",
+							RU: "Урок 6: Present Simple II",
+						},
+						activity: {
+							EN: "Speaking: Giving directions, Yes/No and Wh-questions ",
+							RU: "Говорение: Как добраться, общие и специальные вопросы ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 7: Location",
+							RU: "Урок 7: Местоположение",
+						},
+						activity: {
+							EN: "Reading: Headings, There is/There are, prepositions of place ",
+							RU: "Чтение: Заголовки, There is/There are, предлоги места ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 8: Nouns & Offers",
+							RU: "Урок 8: Существительные и предложения",
+						},
+						activity: {
+							EN: "Making and replying to offers, Countable/uncountable, some/any/a/an ",
+							RU: "Как предлагать и отвечать на предложения, исчисляемые/неисчисляемые, some/any/a/an ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 9: Ability & Frequency",
+							RU: "Урок 9: Способности и частота",
+						},
+						activity: {
+							EN: "Asking for and giving information, Modal verbs: can/can't, adverbs of frequency ",
+							RU: "Запрос и предоставление информации, модальные глаголы: can/can't, наречия частоты ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 10: Preferences",
+							RU: "Урок 10: Предпочтения",
+						},
+						activity: {
+							EN: "Presentation: Questionnaire, The imperative, like/love/hate + Ving ",
+							RU: "Презентация: Опросник, повелительное наклонение, like/love/hate + Ving ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 11: Mid-term Speaking",
+							RU: "Урок 11: Промежуточное говорение",
+						},
+						activity: {
+							EN: "Presentation Speaking of Students ",
+							RU: "Презентации студентов (говорение) ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 12: Present Continuous I",
+							RU: "Урок 12: Present Continuous I",
+						},
+						activity: {
+							EN: "Reading: Matching features, affirmative and negative ",
+							RU: "Чтение: Сопоставление характеристик, утверждение и отрицание ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 13: Continuous vs Simple",
+							RU: "Урок 13: Continuous против Simple",
+						},
+						activity: {
+							EN: "Listening: Multiple Choice, Questions, Present Simple vs Continuous ",
+							RU: "Аудирование: Множественный выбор, вопросы, сравнение Simple и Continuous ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 14: Past of To Be",
+							RU: "Урок 14: Прошедшее время To Be",
+						},
+						activity: {
+							EN: "Speaking: Sport, Past Simple of to be / There was/were ",
+							RU: "Говорение: Спорт, Past Simple глагола to be / There was/were ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 15: Past Simple Affirmative",
+							RU: "Урок 15: Past Simple (утверждение)",
+						},
+						activity: {
+							EN: "Writing: Unusual sports, Regular/Irregular Verbs ",
+							RU: "Письмо: Необычные виды спорта, правильные и неправильные глаголы ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 16: Past Simple Negative",
+							RU: "Урок 16: Past Simple (отрицание)",
+						},
+						activity: {
+							EN: "Writing: Personal Statement ",
+							RU: "Письмо: Личное заявление ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 17: Past Simple Questions",
+							RU: "Урок 17: Past Simple (вопросы)",
+						},
+						activity: {
+							EN: "Speaking: Knowing about evaluation ",
+							RU: "Говорение: Понимание критериев оценки ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 18: Speaking Presentation",
+							RU: "Урок 18: Презентация",
+						},
+						activity: {
+							EN: "Speaking Lesson (Presentation) ",
+							RU: "Урок говорения (презентация) ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 19: Comparisons",
+							RU: "Урок 19: Сравнения",
+						},
+						activity: {
+							EN: "Reading: Multiple Choice Questions, Comparative Degree of Adjectives ",
+							RU: "Чтение: Множественный выбор, сравнительная степень прилагательных ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 20: Superlatives & Experience",
+							RU: "Урок 20: Превосходная степень и опыт",
+						},
+						activity: {
+							EN: "Listening: Gap filling, Superlative Degree, Present Perfect with ever/never ",
+							RU: "Аудирование: Заполнение пропусков, превосходная степень, Present Perfect с ever/never ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 21: Future Plans",
+							RU: "Урок 21: Планы на будущее",
+						},
+						activity: {
+							EN: "Use of English, To be going to / prepositions of time ",
+							RU: "Практика языка, To be going to / предлоги времени ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 22: Advice & Obligation",
+							RU: "Урок 22: Советы и обязательства",
+						},
+						activity: {
+							EN: "Writing under exam conditions, Should/shouldn't, must/have to ",
+							RU: "Письмо в условиях экзамена, Should/shouldn't, must/have to ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 23: Final Review",
+							RU: "Урок 23: Финальный обзор",
+						},
+						activity: {
+							EN: "Review with the main teacher and academic support ",
+							RU: "Повторение с основным учителем и академической поддержкой ",
+						},
+					},
+					{
+						title: {
+							EN: "Lesson 24: Workshop",
+							RU: "Урок 24: Воркшоп",
+						},
+						activity: {
+							EN: "Head Teacher Workshop ",
+							RU: "Мастер-класс от старшего преподавателя ",
+						},
+					},
+				],
+			},
+		],
+
+		teacher: {
+			name: "Emily Johnson",
+			bio: {
+				EN: "Lead Instructor",
+				RU: "Главный преподаватель",
+			},
+			image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+		},
+	},
+	{
+		id: "a1-plus-elementary",
+
+		image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+
+		title: {
+			EN: "A1+ Elementary",
+			RU: "A1+ Elementary",
+		},
+
+		description: {
+			EN: "Build basic English communication and grammar foundation.",
+			RU: "Формирование базового общения и грамматики английского языка.",
+		},
+
+		level: "A1+",
+
+		duration: {
+			EN: "2 Months (40 lessons)",
+			RU: "2 месяца (40 занятий)",
+		},
+
+		outcomes: {
+			EN: [
+				"Develop basic spoken English",
+				"Communicate with tourists and travel confidently",
+				"Write simple messages and letters in English",
+				"Master fundamental English grammar",
+			],
+			RU: [
+				"Развить базовую разговорную речь",
+				"Общаться с туристами и путешествовать",
+				"Уверенно вести переписку на английском",
+				"Освоить базовую грамматику английского",
+			],
+		},
+
+		category: "General_English",
+
+		modules: [
+			{
+				title: {
+					EN: "Month 1",
+					RU: "1-й месяц",
+				},
+
+				description: {
+					EN: "Build basic English communication and grammar foundation.",
+					RU: "Формирование базового общения и грамматики английского языка.",
+				},
+
+				lessons: [
+					{
+						title: {
+							EN: "Starter Unit Review of A1+",
+							RU: "Повторение уровня A1+",
+						},
+						activity: {
+							EN: "Speaking: Talking about family and basic descriptions",
+							RU: "Говорение: разговор о семье и базовые описания",
+						},
+					},
+
+					{
+						title: {
+							EN: "Present Simple (affirmative / negative)",
+							RU: "Present Simple (утвердительная и отрицательная форма)",
+						},
+						activity: {
+							EN: "Reading: True / False / Not Mentioned, Listening: Matching",
+							RU: "Чтение: True / False / Not Mentioned, Аудирование: сопоставление",
+						},
+					},
+
+					{
+						title: {
+							EN: "Adverbs of Frequency / Present Simple Questions",
+							RU: "Наречия частоты / вопросы в Present Simple",
+						},
+						activity: {
+							EN: "Speaking: Free-time activities",
+							RU: "Говорение: занятия в свободное время",
+						},
+					},
+
+					{
+						title: {
+							EN: "There is / There are, Prepositions of Place",
+							RU: "There is / There are, предлоги места",
+						},
+						activity: {
+							EN: "Speaking: Description of a house and room",
+							RU: "Говорение: описание дома и комнаты",
+						},
+					},
+
+					{
+						title: {
+							EN: "Present Continuous vs Present Simple",
+							RU: "Present Continuous vs Present Simple",
+						},
+						activity: {
+							EN: "Use of English: Multiple choice cloze",
+							RU: "Use of English: множественный выбор",
+						},
+					},
+
+					{
+						title: {
+							EN: "Can / Can't",
+							RU: "Can / Can't",
+						},
+						activity: {
+							EN: "Speaking: Dangerous sports",
+							RU: "Говорение: опасные виды спорта",
+						},
+					},
+
+					{
+						title: {
+							EN: "Adverbs of Manner / Have to / Must",
+							RU: "Наречия образа действия / Have to / Must",
+						},
+						activity: {
+							EN: "Writing: Fitness programme announcement",
+							RU: "Письмо: объявление о фитнес-программе",
+						},
+					},
+
+					{
+						title: {
+							EN: "Past Simple of To Be and Can",
+							RU: "Past Simple глаголов To Be и Can",
+						},
+						activity: {
+							EN: "Writing: Presentation",
+							RU: "Письмо: презентация",
+						},
+					},
+
+					{
+						title: {
+							EN: "Past Simple Affirmative",
+							RU: "Past Simple (утвердительная форма)",
+						},
+						activity: {
+							EN: "Speaking: Talking about past events",
+							RU: "Говорение: рассказ о прошлых событиях",
+						},
+					},
+
+					{
+						title: {
+							EN: "Past Simple Negative and Questions",
+							RU: "Past Simple (отрицание и вопросы)",
+						},
+						activity: {
+							EN: "Reading: Matching",
+							RU: "Чтение: сопоставление",
+						},
+					},
+
+					{
+						title: {
+							EN: "Past Continuous",
+							RU: "Past Continuous",
+						},
+						activity: {
+							EN: "Listening: Completing notes",
+							RU: "Аудирование: заполнение заметок",
+						},
+					},
+
+					{
+						title: {
+							EN: "Presentation Lesson",
+							RU: "Презентация",
+						},
+						activity: {
+							EN: "Favourite book",
+							RU: "Любимая книга",
+						},
+					},
+
+					{
+						title: {
+							EN: "Countable / Uncountable Nouns, Some / Any / A / An",
+							RU: "Исчисляемые и неисчисляемые существительные",
+						},
+						activity: {
+							EN: "Use of English: Missing sentences",
+							RU: "Use of English: вставка предложений",
+						},
+					},
+
+					{
+						title: {
+							EN: "A lot of / Much / Many, Should / Shouldn't",
+							RU: "A lot of / Much / Many, Should / Shouldn't",
+						},
+						activity: {
+							EN: "Writing: Formal and informal style",
+							RU: "Письмо: формальный и неформальный стиль",
+						},
+					},
+
+					{
+						title: {
+							EN: "Be Going To, Will, Won't",
+							RU: "Be going to / Will / Won’t",
+						},
+						activity: {
+							EN: "Speaking in pairs",
+							RU: "Говорение в парах",
+						},
+					},
+
+					{
+						title: {
+							EN: "Present Continuous for Future",
+							RU: "Present Continuous для будущего",
+						},
+						activity: {
+							EN: "Speaking: Making suggestions and plans",
+							RU: "Говорение: предложения и планы",
+						},
+					},
+
+					{
+						title: {
+							EN: "Comparative Adjectives",
+							RU: "Сравнительная степень прилагательных",
+						},
+						activity: {
+							EN: "Speaking: Comparing photos and expressing feelings",
+							RU: "Говорение: сравнение фотографий",
+						},
+					},
+
+					{
+						title: {
+							EN: "Superlative Adjectives / Articles",
+							RU: "Превосходная степень прилагательных / артикли",
+						},
+						activity: {
+							EN: "Writing: Formal letter of opinion",
+							RU: "Письмо: формальное письмо-мнение",
+						},
+					},
+
+					{
+						title: {
+							EN: "Present Perfect (ever / never)",
+							RU: "Present Perfect (ever / never)",
+						},
+						activity: {
+							EN: "Use of English: Shop dialogues",
+							RU: "Use of English: диалоги в магазине",
+						},
+					},
+
+					{
+						title: {
+							EN: "Present Perfect (already / just / yet)",
+							RU: "Present Perfect (already / just / yet)",
+						},
+						activity: {
+							EN: "Listening: Multiple choice",
+							RU: "Аудирование: множественный выбор",
+						},
+					},
+
+					{
+						title: {
+							EN: "Presentation Lesson",
+							RU: "Презентация",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+
+					{
+						title: {
+							EN: "Passive Voice with By",
+							RU: "Passive Voice с by",
+						},
+						activity: {
+							EN: "Speaking: Biography",
+							RU: "Говорение: биография",
+						},
+					},
+
+					{
+						title: {
+							EN: "Zero and First Conditional",
+							RU: "Zero и First Conditional",
+						},
+						activity: {
+							EN: "Writing: Paragraphs",
+							RU: "Письмо: абзацы",
+						},
+					},
+
+					{
+						title: {
+							EN: "Final Lesson / Review",
+							RU: "Финальное повторение",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+
+					{
+						title: {
+							EN: "Head Teacher Workshop",
+							RU: "Мастер-класс старшего преподавателя",
+						},
+						activity: {
+							EN: "",
+							RU: "",
+						},
+					},
+				],
+			},
+		],
+
+		teacher: {
+			name: "Emily Johnson",
+			bio: {
+				EN: "Lead Instructor",
+				RU: "Главный преподаватель",
+			},
+			image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+		},
+	},
+	{
 		id: "b1-pre-intermediate",
-		image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+		image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
 		title: {
 			EN: "B1 Pre Intermediate",
 			RU: "B1 Pre-Intermediate",
@@ -1001,7 +1957,7 @@ export const COURSES: Course[] = [
 	{
 		id: "b1-plus-intermediate",
 
-		image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+		image: "https://plus.unsplash.com/premium_photo-1661909267383-58991abdca51?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
 		title: {
 			EN: "B1+ Intermediate",
