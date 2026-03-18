@@ -353,7 +353,10 @@ export default function Home() {
 			</section>
 
 			{/* QUICK DIAGNOSTIC SECTION (COMPONENTIZED) */}
-			<section className="py-16 md:py-32 bg-gradient-to-br from-brand-800 to-brand-900 text-white relative overflow-hidden">
+			<section
+				id="audit"
+				className="py-16 md:py-32 bg-gradient-to-br from-brand-800 to-brand-900 text-white relative overflow-hidden"
+			>
 				<div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 overflow-x-hidden">
 					<QuickDiagnostic />
 				</div>

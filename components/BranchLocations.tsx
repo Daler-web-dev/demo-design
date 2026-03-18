@@ -34,7 +34,8 @@ export default function BranchLocations({
 	const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
 	const selectedBranch = BRANCHES[selectedIndex];
-	const displayName = lang === "RU" ? selectedBranch.nameRu : selectedBranch.nameEn;
+	const displayName =
+		lang === "RU" ? selectedBranch.nameRu : selectedBranch.nameEn;
 	const mapUrl = selectedBranch.mapUrl ?? defaultMapUrl;
 
 	const advance = useCallback(() => {
@@ -83,14 +84,16 @@ export default function BranchLocations({
 
 	const isTransitioning = fromIndex !== null;
 	// Два слоя всегда в DOM — в конце перехода не размонтируем, только меняем opacity/src, без мигания
-	const backSrc = isTransitioning ? BRANCHES[fromIndex!].image : BRANCHES[selectedIndex].image;
+	const backSrc = isTransitioning
+		? BRANCHES[fromIndex!].image
+		: BRANCHES[selectedIndex].image;
 	const backOpacity = isTransitioning ? (transitionActive ? 0 : 1) : 1;
 	const frontOpacity = isTransitioning ? (transitionActive ? 1 : 0) : 0;
 	const imgClass =
 		"absolute inset-0 w-full h-full object-cover transition-opacity duration-[500ms] ease-in-out";
 
 	return (
-		<section className="min-h-fit py-32 px-6 bg-white">
+		<section className="min-h-fit py-32 px-6 bg-white" id="locations">
 			<div className="max-w-7xl mx-auto">
 				<div className="grid lg:grid-cols-2 gap-20 items-center">
 					<div>
@@ -106,7 +109,10 @@ export default function BranchLocations({
 						</p>
 						<div className="grid grid-cols-2 gap-4">
 							{BRANCHES.map((branch, i) => {
-								const name = lang === "RU" ? branch.nameRu : branch.nameEn;
+								const name =
+									lang === "RU"
+										? branch.nameRu
+										: branch.nameEn;
 								const isSelected = selectedIndex === i;
 								return (
 									<button
@@ -140,7 +146,9 @@ export default function BranchLocations({
 								alt={displayName}
 								className={imgClass}
 								style={{ opacity: frontOpacity }}
-								onLoad={() => isTransitioning && setFrontImageLoaded(true)}
+								onLoad={() =>
+									isTransitioning && setFrontImageLoaded(true)
+								}
 							/>
 						</div>
 						<Link

@@ -19,7 +19,7 @@ export default function Navbar() {
 	const navLinks = [
 		{ name: t.nav.home, path: "/" },
 		{ name: t.nav.courses, path: "/courses" },
-		{ name: t.nav.about, path: "/about" },
+		{ name: t.nav.audit, path: "/#audit" },
 		{ name: t.nav.contact, path: "/contact" },
 	];
 

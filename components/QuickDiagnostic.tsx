@@ -23,9 +23,11 @@ const QuickDiagnostic: React.FC = () => {
 		} else {
 			setStage("loading");
 			setTimeout(() => {
-				let recommendation = "business-mastery";
-				if (nextScore >= 10) recommendation = "ielts-elite";
-				else if (nextScore <= 5) recommendation = "kids-genius";
+				let recommendation = "a1-plus-elementary";
+				if (nextScore >= 10) recommendation = "b1-plus-intermediate";
+				else if (nextScore <= 3)
+					recommendation = "azero-pre-elementary";
+				else if (nextScore <= 6) recommendation = "a1-plus-beginner";
 				setRecId(recommendation);
 				setStage("result");
 			}, 1500);

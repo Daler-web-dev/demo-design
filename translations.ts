@@ -7,6 +7,7 @@ export const translations: Record<Language, any> = {
 			home: "Main",
 			courses: "Catalog",
 			about: "The Network",
+			audit: "Take a Diagnostic",
 			contact: "Visit Us",
 			enroll: "Join Now",
 		},
