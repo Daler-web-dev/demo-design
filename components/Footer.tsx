@@ -25,9 +25,11 @@ export default function Footer() {
 							</div>
 						</Link>
 						<h2 className="text-7xl font-display font-black mb-10 leading-[0.9] tracking-tighter">
-							THE FUTURE <br />
-							SPEAKS{" "}
-							<span className="text-indigo-500">ENGLISH.</span>
+							{t.footer.headlineLine1} <br />
+							{t.footer.headlineLine2}{" "}
+							<span className="text-indigo-500">
+								{t.footer.headlineHighlight}
+							</span>
 						</h2>
 						<div className="flex space-x-4">
 							<a
@@ -52,7 +54,7 @@ export default function Footer() {
 					<div className="grid grid-cols-2 gap-10">
 						<div>
 							<h4 className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 mb-8">
-								Navigation
+								{t.footer.navigationTitle}
 							</h4>
 							<ul className="space-y-4 font-bold text-lg">
 								<li>
@@ -60,7 +62,7 @@ export default function Footer() {
 										href="/courses"
 										className="hover:text-gold"
 									>
-										Catalog
+										{t.nav.courses}
 									</Link>
 								</li>
 								<li>
@@ -68,7 +70,7 @@ export default function Footer() {
 										href="/about"
 										className="hover:text-gold"
 									>
-										The Network
+										{t.nav.about}
 									</Link>
 								</li>
 								<li>
@@ -76,14 +78,14 @@ export default function Footer() {
 										href="/contact"
 										className="hover:text-gold"
 									>
-										Contact
+										{t.nav.contact}
 									</Link>
 								</li>
 							</ul>
 						</div>
 						<div>
 							<h4 className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 mb-8">
-								Headquarters
+								{t.footer.hqTitle}
 							</h4>
 							<a
 								href="tel:+998557053030"
@@ -103,7 +105,7 @@ export default function Footer() {
 				</div>
 				<div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between text-slate-500 text-xs font-bold uppercase tracking-widest">
 					<span>{t.footer.rights}</span>
-					<span>Designed for the Elite.</span>
+					<span>{t.footer.tagline}</span>
 				</div>
 			</div>
 		</footer>

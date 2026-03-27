@@ -33,11 +33,11 @@ export default function GeminiAdvisor() {
         body: JSON.stringify({ message: userMsg, lang }),
       });
       const data = await res.json();
-      const botText = data.text ?? (lang === 'RU' ? 'Простите, я не смог обработать ваш запрос.' : 'Sorry, I could not process your request.');
+      const botText = data.text ?? t.ai.fallback;
       setMessages(prev => [...prev, { role: 'bot', text: botText }]);
     } catch (error) {
       console.error('AI Error:', error);
-      setMessages(prev => [...prev, { role: 'bot', text: 'Error connecting to AI advisor.' }]);
+      setMessages(prev => [...prev, { role: 'bot', text: t.ai.connectionError }]);
     } finally {
       setIsTyping(false);
     }
@@ -53,10 +53,10 @@ export default function GeminiAdvisor() {
                 <Sparkles className="w-5 h-5 text-accent" />
               </div>
               <div>
-                <div className="font-bold text-sm">Polyglot AI Advisor</div>
+                <div className="font-bold text-sm">{t.ai.title}</div>
                 <div className="text-[10px] text-brand-300 flex items-center">
                   <span className="w-1.5 h-1.5 bg-green-400 rounded-full mr-1.5"></span>
-                  Online
+                  {t.ai.statusOnline}
                 </div>
               </div>
             </div>
@@ -73,9 +73,7 @@ export default function GeminiAdvisor() {
               <div className="text-center py-6">
                 <Bot className="w-12 h-12 text-gray-300 mx-auto mb-3" />
                 <p className="text-sm text-gray-500 px-6 italic">
-                  {lang === 'RU'
-                    ? 'Здравствуйте! Расскажите о своих целях, и я помогу выбрать идеальный курс.'
-                    : 'Hello! Tell me about your goals, and I will help you choose the perfect course.'}
+                  {t.ai.greeting}
                 </p>
               </div>
             )}

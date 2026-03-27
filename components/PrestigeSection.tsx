@@ -70,7 +70,7 @@ const PrestigeSection = ({ lang }: { lang: string }) => {
 										<iframe
 											className="h-full w-full object-cover"
 											src={videoURL[lang as "EN" | "RU"]}
-											title="YouTube video player"
+												title={t.prestige.videoBadge}
 											frameBorder="0"
 											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 											allowFullScreen

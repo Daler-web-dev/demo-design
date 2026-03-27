@@ -16,7 +16,12 @@ type Teacher = {
 export default function TeamPage() {
   const { t, lang } = useLanguage();
   const teachers = t.staffPage.allTeachers as Teacher[];
-  const nameKey = lang === "RU" ? "nameRu" : "nameEn";
+  const nameKeyByLang = {
+    EN: "nameEn",
+    RU: "nameRu",
+    UZ: "nameEn",
+  } as const;
+  const nameKey = nameKeyByLang[lang] ?? "nameEn";
 
   return (
     <div className="min-h-screen bg-obsidian text-white pt-32 pb-24">
@@ -26,7 +31,7 @@ export default function TeamPage() {
           className="inline-flex items-center gap-2 text-white/60 hover:text-gold text-sm font-bold uppercase tracking-widest mb-16 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
-          {lang === "RU" ? "На главную" : "Back to home"}
+          {t.staffPage.backHome}
         </Link>
 
         <div className="mb-20">

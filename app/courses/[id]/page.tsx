@@ -19,7 +19,6 @@ import {
 	Badge,
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
-import { COURSES } from "@/translations";
 
 const SCROLL_THRESHOLD = 400;
 
@@ -27,14 +26,15 @@ export default function CourseDetail() {
 	const params = useParams();
 	const router = useRouter();
 	const id = params?.id as string | undefined;
-	const { t, lang } = useLanguage();
+	const { t } = useLanguage();
+	const courses = t.courses?.list ?? [];
 	const [activeModule, setActiveModule] = useState<number | null>(
 		id ? 0 : null,
 	);
 	const [scrolled, setScrolled] = useState(false);
 	const lastScrolled = useRef(false);
 
-	const course = COURSES.find((c) => c.id === id);
+	const course = courses.find((c: any) => c.id === id);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -56,26 +56,10 @@ export default function CourseDetail() {
 	}
 
 	const specs = [
-		{
-			icon: Clock,
-			label: lang === "RU" ? "Длительность" : "Duration",
-			value: course.duration[lang],
-		},
-		{
-			icon: GraduationCap,
-			label: lang === "RU" ? "Уровень" : "Level",
-			value: course.level,
-		},
-		{
-			icon: Target,
-			label: lang === "RU" ? "Цель" : "Target",
-			value: "",
-		},
-		{
-			icon: Wallet,
-			label: lang === "RU" ? "Стоимость" : "Price",
-			value: "",
-		},
+		{ icon: Clock, label: t.courseDetail.durationLabel, value: course.duration },
+		{ icon: GraduationCap, label: t.courseDetail.levelLabel, value: course.level },
+		{ icon: Target, label: t.courseDetail.targetLabel, value: "" },
+		{ icon: Wallet, label: t.courseDetail.priceLabel, value: "" },
 	];
 
 	return (
@@ -86,7 +70,7 @@ export default function CourseDetail() {
 					<div className="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/80 to-transparent z-10"></div>
 					<img
 						src={course.image}
-						alt={course.title[lang]}
+						alt={course.title}
 						className="w-full h-full object-cover opacity-60 scale-105"
 					/>
 				</div>
@@ -98,18 +82,16 @@ export default function CourseDetail() {
 					>
 						<ChevronLeft className="mr-2 w-5 h-5 group-hover:-translate-x-2 transition-transform" />
 						<span className="text-xs font-black uppercase tracking-widest">
-							{lang === "RU"
-								? "Назад в каталог"
-								: "Back to Catalog"}
+							{t.courseDetail.backToCatalog}
 						</span>
 					</Link>
 
 					<div className="flex items-center">
 						<div>
 							<h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-black text-white leading-[0.85] tracking-tighter uppercase mb-10">
-								{course.title[lang]
+								{course.title
 									.split(" ")
-									.map((word, i) => (
+									.map((word: string, i: number) => (
 										<span
 											key={i}
 											className={
@@ -123,16 +105,14 @@ export default function CourseDetail() {
 									))}
 							</h1>
 							<p className="text-xl md:text-2xl text-slate-300 max-w-xl leading-relaxed font-medium mb-12">
-								{course.description[lang]}
+								{course.description}
 							</p>
 							<div className="flex flex-wrap gap-6">
 								<Link
 									href="/enroll"
 									className="bg-gold text-obsidian px-12 py-6 rounded-2xl font-black text-xl hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-2xl"
 								>
-									{lang === "RU"
-										? "Записаться сейчас"
-										: "Enroll Now"}
+									{t.courseDetail.enrollNow}
 								</Link>
 								{/* <button className="flex items-center space-x-4 group text-white">
 									<div className="w-14 h-14 rounded-full border-2 border-white/20 flex items-center justify-center group-hover:bg-indigo-600 group-hover:border-indigo-600 transition-all">
@@ -173,15 +153,15 @@ export default function CourseDetail() {
 					<div className="grid lg:grid-cols-12 gap-24">
 						<div className="lg:col-span-5 sticky top-40 h-fit">
 							<span className="text-indigo-600 font-black uppercase tracking-[0.4em] text-[10px] mb-6 block">
-								Course Architecture
+								{t.courseDetail.architecture}
 							</span>
 							<h2 className="text-6xl md:text-7xl font-display font-black text-obsidian uppercase tracking-tighter leading-none mb-10">
-								The
+								{t.courseDetail.journeyLine1}
 								<br />
-								<span className="text-outline">Journey.</span>
+								<span className="text-outline">{t.courseDetail.journeyLine2}</span>
 							</h2>
 							<p className="text-xl text-slate-400 font-bold mb-12 leading-relaxed">
-								{course.description[lang]}
+								{course.description}
 							</p>
 
 							{/* <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
@@ -190,7 +170,7 @@ export default function CourseDetail() {
 									Guaranteed Outcomes
 								</h4>
 								<ul className="space-y-4">
-									{course.outcomes[lang].map(
+									{course.outcomes.map(
 										(outcome, idx) => (
 											<li
 												key={idx}
@@ -211,7 +191,7 @@ export default function CourseDetail() {
 
 						<div className="lg:col-span-7">
 							<div className="space-y-6">
-								{course.modules.map((module, idx) => (
+								{course.modules.map((module: any, idx: number) => (
 									<div
 										key={idx}
 										className={`p-10 rounded-[3.5rem] border-2 transition-all duration-500 cursor-pointer ${
@@ -235,7 +215,7 @@ export default function CourseDetail() {
 													0{idx + 1}
 												</span>
 												<h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter leading-none">
-													{module.title[lang]}
+													{module.title}
 												</h3>
 											</div>
 											<ChevronLeft
@@ -248,11 +228,11 @@ export default function CourseDetail() {
 											<p
 												className={`text-lg font-medium leading-relaxed ${activeModule === idx ? "text-slate-400" : "text-slate-500"}`}
 											>
-												{module.description[lang]}
+												{module.description}
 											</p>
 											<div>
 												{module.lessons.map(
-													(lesson, i) => (
+													(lesson: any, i: number) => (
 														<div
 															key={i}
 															className="flex items-center space-x-4 mt-6 group"
@@ -261,21 +241,9 @@ export default function CourseDetail() {
 																<Badge className="w-4 h-4 fill-current" />
 															</div>
 															<div>
-																<h4 className="text-md font-bold">
-																	{
-																		lesson
-																			.title[
-																			lang
-																		]
-																	}
-																</h4>
+																<h4 className="text-md font-bold">{lesson.title}</h4>
 																<p className="text-sm text-slate-500">
-																	{
-																		lesson
-																			.activity[
-																			lang
-																		]
-																	}
+																	{lesson.activity}
 																</p>
 															</div>
 														</div>
@@ -285,10 +253,10 @@ export default function CourseDetail() {
 											<div className="mt-8 flex gap-4">
 												<span className="px-4 py-2 bg-white/10 rounded-full text-[10px] font-black uppercase tracking-widest">
 													{module.lessons.length}{" "}
-													Lessons
+													{t.courseDetail.lessonsLabel}
 												</span>
 												<span className="px-4 py-2 bg-white/10 rounded-full text-[10px] font-black uppercase tracking-widest">
-													Practical Workshop
+													{t.courseDetail.workshopLabel}
 												</span>
 											</div>
 										</div>
@@ -307,19 +275,19 @@ export default function CourseDetail() {
 						<div className="bg-obsidian rounded-[4rem] p-16 text-white flex flex-col justify-between relative overflow-hidden group">
 							<div className="relative z-10">
 								<span className="text-gold font-black uppercase tracking-[0.4em] text-[10px] mb-8 block">
-									Chief Mentor
+									{t.courseDetail.chiefMentor}
 								</span>
 								<h2 className="text-6xl font-display font-black uppercase tracking-tighter leading-none mb-10">
-									Learn from
+									{t.courseDetail.learnFromLine1}
 									<br />
-									the Best.
+									{t.courseDetail.learnFromLine2}
 								</h2>
 								<div className="p-12 bg-white/5 border border-white/10 rounded-[3rem] backdrop-blur-xl">
 									<h4 className="text-4xl font-black mb-4">
 										{course.teacher.name}
 									</h4>
 									<p className="text-slate-400 text-lg leading-relaxed">
-										{course.teacher.bio[lang]}
+										{course.teacher.bio}
 									</p>
 								</div>
 							</div>
@@ -349,8 +317,8 @@ export default function CourseDetail() {
 			<section className="py-40 bg-white">
 				<div className="max-w-5xl mx-auto px-6 text-center">
 					<h2 className="text-7xl md:text-9xl font-display font-black text-obsidian uppercase tracking-tighter leading-none mb-12">
-						Start Your <br />
-						<span className="text-outline">Future.</span>
+						{t.courseDetail.startYourLine1} <br />
+						<span className="text-outline">{t.courseDetail.startYourLine2}</span>
 					</h2>
 					<div className="bg-slate-50 rounded-[5rem] p-16 md:p-24 border border-slate-100 shadow-xl relative overflow-hidden group">
 						<div className="absolute top-0 right-0 p-12 opacity-5 group-hover:opacity-10 transition-opacity">
@@ -358,7 +326,7 @@ export default function CourseDetail() {
 						</div>
 						<div className="relative z-10">
 							<div className="text-sm font-black uppercase tracking-[0.4em] text-indigo-600 mb-6">
-								Investment in yourself
+								{t.courseDetail.investment}
 							</div>
 							<div className="text-8xl md:text-9xl font-black text-obsidian mb-10 tracking-tighter">
 								{/* {course.price[lang]} */}
@@ -368,18 +336,17 @@ export default function CourseDetail() {
 									href="/enroll"
 									className="bg-obsidian text-white px-16 py-8 rounded-[2.5rem] font-black text-2xl hover:bg-indigo-600 transition-all shadow-2xl hover:scale-105"
 								>
-									Join Program
+									{t.courseDetail.joinProgram}
 								</Link>
 								<Link
 									href="/contact"
 									className="bg-white text-obsidian px-16 py-8 rounded-[2.5rem] border-2 border-slate-200 font-black text-2xl hover:bg-slate-50 transition-all"
 								>
-									Ask a Question
+									{t.courseDetail.askQuestion}
 								</Link>
 							</div>
 							<p className="mt-12 text-slate-400 font-bold uppercase tracking-widest text-xs">
-								Trial lesson is free • No hidden fees • 100%
-								Satisfaction
+								{t.courseDetail.trialLine}
 							</p>
 						</div>
 					</div>
@@ -393,7 +360,7 @@ export default function CourseDetail() {
 				<div className="bg-obsidian/90 backdrop-blur-2xl rounded-full p-3 pl-10 border border-white/10 shadow-2xl flex items-center justify-between">
 					<div className="flex flex-col">
 						<span className="text-[10px] font-black uppercase tracking-widest text-white/40">
-							{course.title[lang]}
+							{course.title}
 						</span>
 						<span className="text-xl font-black text-gold">
 							{/* {course.price[lang]} */}
@@ -403,7 +370,7 @@ export default function CourseDetail() {
 						href="/enroll"
 						className="bg-white text-obsidian px-10 py-4 rounded-full font-black uppercase tracking-widest text-xs hover:bg-gold transition-colors"
 					>
-						Apply
+						{t.courseDetail.apply}
 					</Link>
 				</div>
 			</div>

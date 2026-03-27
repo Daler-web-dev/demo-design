@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { RotateCcw, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
-import { COURSES } from "../translations";
 
 interface TestResultViewProps {
 	score: number;
@@ -21,8 +20,9 @@ const TestResultView: React.FC<TestResultViewProps> = ({
 	onReset,
 	title,
 }) => {
-	const { t, lang } = useLanguage();
-	const recommendedCourse = COURSES.find((c) => c.id === recId);
+	const { t } = useLanguage();
+	const courses = t.courses?.list ?? [];
+	const recommendedCourse = courses.find((c: any) => c.id === recId);
 
 	if (!recommendedCourse) return null;
 
@@ -43,27 +43,27 @@ const TestResultView: React.FC<TestResultViewProps> = ({
 						<img
 							src={recommendedCourse.image}
 							className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-							alt="Recommended"
+							alt={t.diagnostic.recommendedAlt}
 						/>
 					</div>
 					<div className="flex-grow text-left w-full min-w-0">
 						<div className="flex flex-wrap items-center justify-between gap-2 mb-4">
 							<span className="text-gold font-black uppercase tracking-widest text-[10px] sm:text-xs">
-								DIAGNOSTIC LEVEL: {level}
+								{t.diagnostic.levelLabel}: {level}
 							</span>
 							<span className="text-white/20 font-black text-xs">
-								{score}/{maxScore} PTS
+								{score}/{maxScore} {t.diagnostic.pointsLabel}
 							</span>
 						</div>
 						<h4 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-black uppercase tracking-tighter leading-[0.95] mb-4 md:mb-6 break-words">
-							{recommendedCourse.title[lang]}
+							{recommendedCourse.title}
 						</h4>
 						<div className="flex flex-wrap gap-3 sm:gap-4">
 							<Link
 								href={`/courses/${recommendedCourse.id}`}
 								className="px-10 py-5 bg-white text-obsidian rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-gold transition-colors"
 							>
-								View Program
+								{t.diagnostic.viewProgram}
 							</Link>
 							<button
 								onClick={onReset}

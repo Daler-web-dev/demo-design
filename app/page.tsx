@@ -15,9 +15,13 @@ import {
 	PlayCircle,
 	Medal,
 	Award,
+	Target,
+	Smile,
+	Globe,
+	Globe2,
+	Feather,
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
-import { COURSE_CATEGORIES, COURSES } from "@/translations";
 import QuickDiagnostic from "@/components/QuickDiagnostic";
 import BranchLocations from "@/components/BranchLocations";
 import PrestigeSection from "@/components/PrestigeSection";
@@ -25,6 +29,16 @@ import PrestigeSection from "@/components/PrestigeSection";
 export default function Home() {
 	const { t, lang } = useLanguage();
 	const [activeFaq, setActiveFaq] = useState<number | null>(null);
+	const courseCategories = t.courses?.categories ?? [];
+
+	const iconById: Record<string, React.ComponentType<any>> = {
+		BookOpen,
+		Target,
+		Smile,
+		Globe,
+		Globe2,
+		Feather,
+	};
 
 	// Helper to map themes to course cards based on category
 	const getCardTheme = (category: string) => {
@@ -117,13 +131,13 @@ export default function Home() {
 						</div>
 						<h1 className="text-[clamp(2.5rem,12vw,6.75rem)] lg:text-[9.25rem] font-display font-black leading-[0.82] tracking-tighter text-brand-800 uppercase mb-6 overflow-hidden">
 							<span className="hero-line hero-delay-1 block text-gold">
-								LEARN.
+								{t.homePage.heroWord1}
 							</span>
 							<span className="hero-line hero-delay-2 block text-outline-brand">
-								LISTEN.
+								{t.homePage.heroWord2}
 							</span>
 							<span className="hero-line hero-delay-3 block text-indigo-600">
-								SPEAK.
+								{t.homePage.heroWord3}
 							</span>
 						</h1>
 						{/* <p className="hero-subtitle-in hero-delay-4 text-xl md:text-2xl text-indigo-600/80 max-w-3xl leading-relaxed mb-16 font-medium tracking-normal">
@@ -155,7 +169,7 @@ export default function Home() {
 									/>
 								))}
 								<div className="pl-5 text-xs sm:text-sm font-bold text-slate-400">
-									Join 15,000+ Alumni
+									{t.homePage.alumni}
 								</div>
 							</div>
 						</div>
@@ -231,7 +245,7 @@ export default function Home() {
 											<div className="flex items-center space-x-2 mb-2">
 												<Award className="w-4 h-4 md:w-5 md:h-5 text-gold group-hover:rotate-12 transition-transform" />
 												<span className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] text-gold">
-													teacher
+													{t.results.roleLabel}
 												</span>
 											</div>
 											<h3 className="text-2xl md:text-3xl font-display font-black leading-none uppercase tracking-tighter group-hover:text-gold transition-colors">
@@ -263,30 +277,31 @@ export default function Home() {
 						<div>
 							<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-4">
 								<span className="w-8 h-0.5 bg-gold" />
-								COURSES
+								{t.homePage.coursesBadge}
 							</div>
 							<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.95] uppercase tracking-tighter break-words max-w-full text-brand-800">
-								The
+								{t.homePage.coursesTitleLine1}
 								<br />
-								Programs.
+								{t.homePage.coursesTitleLine2}
 							</h2>
 							<p className="text-xl text-indigo-600/80 font-bold mt-6">
-								Engineered for absolute fluency.
+								{t.homePage.coursesSubtitle}
 							</p>
 						</div>
 						<Link
 							href="/courses"
 							className="text-lg font-black text-indigo-600 hover:text-brand-700 flex items-center group transition-colors"
 						>
-							Full Catalog{" "}
+							{t.homePage.fullCatalog}{" "}
 							<ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-2 transition-transform" />
 						</Link>
 					</div>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-						{COURSE_CATEGORIES.map((category: any) => {
+						{courseCategories.map((category: any) => {
 							const theme = getCardTheme(category.label);
-							const CourseIcon = category.icon;
+							const CourseIcon =
+								iconById[category.iconId] ?? BookOpen;
 
 							return (
 								<Link
@@ -325,9 +340,7 @@ export default function Home() {
 											{category.value}
 										</h3>
 										<p className="text-xs font-bold opacity-60">
-											{lang === "RU"
-												? "Подберите программу под свой уровень"
-												: "See all programs for this track"}
+											{t.homePage.courseTrackHint}
 										</p>
 										{/* <span
 											className={`hidden hover:inline-block px-2.5 py-1 mb-4 ${theme.tag} text-[10px] font-black uppercase tracking-widest rounded shadow-sm`}
@@ -363,6 +376,7 @@ export default function Home() {
 			</section>
 
 			<BranchLocations
+				badge={t.homePage.locationsBadge}
 				title={t.branches.title}
 				subtitle={t.branches.subtitle}
 				mapRouteText={t.branches.mapRouteText}
@@ -383,7 +397,7 @@ export default function Home() {
 						<div className="md:col-span-2 md:row-span-2 bg-indigo-600 rounded-[2rem] sm:rounded-[3.5rem] p-8 sm:p-12 relative overflow-hidden group min-h-[200px] md:min-h-0">
 							<img
 								src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=1600"
-								alt="Polyglot Hub lounge"
+								alt={t.homePage.lifestyleAltHub}
 								className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
 								loading="lazy"
 							/>
@@ -391,24 +405,21 @@ export default function Home() {
 							<div className="relative z-10 flex flex-col h-full">
 								<Coffee className="absolute top-6 right-6 sm:top-10 sm:right-10 w-16 h-16 sm:w-20 sm:h-20 opacity-40 group-hover:scale-125 transition-transform" />
 								<h4 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 md:mb-6 uppercase tracking-tighter leading-tight mt-auto">
-									Polyglot Hub
+									{t.homePage.lifestyleHubTitle}
 								</h4>
 								<p className="text-indigo-100 text-base sm:text-lg max-w-md">
-									Our central campuses feature coffee zones
-									and collaborative lounges for relaxed
-									conversation practice with mentors and
-									peers.
+									{t.homePage.lifestyleHubDesc}
 								</p>
 								<div className="mt-6 sm:mt-8 px-4 py-1.5 sm:px-6 sm:py-2 bg-white/15 rounded-full font-bold text-[10px] sm:text-xs tracking-[0.25em] uppercase inline-flex items-center gap-2">
 									<span className="w-2 h-2 rounded-full bg-gold" />
-									COMMUNITY FIRST
+									{t.homePage.lifestyleCommunityTag}
 								</div>
 							</div>
 						</div>
 						<div className="md:col-span-2 bg-brand-800 rounded-[2rem] sm:rounded-[3.5rem] p-6 sm:p-12 flex flex-col justify-between group min-h-[140px] md:min-h-0 relative overflow-hidden">
 							<img
 								src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&q=80&w=1600"
-								alt="Cinema night at Polyglot"
+								alt={t.homePage.lifestyleAltCinema}
 								className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
 								loading="lazy"
 							/>
@@ -417,7 +428,7 @@ export default function Home() {
 								<div className="flex justify-between items-start">
 									<PlayCircle className="w-8 h-8 sm:w-12 sm:h-12 text-gold shrink-0" />
 									<span className="text-[10px] font-black uppercase tracking-widest text-slate-200">
-										Every Friday
+										{t.homePage.lifestyleCinemaTag}
 									</span>
 								</div>
 								<h4 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tighter mt-4 md:mt-0">
@@ -428,7 +439,7 @@ export default function Home() {
 						<div className="bg-brand-700 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group hover:bg-indigo-500 transition-colors min-h-[120px] md:min-h-0 relative overflow-hidden">
 							<img
 								src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=1200"
-								alt="Polyglot library and study space"
+								alt={t.homePage.lifestyleAltLibrary}
 								className="absolute inset-0 w-full h-full object-cover opacity-18 pointer-events-none"
 								loading="lazy"
 							/>
@@ -443,7 +454,7 @@ export default function Home() {
 						<div className="bg-gold/20 text-brand-900 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group border border-gold/30 min-h-[120px] md:min-h-0 relative overflow-hidden">
 							<img
 								src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&q=80&w=1200"
-								alt="Speaking club at Polyglot"
+								alt={t.homePage.lifestyleAltSpeaking}
 								className="absolute inset-0 w-full h-full object-cover opacity-22 pointer-events-none"
 								loading="lazy"
 							/>
@@ -464,7 +475,7 @@ export default function Home() {
 					<div className="text-center mb-32">
 						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
 							<span className="w-8 h-0.5 bg-gold mx-auto" />
-							WHY CHOOSE US
+							{t.homePage.whyChooseUs}
 							<span className="w-8 h-0.5 bg-gold mx-auto" />
 						</div>
 						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black text-brand-800 leading-[0.95] tracking-tighter uppercase mb-6 break-words max-w-full">
@@ -505,7 +516,7 @@ export default function Home() {
 					<div className="text-center mb-24">
 						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-4">
 							<span className="w-8 h-0.5 bg-gold" />
-							FAQ
+							{t.homePage.faqBadge}
 							<span className="w-8 h-0.5 bg-gold" />
 						</div>
 						<h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-black text-white uppercase tracking-tighter leading-[0.95] mb-6 break-words max-w-full">
@@ -561,14 +572,14 @@ export default function Home() {
 				<div className="max-w-7xl mx-auto bg-gradient-to-br from-indigo-600 via-indigo-600 to-brand-700 rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden shadow-2xl shadow-indigo-500/20">
 					<div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
 					<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[8rem] font-display font-black text-white leading-[0.95] tracking-tighter mb-16 relative z-10 break-words max-w-full px-2">
-						STOP DREAMING. <br />
-						START SPEAKING.
+						{t.homePage.ctaLine1} <br />
+						{t.homePage.ctaLine2}
 					</h2>
 					<Link
 						href="/enroll"
 						className="inline-flex bg-white text-brand-800 px-16 py-8 rounded-[2.5rem] font-black text-3xl hover:bg-gold hover:text-white transition-all transform hover:scale-105 active:scale-95 relative z-10 shadow-2xl"
 					>
-						Book Free Lesson
+						{t.homePage.bookLesson}
 					</Link>
 				</div>
 			</section>

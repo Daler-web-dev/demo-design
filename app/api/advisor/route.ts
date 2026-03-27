@@ -15,7 +15,8 @@ export async function POST(request: Request) {
     }
 
     const ai = new GoogleGenAI({ apiKey });
-    const langLabel = lang === 'RU' ? 'Russian' : 'English';
+    const langLabel =
+      lang === "RU" ? "Russian" : lang === "UZ" ? "Uzbek" : "English";
     const prompt = `You are a helpful educational advisor for "Polyglot School" in Samarkand.
 User asked: "${message}"
 Language: ${langLabel}.

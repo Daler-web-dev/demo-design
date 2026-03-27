@@ -1,29 +1,42 @@
-'use client';
+"use client";
 
-import React, { useState, createContext, useContext } from 'react';
-import { Language } from '@/types';
-import { translations } from '@/translations';
+import React from "react";
+import { useRouter } from "next/navigation";
+import { useLocale, useMessages } from "next-intl";
 
-interface LanguageContextType {
-  lang: Language;
-  setLang: (l: Language) => void;
-  t: (typeof translations)[Language];
-}
+type Locale = "en" | "ru" | "uz";
+type Language = "EN" | "RU" | "UZ";
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const localeToLang: Record<Locale, Language> = {
+  en: "EN",
+  ru: "RU",
+  uz: "UZ",
+};
+
+const langToLocale: Record<Language, Locale> = {
+  EN: "en",
+  RU: "ru",
+  UZ: "uz",
+};
 
 export const useLanguage = () => {
-  const context = useContext(LanguageContext);
-  if (!context) throw new Error('useLanguage must be used within LanguageProvider');
-  return context;
+  const router = useRouter();
+  const locale = useLocale() as Locale;
+  const messages = useMessages() as any;
+
+  const setLang = (nextLang: Language) => {
+    const nextLocale = langToLocale[nextLang];
+    document.cookie = `locale=${nextLocale}; path=/; max-age=31536000; samesite=lax`;
+    router.refresh();
+  };
+
+  return {
+    lang: localeToLang[locale] ?? "EN",
+    setLang,
+    t: messages,
+  };
 };
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Language>('EN');
-  const t = translations[lang];
-  return (
-    <LanguageContext.Provider value={{ lang, setLang, t }}>
-      {children}
-    </LanguageContext.Provider>
-  );
+  return <>{children}</>;
 }

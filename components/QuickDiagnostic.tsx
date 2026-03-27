@@ -37,11 +37,11 @@ const QuickDiagnostic: React.FC = () => {
 	if (stage === "intro") {
 		return (
 			<div className="text-center py-12 md:py-20 animate-fade-up px-2 sm:px-0">
-				<div className="flex justify-center mb-6 md:mb-10">
-					<div className="w-16 h-16 sm:w-24 sm:h-24 bg-white/5 rounded-[1.5rem] sm:rounded-[2rem] border border-white/10 flex items-center justify-center animate-pulse-slow">
+				{/* <div className="flex justify-center mb-6 md:mb-10"> */}
+				{/* <div className="w-16 h-16 sm:w-24 sm:h-24 bg-white/5 rounded-[1.5rem] sm:rounded-[2rem] border border-white/10 flex items-center justify-center animate-pulse-slow">
 						<Activity className="w-8 h-8 sm:w-12 sm:h-12 text-gold" />
-					</div>
-				</div>
+						</div> */}
+				{/* </div> */}
 				<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-black uppercase tracking-tighter leading-[0.95] mb-4 md:mb-6 break-words max-w-full">
 					{t.diagnostic.title}
 				</h2>
@@ -104,7 +104,7 @@ const QuickDiagnostic: React.FC = () => {
 			<div className="py-12 md:py-20 animate-fade-up max-w-4xl mx-auto px-4 sm:px-6">
 				<div className="mb-8 md:mb-12">
 					<span className="text-xs font-black uppercase tracking-[0.3em] sm:tracking-[0.4em] text-gold mb-2 block">
-						QUESTION 0{currentIdx + 1} / 03
+						{t.diagnostic.questionLabel} 0{currentIdx + 1} / 03
 					</span>
 					<h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-display font-black uppercase tracking-tighter leading-[1.1] break-words">
 						{q.q}
@@ -145,7 +145,11 @@ const QuickDiagnostic: React.FC = () => {
 		<TestResultView
 			score={score}
 			maxScore={12}
-			level={score > 8 ? "Strong B2+" : "Developing A2/B1"}
+			level={
+				score > 8
+					? t.diagnostic.levelStrong
+					: t.diagnostic.levelDeveloping
+			}
 			recId={recId}
 			onReset={() => {
 				setStage("intro");

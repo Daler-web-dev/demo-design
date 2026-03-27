@@ -5,21 +5,20 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Search, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
-import { COURSE_CATEGORIES, COURSES } from "@/translations";
 
 function CoursesContent() {
-	const { lang } = useLanguage();
+	const { t } = useLanguage();
 	const searchParams = useSearchParams();
 	const categoryFromUrl = searchParams.get("category");
+	const courses = t.courses?.list ?? [];
+	const categories = t.courses?.categories ?? [];
 
-	const [filter, setFilter] = useState(categoryFromUrl || "All");
+	const [filter, setFilter] = useState(categoryFromUrl || "ALL");
 	const [search, setSearch] = useState("");
 
-	const filteredCourses = COURSES.filter((course) => {
-		const matchesFilter = filter === "All" || course.category === filter;
-		const matchesSearch = course.title[lang]
-			.toLowerCase()
-			.includes(search.toLowerCase());
+	const filteredCourses = courses.filter((course: any) => {
+		const matchesFilter = filter === "ALL" || course.category === filter;
+		const matchesSearch = course.title.toLowerCase().includes(search.toLowerCase());
 		return matchesFilter && matchesSearch;
 	});
 
@@ -28,14 +27,14 @@ function CoursesContent() {
 			<div className="max-w-7xl mx-auto px-6">
 				<div className="mb-24">
 					<h1 className="text-6xl md:text-[10rem] font-display font-black tracking-tighter leading-none mb-12">
-						CHOOSE <br />
-						YOUR PATH.
+						{t.coursesPage.titleLine1} <br />
+						{t.coursesPage.titleLine2}
 					</h1>
 					<div className="flex flex-col md:flex-row md:items-center justify-between gap-8 border-t-2 border-brand-900 pt-10">
 						<div className="flex flex-wrap gap-3">
 							{[
-								{ value: "ALL", label: "All" },
-								...COURSE_CATEGORIES,
+								{ value: t.coursesPage.allLabel, label: "ALL" },
+								...categories,
 							].map((cat) => (
 								<button
 									key={cat.value}
@@ -54,7 +53,7 @@ function CoursesContent() {
 							<Search className="absolute right-4 top-1/2 -translate-y-1/2 text-brand-300" />
 							<input
 								type="text"
-								placeholder="Search program..."
+								placeholder={t.coursesPage.searchPlaceholder}
 								value={search}
 								onChange={(e) => setSearch(e.target.value)}
 								className="w-full bg-brand-50 border-none rounded-2xl py-4 pl-6 pr-12 focus:ring-2 focus:ring-brand-900 font-bold"
@@ -64,7 +63,7 @@ function CoursesContent() {
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
-					{filteredCourses.map((course) => (
+					{filteredCourses.map((course: any) => (
 						<Link
 							href={`/courses/${course.id}`}
 							key={course.id}
@@ -74,7 +73,7 @@ function CoursesContent() {
 								<img
 									src={course.image}
 									className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
-									alt={course.title[lang]}
+									alt={course.title}
 								/>
 								<div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all"></div>
 							</div>
@@ -84,7 +83,7 @@ function CoursesContent() {
 										{course.category} • {course.level}
 									</div>
 									<h3 className="text-4xl font-display font-black leading-tight mb-4 group-hover:text-brand-900">
-										{course.title[lang]}
+										{course.title}
 									</h3>
 									{/* <div className="text-2xl font-black text-brand-900/40">
 										{course.price[lang]}
@@ -102,9 +101,14 @@ function CoursesContent() {
 	);
 }
 
+function CoursesLoadingFallback() {
+	const { t } = useLanguage();
+	return <div>{t.coursesPage.loading}</div>;
+}
+
 export default function Courses() {
 	return (
-		<Suspense fallback={<div>Loading...</div>}>
+		<Suspense fallback={<CoursesLoadingFallback />}>
 			<CoursesContent />
 		</Suspense>
 	);

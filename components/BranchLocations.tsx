@@ -9,17 +9,19 @@ const AUTO_ADVANCE_MS = 4500;
 const CROSSFADE_MS = 500;
 
 export type BranchLocationsProps = {
+	badge?: string;
 	title: string;
 	subtitle: string;
 	/** Текст кнопки перехода на карту, например "Составить маршрут" */
 	mapRouteText: string;
 	/** Язык для отображения названий: nameEn / nameRu */
-	lang: "EN" | "RU";
+	lang: "EN" | "RU" | "UZ";
 	/** URL карты по умолчанию, если у филиала нет своего mapUrl */
 	defaultMapUrl?: string;
 };
 
 export default function BranchLocations({
+	badge = "LOCATIONS",
 	title,
 	subtitle,
 	mapRouteText,
@@ -34,8 +36,12 @@ export default function BranchLocations({
 	const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
 	const selectedBranch = BRANCHES[selectedIndex];
-	const displayName =
-		lang === "RU" ? selectedBranch.nameRu : selectedBranch.nameEn;
+	const nameByLang = {
+		EN: selectedBranch.nameEn,
+		RU: selectedBranch.nameRu,
+		UZ: selectedBranch.nameEn,
+	};
+	const displayName = nameByLang[lang] ?? selectedBranch.nameEn;
 	const mapUrl = selectedBranch.mapUrl ?? defaultMapUrl;
 
 	const advance = useCallback(() => {
@@ -99,7 +105,7 @@ export default function BranchLocations({
 					<div>
 						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
 							<span className="w-8 h-0.5 bg-gold" />
-							LOCATIONS
+							{badge}
 						</div>
 						<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-brand-800 leading-[0.95] mb-10 break-words max-w-full">
 							{title}
@@ -109,10 +115,12 @@ export default function BranchLocations({
 						</p>
 						<div className="grid grid-cols-2 gap-4">
 							{BRANCHES.map((branch, i) => {
-								const name =
-									lang === "RU"
-										? branch.nameRu
-										: branch.nameEn;
+								const nameByLang = {
+									EN: branch.nameEn,
+									RU: branch.nameRu,
+									UZ: branch.nameEn,
+								};
+								const name = nameByLang[lang] ?? branch.nameEn;
 								const isSelected = selectedIndex === i;
 								return (
 									<button

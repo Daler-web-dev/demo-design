@@ -15,7 +15,7 @@ export default function Contact() {
 					{t.nav.contact}
 				</h1>
 				<p className="text-xl text-gray-500">
-					We are always here to help you start your journey.
+					{t.contact.subtitle}
 				</p>
 			</section>
 
@@ -45,7 +45,7 @@ export default function Contact() {
 								</div>
 								<div>
 									<h3 className="text-2xl font-bold text-brand-900 mb-2">
-										Phone
+										{t.contact.phoneLabel}
 									</h3>
 									<a
 										href="tel:+998557053030"
@@ -69,7 +69,7 @@ export default function Contact() {
 								</div>
 								<div>
 									<h3 className="text-2xl font-bold text-brand-900 mb-2">
-										Email
+										{t.contact.emailLabel}
 									</h3>
 									<p className="text-lg text-gray-500">
 										hello@polyglot-school.uz
@@ -83,13 +83,13 @@ export default function Contact() {
 								</div>
 								<div>
 									<h3 className="text-2xl font-bold text-brand-900 mb-2">
-										Hours
+										{t.contact.hoursLabel}
 									</h3>
 									<p className="text-lg text-gray-500">
-										Mon - Sat: 09:00 - 20:00
+										{t.contact.hoursWeekdays}
 									</p>
 									<p className="text-lg text-gray-500">
-										Sunday: Closed
+										{t.contact.hoursSunday}
 									</p>
 								</div>
 							</div>
@@ -100,18 +100,16 @@ export default function Contact() {
 						<div className="absolute inset-0 bg-brand-100 flex flex-col items-center justify-center p-12 text-center">
 							<MapPin className="w-20 h-20 text-brand-300 mb-6" />
 							<h3 className="text-2xl font-bold text-brand-900 mb-2">
-								Interactive Map
+								{t.contact.mapTitle}
 							</h3>
 							<p className="text-brand-700">
-								Find us near the Samarkand State University
-								campus, right at the corner of Universitet
-								Boulevard.
+								{t.contact.mapDescription}
 							</p>
 							<Link
 								href="/#locations"
 								className="mt-8 bg-white text-brand-900 px-8 py-3 rounded-full font-bold shadow-lg"
 							>
-								Show all locations
+								{t.contact.showLocations}
 							</Link>
 						</div>
 					</div>
@@ -122,17 +120,17 @@ export default function Contact() {
 				<div className="max-w-4xl mx-auto bg-white rounded-[3rem] p-10 md:p-16 shadow-xl text-center">
 					<MessageSquare className="w-12 h-12 text-brand-600 mx-auto mb-6" />
 					<h2 className="text-3xl font-display font-bold text-brand-900 mb-4">
-						Have specific questions?
+						{t.contact.questionsTitle}
 					</h2>
 					<p className="text-lg text-gray-500 mb-10">
-						Send us a message and we&apos;ll reply within 24 hours.
+						{t.contact.questionsSubtitle}
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<a
 							href="https://t.me/+m0zqMklXRjE2OTgy"
 							className="bg-brand-900 text-white px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center"
 						>
-							Message on Telegram
+							{t.contact.telegramCta}
 						</a>
 						{/* <a
 							href="mailto:info@polyglot.uz"

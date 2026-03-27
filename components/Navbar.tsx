@@ -98,12 +98,22 @@ export default function Navbar() {
 					</div>
 
 					<div className="flex items-center gap-4">
-						<button
-							onClick={() => setLang(lang === "EN" ? "RU" : "EN")}
-							className={`text-xs font-black p-2 rounded-lg transition-all border ${scrolled ? "text-white border-white/20" : "text-obsidian border-obsidian/20"}`}
+						<select
+							value={lang}
+							onChange={(e) => setLang(e.target.value as "EN" | "RU" | "UZ")}
+							className={`text-xs font-black p-2 rounded-lg transition-all border bg-transparent ${scrolled ? "text-white border-white/20" : "text-obsidian border-obsidian/20"}`}
+							aria-label={t.nav.languageSelect ?? "Language"}
 						>
-							{lang}
-						</button>
+							<option value="EN" className="text-obsidian">
+								EN
+							</option>
+							<option value="RU" className="text-obsidian">
+								RU
+							</option>
+							<option value="UZ" className="text-obsidian">
+								UZ
+							</option>
+						</select>
 						<Link
 							href="/enroll"
 							className="hidden sm:flex items-center bg-gold text-obsidian px-8 py-3 rounded-2xl text-sm font-black hover:scale-105 transition-all shadow-lg shadow-gold/20"
@@ -114,7 +124,7 @@ export default function Navbar() {
 							type="button"
 							onClick={() => setMenuOpen(true)}
 							className={`md:hidden p-2 ${scrolled ? "text-white" : "text-obsidian"}`}
-							aria-label="Open menu"
+							aria-label={t.nav.openMenu}
 						>
 							<Menu className="w-8 h-8" />
 						</button>
@@ -127,7 +137,7 @@ export default function Navbar() {
 				<div
 					className="fixed inset-0 z-[200] bg-obsidian"
 					aria-modal
-					aria-label="Main menu"
+					aria-label={t.nav.mainMenu}
 				>
 					<div className="h-full flex flex-col">
 						<div className="flex justify-between items-center px-6 py-5 border-b border-white/10">
@@ -148,7 +158,7 @@ export default function Navbar() {
 								type="button"
 								onClick={() => setMenuOpen(false)}
 								className="p-2 text-white"
-								aria-label="Close menu"
+								aria-label={t.nav.closeMenu}
 							>
 								<X className="w-8 h-8" />
 							</button>
