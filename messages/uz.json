@@ -243,7 +243,8 @@
 		"headlineHighlight": "ENGLISH.",
 		"navigationTitle": "Navigatsiya",
 		"hqTitle": "Bosh ofis",
-		"tagline": "Eng yaxshisini tanlaganlar uchun."
+		"tagline": "Eng yaxshisini tanlaganlar uchun.",
+		"privacyPolicy": "Maxfiylik siyosati"
 	},
 	"ai": {
 		"trigger": "AI maslahatchi",
@@ -268,7 +269,95 @@
 		"branchPlaceholder": "—",
 		"heroAlt": "Bizga qo'shiling",
 		"quoteAuthor": "Nodira, IELTS talabasi",
-		"quoteText": "Bu yerda o'qishni boshlash akademik kelajagim uchun eng to'g'ri qaror bo'ldi. Muhit juda ilhomlantiradi!"
+		"quoteText": "Bu yerda o'qishni boshlash akademik kelajagim uchun eng to'g'ri qaror bo'ldi. Muhit juda ilhomlantiradi!",
+		"privacyNotice": "Formani yuborish orqali quyidagi hujjat bilan tanishganingizni tasdiqlaysiz:",
+		"privacyLink": "Maxfiylik siyosati"
+	},
+	"privacyPage": {
+		"title": "Maxfiylik siyosati",
+		"updated": "Yangilangan sanasi: 2026 yil 28 mart",
+		"backHome": "Bosh sahifaga",
+		"intro": "Ushbu Maxfiylik siyosati Polyglot til maktabi (Samarqand, O'zbekiston Respublikasi) veb-saytimizdan («Sayt») foydalanish, yozilish yoki murojaat qoldirish va xizmatlarimiz bilan o'zaro aloqa paytida shaxsiy ma'lumotlarni qanday yig'ishi, ishlatishi, saqlashi va himoya qilishini tushuntiradi. Hujjat O'zbekiston Respublikasining 2019 yil 2 iyuldagi ZRU-709-son «Shaxsiy ma'lumotlar to'g'risida»gi Qonuni va boshqa qonunchilikka muvofiq tayyorlangan.",
+		"contactBlockTitle": "Shaxsiy ma'lumotlar bo'yicha savollar",
+		"contactPageLink": "Aloqa sahifasi",
+		"sections": [
+			{
+				"title": "1. Shaxsiy ma'lumotlarni boshqaruvchi",
+				"paragraphs": [
+					"Shaxsiy ma'lumotlaringiz operatori (nazoratchisi) Samarqand shahrida faoliyat yurituvchi Polyglot til maktabi hisoblanadi (bundan buyon — «biz»). Maxfiylik bo'yicha murojaatlar uchun ushbu sahifadagi telefon raqamlari yoki Saytdagi aloqa bo'limi orqali bog'lanishingiz mumkin."
+				]
+			},
+			{
+				"title": "2. Qanday ma'lumotlar yig'iladi",
+				"paragraphs": [
+					"Biz bilan o'zaro aloqa uslubiga qarab quyidagi toifadagi shaxsiy ma'lumotlar qayta ishlanishi mumkin:",
+					"— shaxsni aniqlash va bog'lanish: ism-familiya (ko'rsatilgan bo'lsa), telefon raqami, afzal ko'rilgan filial va shakllarda ixtiyoriy kiritilgan boshqa ma'lumotlar (kursga yozilish, qayta aloqa, murojaat va hokazo);",
+					"— Saytga kirishda texnik ma'lumotlar: IP-manzil, brauzer va qurilma turi, kirish sanasi va vaqti, cookie va shu kabi texnologiyalar (qo'llanilsa) — brauzer sozlamalari va cookie bo'yicha alohida xabarnomalar bilan mos ravishda.",
+					"Sayt orqali maxsus toifadagi shaxsiy ma'lumotlar (sog'liq, biometriya va hokazo) talab qilinmaydi, bundan mustasno, muayyan xizmat uchun aniq zarur bo'lib, qonun talab qilganda alohida rozilik rasmiylashtirilgan hollar."
+				]
+			},
+			{
+				"title": "3. Qayta ishlash maqsadlari",
+				"paragraphs": [
+					"Shaxsiy ma'lumotlar quyidagi maqsadlarda qayta ishlanadi:",
+					"— o'qish va sinov darsi bo'yicha arizalarni ko'rib chiqish, siz bilan bog'lanish, filiallarga tashrifni tashkil etish, ta'lim xizmatlari shartnomasini tuzish va bajarish;",
+					"— murojaatlarga javob berish, xizmat sifatini oshirish va ichki ma'muriyat;",
+					"— Sayt xavfsizligini ta'minlash, suiiste'mollikning oldini olish hamda O'zbekiston Respublikasi qonunchiligidan kelib chiqadigan majburiyatlarni bajarish.",
+					"Ko'rsatilgan maqsadlarga mos kelmaydigan maqsadlarda qo'shimcha huquqiy asos bo'lmasdan qayta ishlanmaydi."
+				]
+			},
+			{
+				"title": "4. Huquqiy asoslar",
+				"paragraphs": [
+					"Qayta ishlash, holatga qarab, quyidagilar asosida amalga oshiriladi: sizning roziligingiz (shu jumladan shaxsiy ma'lumotlar bilan forma yuborish orqali); shartnoma tuzishdan oldingi yoki ta'lim xizmatlari shartnomasini bajarish bo'yicha harakatlar; qonunga muvofiq ruxsat etilgan va huquqlaringizni buzmaydigan qonuniy manfaatlarimiz. Qonun to'g'ridan-to'g'ri talab qiladigan joylarda (masalan, alohida turdagi mailinglar uchun) alohida rozilik so'raladi."
+				]
+			},
+			{
+				"title": "5. Uchinchi shaxslarga uzatish va chegaradan tashqari uzatish",
+				"paragraphs": [
+					"Shaxsiy ma'lumotlar topshiruv bo'yicha ma'lumotlarni qayta ishlovchilarga (xosting, IT-xizmatlari va boshqalar) maxfiylik va ma'lumotlarni himoya qilish talablari bilan uzatilishi mumkin.",
+					"Yozilish arizasidagi ma'lumotlar xodimlar tomonidan tezkor qayta ishlash uchun ichki xabarnoma kanallariga (xususan, Telegram) yuborilishi mumkin. Bunday xizmatlar ma'lumotlarni O'zbekiston Respublikasi hududidan tashqaridagi serverlarda qayta ishlashi mumkin. Shaxsiy ma'lumotlarning chegaradan tashqari uzatilishi «Shaxsiy ma'lumotlar to'g'risida»gi Qonunning 7-bobi (shu jumladan qabul qiluvchi mamlakatda yetarli himoya yoki qonun bilan belgilangan boshqa shartlar bajarilganda)ga muvofiq amalga oshiriladi.",
+					"Biz shaxsiy ma'lumotlarni sotmaymiz."
+				]
+			},
+			{
+				"title": "6. Saqlash muddatlari",
+				"paragraphs": [
+					"Shaxsiy ma'lumotlar ushbu Siyosatda ko'rsatilgan qayta ishlash maqsadlariga erishish uchun zarur bo'lgan muddatdan ortiq saqlanmaydi, agar qonun uzoqroq muddatni belgilamagan bo'lsa (masalan, buxgalteriya yoki nizolarni hal qilish uchun). Muddat tugagach, ma'lumotlar ichki tartib-qoidalarga muvofiq o'chiriladi yoki anonimlashtiriladi."
+				]
+			},
+			{
+				"title": "7. Himoya choralari",
+				"paragraphs": [
+					"Tavakkalchilik darajasiga mos tashkiliy va texnik choralari qo'llanadi: shaxsiy ma'lumotlarga kirishni cheklash, iloji boricha himoyalangan uzatish, xodimlarning maxfiylikni saqlash majburiyati. Internet orqali uzatish mutlaqo xavfsiz bo'lmasligi mumkin; ochiq kanallar orqali ortiqcha sezgir ma'lumotlarni yubormaslikni so'raymiz."
+				]
+			},
+			{
+				"title": "8. Shaxsiy ma'lumotlar subyektining huquqlari",
+				"paragraphs": [
+					"«Shaxsiy ma'lumotlar to'g'risida»gi Qonunga muvofiq, qonunda nazarda tutilgan shartlarda siz o'zingizning shaxsiy ma'lumotlaringiz qayta ishlashi to'g'risida ma'lumot olish, ularga kirish, tuzatish yoki o'chirishni talab qilish, rozilik asosida qayta ishlanayotgan bo'lsa rozilikni qaytarib olish hamda qonun ruxsat bergan hollarda qayta ishlashga qarshi chiqish huquqiga egasiz.",
+					"Huquqlardan foydalanish uchun quyidagi kontaktlar orqali murojaat qiling. Shaxsiy ma'lumotlarni himoya qilish uchun shaxsingizni tasdiqlovchi ma'lumotlarni so'rash huquqimiz mavjud."
+				]
+			},
+			{
+				"title": "9. Shikoyatlar va vakolatli organ",
+				"paragraphs": [
+					"Agar huquqlaringiz buzilgan deb hisoblasangiz, O'zbekiston Respublikasida shaxsiy ma'lumotlarni himoya qilish sohasidagi vakolatli davlat organiga amaldagi qonunchilikda belgilangan tartibda shikoyat yuborishingiz mumkin, bundan tashqari to'g'ridan-to'g'ri biz bilan bog'lanishingiz mumkin."
+				]
+			},
+			{
+				"title": "10. Bolalar",
+				"paragraphs": [
+					"Xizmatlar asosan o'quvchilar va ularning qonuniy vakillari uchun mo'ljallangan. Qonun talab qiladigan joylarda bolaning shaxsiy ma'lumotlari tegishli vakolatsiz yig'ilgani ma'lum bo'lsa, bunday ma'lumotlarni o'chirish choralarini ko'ramiz."
+				]
+			},
+			{
+				"title": "11. Siyosatga o'zgartirishlar",
+				"paragraphs": [
+					"Qonunchilik yoki qayta ishlash tartibidagi o'zgarishlarni hisobga olgan holda ushbu Siyosatni yangilashimiz mumkin. Amaldagi matn har doim yangilangan sanasi bilan ushbu sahifada joylashtiriladi. Siyosat matni bilan davriy tanishib turishingizni tavsiya qilamiz."
+				]
+			}
+		]
 	},
 	"diagnostic": {
 		"title": "Diagnostika",

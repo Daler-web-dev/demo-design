@@ -102,6 +102,12 @@ export default function Enroll() {
                 </>
               )}
             </button>
+            <p className="text-center text-sm text-gray-500 leading-relaxed pt-2">
+              {t.enrollForm.privacyNotice}{' '}
+              <Link href="/privacy" className="text-brand-600 font-bold hover:underline underline-offset-2">
+                {t.enrollForm.privacyLink}
+              </Link>
+            </p>
           </form>
         </div>
 

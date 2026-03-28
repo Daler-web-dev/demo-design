@@ -81,6 +81,14 @@ export default function Footer() {
 										{t.nav.contact}
 									</Link>
 								</li>
+								<li>
+									<Link
+										href="/privacy"
+										className="hover:text-gold"
+									>
+										{t.footer.privacyPolicy}
+									</Link>
+								</li>
 							</ul>
 						</div>
 						<div>

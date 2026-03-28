@@ -243,7 +243,8 @@
 		"headlineHighlight": "ENGLISH.",
 		"navigationTitle": "Navigation",
 		"hqTitle": "Headquarters",
-		"tagline": "Designed for the Elite."
+		"tagline": "Designed for the Elite.",
+		"privacyPolicy": "Privacy Policy"
 	},
 	"ai": {
 		"trigger": "AI Advisor",
@@ -268,7 +269,95 @@
 		"branchPlaceholder": "—",
 		"heroAlt": "Join us",
 		"quoteAuthor": "Nodira, IELTS Student",
-		"quoteText": "Starting my journey here was the best decision for my academic future. The atmosphere is truly motivating!"
+		"quoteText": "Starting my journey here was the best decision for my academic future. The atmosphere is truly motivating!",
+		"privacyNotice": "We process your personal data as described in our",
+		"privacyLink": "Privacy Policy"
+	},
+	"privacyPage": {
+		"title": "Privacy Policy",
+		"updated": "Last updated: 28 March 2026",
+		"backHome": "Back to home",
+		"intro": "This Privacy Policy explains how Polyglot Language School (Samarkand, Republic of Uzbekistan) collects, uses, stores, and protects personal data when you use our website (the \"Site\"), submit an enrollment or contact request, or interact with our services. The Policy is drawn up with regard to the Law of the Republic of Uzbekistan No. ZRU-709 of 2 July 2019 \"On Personal Data\" and other applicable legislation of the Republic of Uzbekistan.",
+		"contactBlockTitle": "Questions about personal data",
+		"contactPageLink": "Contact form",
+		"sections": [
+			{
+				"title": "1. Data controller",
+				"paragraphs": [
+					"The controller of your personal data is Polyglot Language School, operating in Samarkand, Republic of Uzbekistan (hereinafter — \"we\", \"us\"). For privacy-related requests, you can contact us using the phone numbers on this page or via the contact section of the Site."
+				]
+			},
+			{
+				"title": "2. What data we collect",
+				"paragraphs": [
+					"We may process the following categories of personal data, depending on how you interact with us:",
+					"— identification and contact data: full name, phone number, preferred branch or campus, and other information you voluntarily provide in forms (e.g. enrollment, callback, or contact requests);",
+					"— technical data when you visit the Site: IP address, browser type, device type, date and time of access, cookies and similar technologies (if we use them), as described in your browser settings and applicable cookie notices.",
+					"We do not require special categories of personal data (health, biometric data, etc.) through the Site unless explicitly necessary for a specific service and collected with separate consent where the law requires it."
+				]
+			},
+			{
+				"title": "3. Purposes of processing",
+				"paragraphs": [
+					"We process personal data for the following purposes:",
+					"— processing enrollment and trial-lesson requests, contacting you, organizing visits to branches, and concluding or performing an agreement on educational services;",
+					"— responding to inquiries, improving the quality of service, and internal administration;",
+					"— ensuring the security of the Site, preventing fraud and abuse, and complying with legal obligations of the Republic of Uzbekistan.",
+					"We do not use your data for incompatible purposes without an additional legal basis."
+				]
+			},
+			{
+				"title": "4. Legal grounds",
+				"paragraphs": [
+					"Processing is based, as applicable, on: your consent (including by submitting a form with personal data); steps prior to entering into a contract or performance of a contract for educational services; and our legitimate interests that do not override your rights, where permitted by law. Where the law requires separate consent (e.g. certain marketing communications), we will obtain it explicitly."
+				]
+			},
+			{
+				"title": "5. Disclosure and cross-border transfer",
+				"paragraphs": [
+					"We may transfer personal data to processors who assist us in operating the Site and business (e.g. hosting provider, IT services), subject to confidentiality and data-protection requirements.",
+					"Enrollment data you submit may be forwarded to our internal messaging systems (for example, Telegram) so that staff can process your application promptly. Such providers may process data on servers located outside the Republic of Uzbekistan. Cross-border transfer of personal data is carried out in accordance with Chapter 7 of the Law of the Republic of Uzbekistan \"On Personal Data\" (including where the recipient country ensures adequate protection or other conditions set by law are met).",
+					"We do not sell personal data to third parties."
+				]
+			},
+			{
+				"title": "6. Retention",
+				"paragraphs": [
+					"We store personal data only for as long as necessary to fulfill the purposes stated in this Policy, unless a longer period is required by law (e.g. accounting or dispute resolution). When data is no longer needed, we delete or anonymize it in line with our internal procedures."
+				]
+			},
+			{
+				"title": "7. Security",
+				"paragraphs": [
+					"We implement organizational and technical measures appropriate to the risks, including restricted access to personal data, secure transmission where possible, and staff confidentiality. No method of transmission over the Internet is completely secure; we encourage you not to send unnecessary sensitive information through open channels."
+				]
+			},
+			{
+				"title": "8. Your rights",
+				"paragraphs": [
+					"Under the Law of the Republic of Uzbekistan \"On Personal Data\", you have the right, subject to statutory conditions, to request information about the processing of your personal data, to access, rectify, or delete data where applicable, to withdraw consent where processing is consent-based, and to object to processing where the law allows.",
+					"You may exercise these rights by contacting us using the contacts below. We may need to verify your identity before fulfilling a request."
+				]
+			},
+			{
+				"title": "9. Complaints and supervisory authority",
+				"paragraphs": [
+					"If you believe your rights have been violated, you may file a complaint with the authorized state body for personal data protection in the Republic of Uzbekistan, as determined under current legislation, in addition to contacting us directly."
+				]
+			},
+			{
+				"title": "10. Children",
+				"paragraphs": [
+					"Our services are primarily aimed at students and their legal representatives. If we become aware that we have collected personal data from a child without appropriate authority where required by law, we will take steps to delete such information."
+				]
+			},
+			{
+				"title": "11. Changes",
+				"paragraphs": [
+					"We may update this Policy to reflect legal or operational changes. The current version will always be published on this page with an updated \"Last updated\" date. We recommend reviewing the Policy periodically."
+				]
+			}
+		]
 	},
 	"diagnostic": {
 		"title": "Quick Diagnostic",
