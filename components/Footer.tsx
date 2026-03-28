@@ -67,10 +67,10 @@ export default function Footer() {
 								</li>
 								<li>
 									<Link
-										href="/about"
+										href="/#audit"
 										className="hover:text-gold"
 									>
-										{t.nav.about}
+										{t.nav.audit}
 									</Link>
 								</li>
 								<li>

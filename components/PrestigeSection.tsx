@@ -15,6 +15,7 @@ const PrestigeSection = ({ lang }: { lang: string }) => {
 
 	const videoURL = {
 		RU: "https://www.youtube.com/embed/wn-h1-9ofwg",
+		UZ: "https://www.youtube.com/embed/hYLCpAvfkrA",
 		EN: "https://www.youtube.com/embed/hYLCpAvfkrA",
 	};
 
@@ -69,8 +70,12 @@ const PrestigeSection = ({ lang }: { lang: string }) => {
 									{isPlaying ? (
 										<iframe
 											className="h-full w-full object-cover"
-											src={videoURL[lang as "EN" | "RU"]}
-												title={t.prestige.videoBadge}
+											src={
+												videoURL[
+													lang as "UZ" | "RU" | "EN"
+												]
+											}
+											title={t.prestige.videoBadge}
 											frameBorder="0"
 											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 											allowFullScreen

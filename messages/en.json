@@ -416,19 +416,19 @@
 				"iconId": "Smile"
 			},
 			{
-				"value": "Подготовка к CEFR/DTM",
+				"value": "CEFR/DTM",
 				"label": "Подготовка_к_CEFR/DTM",
 				"duration": "From Foundation to Fluency",
 				"iconId": "Globe"
 			},
 			{
-				"value": "Подготовка к TOEFL",
+				"value": "TOEFL",
 				"label": "Подготовка_к_TOEFL",
 				"duration": "From Intermediate to Advanced",
 				"iconId": "Globe2"
 			},
 			{
-				"value": "Подготовка к Duolingo",
+				"value": "Duolingo",
 				"label": "Подготовка_к_Duolingo",
 				"duration": "From Intermediate to Advanced",
 				"iconId": "Feather"
