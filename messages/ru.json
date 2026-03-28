@@ -377,6 +377,7 @@
     "questionLabel": "Вопрос",
     "back": "Назад",
     "next": "Далее",
+    "skipQuestion": "Пропустить вопрос",
     "finishBtn": "Завершить и анализировать",
     "completeBadge": "Аудит завершён",
     "resultSuccessTitle": "Все тесты пройдены",

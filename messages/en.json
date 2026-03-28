@@ -377,6 +377,7 @@
 		"questionLabel": "Question",
 		"back": "Back",
 		"next": "Next",
+		"skipQuestion": "Skip question",
 		"finishBtn": "Finish & Analyze",
 		"completeBadge": "Audit Complete",
 		"resultSuccessTitle": "All tests passed",
