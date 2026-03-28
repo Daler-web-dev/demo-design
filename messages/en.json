@@ -1,1139 +1,1139 @@
 {
-  "nav": {
-    "home": "Main",
-    "courses": "Catalog",
-    "about": "The Network",
-    "audit": "Take a Diagnostic",
-    "contact": "Visit Us",
-    "enroll": "Join Now",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu",
-    "mainMenu": "Main menu"
-  },
-  "hero": {
-    "badge": "Samarkand's #1 Language Institution",
-    "title": "Define Your Future with English Mastery",
-    "subtitle": "Premium education for the global-minded. Oxford-certified standards across 8 locations in Samarkand."
-  },
-  "prestige": {
-    "badge": "Official Ranking 2024",
-    "numberWord": "NUMBER",
-    "oneWord": "ONE.",
-    "descriptionBeforeHighlight": "Officially recognized as the Best Performing Learning Center in ",
-    "descriptionHighlight": "Uzbekistan by IDP Uzbekistan.",
-    "videoBadge": "Polyglot School",
-    "videoTitleLine1": "Watch the story behind",
-    "videoTitleLine2": "Uzbekistan's leading language school."
-  },
-  "results": {
-    "badge": "THE TEAM",
-    "title": "Our Pride",
-    "subtitle": "6 teachers with IELTS 9",
-    "uniqueClaim": "No other language center in Samarkand has this",
-    "scoreLabel": "IELTS 9",
-    "roleLabel": "Teacher",
-    "teachersStat": "Teachers",
-    "maxBandLabel": "Max Band",
-    "teachers": [
-      {
-        "name": "Angus",
-        "image": "Angus.jpeg"
-      },
-      {
-        "name": "Jasur",
-        "image": "Jasur.jpeg"
-      },
-      {
-        "name": "Nazira",
-        "image": "NAZIRA.jpeg"
-      },
-      {
-        "name": "Otabek",
-        "image": "Otabek.jpeg"
-      },
-      {
-        "name": "Shahzoda",
-        "image": "SHAHZODA.jpeg"
-      },
-      {
-        "name": "Tesni",
-        "image": "Tesni.jpeg"
-      }
-    ],
-    "viewAllStaff": "View all staff"
-  },
-  "staffPage": {
-    "title": "Our Team",
-    "subtitle": "Meet the people who make Polyglot the leading language school in Samarkand.",
-    "backHome": "Back to home",
-    "sectionNiners": "IELTS 9 — Our Pride",
-    "sectionTeam": "Teaching Team",
-    "roleLabel": "Teacher",
-    "scoreLabel": "IELTS 9",
-    "allTeachers": [
-      {
-        "nameEn": "Angus",
-        "nameRu": "Ангус",
-        "image": "Angus.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Jasur",
-        "nameRu": "Жасур",
-        "image": "Jasur.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Nazira",
-        "nameRu": "Назира",
-        "image": "NAZIRA.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Otabek",
-        "nameRu": "Отабек",
-        "image": "Otabek.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Shahzoda",
-        "nameRu": "Шахзода",
-        "image": "SHAHZODA.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Tesni",
-        "nameRu": "Тесни",
-        "image": "Tesni.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Javokhir",
-        "nameRu": "Жавохир",
-        "image": "Javokhir.jpeg",
-        "folder": "team",
-        "ielts9": false
-      },
-      {
-        "nameEn": "Nodir",
-        "nameRu": "Нодир",
-        "image": "Nodir.jpeg",
-        "folder": "team",
-        "ielts9": false
-      },
-      {
-        "nameEn": "Shahrukh",
-        "nameRu": "Шахрух",
-        "image": "Shahrukh.jpeg",
-        "folder": "team",
-        "ielts9": false
-      },
-      {
-        "nameEn": "Siyovush",
-        "nameRu": "Сиёвуш",
-        "image": "Siyovush.jpeg",
-        "folder": "team",
-        "ielts9": false
-      }
-    ]
-  },
-  "branches": {
-    "title": "Closest to You",
-    "subtitle": "A network of 8 high-tech campuses across Samarkand.",
-    "mapRouteText": "Build route",
-    "list": [
-      "Registan Center",
-      "Siyob Campus",
-      "Universitet Blvd",
-      "Vokzal District",
-      "Sat-Tepo",
-      "Afrosiyob",
-      "Chust",
-      "Motrid"
-    ]
-  },
-  "methodology": {
-    "title": "The Protocol",
-    "subtitle": "How we take you from quiet listener to confident speaker.",
-    "steps": [
-      {
-        "title": "Innovative methodology",
-        "desc": "Developed with international universities and aligned with global standards—so you can reach advanced proficiency in a focused timeframe."
-      },
-      {
-        "title": "Comfort built in",
-        "desc": "Fully equipped classrooms plus a dedicated co-working zone for independent study."
-      },
-      {
-        "title": "Speaking practice",
-        "desc": "Extra practical sessions beyond core lessons to build fluency and confidence."
-      },
-      {
-        "title": "Class rhythm",
-        "desc": "Four 90-minute lessons per week. From A1, IELTS prep with a native speaker. Visit daily for extra Academic Support."
-      },
-      {
-        "title": "Proven outcomes",
-        "desc": "Our alumni study at leading universities worldwide. About 90% hit their target IELTS scores."
-      },
-      {
-        "title": "Life around learning",
-        "desc": "Sundays: English film nights, debates, music, plus seminars and trainings with local and international speakers."
-      },
-      {
-        "title": "Motivation in class",
-        "desc": "Active students earn Polyglot dollars and redeem them for prizes at the auction on the last Sunday of each month."
-      },
-      {
-        "title": "Parents in the loop",
-        "desc": "Regular calls and SMS keep parents updated on their children’s progress."
-      }
-    ]
-  },
-  "lifestyle": {
-    "title": "Ecosystem",
-    "subtitle": "Learning English is a lifestyle, not a 90-minute chore.",
-    "items": [
-      {
-        "title": "Speaking Clubs",
-        "label": "Daily"
-      },
-      {
-        "title": "Cinema Nights",
-        "label": "Weekends"
-      },
-      {
-        "title": "Elite Library",
-        "label": "24/7 Access"
-      },
-      {
-        "title": "Game Theory",
-        "label": "Interactive"
-      }
-    ]
-  },
-  "faq": {
-    "title": "Intelligent Support",
-    "questions": [
-      {
-        "q": "How long to reach IELTS 7.0?",
-        "a": "Typically 6-9 months of intensive study depending on your starting point."
-      },
-      {
-        "q": "Are your teachers certified?",
-        "a": "Yes, 100% of our staff hold CELTA, DELTA or equivalent international certificates."
-      },
-      {
-        "q": "Can I change my branch?",
-        "a": "Absolutely. You can move between any of our 8 campuses in Samarkand."
-      }
-    ]
-  },
-  "footer": {
-    "rights": "© 2026 Polyglot Network. Excellence in Samarkand since 2012.",
-    "address": "Universitet Blvd 77",
-    "headlineLine1": "THE FUTURE",
-    "headlineLine2": "SPEAKS",
-    "headlineHighlight": "ENGLISH.",
-    "navigationTitle": "Navigation",
-    "hqTitle": "Headquarters",
-    "tagline": "Designed for the Elite."
-  },
-  "ai": {
-    "trigger": "AI Advisor",
-    "placeholder": "What is your current level?",
-    "title": "Polyglot AI Advisor",
-    "statusOnline": "Online",
-    "greeting": "Hello! Tell me about your goals, and I will help you choose the perfect course.",
-    "fallback": "Sorry, I could not process your request.",
-    "connectionError": "Error connecting to AI advisor."
-  },
-  "enrollForm": {
-    "title": "Join Polyglot Network",
-    "subtitle": "Start your journey to English mastery today. Our advisors will contact you shortly.",
-    "name": "Your Full Name",
-    "phone": "Contact Number",
-    "branch": "Choose a convenient branch",
-    "submit": "Send Application",
-    "success": "Welcome Aboard!",
-    "successDetails": "We have received your application. Our counselor will contact you shortly to schedule your trial lesson.",
-    "backHome": "Back to Home",
-    "namePlaceholder": "John Doe",
-    "branchPlaceholder": "—",
-    "heroAlt": "Join us",
-    "quoteAuthor": "Nodira, IELTS Student",
-    "quoteText": "Starting my journey here was the best decision for my academic future. The atmosphere is truly motivating!"
-  },
-  "diagnostic": {
-    "title": "Quick Diagnostic",
-    "subtitle": "Find out your real language level in 60 seconds.",
-    "quickCardTime": "60 Seconds",
-    "quickCardTitle": "Quick Diagnostic",
-    "quickCardDesc": "Fast AI assessment of your speaking comfort and basic goals.",
-    "quickCardCta": "Start Now",
-    "deepCardTime": "30 Minutes",
-    "deepCardTitle": "Deep Audit",
-    "deepCardDesc": "Full professional academic testing with grammar, vocabulary and logic.",
-    "deepCardCta": "Go To Exam",
-    "startBtn": "Start Test",
-    "nextBtn": "Next Question",
-    "calculating": "Analyzing data...",
-    "resultTitle": "Diagnostic Complete",
-    "recommendation": "Recommended program:",
-    "retake": "Retake Test",
-    "questionLabel": "QUESTION",
-    "levelStrong": "Strong B2+",
-    "levelDeveloping": "Developing A2/B1",
-    "recommendedAlt": "Recommended program",
-    "levelLabel": "DIAGNOSTIC LEVEL",
-    "pointsLabel": "PTS",
-    "viewProgram": "View Program",
-    "questions": [
-      {
-        "q": "How would you describe your comfort when communicating?",
-        "options": [
-          {
-            "a": "I use single words and gestures",
-            "score": 1
-          },
-          {
-            "a": "I can communicate in daily life, but complex topics are difficult",
-            "score": 2
-          },
-          {
-            "a": "I speak freely but sometimes make grammar mistakes",
-            "score": 3
-          },
-          {
-            "a": "I use English professionally every day",
-            "score": 4
-          }
-        ]
-      },
-      {
-        "q": "Which sentence is grammatically correct?",
-        "options": [
-          {
-            "a": "I have seen him yesterday",
-            "score": 1
-          },
-          {
-            "a": "I saw him yesterday",
-            "score": 3
-          },
-          {
-            "a": "I seen him yesterday",
-            "score": 0
-          }
-        ]
-      },
-      {
-        "q": "What is your main learning goal?",
-        "options": [
-          {
-            "a": "Academic (IELTS / University admission)",
-            "score": 5
-          },
-          {
-            "a": "Career growth / Business negotiations",
-            "score": 4
-          },
-          {
-            "a": "Personal development / Travel",
-            "score": 2
-          }
-        ]
-      }
-    ]
-  },
-  "deepAudit": {
-    "backgroundWord": "AUDIT",
-    "titleWord": "Neural",
-    "titleHighlight": "Deep Audit.",
-    "subtitle": "Full 30-minute professional assessment from Polyglot HQ. Cover grammar, lexical resource, and linguistic logic.",
-    "timeLabel": "Time Limit",
-    "timeValue": "30 MIN",
-    "standardsLabel": "Standards",
-    "standardsValue": "CEFR STDR",
-    "accuracyLabel": "Accuracy",
-    "accuracyValue": "98% ACC.",
-    "startBtn": "Start Full Exam",
-    "formTitle": "Your contact details",
-    "formSubtitle": "We will use them to call you back after the test.",
-    "formNameLabel": "Name",
-    "formNamePlaceholder": "John Doe",
-    "formPhoneLabel": "Phone",
-    "formPhonePlaceholder": "+998 (__) ___-__-__",
-    "formContinueBtn": "Continue to test",
-    "leaveWarning": "If you refresh the page or go back, your progress will be lost. Are you sure?",
-    "formLoading": "Loading test…",
-    "formLoadError": "Failed to load test. Please refresh the page.",
-    "questionLabel": "Question",
-    "back": "Back",
-    "next": "Next",
-    "finishBtn": "Finish & Analyze",
-    "completeBadge": "Audit Complete",
-    "resultSuccessTitle": "All tests passed",
-    "resultSuccessSubtitle": "We will call you back soon.",
-    "yourLabel": "Your",
-    "standingLabel": "Standing.",
-    "metricsTitle": "Diagnostic Metrics",
-    "levelLabel": "Level",
-    "retakeBtn": "Retake Audit",
-    "systemRecLabel": "System Recommendation",
-    "readyForLabel": "Ready for",
-    "reserveSpotBtn": "Reserve Spot",
-    "levels": {
-      "beginner": "Beginner (A1)",
-      "intermediate": "Intermediate (B1-B2)",
-      "advanced": "Advanced (C1)"
-    }
-  },
-  "courses": {
-    "categories": [
-      {
-        "value": "General English",
-        "label": "General_English",
-        "duration": "From Beginning to Fluency",
-        "iconId": "BookOpen"
-      },
-      {
-        "value": "IELTS Intensive",
-        "label": "IELTS_Intensive",
-        "duration": "From Intermediate to Advanced",
-        "iconId": "Target"
-      },
-      {
-        "value": "English kids",
-        "label": "English_kids",
-        "duration": "From Foundation to Beginner",
-        "iconId": "Smile"
-      },
-      {
-        "value": "Подготовка к CEFR/DTM",
-        "label": "Подготовка_к_CEFR/DTM",
-        "duration": "From Foundation to Fluency",
-        "iconId": "Globe"
-      },
-      {
-        "value": "Подготовка к TOEFL",
-        "label": "Подготовка_к_TOEFL",
-        "duration": "From Intermediate to Advanced",
-        "iconId": "Globe2"
-      },
-      {
-        "value": "Подготовка к Duolingo",
-        "label": "Подготовка_к_Duolingo",
-        "duration": "From Intermediate to Advanced",
-        "iconId": "Feather"
-      }
-    ],
-    "list": [
-      {
-        "id": "azero-pre-elementary",
-        "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=800&q=80",
-        "title": "Azero Pre-Elementary",
-        "description": "A foundational course focusing on basic descriptions, reading unfamiliar words, and building a 700+ word vocabulary.",
-        "duration": "2 Months (40 lessons)",
-        "outcomes": [
-          "Confidently write and read even unfamiliar words ",
-          "Describe surroundings and people at a basic level ",
-          "Use a minimum of 700+ words in English ",
-          "Express thoughts in writing through letters ",
-          "Potential to skip A1+ and move to A2 with 85%+ final test score (for ages 15+)"
-        ],
-        "level": "Azero",
-        "category": "English_kids",
-        "modules": [
-          {
-            "title": "Month 1 & 2 Curriculum",
-            "description": "24 lessons with the main teacher, plus sessions with assistants and international instructors. ",
-            "lessons": [
-              {
-                "title": "Present Simple 'to be' (Singular)",
-                "activity": "Speaking: Presenting a friend "
-              },
-              {
-                "title": "Describing Jobs & Greetings",
-                "activity": "Speaking: Word stress intonation "
-              },
-              {
-                "title": "Present Simple 'to be' (Plural)",
-                "activity": "Speaking: Favorite musician "
-              },
-              {
-                "title": "Wh- questions",
-                "activity": "Speaking: Exchanging information [cite: 31]"
-              },
-              {
-                "title": "Nouns & Demonstrative Pronouns",
-                "activity": "Speaking: Conversation at a cloakroom [cite: 32]"
-              },
-              {
-                "title": "Has got / Have got",
-                "activity": "Speaking: Family members [cite: 33]"
-              },
-              {
-                "title": "Present Simple (Action/Plural)",
-                "activity": "Listening and Speaking about daily routines [cite: 34]"
-              },
-              {
-                "title": "Present Simple Questions",
-                "activity": "Reading and Speaking about animals [cite: 35]"
-              },
-              {
-                "title": "Present Simple (Action/Singular)",
-                "activity": "Speaking: Free time [cite: 36]"
-              },
-              {
-                "title": "Adverbs of Frequency",
-                "activity": "Reading and talking about Eating Habits [cite: 37]"
-              },
-              {
-                "title": "There is/are; some and any",
-                "activity": "Describing city [cite: 38]"
-              },
-              {
-                "title": "Is there / Are there",
-                "activity": "Renting a place [cite: 39]"
-              },
-              {
-                "title": "Modal verb: Can/Can't",
-                "activity": "Class survey about abilities [cite: 40]"
-              },
-              {
-                "title": "Possessive 's",
-                "activity": "Listening and talking about a talented person [cite: 41]"
-              },
-              {
-                "title": "Present Continuous",
-                "activity": "Describing picture and finding difference [cite: 41]"
-              },
-              {
-                "title": "Adjective Order",
-                "activity": "Talking about clothes [cite: 41]"
-              },
-              {
-                "title": "Past Simple: was/were",
-                "activity": "Questions about famous person [cite: 42]"
-              },
-              {
-                "title": "Past Simple: Regular Verbs",
-                "activity": "Quiz about Famous person [cite: 42]"
-              },
-              {
-                "title": "Past Simple: Irregular Verbs",
-                "activity": "Things to describe the world [cite: 42]"
-              },
-              {
-                "title": "Past Simple Questions",
-                "activity": "Asking about past experience of peers [cite: 42]"
-              },
-              {
-                "title": "Preferences (like/love/hate)",
-                "activity": "Activities in free time [cite: 42]"
-              },
-              {
-                "title": "Object Pronouns",
-                "activity": "Finding out a superfan [cite: 43]"
-              },
-              {
-                "title": "Nouns & Travel",
-                "activity": "Countable and uncountable nouns (Bad journey experience) [cite: 44]"
-              },
-              {
-                "title": "Present Continuous (Future)",
-                "activity": "Planning a dream holiday [cite: 44]"
-              }
-            ]
-          }
-        ],
-        "teacher": {
-          "name": "Emily Johnson",
-          "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-          "bio": "Lead Instructor"
-        }
-      },
-      {
-        "id": "a1-plus-beginner",
-        "image": "https://plus.unsplash.com/premium_photo-1770548404170-6e7cbaabf0bf?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "title": "A1+ Beginner",
-        "description": "Develop listening skills, basic life descriptions, and expand vocabulary to 2000+ words.",
-        "duration": "2 Months (40 lessons)",
-        "outcomes": [
-          "Improve English listening comprehension ",
-          "Describe daily life and others at a basic level ",
-          "Use a minimum of 2000+ English words ",
-          "Express thoughts in writing (letters and online) "
-        ],
-        "level": "A1+",
-        "category": "General_English",
-        "modules": [
-          {
-            "title": "Course Curriculum",
-            "description": "Comprehensive 24-lesson program with main teachers, assistants, and international instructors[cite: 8, 9, 10].",
-            "lessons": [
-              {
-                "title": "Starter Unit: Basics",
-                "activity": "Alphabet, Colours, Numbers, Days of the week, Months "
-              },
-              {
-                "title": "Lesson 1: To be",
-                "activity": "Reading/Speaking: Talking about hobby (affirmative and negative) "
-              },
-              {
-                "title": "Lesson 2: Possession",
-                "activity": "Listening/Writing: Describing a picture, Have/has got, possessive adjectives "
-              },
-              {
-                "title": "Lesson 3: Describing People",
-                "activity": "Reading/Speaking: Possessive 's, regular and irregular nouns "
-              },
-              {
-                "title": "Lesson 4: Questions & Articles",
-                "activity": "Writing: School planner, Wh-questions, demonstrative pronouns, articles "
-              },
-              {
-                "title": "Lesson 5: Present Simple I",
-                "activity": "Listening: True/False/Not mentioned (Affirmative/Negative) "
-              },
-              {
-                "title": "Lesson 6: Present Simple II",
-                "activity": "Speaking: Giving directions, Yes/No and Wh-questions "
-              },
-              {
-                "title": "Lesson 7: Location",
-                "activity": "Reading: Headings, There is/There are, prepositions of place "
-              },
-              {
-                "title": "Lesson 8: Nouns & Offers",
-                "activity": "Making and replying to offers, Countable/uncountable, some/any/a/an "
-              },
-              {
-                "title": "Lesson 9: Ability & Frequency",
-                "activity": "Asking for and giving information, Modal verbs: can/can't, adverbs of frequency "
-              },
-              {
-                "title": "Lesson 10: Preferences",
-                "activity": "Presentation: Questionnaire, The imperative, like/love/hate + Ving "
-              },
-              {
-                "title": "Lesson 11: Mid-term Speaking",
-                "activity": "Presentation Speaking of Students "
-              },
-              {
-                "title": "Lesson 12: Present Continuous I",
-                "activity": "Reading: Matching features, affirmative and negative "
-              },
-              {
-                "title": "Lesson 13: Continuous vs Simple",
-                "activity": "Listening: Multiple Choice, Questions, Present Simple vs Continuous "
-              },
-              {
-                "title": "Lesson 14: Past of To Be",
-                "activity": "Speaking: Sport, Past Simple of to be / There was/were "
-              },
-              {
-                "title": "Lesson 15: Past Simple Affirmative",
-                "activity": "Writing: Unusual sports, Regular/Irregular Verbs "
-              },
-              {
-                "title": "Lesson 16: Past Simple Negative",
-                "activity": "Writing: Personal Statement "
-              },
-              {
-                "title": "Lesson 17: Past Simple Questions",
-                "activity": "Speaking: Knowing about evaluation "
-              },
-              {
-                "title": "Lesson 18: Speaking Presentation",
-                "activity": "Speaking Lesson (Presentation) "
-              },
-              {
-                "title": "Lesson 19: Comparisons",
-                "activity": "Reading: Multiple Choice Questions, Comparative Degree of Adjectives "
-              },
-              {
-                "title": "Lesson 20: Superlatives & Experience",
-                "activity": "Listening: Gap filling, Superlative Degree, Present Perfect with ever/never "
-              },
-              {
-                "title": "Lesson 21: Future Plans",
-                "activity": "Use of English, To be going to / prepositions of time "
-              },
-              {
-                "title": "Lesson 22: Advice & Obligation",
-                "activity": "Writing under exam conditions, Should/shouldn't, must/have to "
-              },
-              {
-                "title": "Lesson 23: Final Review",
-                "activity": "Review with the main teacher and academic support "
-              },
-              {
-                "title": "Lesson 24: Workshop",
-                "activity": "Head Teacher Workshop "
-              }
-            ]
-          }
-        ],
-        "teacher": {
-          "name": "Emily Johnson",
-          "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-          "bio": "Lead Instructor"
-        }
-      },
-      {
-        "id": "a1-plus-elementary",
-        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
-        "title": "A1+ Elementary",
-        "description": "Build basic English communication and grammar foundation.",
-        "duration": "2 Months (40 lessons)",
-        "outcomes": [
-          "Develop basic spoken English",
-          "Communicate with tourists and travel confidently",
-          "Write simple messages and letters in English",
-          "Master fundamental English grammar"
-        ],
-        "level": "A1+",
-        "category": "General_English",
-        "modules": [
-          {
-            "title": "Month 1",
-            "description": "Build basic English communication and grammar foundation.",
-            "lessons": [
-              {
-                "title": "Starter Unit Review of A1+",
-                "activity": "Speaking: Talking about family and basic descriptions"
-              },
-              {
-                "title": "Present Simple (affirmative / negative)",
-                "activity": "Reading: True / False / Not Mentioned, Listening: Matching"
-              },
-              {
-                "title": "Adverbs of Frequency / Present Simple Questions",
-                "activity": "Speaking: Free-time activities"
-              },
-              {
-                "title": "There is / There are, Prepositions of Place",
-                "activity": "Speaking: Description of a house and room"
-              },
-              {
-                "title": "Present Continuous vs Present Simple",
-                "activity": "Use of English: Multiple choice cloze"
-              },
-              {
-                "title": "Can / Can't",
-                "activity": "Speaking: Dangerous sports"
-              },
-              {
-                "title": "Adverbs of Manner / Have to / Must",
-                "activity": "Writing: Fitness programme announcement"
-              },
-              {
-                "title": "Past Simple of To Be and Can",
-                "activity": "Writing: Presentation"
-              },
-              {
-                "title": "Past Simple Affirmative",
-                "activity": "Speaking: Talking about past events"
-              },
-              {
-                "title": "Past Simple Negative and Questions",
-                "activity": "Reading: Matching"
-              },
-              {
-                "title": "Past Continuous",
-                "activity": "Listening: Completing notes"
-              },
-              {
-                "title": "Presentation Lesson",
-                "activity": "Favourite book"
-              },
-              {
-                "title": "Countable / Uncountable Nouns, Some / Any / A / An",
-                "activity": "Use of English: Missing sentences"
-              },
-              {
-                "title": "A lot of / Much / Many, Should / Shouldn't",
-                "activity": "Writing: Formal and informal style"
-              },
-              {
-                "title": "Be Going To, Will, Won't",
-                "activity": "Speaking in pairs"
-              },
-              {
-                "title": "Present Continuous for Future",
-                "activity": "Speaking: Making suggestions and plans"
-              },
-              {
-                "title": "Comparative Adjectives",
-                "activity": "Speaking: Comparing photos and expressing feelings"
-              },
-              {
-                "title": "Superlative Adjectives / Articles",
-                "activity": "Writing: Formal letter of opinion"
-              },
-              {
-                "title": "Present Perfect (ever / never)",
-                "activity": "Use of English: Shop dialogues"
-              },
-              {
-                "title": "Present Perfect (already / just / yet)",
-                "activity": "Listening: Multiple choice"
-              },
-              {
-                "title": "Presentation Lesson",
-                "activity": ""
-              },
-              {
-                "title": "Passive Voice with By",
-                "activity": "Speaking: Biography"
-              },
-              {
-                "title": "Zero and First Conditional",
-                "activity": "Writing: Paragraphs"
-              },
-              {
-                "title": "Final Lesson / Review",
-                "activity": ""
-              },
-              {
-                "title": "Head Teacher Workshop",
-                "activity": ""
-              }
-            ]
-          }
-        ],
-        "teacher": {
-          "name": "Emily Johnson",
-          "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-          "bio": "Lead Instructor"
-        }
-      },
-      {
-        "id": "b1-pre-intermediate",
-        "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
-        "title": "B1 Pre Intermediate",
-        "description": "Build confident communication and solid grammar foundation.",
-        "duration": "2 Months (40 lessons)",
-        "outcomes": [
-          "Use advanced grammar structures in speech and writing",
-          "Participate in discussions and debates",
-          "Write structured essays and formal letters",
-          "Prepare for the national B2 certificate exam"
-        ],
-        "level": "B1",
-        "category": "General_English",
-        "modules": [
-          {
-            "title": "Month 1",
-            "description": "Focus on core grammar and everyday vocabulary.",
-            "lessons": [
-              {
-                "title": "Present Simple vs Present Continuous",
-                "activity": "Reading: Multiple Choice Questions"
-              },
-              {
-                "title": "Articles",
-                "activity": "Speaking: Family arguments / information role-plays"
-              },
-              {
-                "title": "Past Simple",
-                "activity": "Telling stories related to crime"
-              },
-              {
-                "title": "Past Continuous",
-                "activity": "Writing: Understanding the evaluation"
-              },
-              {
-                "title": "Quantifiers",
-                "activity": "Talking about social networks"
-              },
-              {
-                "title": "Relative Pronouns",
-                "activity": "Discussing definitions"
-              },
-              {
-                "title": "Present Perfect (ever / never / for / since)",
-                "activity": "Understanding first aid"
-              },
-              {
-                "title": "Present Perfect vs Past Simple",
-                "activity": "Writing: Content and style"
-              },
-              {
-                "title": "Comparative & Superlative Adjectives",
-                "activity": "Writing: Opinions about TV and films"
-              },
-              {
-                "title": "Modifying adjectives / too & enough",
-                "activity": "Speaking: Negotiations"
-              },
-              {
-                "title": "Presentation",
-                "activity": ""
-              },
-              {
-                "title": "Going to / Will / May / Might",
-                "activity": "Talking about your future"
-              },
-              {
-                "title": "Zero & First Conditional",
-                "activity": "Writing: Formal exam letter"
-              },
-              {
-                "title": "Modals of obligation / prohibition / advice",
-                "activity": "Writing a CV"
-              },
-              {
-                "title": "Second Conditional",
-                "activity": "Speaking: Giving advice"
-              },
-              {
-                "title": "Past Perfect / Used to",
-                "activity": "Reporting past activities"
-              },
-              {
-                "title": "Gerunds vs Infinitives",
-                "activity": "Discussing friendship interests"
-              },
-              {
-                "title": "Reported Speech: Statements",
-                "activity": "Reading: Referencing exercise"
-              },
-              {
-                "title": "Reported Speech: Questions",
-                "activity": "Listening: Completing notes"
-              },
-              {
-                "title": "Passive Voice (Present Simple)",
-                "activity": "Speaking: Importance of the internet"
-              },
-              {
-                "title": "Passive Voice (Other tenses)",
-                "activity": "Speculating about photos"
-              },
-              {
-                "title": "Presentation",
-                "activity": ""
-              },
-              {
-                "title": "Review Lesson",
-                "activity": ""
-              },
-              {
-                "title": "Head Teacher Workshop",
-                "activity": ""
-              }
-            ]
-          }
-        ],
-        "teacher": {
-          "name": "Emily Johnson",
-          "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-          "bio": "Lead Instructor"
-        }
-      },
-      {
-        "id": "b1-plus-intermediate",
-        "image": "https://plus.unsplash.com/premium_photo-1661909267383-58991abdca51?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "title": "B1+ Intermediate",
-        "description": "Develop advanced grammar and argumentative speaking skills.",
-        "duration": "2 Months (40 lessons)",
-        "outcomes": [
-          "Use advanced grammar structures in speech and writing",
-          "Participate in discussions and debates",
-          "Write structured essays and formal letters",
-          "Prepare for the national B2 certificate exam"
-        ],
-        "level": "B1+",
-        "category": "General_English",
-        "modules": [
-          {
-            "title": "Month 1",
-            "description": "Develop advanced grammar and argumentative speaking skills.",
-            "lessons": [
-              {
-                "title": "Present Simple vs Present Continuous",
-                "activity": "Reading: True / False / Not Given"
-              },
-              {
-                "title": "State and Action Verbs",
-                "activity": "Listening: Matching information, Speaking: Describing people"
-              },
-              {
-                "title": "Past Simple / Past Continuous / Past Perfect",
-                "activity": "Speaking: Exchanging information"
-              },
-              {
-                "title": "Used to / Would",
-                "activity": "Speaking: Discussing life in the past"
-              },
-              {
-                "title": "Present Perfect",
-                "activity": "Listening: Podcast"
-              },
-              {
-                "title": "Present Perfect Continuous",
-                "activity": "Writing: Explaining statistics for Writing Task 1"
-              },
-              {
-                "title": "Future Forms",
-                "activity": "Writing: A recipe"
-              },
-              {
-                "title": "Future Continuous & Future Perfect",
-                "activity": "Speaking: Recipe discussion"
-              },
-              {
-                "title": "Modals of Obligation / Prohibition / Advice / Permission",
-                "activity": "Writing: Formal letter of application"
-              },
-              {
-                "title": "Zero, First, Second Conditionals",
-                "activity": "Speaking: Talking about school projects"
-              },
-              {
-                "title": "Presentation",
-                "activity": ""
-              },
-              {
-                "title": "Passive Voice / Have Something Done",
-                "activity": "Speaking: Brainstorming with the team"
-              },
-              {
-                "title": "Gerunds and Infinitives",
-                "activity": "Writing: For-and-against essay"
-              },
-              {
-                "title": "Defining Relative Clauses",
-                "activity": "Reading and analyzing a magazine article"
-              },
-              {
-                "title": "Non-defining Relative Clauses",
-                "activity": "Speaking: Debate (superstitions and rituals)"
-              },
-              {
-                "title": "Reported Speech: Statements",
-                "activity": "Speaking: Film feedback"
-              },
-              {
-                "title": "Reported Speech: Questions & Commands",
-                "activity": "Writing: Instructions"
-              },
-              {
-                "title": "Modal Verbs of Speculation and Deduction",
-                "activity": "Speaking: Conspiracy theories discussion"
-              },
-              {
-                "title": "Third Conditional",
-                "activity": "Writing: A story"
-              },
-              {
-                "title": "Indeterminate Pronouns",
-                "activity": "Speaking: Clothes shop dialogue"
-              },
-              {
-                "title": "So / Such / I wish / If only",
-                "activity": "Writing: Formal letter of complaint"
-              },
-              {
-                "title": "Presentation",
-                "activity": ""
-              },
-              {
-                "title": "Review Lesson",
-                "activity": ""
-              },
-              {
-                "title": "Head Teacher Workshop",
-                "activity": ""
-              }
-            ]
-          }
-        ],
-        "teacher": {
-          "name": "Emily Johnson",
-          "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-          "bio": "Lead Instructor"
-        }
-      }
-    ]
-  },
-  "coursesPage": {
-    "titleLine1": "CHOOSE",
-    "titleLine2": "YOUR PATH.",
-    "allLabel": "ALL",
-    "searchPlaceholder": "Search program...",
-    "loading": "Loading..."
-  },
-  "courseDetail": {
-    "durationLabel": "Duration",
-    "levelLabel": "Level",
-    "targetLabel": "Target",
-    "priceLabel": "Price",
-    "backToCatalog": "Back to Catalog",
-    "enrollNow": "Enroll Now",
-    "architecture": "Course Architecture",
-    "journeyLine1": "The",
-    "journeyLine2": "Journey.",
-    "lessonsLabel": "Lessons",
-    "workshopLabel": "Practical Workshop",
-    "chiefMentor": "Chief Mentor",
-    "learnFromLine1": "Learn from",
-    "learnFromLine2": "the Best.",
-    "startYourLine1": "Start Your",
-    "startYourLine2": "Future.",
-    "investment": "Investment in yourself",
-    "joinProgram": "Join Program",
-    "askQuestion": "Ask a Question",
-    "trialLine": "Trial lesson is free • No hidden fees • 100% Satisfaction",
-    "apply": "Apply"
-  },
-  "contact": {
-    "subtitle": "We are always here to help you start your journey.",
-    "phoneLabel": "Phone",
-    "emailLabel": "Email",
-    "hoursLabel": "Hours",
-    "hoursWeekdays": "Mon - Sat: 09:00 - 20:00",
-    "hoursSunday": "Sunday: Closed",
-    "mapTitle": "Interactive Map",
-    "mapDescription": "Find us near the Samarkand State University campus, right at the corner of Universitet Boulevard.",
-    "showLocations": "Show all locations",
-    "questionsTitle": "Have specific questions?",
-    "questionsSubtitle": "Send us a message and we'll reply within 24 hours.",
-    "telegramCta": "Message on Telegram"
-  },
-  "homePage": {
-    "heroWord1": "LEARN.",
-    "heroWord2": "LISTEN.",
-    "heroWord3": "SPEAK.",
-    "alumni": "Join 15,000+ Alumni",
-    "coursesBadge": "COURSES",
-    "coursesTitleLine1": "The",
-    "coursesTitleLine2": "Programs.",
-    "coursesSubtitle": "Engineered for absolute fluency.",
-    "fullCatalog": "Full Catalog",
-    "courseTrackHint": "See all programs for this track",
-    "locationsBadge": "LOCATIONS",
-    "lifestyleAltHub": "Polyglot Hub lounge",
-    "lifestyleHubTitle": "Polyglot Hub",
-    "lifestyleHubDesc": "Our central campuses feature coffee zones and collaborative lounges for relaxed conversation practice with mentors and peers.",
-    "lifestyleCommunityTag": "COMMUNITY FIRST",
-    "lifestyleAltCinema": "Cinema night at Polyglot",
-    "lifestyleCinemaTag": "Every Friday",
-    "lifestyleAltLibrary": "Polyglot library and study space",
-    "lifestyleAltSpeaking": "Speaking club at Polyglot",
-    "whyChooseUs": "WHY CHOOSE US",
-    "faqBadge": "FAQ",
-    "ctaLine1": "STOP DREAMING.",
-    "ctaLine2": "START SPEAKING.",
-    "bookLesson": "Book Free Lesson"
-  }
+	"nav": {
+		"home": "Main",
+		"courses": "Catalog",
+		"about": "The Network",
+		"audit": "Take a Diagnostic",
+		"contact": "Visit Us",
+		"enroll": "Join Now",
+		"openMenu": "Open menu",
+		"closeMenu": "Close menu",
+		"mainMenu": "Main menu"
+	},
+	"hero": {
+		"badge": "Samarkand's #1 Language Institution",
+		"title": "Define Your Future with English Mastery",
+		"subtitle": "Premium education for the global-minded. Oxford-certified standards across 8 locations in Samarkand."
+	},
+	"prestige": {
+		"badge": "Official Ranking 2024",
+		"numberWord": "NUMBER",
+		"oneWord": "ONE.",
+		"descriptionBeforeHighlight": "Officially recognized as the Best Performing Learning Center in ",
+		"descriptionHighlight": "Uzbekistan by IDP Uzbekistan.",
+		"videoBadge": "Polyglot School",
+		"videoTitleLine1": "Watch the story behind",
+		"videoTitleLine2": "Uzbekistan's leading language school."
+	},
+	"results": {
+		"badge": "THE TEAM",
+		"title": "Our Pride",
+		"subtitle": "6 teachers with IELTS 9",
+		"uniqueClaim": "No other language center in Samarkand has this",
+		"scoreLabel": "IELTS 9",
+		"roleLabel": "Teacher",
+		"teachersStat": "Teachers",
+		"maxBandLabel": "Max Band",
+		"teachers": [
+			{
+				"name": "Angus",
+				"image": "Angus.jpeg"
+			},
+			{
+				"name": "Jasur",
+				"image": "Jasur.jpeg"
+			},
+			{
+				"name": "Nazira",
+				"image": "NAZIRA.jpeg"
+			},
+			{
+				"name": "Otabek",
+				"image": "Otabek.jpeg"
+			},
+			{
+				"name": "Shahzoda",
+				"image": "SHAHZODA.jpeg"
+			},
+			{
+				"name": "Tesni",
+				"image": "Tesni.jpeg"
+			}
+		],
+		"viewAllStaff": "View all staff"
+	},
+	"staffPage": {
+		"title": "Our Team",
+		"subtitle": "Meet the people who make Polyglot the leading language school in Samarkand.",
+		"backHome": "Back to home",
+		"sectionNiners": "IELTS 9 — Our Pride",
+		"sectionTeam": "Teaching Team",
+		"roleLabel": "Teacher",
+		"scoreLabel": "IELTS 9",
+		"allTeachers": [
+			{
+				"nameEn": "Angus",
+				"nameRu": "Ангус",
+				"image": "Angus.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Jasur",
+				"nameRu": "Жасур",
+				"image": "Jasur.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Nazira",
+				"nameRu": "Назира",
+				"image": "NAZIRA.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Otabek",
+				"nameRu": "Отабек",
+				"image": "Otabek.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Shahzoda",
+				"nameRu": "Шахзода",
+				"image": "SHAHZODA.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Tesni",
+				"nameRu": "Тесни",
+				"image": "Tesni.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Javokhir",
+				"nameRu": "Жавохир",
+				"image": "Javokhir.jpeg",
+				"folder": "team",
+				"ielts9": false
+			},
+			{
+				"nameEn": "Nodir",
+				"nameRu": "Нодир",
+				"image": "Nodir.jpeg",
+				"folder": "team",
+				"ielts9": false
+			},
+			{
+				"nameEn": "Shahrukh",
+				"nameRu": "Шахрух",
+				"image": "Shahrukh.jpeg",
+				"folder": "team",
+				"ielts9": false
+			},
+			{
+				"nameEn": "Siyovush",
+				"nameRu": "Сиёвуш",
+				"image": "Siyovush.jpeg",
+				"folder": "team",
+				"ielts9": false
+			}
+		]
+	},
+	"branches": {
+		"title": "Closest to You",
+		"subtitle": "A network of 8 high-tech campuses across Samarkand.",
+		"mapRouteText": "Build route",
+		"list": [
+			"Registan Center",
+			"Siyob Campus",
+			"Universitet Blvd",
+			"Vokzal District",
+			"Sat-Tepo",
+			"Afrosiyob",
+			"Chust",
+			"Motrid"
+		]
+	},
+	"methodology": {
+		"title": "The Protocol",
+		"subtitle": "How we take you from quiet listener to confident speaker.",
+		"steps": [
+			{
+				"title": "Innovative methodology",
+				"desc": "Developed with international universities and aligned with global standards—so you can reach advanced proficiency in a focused timeframe."
+			},
+			{
+				"title": "Comfort built in",
+				"desc": "Fully equipped classrooms plus a dedicated co-working zone for independent study."
+			},
+			{
+				"title": "Speaking practice",
+				"desc": "Extra practical sessions beyond core lessons to build fluency and confidence."
+			},
+			{
+				"title": "Class rhythm",
+				"desc": "Four 90-minute lessons per week. From A1, IELTS prep with a native speaker. Visit daily for extra Academic Support."
+			},
+			{
+				"title": "Proven outcomes",
+				"desc": "Our alumni study at leading universities worldwide. About 90% hit their target IELTS scores."
+			},
+			{
+				"title": "Life around learning",
+				"desc": "Sundays: English film nights, debates, music, plus seminars and trainings with local and international speakers."
+			},
+			{
+				"title": "Motivation in class",
+				"desc": "Active students earn Polyglot dollars and redeem them for prizes at the auction on the last Sunday of each month."
+			},
+			{
+				"title": "Parents in the loop",
+				"desc": "Regular calls and SMS keep parents updated on their children’s progress."
+			}
+		]
+	},
+	"lifestyle": {
+		"title": "Ecosystem",
+		"subtitle": "Learning English is a lifestyle, not a 90-minute chore.",
+		"items": [
+			{
+				"title": "Speaking Clubs",
+				"label": "Daily"
+			},
+			{
+				"title": "Cinema Nights",
+				"label": "Weekends"
+			},
+			{
+				"title": "Elite Library",
+				"label": "24/7 Access"
+			},
+			{
+				"title": "Game Theory",
+				"label": "Interactive"
+			}
+		]
+	},
+	"faq": {
+		"title": "Intelligent Support",
+		"questions": [
+			{
+				"q": "How long to reach IELTS 7.0?",
+				"a": "Typically 6-9 months of intensive study depending on your starting point."
+			},
+			{
+				"q": "Are your teachers certified?",
+				"a": "Yes, 100% of our staff hold CELTA, DELTA or equivalent international certificates."
+			},
+			{
+				"q": "Can I change my branch?",
+				"a": "Absolutely. You can move between any of our 8 campuses in Samarkand."
+			}
+		]
+	},
+	"footer": {
+		"rights": "© 2026 Polyglot Network. Excellence in Samarkand since 2012.",
+		"address": "Universitet Blvd 77",
+		"headlineLine1": "THE FUTURE",
+		"headlineLine2": "SPEAKS",
+		"headlineHighlight": "ENGLISH.",
+		"navigationTitle": "Navigation",
+		"hqTitle": "Headquarters",
+		"tagline": "Designed for the Elite."
+	},
+	"ai": {
+		"trigger": "AI Advisor",
+		"placeholder": "What is your current level?",
+		"title": "Polyglot AI Advisor",
+		"statusOnline": "Online",
+		"greeting": "Hello! Tell me about your goals, and I will help you choose the perfect course.",
+		"fallback": "Sorry, I could not process your request.",
+		"connectionError": "Error connecting to AI advisor."
+	},
+	"enrollForm": {
+		"title": "Join Polyglot Network",
+		"subtitle": "Start your journey to English mastery today. Our advisors will contact you shortly.",
+		"name": "Your Full Name",
+		"phone": "Contact Number",
+		"branch": "Choose a convenient branch",
+		"submit": "Send Application",
+		"success": "Welcome Aboard!",
+		"successDetails": "We have received your application. Our counselor will contact you shortly to schedule your trial lesson.",
+		"backHome": "Back to Home",
+		"namePlaceholder": "John Doe",
+		"branchPlaceholder": "—",
+		"heroAlt": "Join us",
+		"quoteAuthor": "Nodira, IELTS Student",
+		"quoteText": "Starting my journey here was the best decision for my academic future. The atmosphere is truly motivating!"
+	},
+	"diagnostic": {
+		"title": "Quick Diagnostic",
+		"subtitle": "Find out your real language level in 60 seconds.",
+		"quickCardTime": "60 Seconds",
+		"quickCardTitle": "Quick Diagnostic",
+		"quickCardDesc": "Fast AI assessment of your speaking comfort and basic goals.",
+		"quickCardCta": "Start Now",
+		"deepCardTime": "30 Minutes",
+		"deepCardTitle": "Deep Audit",
+		"deepCardDesc": "Full professional academic testing with grammar, vocabulary and logic.",
+		"deepCardCta": "Go To Exam",
+		"startBtn": "Start Test",
+		"nextBtn": "Next Question",
+		"calculating": "Analyzing data...",
+		"resultTitle": "Diagnostic Complete",
+		"recommendation": "Recommended program:",
+		"retake": "Retake Test",
+		"questionLabel": "QUESTION",
+		"levelStrong": "Strong B2+",
+		"levelDeveloping": "Developing A2/B1",
+		"recommendedAlt": "Recommended program",
+		"levelLabel": "DIAGNOSTIC LEVEL",
+		"pointsLabel": "PTS",
+		"viewProgram": "View Program",
+		"questions": [
+			{
+				"q": "How would you describe your comfort when communicating?",
+				"options": [
+					{
+						"a": "I use single words and gestures",
+						"score": 1
+					},
+					{
+						"a": "I can communicate in daily life, but complex topics are difficult",
+						"score": 2
+					},
+					{
+						"a": "I speak freely but sometimes make grammar mistakes",
+						"score": 3
+					},
+					{
+						"a": "I use English professionally every day",
+						"score": 4
+					}
+				]
+			},
+			{
+				"q": "Which sentence is grammatically correct?",
+				"options": [
+					{
+						"a": "I have seen him yesterday",
+						"score": 1
+					},
+					{
+						"a": "I saw him yesterday",
+						"score": 3
+					},
+					{
+						"a": "I seen him yesterday",
+						"score": 0
+					}
+				]
+			},
+			{
+				"q": "What is your main learning goal?",
+				"options": [
+					{
+						"a": "Academic (IELTS / University admission)",
+						"score": 5
+					},
+					{
+						"a": "Career growth / Business negotiations",
+						"score": 4
+					},
+					{
+						"a": "Personal development / Travel",
+						"score": 2
+					}
+				]
+			}
+		]
+	},
+	"deepAudit": {
+		"backgroundWord": "AUDIT",
+		"titleWord": "Neural",
+		"titleHighlight": "Deep Audit.",
+		"subtitle": "Full 30-minute professional assessment from Polyglot HQ. Cover grammar, lexical resource, and linguistic logic.",
+		"timeLabel": "Time Limit",
+		"timeValue": "30 MIN",
+		"standardsLabel": "Standards",
+		"standardsValue": "CEFR STDR",
+		"accuracyLabel": "Accuracy",
+		"accuracyValue": "98% ACC.",
+		"startBtn": "Start Full Exam",
+		"formTitle": "Your contact details",
+		"formSubtitle": "We will use them to call you back after the test.",
+		"formNameLabel": "Name",
+		"formNamePlaceholder": "John Doe",
+		"formPhoneLabel": "Phone",
+		"formPhonePlaceholder": "+998 (__) ___-__-__",
+		"formContinueBtn": "Continue to test",
+		"leaveWarning": "If you refresh the page or go back, your progress will be lost. Are you sure?",
+		"formLoading": "Loading test…",
+		"formLoadError": "Failed to load test. Please refresh the page.",
+		"questionLabel": "Question",
+		"back": "Back",
+		"next": "Next",
+		"finishBtn": "Finish & Analyze",
+		"completeBadge": "Audit Complete",
+		"resultSuccessTitle": "All tests passed",
+		"resultSuccessSubtitle": "We will call you back soon.",
+		"yourLabel": "Your",
+		"standingLabel": "Standing.",
+		"metricsTitle": "Diagnostic Metrics",
+		"levelLabel": "Level",
+		"retakeBtn": "Retake Audit",
+		"systemRecLabel": "System Recommendation",
+		"readyForLabel": "Ready for",
+		"reserveSpotBtn": "Reserve Spot",
+		"levels": {
+			"beginner": "Beginner (A1)",
+			"intermediate": "Intermediate (B1-B2)",
+			"advanced": "Advanced (C1)"
+		}
+	},
+	"courses": {
+		"categories": [
+			{
+				"value": "General English",
+				"label": "General_English",
+				"duration": "From Beginning to Fluency",
+				"iconId": "BookOpen"
+			},
+			{
+				"value": "IELTS Intensive",
+				"label": "IELTS_Intensive",
+				"duration": "From Intermediate to Advanced",
+				"iconId": "Target"
+			},
+			{
+				"value": "English kids",
+				"label": "English_kids",
+				"duration": "From Foundation to Beginner",
+				"iconId": "Smile"
+			},
+			{
+				"value": "Подготовка к CEFR/DTM",
+				"label": "Подготовка_к_CEFR/DTM",
+				"duration": "From Foundation to Fluency",
+				"iconId": "Globe"
+			},
+			{
+				"value": "Подготовка к TOEFL",
+				"label": "Подготовка_к_TOEFL",
+				"duration": "From Intermediate to Advanced",
+				"iconId": "Globe2"
+			},
+			{
+				"value": "Подготовка к Duolingo",
+				"label": "Подготовка_к_Duolingo",
+				"duration": "From Intermediate to Advanced",
+				"iconId": "Feather"
+			}
+		],
+		"list": [
+			{
+				"id": "azero-pre-elementary",
+				"image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=800&q=80",
+				"title": "Azero Pre-Elementary",
+				"description": "A foundational course focusing on basic descriptions, reading unfamiliar words, and building a 700+ word vocabulary.",
+				"duration": "2 Months (40 lessons)",
+				"outcomes": [
+					"Confidently write and read even unfamiliar words ",
+					"Describe surroundings and people at a basic level ",
+					"Use a minimum of 700+ words in English ",
+					"Express thoughts in writing through letters ",
+					"Potential to skip A1+ and move to A2 with 85%+ final test score (for ages 15+)"
+				],
+				"level": "Azero",
+				"category": "English_kids",
+				"modules": [
+					{
+						"title": "Month 1 & 2 Curriculum",
+						"description": "24 lessons with the main teacher, plus sessions with assistants and international instructors. ",
+						"lessons": [
+							{
+								"title": "Present Simple 'to be' (Singular)",
+								"activity": "Speaking: Presenting a friend "
+							},
+							{
+								"title": "Describing Jobs & Greetings",
+								"activity": "Speaking: Word stress intonation "
+							},
+							{
+								"title": "Present Simple 'to be' (Plural)",
+								"activity": "Speaking: Favorite musician "
+							},
+							{
+								"title": "Wh- questions",
+								"activity": "Speaking: Exchanging information [cite: 31]"
+							},
+							{
+								"title": "Nouns & Demonstrative Pronouns",
+								"activity": "Speaking: Conversation at a cloakroom [cite: 32]"
+							},
+							{
+								"title": "Has got / Have got",
+								"activity": "Speaking: Family members [cite: 33]"
+							},
+							{
+								"title": "Present Simple (Action/Plural)",
+								"activity": "Listening and Speaking about daily routines [cite: 34]"
+							},
+							{
+								"title": "Present Simple Questions",
+								"activity": "Reading and Speaking about animals [cite: 35]"
+							},
+							{
+								"title": "Present Simple (Action/Singular)",
+								"activity": "Speaking: Free time [cite: 36]"
+							},
+							{
+								"title": "Adverbs of Frequency",
+								"activity": "Reading and talking about Eating Habits [cite: 37]"
+							},
+							{
+								"title": "There is/are; some and any",
+								"activity": "Describing city [cite: 38]"
+							},
+							{
+								"title": "Is there / Are there",
+								"activity": "Renting a place [cite: 39]"
+							},
+							{
+								"title": "Modal verb: Can/Can't",
+								"activity": "Class survey about abilities [cite: 40]"
+							},
+							{
+								"title": "Possessive 's",
+								"activity": "Listening and talking about a talented person [cite: 41]"
+							},
+							{
+								"title": "Present Continuous",
+								"activity": "Describing picture and finding difference [cite: 41]"
+							},
+							{
+								"title": "Adjective Order",
+								"activity": "Talking about clothes [cite: 41]"
+							},
+							{
+								"title": "Past Simple: was/were",
+								"activity": "Questions about famous person [cite: 42]"
+							},
+							{
+								"title": "Past Simple: Regular Verbs",
+								"activity": "Quiz about Famous person [cite: 42]"
+							},
+							{
+								"title": "Past Simple: Irregular Verbs",
+								"activity": "Things to describe the world [cite: 42]"
+							},
+							{
+								"title": "Past Simple Questions",
+								"activity": "Asking about past experience of peers [cite: 42]"
+							},
+							{
+								"title": "Preferences (like/love/hate)",
+								"activity": "Activities in free time [cite: 42]"
+							},
+							{
+								"title": "Object Pronouns",
+								"activity": "Finding out a superfan [cite: 43]"
+							},
+							{
+								"title": "Nouns & Travel",
+								"activity": "Countable and uncountable nouns (Bad journey experience) [cite: 44]"
+							},
+							{
+								"title": "Present Continuous (Future)",
+								"activity": "Planning a dream holiday [cite: 44]"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Emily Johnson",
+					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+					"bio": "Lead Instructor"
+				}
+			},
+			{
+				"id": "a1-plus-beginner",
+				"image": "https://plus.unsplash.com/premium_photo-1770548404170-6e7cbaabf0bf?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"title": "A1+ Beginner",
+				"description": "Develop listening skills, basic life descriptions, and expand vocabulary to 2000+ words.",
+				"duration": "2 Months (40 lessons)",
+				"outcomes": [
+					"Improve English listening comprehension ",
+					"Describe daily life and others at a basic level ",
+					"Use a minimum of 2000+ English words ",
+					"Express thoughts in writing (letters and online) "
+				],
+				"level": "A1+",
+				"category": "General_English",
+				"modules": [
+					{
+						"title": "Course Curriculum",
+						"description": "Comprehensive 24-lesson program with main teachers, assistants, and international instructors[cite: 8, 9, 10].",
+						"lessons": [
+							{
+								"title": "Starter Unit: Basics",
+								"activity": "Alphabet, Colours, Numbers, Days of the week, Months "
+							},
+							{
+								"title": "Lesson 1: To be",
+								"activity": "Reading/Speaking: Talking about hobby (affirmative and negative) "
+							},
+							{
+								"title": "Lesson 2: Possession",
+								"activity": "Listening/Writing: Describing a picture, Have/has got, possessive adjectives "
+							},
+							{
+								"title": "Lesson 3: Describing People",
+								"activity": "Reading/Speaking: Possessive 's, regular and irregular nouns "
+							},
+							{
+								"title": "Lesson 4: Questions & Articles",
+								"activity": "Writing: School planner, Wh-questions, demonstrative pronouns, articles "
+							},
+							{
+								"title": "Lesson 5: Present Simple I",
+								"activity": "Listening: True/False/Not mentioned (Affirmative/Negative) "
+							},
+							{
+								"title": "Lesson 6: Present Simple II",
+								"activity": "Speaking: Giving directions, Yes/No and Wh-questions "
+							},
+							{
+								"title": "Lesson 7: Location",
+								"activity": "Reading: Headings, There is/There are, prepositions of place "
+							},
+							{
+								"title": "Lesson 8: Nouns & Offers",
+								"activity": "Making and replying to offers, Countable/uncountable, some/any/a/an "
+							},
+							{
+								"title": "Lesson 9: Ability & Frequency",
+								"activity": "Asking for and giving information, Modal verbs: can/can't, adverbs of frequency "
+							},
+							{
+								"title": "Lesson 10: Preferences",
+								"activity": "Presentation: Questionnaire, The imperative, like/love/hate + Ving "
+							},
+							{
+								"title": "Lesson 11: Mid-term Speaking",
+								"activity": "Presentation Speaking of Students "
+							},
+							{
+								"title": "Lesson 12: Present Continuous I",
+								"activity": "Reading: Matching features, affirmative and negative "
+							},
+							{
+								"title": "Lesson 13: Continuous vs Simple",
+								"activity": "Listening: Multiple Choice, Questions, Present Simple vs Continuous "
+							},
+							{
+								"title": "Lesson 14: Past of To Be",
+								"activity": "Speaking: Sport, Past Simple of to be / There was/were "
+							},
+							{
+								"title": "Lesson 15: Past Simple Affirmative",
+								"activity": "Writing: Unusual sports, Regular/Irregular Verbs "
+							},
+							{
+								"title": "Lesson 16: Past Simple Negative",
+								"activity": "Writing: Personal Statement "
+							},
+							{
+								"title": "Lesson 17: Past Simple Questions",
+								"activity": "Speaking: Knowing about evaluation "
+							},
+							{
+								"title": "Lesson 18: Speaking Presentation",
+								"activity": "Speaking Lesson (Presentation) "
+							},
+							{
+								"title": "Lesson 19: Comparisons",
+								"activity": "Reading: Multiple Choice Questions, Comparative Degree of Adjectives "
+							},
+							{
+								"title": "Lesson 20: Superlatives & Experience",
+								"activity": "Listening: Gap filling, Superlative Degree, Present Perfect with ever/never "
+							},
+							{
+								"title": "Lesson 21: Future Plans",
+								"activity": "Use of English, To be going to / prepositions of time "
+							},
+							{
+								"title": "Lesson 22: Advice & Obligation",
+								"activity": "Writing under exam conditions, Should/shouldn't, must/have to "
+							},
+							{
+								"title": "Lesson 23: Final Review",
+								"activity": "Review with the main teacher and academic support "
+							},
+							{
+								"title": "Lesson 24: Workshop",
+								"activity": "Head Teacher Workshop "
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Emily Johnson",
+					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+					"bio": "Lead Instructor"
+				}
+			},
+			{
+				"id": "a1-plus-elementary",
+				"image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+				"title": "A1+ Elementary",
+				"description": "Build basic English communication and grammar foundation.",
+				"duration": "2 Months (40 lessons)",
+				"outcomes": [
+					"Develop basic spoken English",
+					"Communicate with tourists and travel confidently",
+					"Write simple messages and letters in English",
+					"Master fundamental English grammar"
+				],
+				"level": "A1+",
+				"category": "General_English",
+				"modules": [
+					{
+						"title": "Month 1",
+						"description": "Build basic English communication and grammar foundation.",
+						"lessons": [
+							{
+								"title": "Starter Unit Review of A1+",
+								"activity": "Speaking: Talking about family and basic descriptions"
+							},
+							{
+								"title": "Present Simple (affirmative / negative)",
+								"activity": "Reading: True / False / Not Mentioned, Listening: Matching"
+							},
+							{
+								"title": "Adverbs of Frequency / Present Simple Questions",
+								"activity": "Speaking: Free-time activities"
+							},
+							{
+								"title": "There is / There are, Prepositions of Place",
+								"activity": "Speaking: Description of a house and room"
+							},
+							{
+								"title": "Present Continuous vs Present Simple",
+								"activity": "Use of English: Multiple choice cloze"
+							},
+							{
+								"title": "Can / Can't",
+								"activity": "Speaking: Dangerous sports"
+							},
+							{
+								"title": "Adverbs of Manner / Have to / Must",
+								"activity": "Writing: Fitness programme announcement"
+							},
+							{
+								"title": "Past Simple of To Be and Can",
+								"activity": "Writing: Presentation"
+							},
+							{
+								"title": "Past Simple Affirmative",
+								"activity": "Speaking: Talking about past events"
+							},
+							{
+								"title": "Past Simple Negative and Questions",
+								"activity": "Reading: Matching"
+							},
+							{
+								"title": "Past Continuous",
+								"activity": "Listening: Completing notes"
+							},
+							{
+								"title": "Presentation Lesson",
+								"activity": "Favourite book"
+							},
+							{
+								"title": "Countable / Uncountable Nouns, Some / Any / A / An",
+								"activity": "Use of English: Missing sentences"
+							},
+							{
+								"title": "A lot of / Much / Many, Should / Shouldn't",
+								"activity": "Writing: Formal and informal style"
+							},
+							{
+								"title": "Be Going To, Will, Won't",
+								"activity": "Speaking in pairs"
+							},
+							{
+								"title": "Present Continuous for Future",
+								"activity": "Speaking: Making suggestions and plans"
+							},
+							{
+								"title": "Comparative Adjectives",
+								"activity": "Speaking: Comparing photos and expressing feelings"
+							},
+							{
+								"title": "Superlative Adjectives / Articles",
+								"activity": "Writing: Formal letter of opinion"
+							},
+							{
+								"title": "Present Perfect (ever / never)",
+								"activity": "Use of English: Shop dialogues"
+							},
+							{
+								"title": "Present Perfect (already / just / yet)",
+								"activity": "Listening: Multiple choice"
+							},
+							{
+								"title": "Presentation Lesson",
+								"activity": ""
+							},
+							{
+								"title": "Passive Voice with By",
+								"activity": "Speaking: Biography"
+							},
+							{
+								"title": "Zero and First Conditional",
+								"activity": "Writing: Paragraphs"
+							},
+							{
+								"title": "Final Lesson / Review",
+								"activity": ""
+							},
+							{
+								"title": "Head Teacher Workshop",
+								"activity": ""
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Emily Johnson",
+					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+					"bio": "Lead Instructor"
+				}
+			},
+			{
+				"id": "b1-pre-intermediate",
+				"image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
+				"title": "B1 Pre Intermediate",
+				"description": "Build confident communication and solid grammar foundation.",
+				"duration": "2 Months (40 lessons)",
+				"outcomes": [
+					"Use advanced grammar structures in speech and writing",
+					"Participate in discussions and debates",
+					"Write structured essays and formal letters",
+					"Prepare for the national B2 certificate exam"
+				],
+				"level": "B1",
+				"category": "General_English",
+				"modules": [
+					{
+						"title": "Month 1",
+						"description": "Focus on core grammar and everyday vocabulary.",
+						"lessons": [
+							{
+								"title": "Present Simple vs Present Continuous",
+								"activity": "Reading: Multiple Choice Questions"
+							},
+							{
+								"title": "Articles",
+								"activity": "Speaking: Family arguments / information role-plays"
+							},
+							{
+								"title": "Past Simple",
+								"activity": "Telling stories related to crime"
+							},
+							{
+								"title": "Past Continuous",
+								"activity": "Writing: Understanding the evaluation"
+							},
+							{
+								"title": "Quantifiers",
+								"activity": "Talking about social networks"
+							},
+							{
+								"title": "Relative Pronouns",
+								"activity": "Discussing definitions"
+							},
+							{
+								"title": "Present Perfect (ever / never / for / since)",
+								"activity": "Understanding first aid"
+							},
+							{
+								"title": "Present Perfect vs Past Simple",
+								"activity": "Writing: Content and style"
+							},
+							{
+								"title": "Comparative & Superlative Adjectives",
+								"activity": "Writing: Opinions about TV and films"
+							},
+							{
+								"title": "Modifying adjectives / too & enough",
+								"activity": "Speaking: Negotiations"
+							},
+							{
+								"title": "Presentation",
+								"activity": ""
+							},
+							{
+								"title": "Going to / Will / May / Might",
+								"activity": "Talking about your future"
+							},
+							{
+								"title": "Zero & First Conditional",
+								"activity": "Writing: Formal exam letter"
+							},
+							{
+								"title": "Modals of obligation / prohibition / advice",
+								"activity": "Writing a CV"
+							},
+							{
+								"title": "Second Conditional",
+								"activity": "Speaking: Giving advice"
+							},
+							{
+								"title": "Past Perfect / Used to",
+								"activity": "Reporting past activities"
+							},
+							{
+								"title": "Gerunds vs Infinitives",
+								"activity": "Discussing friendship interests"
+							},
+							{
+								"title": "Reported Speech: Statements",
+								"activity": "Reading: Referencing exercise"
+							},
+							{
+								"title": "Reported Speech: Questions",
+								"activity": "Listening: Completing notes"
+							},
+							{
+								"title": "Passive Voice (Present Simple)",
+								"activity": "Speaking: Importance of the internet"
+							},
+							{
+								"title": "Passive Voice (Other tenses)",
+								"activity": "Speculating about photos"
+							},
+							{
+								"title": "Presentation",
+								"activity": ""
+							},
+							{
+								"title": "Review Lesson",
+								"activity": ""
+							},
+							{
+								"title": "Head Teacher Workshop",
+								"activity": ""
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Emily Johnson",
+					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+					"bio": "Lead Instructor"
+				}
+			},
+			{
+				"id": "b1-plus-intermediate",
+				"image": "https://plus.unsplash.com/premium_photo-1661909267383-58991abdca51?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"title": "B1+ Intermediate",
+				"description": "Develop advanced grammar and argumentative speaking skills.",
+				"duration": "2 Months (40 lessons)",
+				"outcomes": [
+					"Use advanced grammar structures in speech and writing",
+					"Participate in discussions and debates",
+					"Write structured essays and formal letters",
+					"Prepare for the national B2 certificate exam"
+				],
+				"level": "B1+",
+				"category": "General_English",
+				"modules": [
+					{
+						"title": "Month 1",
+						"description": "Develop advanced grammar and argumentative speaking skills.",
+						"lessons": [
+							{
+								"title": "Present Simple vs Present Continuous",
+								"activity": "Reading: True / False / Not Given"
+							},
+							{
+								"title": "State and Action Verbs",
+								"activity": "Listening: Matching information, Speaking: Describing people"
+							},
+							{
+								"title": "Past Simple / Past Continuous / Past Perfect",
+								"activity": "Speaking: Exchanging information"
+							},
+							{
+								"title": "Used to / Would",
+								"activity": "Speaking: Discussing life in the past"
+							},
+							{
+								"title": "Present Perfect",
+								"activity": "Listening: Podcast"
+							},
+							{
+								"title": "Present Perfect Continuous",
+								"activity": "Writing: Explaining statistics for Writing Task 1"
+							},
+							{
+								"title": "Future Forms",
+								"activity": "Writing: A recipe"
+							},
+							{
+								"title": "Future Continuous & Future Perfect",
+								"activity": "Speaking: Recipe discussion"
+							},
+							{
+								"title": "Modals of Obligation / Prohibition / Advice / Permission",
+								"activity": "Writing: Formal letter of application"
+							},
+							{
+								"title": "Zero, First, Second Conditionals",
+								"activity": "Speaking: Talking about school projects"
+							},
+							{
+								"title": "Presentation",
+								"activity": ""
+							},
+							{
+								"title": "Passive Voice / Have Something Done",
+								"activity": "Speaking: Brainstorming with the team"
+							},
+							{
+								"title": "Gerunds and Infinitives",
+								"activity": "Writing: For-and-against essay"
+							},
+							{
+								"title": "Defining Relative Clauses",
+								"activity": "Reading and analyzing a magazine article"
+							},
+							{
+								"title": "Non-defining Relative Clauses",
+								"activity": "Speaking: Debate (superstitions and rituals)"
+							},
+							{
+								"title": "Reported Speech: Statements",
+								"activity": "Speaking: Film feedback"
+							},
+							{
+								"title": "Reported Speech: Questions & Commands",
+								"activity": "Writing: Instructions"
+							},
+							{
+								"title": "Modal Verbs of Speculation and Deduction",
+								"activity": "Speaking: Conspiracy theories discussion"
+							},
+							{
+								"title": "Third Conditional",
+								"activity": "Writing: A story"
+							},
+							{
+								"title": "Indeterminate Pronouns",
+								"activity": "Speaking: Clothes shop dialogue"
+							},
+							{
+								"title": "So / Such / I wish / If only",
+								"activity": "Writing: Formal letter of complaint"
+							},
+							{
+								"title": "Presentation",
+								"activity": ""
+							},
+							{
+								"title": "Review Lesson",
+								"activity": ""
+							},
+							{
+								"title": "Head Teacher Workshop",
+								"activity": ""
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Emily Johnson",
+					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+					"bio": "Lead Instructor"
+				}
+			}
+		]
+	},
+	"coursesPage": {
+		"titleLine1": "CHOOSE",
+		"titleLine2": "YOUR PATH.",
+		"allLabel": "ALL",
+		"searchPlaceholder": "Search program...",
+		"loading": "Loading..."
+	},
+	"courseDetail": {
+		"durationLabel": "Duration",
+		"levelLabel": "Level",
+		"targetLabel": "Target",
+		"priceLabel": "Price",
+		"backToCatalog": "Back to Catalog",
+		"enrollNow": "Enroll Now",
+		"architecture": "Course Architecture",
+		"journeyLine1": "The",
+		"journeyLine2": "Journey.",
+		"lessonsLabel": "Lessons",
+		"workshopLabel": "Practical Workshop",
+		"chiefMentor": "Chief Mentor",
+		"learnFromLine1": "Learn from",
+		"learnFromLine2": "the Best.",
+		"startYourLine1": "Start Your",
+		"startYourLine2": "Future.",
+		"investment": "Investment in yourself",
+		"joinProgram": "Join Program",
+		"askQuestion": "Ask a Question",
+		"trialLine": "Trial lesson is free • No hidden fees • 100% Satisfaction",
+		"apply": "Apply"
+	},
+	"contact": {
+		"subtitle": "We are always here to help you start your journey.",
+		"phoneLabel": "Phone",
+		"emailLabel": "Email",
+		"hoursLabel": "Hours",
+		"hoursWeekdays": "Mon - Sat: 09:00 - 20:00",
+		"hoursSunday": "Sunday: Closed",
+		"mapTitle": "Interactive Map",
+		"mapDescription": "Find us near the Samarkand State University campus, right at the corner of Universitet Boulevard.",
+		"showLocations": "Show all locations",
+		"questionsTitle": "Have specific questions?",
+		"questionsSubtitle": "Send us a message and we'll reply within 24 hours.",
+		"telegramCta": "Message on Telegram"
+	},
+	"homePage": {
+		"heroWord1": "LEARN.",
+		"heroWord2": "LISTEN.",
+		"heroWord3": "SPEAK.",
+		"alumni": "Join 15,000+ Alumni",
+		"coursesBadge": "COURSES",
+		"coursesTitleLine1": "The",
+		"coursesTitleLine2": "Programs.",
+		"coursesSubtitle": "Engineered for absolute fluency.",
+		"fullCatalog": "Full Catalog",
+		"courseTrackHint": "See all programs for this track",
+		"locationsBadge": "LOCATIONS",
+		"lifestyleAltHub": "Polyglot Hub lounge",
+		"lifestyleHubTitle": "Polyglot Hub",
+		"lifestyleHubDesc": "Our central campuses feature coffee zones and collaborative lounges for relaxed conversation practice with mentors and peers.",
+		"lifestyleCommunityTag": "COMMUNITY FIRST",
+		"lifestyleAltCinema": "Cinema night at Polyglot",
+		"lifestyleCinemaTag": "Every Friday",
+		"lifestyleAltLibrary": "Polyglot library and study space",
+		"lifestyleAltSpeaking": "Speaking club at Polyglot",
+		"whyChooseUs": "WHY CHOOSE US",
+		"faqBadge": "FAQ",
+		"ctaLine1": "STOP DREAMING.",
+		"ctaLine2": "START SPEAKING.",
+		"bookLesson": "Book Free Lesson"
+	}
 }
