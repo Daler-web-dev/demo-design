@@ -25,10 +25,12 @@ import { useLanguage } from "@/context/LanguageContext";
 import QuickDiagnostic from "@/components/QuickDiagnostic";
 import BranchLocations from "@/components/BranchLocations";
 import PrestigeSection from "@/components/PrestigeSection";
+import MethodologySection from "@/components/MethodologySection";
 
 export default function Home() {
 	const { t, lang } = useLanguage();
 	const [activeFaq, setActiveFaq] = useState<number | null>(null);
+
 	const courseCategories = t.courses?.categories ?? [];
 
 	const iconById: Record<string, React.ComponentType<any>> = {
@@ -470,46 +472,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="min-h-fit py-40 bg-white">
-				<div className="max-w-7xl mx-auto px-6">
-					<div className="text-center mb-32">
-						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
-							<span className="w-8 h-0.5 bg-gold mx-auto" />
-							{t.homePage.whyChooseUs}
-							<span className="w-8 h-0.5 bg-gold mx-auto" />
-						</div>
-						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black text-brand-800 leading-[0.95] tracking-tighter uppercase mb-6 break-words max-w-full">
-							{t.methodology.title}
-						</h2>
-						<p className="text-xl text-indigo-600/80 font-bold max-w-2xl mx-auto">
-							{t.methodology.subtitle}
-						</p>
-					</div>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-						{t.methodology.steps.map(
-							(
-								step: { title: string; desc: string },
-								i: number,
-							) => (
-								<div
-									key={i}
-									className="p-12 bg-gold rounded-[3.5rem] border-2 border-gold text-brand-900 hover:bg-gold/90 hover:border-gold hover:text-brand-900 transition-all duration-500 group"
-								>
-									<div className="text-4xl font-black text-brand-900 mb-10 group-hover:text-brand-900 group-hover:opacity-100 transition-all">
-										0{i + 1}
-									</div>
-									<h4 className="text-3xl font-black mb-6 uppercase tracking-tighter leading-none">
-										{step.title}
-									</h4>
-									<p className="text-brand-900/80 font-medium group-hover:text-brand-900 transition-colors leading-relaxed">
-										{step.desc}
-									</p>
-								</div>
-							),
-						)}
-					</div>
-				</div>
-			</section>
+			<MethodologySection />
 
 			<section className="min-h-fit py-40 bg-brand-900">
 				<div className="max-w-4xl mx-auto px-6 text-white">

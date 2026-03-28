@@ -159,24 +159,40 @@
 		]
 	},
 	"methodology": {
-		"title": "Metodika",
-		"subtitle": "Qanday qilib biz sizni tinglovchidan erkin so'zlashuvchiga aylantiramiz.",
+		"title": "Protokol",
+		"subtitle": "Sizni jim tinglovchidan ishonchli so'zlashuvchiga qanday olib chiqamiz.",
 		"steps": [
 			{
-				"title": "Нейро-диагностика",
-				"desc": "Не просто грамматика. Мы тестируем когнитивный комфорт и речевые барьеры."
+				"title": "Innovatsion o'qitish metodikasi",
+				"desc": "Xorijiy universitetlar tajribasiga asoslangan, xalqaro ta'lim standartlariga mos metodika — tilni qisqa vaqt ichida yuqori darajagacha olib chiqishga yordam beradi."
 			},
 			{
-				"title": "Глубокое погружение",
-				"desc": "100% английская среда с первой секунды урока."
+				"title": "Barcha qulayliklar",
+				"desc": "Sinfxonalar zamonaviy jihozlangan; mustaqil mashg'ulot uchun alohida co-working zonasi mavjud."
 			},
 			{
-				"title": "Активный фидбек",
-				"desc": "Коррекция ошибок в реальном времени через нашу цифровую систему."
+				"title": "Nutq amaliyoti",
+				"desc": "Asosiy darslardan tashqari suhbat nutqini rivojlantirish uchun alohida amaliy mashg'ulotlar o'tkaziladi."
 			},
 			{
-				"title": "Проверка в жизни",
-				"desc": "Финальная сертификация через дебаты с носителями языка."
+				"title": "Darslar tartibi",
+				"desc": "Ingliz tili haftasiga 4 marta, har dars 90 daqiqa. A1 dan boshlab IELTSga tayyorlov — ona tili inglizcha so'zlovchi bilan. Academic Support uchun markazga har kuni kelish mumkin."
+			},
+			{
+				"title": "Kafolatlangan muvaffaqiyat",
+				"desc": "Bitiruvchilarimiz dunyoning yetakchi universitetlarida o'qiydi; talabalarning taxminan 90% qismi IELTSdan kerakli ball oldi."
+			},
+			{
+				"title": "Ko'p qirrali ta'lim",
+				"desc": "Yakshanbalari ingliz tilida kino kechalari, munozaralar va qo'shiq, shuningdek mahalliy va xorijiy spikerlar seminarlari va treninglari."
+			},
+			{
+				"title": "Darsdagi motivatsiya",
+				"desc": "Faol o'quvchilar «polyglot dollarlari» oladi va ularni har oyning oxirgi yakshanbasidagi auksionda qimmatbaho sovg'alarga almashtiradi."
+			},
+			{
+				"title": "Ota-onalar nazorati",
+				"desc": "Farzandlari muvaffaqiyati haqida muntazam qo'ng'iroq va SMS orqali xabar beriladi."
 			}
 		]
 	},
