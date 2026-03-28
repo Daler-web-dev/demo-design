@@ -22,6 +22,13 @@ import { useLanguage } from "@/context/LanguageContext";
 
 const SCROLL_THRESHOLD = 400;
 
+function resolveTeamPhoto(src: string | undefined): string {
+	if (!src?.trim()) return "";
+	if (/^https?:\/\//i.test(src)) return src;
+	const clean = src.replace(/^\/+/, "").replace(/^team\//, "");
+	return `/team/${clean}`;
+}
+
 export default function CourseDetail() {
 	const params = useParams();
 	const router = useRouter();
@@ -56,14 +63,22 @@ export default function CourseDetail() {
 	}
 
 	const specs = [
-		{ icon: Clock, label: t.courseDetail.durationLabel, value: course.duration },
-		{ icon: GraduationCap, label: t.courseDetail.levelLabel, value: course.level },
+		{
+			icon: Clock,
+			label: t.courseDetail.durationLabel,
+			value: course.duration,
+		},
+		{
+			icon: GraduationCap,
+			label: t.courseDetail.levelLabel,
+			value: course.level,
+		},
 		{ icon: Target, label: t.courseDetail.targetLabel, value: "" },
 		{ icon: Wallet, label: t.courseDetail.priceLabel, value: "" },
 	];
 
 	return (
-		<div className="bg-white min-h-screen relative selection:bg-indigo-600 selection:text-white">
+		<div className="bg-white min-h-screen relative selection:bg-gold selection:text-obsidian">
 			{/* 1. IMMERSIVE HERO */}
 			<section className="relative max-h-[96vh] flex items-center overflow-hidden bg-obsidian rounded-3xl m-3">
 				<div className="absolute inset-0 z-0">
@@ -152,13 +167,15 @@ export default function CourseDetail() {
 				<div className="max-w-7xl mx-auto px-6">
 					<div className="grid lg:grid-cols-12 gap-24">
 						<div className="lg:col-span-5 sticky top-40 h-fit">
-							<span className="text-indigo-600 font-black uppercase tracking-[0.4em] text-[10px] mb-6 block">
+							<span className="text-gold font-black uppercase tracking-[0.4em] text-[10px] mb-6 block">
 								{t.courseDetail.architecture}
 							</span>
-							<h2 className="text-6xl md:text-7xl font-display font-black text-obsidian uppercase tracking-tighter leading-none mb-10">
+							<h2 className="text-6xl md:text-7xl font-display font-black text-indigo-600 uppercase tracking-tighter leading-none mb-10">
 								{t.courseDetail.journeyLine1}
 								<br />
-								<span className="text-outline">{t.courseDetail.journeyLine2}</span>
+								<span className="text-outline">
+									{t.courseDetail.journeyLine2}
+								</span>
 							</h2>
 							<p className="text-xl text-slate-400 font-bold mb-12 leading-relaxed">
 								{course.description}
@@ -191,77 +208,94 @@ export default function CourseDetail() {
 
 						<div className="lg:col-span-7">
 							<div className="space-y-6">
-								{course.modules.map((module: any, idx: number) => (
-									<div
-										key={idx}
-										className={`p-10 rounded-[3.5rem] border-2 transition-all duration-500 cursor-pointer ${
-											activeModule === idx
-												? "bg-obsidian text-white border-obsidian shadow-2xl scale-[1.02]"
-												: "bg-slate-50 border-slate-100 hover:border-indigo-600"
-										}`}
-										onClick={() =>
-											setActiveModule(
-												activeModule === idx
-													? null
-													: idx,
-											)
-										}
-									>
-										<div className="flex justify-between items-center mb-6">
-											<div className="flex items-center space-x-6">
-												<span
-													className={`text-4xl font-black ${activeModule === idx ? "text-indigo-400" : "text-slate-200"}`}
-												>
-													0{idx + 1}
-												</span>
-												<h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter leading-none">
-													{module.title}
-												</h3>
-											</div>
-											<ChevronLeft
-												className={`w-8 h-8 transition-transform duration-500 ${activeModule === idx ? "-rotate-90 text-gold" : "rotate-[270deg] opacity-20"}`}
-											/>
-										</div>
+								{course.modules.map(
+									(module: any, idx: number) => (
 										<div
-											className={`transition-all duration-500 overflow-hidden ${activeModule === idx ? "h-full opacity-100" : "max-h-0 opacity-0"}`}
+											key={idx}
+											className={`p-10 rounded-[3.5rem] border-2 transition-all duration-500 cursor-pointer ${
+												activeModule === idx
+													? "bg-obsidian text-white border-obsidian shadow-2xl scale-[1.02]"
+													: "bg-brand-50 border-brand-100 hover:border-brand-500"
+											}`}
+											onClick={() =>
+												setActiveModule(
+													activeModule === idx
+														? null
+														: idx,
+												)
+											}
 										>
-											<p
-												className={`text-lg font-medium leading-relaxed ${activeModule === idx ? "text-slate-400" : "text-slate-500"}`}
-											>
-												{module.description}
-											</p>
-											<div>
-												{module.lessons.map(
-													(lesson: any, i: number) => (
-														<div
-															key={i}
-															className="flex items-center space-x-4 mt-6 group"
-														>
-															<div className="w-8 h-8 bg-white rounded-full flex items-center justify-center shrink-0 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-																<Badge className="w-4 h-4 fill-current" />
-															</div>
-															<div>
-																<h4 className="text-md font-bold">{lesson.title}</h4>
-																<p className="text-sm text-slate-500">
-																	{lesson.activity}
-																</p>
-															</div>
-														</div>
-													),
-												)}
+											<div className="flex justify-between items-center mb-6">
+												<div className="flex items-center space-x-6">
+													<span
+														className={`text-4xl font-black ${activeModule === idx ? "text-gold" : "text-slate-200"}`}
+													>
+														0{idx + 1}
+													</span>
+													<h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter leading-none">
+														{module.title}
+													</h3>
+												</div>
+												<ChevronLeft
+													className={`w-8 h-8 transition-transform duration-500 ${activeModule === idx ? "-rotate-90 text-gold" : "rotate-[270deg] opacity-20"}`}
+												/>
 											</div>
-											<div className="mt-8 flex gap-4">
-												<span className="px-4 py-2 bg-white/10 rounded-full text-[10px] font-black uppercase tracking-widest">
-													{module.lessons.length}{" "}
-													{t.courseDetail.lessonsLabel}
-												</span>
-												<span className="px-4 py-2 bg-white/10 rounded-full text-[10px] font-black uppercase tracking-widest">
-													{t.courseDetail.workshopLabel}
-												</span>
+											<div
+												className={`transition-all duration-500 overflow-hidden ${activeModule === idx ? "h-full opacity-100" : "max-h-0 opacity-0"}`}
+											>
+												<p
+													className={`text-lg font-medium leading-relaxed ${activeModule === idx ? "text-slate-400" : "text-slate-500"}`}
+												>
+													{module.description}
+												</p>
+												<div>
+													{module.lessons.map(
+														(
+															lesson: any,
+															i: number,
+														) => (
+															<div
+																key={i}
+																className="flex items-center space-x-4 mt-6 group"
+															>
+																<div className="w-8 h-8 bg-white rounded-full flex items-center justify-center shrink-0 text-brand-600 group-hover:bg-gold group-hover:text-obsidian transition-colors">
+																	<Badge className="w-4 h-4 fill-current" />
+																</div>
+																<div>
+																	<h4 className="text-md font-bold">
+																		{
+																			lesson.title
+																		}
+																	</h4>
+																	<p className="text-sm text-slate-500">
+																		{
+																			lesson.activity
+																		}
+																	</p>
+																</div>
+															</div>
+														),
+													)}
+												</div>
+												<div className="mt-8 flex gap-4">
+													<span className="px-4 py-2 bg-white/10 rounded-full text-[10px] font-black uppercase tracking-widest">
+														{module.lessons.length}{" "}
+														{
+															t.courseDetail
+																.lessonsLabel
+														}
+													</span>
+													<span className="px-4 py-2 bg-white/10 rounded-full text-[10px] font-black uppercase tracking-widest">
+														{
+															t.courseDetail
+																.workshopLabel
+														}
+													</span>
+												</div>
 											</div>
 										</div>
-									</div>
-								))}
+									),
+								)}
 							</div>
 						</div>
 					</div>
@@ -295,8 +329,8 @@ export default function CourseDetail() {
 						</div>
 						<div className="relative rounded-[4rem] overflow-hidden group">
 							<img
-								src={course.teacher.image}
-								className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100 min-h-[400px]"
+								src={resolveTeamPhoto(course.teacher.image)}
+								className="w-full h-full object-cover transition-all duration-1000 scale-105 group-hover:scale-100 min-h-[400px]"
 								alt={course.teacher.name}
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent opacity-60"></div>
@@ -316,16 +350,18 @@ export default function CourseDetail() {
 			{/* 4. PRICING & CTA */}
 			<section className="py-40 bg-white">
 				<div className="max-w-5xl mx-auto px-6 text-center">
-					<h2 className="text-7xl md:text-9xl font-display font-black text-obsidian uppercase tracking-tighter leading-none mb-12">
+					<h2 className="text-7xl md:text-9xl font-display font-black text-indigo-600 uppercase tracking-tighter leading-none mb-12">
 						{t.courseDetail.startYourLine1} <br />
-						<span className="text-outline">{t.courseDetail.startYourLine2}</span>
+						<span className="text-outline">
+							{t.courseDetail.startYourLine2}
+						</span>
 					</h2>
-					<div className="bg-slate-50 rounded-[5rem] p-16 md:p-24 border border-slate-100 shadow-xl relative overflow-hidden group">
+					<div className="bg-brand-50 rounded-[5rem] p-16 md:p-24 border border-brand-100 shadow-xl relative overflow-hidden group">
 						<div className="absolute top-0 right-0 p-12 opacity-5 group-hover:opacity-10 transition-opacity">
-							<Zap className="w-40 h-40 text-indigo-600" />
+							<Zap className="w-40 h-40 text-brand-500" />
 						</div>
 						<div className="relative z-10">
-							<div className="text-sm font-black uppercase tracking-[0.4em] text-indigo-600 mb-6">
+							<div className="text-sm font-black uppercase tracking-[0.4em] text-gold mb-6">
 								{t.courseDetail.investment}
 							</div>
 							<div className="text-8xl md:text-9xl font-black text-obsidian mb-10 tracking-tighter">
@@ -334,13 +370,13 @@ export default function CourseDetail() {
 							<div className="flex flex-col md:flex-row justify-center gap-6">
 								<Link
 									href="/enroll"
-									className="bg-obsidian text-white px-16 py-8 rounded-[2.5rem] font-black text-2xl hover:bg-indigo-600 transition-all shadow-2xl hover:scale-105"
+									className="bg-obsidian text-white px-16 py-8 rounded-[2.5rem] font-black text-2xl hover:bg-brand-600 transition-all shadow-2xl hover:scale-105"
 								>
 									{t.courseDetail.joinProgram}
 								</Link>
 								<Link
 									href="/contact"
-									className="bg-white text-obsidian px-16 py-8 rounded-[2.5rem] border-2 border-slate-200 font-black text-2xl hover:bg-slate-50 transition-all"
+									className="bg-white text-obsidian px-16 py-8 rounded-[2.5rem] border-2 border-brand-200 font-black text-2xl hover:bg-brand-50 transition-all"
 								>
 									{t.courseDetail.askQuestion}
 								</Link>

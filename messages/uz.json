@@ -556,9 +556,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Emily Johnson",
-					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-					"bio": "Главный преподаватель"
+					"name": "Javokhir",
+					"image": "Javokhir.jpeg",
+					"bio": "Bosh o'qituvchi"
 				}
 			},
 			{
@@ -684,9 +684,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Emily Johnson",
-					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-					"bio": "Главный преподаватель"
+					"name": "Nodir",
+					"image": "Nodir.jpeg",
+					"bio": "Bosh o'qituvchi"
 				}
 			},
 			{
@@ -812,9 +812,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Emily Johnson",
-					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-					"bio": "Главный преподаватель"
+					"name": "Shahrukh",
+					"image": "Shahrukh.jpeg",
+					"bio": "Bosh o'qituvchi"
 				}
 			},
 			{
@@ -936,9 +936,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Emily Johnson",
-					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-					"bio": "Главный преподаватель"
+					"name": "Siyovush",
+					"image": "Siyovush.jpeg",
+					"bio": "Bosh o'qituvchi"
 				}
 			},
 			{
@@ -1060,9 +1060,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Emily Johnson",
-					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-					"bio": "Главный преподаватель"
+					"name": "Nodir",
+					"image": "Nodir.jpeg",
+					"bio": "Bosh o'qituvchi"
 				}
 			}
 		]
@@ -1087,10 +1087,10 @@
 		"lessonsLabel": "Dars",
 		"workshopLabel": "Amaliy workshop",
 		"chiefMentor": "Bosh mentor",
-		"learnFromLine1": "Eng yaxshilardan",
+		"learnFromLine1": "Eng zo'rlardan",
 		"learnFromLine2": "o'rganing.",
-		"startYourLine1": "Boshlang",
-		"startYourLine2": "kelajagingizni.",
+		"startYourLine1": "Kelajagingizni",
+		"startYourLine2": "boshlang.",
 		"investment": "O'zingizga investitsiya",
 		"joinProgram": "Dasturga qo'shilish",
 		"askQuestion": "Savol berish",

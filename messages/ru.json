@@ -1,1140 +1,1140 @@
 {
-  "nav": {
-    "home": "Главная",
-    "courses": "Курсы",
-    "about": "О сети",
-    "audit": "Пройти тестирование",
-    "contact": "Контакты",
-    "enroll": "Записаться",
-    "openMenu": "Открыть меню",
-    "closeMenu": "Закрыть меню",
-    "mainMenu": "Главное меню"
-  },
-  "hero": {
-    "badge": "Языковая школа №1 в Самарканде",
-    "title": "Создай свое будущее через английский",
-    "subtitle": "Премиальное образование мирового уровня. Оксфордские стандарты в 8 филиалах по всему Самарканду."
-  },
-  "prestige": {
-    "badge": "Официальный рейтинг 2024",
-    "numberWord": "НОМЕР",
-    "oneWord": "ПЕРВЫЙ.",
-    "descriptionBeforeHighlight": "Официально признан Лучшим языковым центром ",
-    "descriptionHighlight": "Узбекистана по версии IDP Uzbekistan.",
-    "videoBadge": "Polyglot School",
-    "videoTitleLine1": "Узнайте историю",
-    "videoTitleLine2": "ведущей языковой школы Узбекистана."
-  },
-  "results": {
-    "badge": "КОМАНДА",
-    "title": "Наша гордость",
-    "subtitle": "6 преподавателей с IELTS 9",
-    "uniqueClaim": "Такого нет ни в одном учебном центре Самарканда",
-    "scoreLabel": "IELTS 9",
-    "roleLabel": "Преподаватель",
-    "teachersStat": "Преподавателей",
-    "maxBandLabel": "Макс. балл",
-    "teachers": [
-      {
-        "name": "Ангус",
-        "image": "Angus.jpeg"
-      },
-      {
-        "name": "Жасур",
-        "image": "Jasur.jpeg"
-      },
-      {
-        "name": "Назира",
-        "image": "NAZIRA.jpeg"
-      },
-      {
-        "name": "Отабек",
-        "image": "Otabek.jpeg"
-      },
-      {
-        "name": "Шахзода",
-        "image": "SHAHZODA.jpeg"
-      },
-      {
-        "name": "Тесни",
-        "image": "Tesni.jpeg"
-      }
-    ],
-    "viewAllStaff": "Посмотреть весь состав"
-  },
-  "staffPage": {
-    "title": "Наша команда",
-    "subtitle": "Люди, которые делают Polyglot ведущей языковой школой Самарканда.",
-    "backHome": "На главную",
-    "sectionNiners": "IELTS 9 — Наша гордость",
-    "sectionTeam": "Преподавательский состав",
-    "roleLabel": "Преподаватель",
-    "scoreLabel": "IELTS 9",
-    "allTeachers": [
-      {
-        "nameEn": "Angus",
-        "nameRu": "Ангус",
-        "image": "Angus.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Jasur",
-        "nameRu": "Жасур",
-        "image": "Jasur.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Nazira",
-        "nameRu": "Назира",
-        "image": "NAZIRA.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Otabek",
-        "nameRu": "Отабек",
-        "image": "Otabek.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Shahzoda",
-        "nameRu": "Шахзода",
-        "image": "SHAHZODA.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Tesni",
-        "nameRu": "Тесни",
-        "image": "Tesni.jpeg",
-        "folder": "niners",
-        "ielts9": true
-      },
-      {
-        "nameEn": "Javokhir",
-        "nameRu": "Жавохир",
-        "image": "Javokhir.jpeg",
-        "folder": "team",
-        "ielts9": false
-      },
-      {
-        "nameEn": "Nodir",
-        "nameRu": "Нодир",
-        "image": "Nodir.jpeg",
-        "folder": "team",
-        "ielts9": false
-      },
-      {
-        "nameEn": "Shahrukh",
-        "nameRu": "Шахрух",
-        "image": "Shahrukh.jpeg",
-        "folder": "team",
-        "ielts9": false
-      },
-      {
-        "nameEn": "Siyovush",
-        "nameRu": "Сиёвуш",
-        "image": "Siyovush.jpeg",
-        "folder": "team",
-        "ielts9": false
-      }
-    ]
-  },
-  "branches": {
-    "title": "Мы всегда рядом",
-    "subtitle": "Сеть из 8 высокотехнологичных кампусов по всему Самарканду.",
-    "mapRouteText": "Составить маршрут",
-    "list": [
-      "Регистан Центр",
-      "Сиёб Кампус",
-      "Университетский Бульвар",
-      "Вокзал",
-      "Сат-Тепо",
-      "Афросиёб",
-      "Чуст",
-      "Мотрид"
-    ]
-  },
-  "methodology": {
-    "title": "Методология",
-    "subtitle": "От тихого слушателя — к уверенному спикеру.",
-    "steps": [
-      {
-        "title": "Современная методика",
-        "desc": "Разработана с зарубежными вузами, соответствует международным стандартам — до высокого уровня за короткий срок."
-      },
-      {
-        "title": "Комфорт и зоны для учёбы",
-        "desc": "Оборудованные кабинеты и зона co-working для самостоятельных занятий."
-      },
-      {
-        "title": "Разговорная практика",
-        "desc": "Отдельные занятия для развития устной речи помимо основного курса."
-      },
-      {
-        "title": "Расписание",
-        "desc": "4 раза в неделю по 90 минут. С A1 — подготовка к IELTS с носителем. Центр открыт ежедневно для Academic Support."
-      },
-      {
-        "title": "Результаты",
-        "desc": "Выпускники в топ-вузах мира; около 90% получают нужный балл по IELTS."
-      },
-      {
-        "title": "Вне уроков",
-        "desc": "По воскресеньям: кино на английском, дебаты, песни, семинары с местными и зарубежными спикерами."
-      },
-      {
-        "title": "Мотивация",
-        "desc": "Активные ученики копят «доллары-полиглоты» и меняют их на призы на аукционе в последнее воскресенье месяца."
-      },
-      {
-        "title": "Для родителей",
-        "desc": "Успеваемость детей — регулярные звонки и SMS."
-      }
-    ]
-  },
-  "lifestyle": {
-    "title": "Экосистема",
-    "subtitle": "Изучение английского — это стиль жизни, а не 90 минут за партой.",
-    "items": [
-      {
-        "title": "Разговорные клубы",
-        "label": "Ежедневно"
-      },
-      {
-        "title": "Кинопоказы",
-        "label": "Выходные"
-      },
-      {
-        "title": "Элитная библиотека",
-        "label": "24/7 Доступ"
-      },
-      {
-        "title": "Игровая теория",
-        "label": "Интерактив"
-      }
-    ]
-  },
-  "faq": {
-    "title": "Интеллектуальная поддержка",
-    "questions": [
-      {
-        "q": "Сколько времени нужно до IELTS 7.0?",
-        "a": "Обычно 6-9 месяцев интенсивного обучения в зависимости от вашего старта."
-      },
-      {
-        "q": "Ваши учителя сертифицированы?",
-        "a": "Да, 100% нашего персонала имеют международные сертификаты CELTA или DELTA."
-      },
-      {
-        "q": "Могу ли я сменить филиал?",
-        "a": "Конечно. Вы можете перемещаться между любыми из 8 кампусов в Самарканде."
-      }
-    ]
-  },
-  "footer": {
-    "rights": "© 2026 Polyglot Network. Лидер образования в Самарканде с 2012 года.",
-    "address": "Университетский бульвар 77",
-    "headlineLine1": "FUTURE",
+	"nav": {
+		"home": "Главная",
+		"courses": "Курсы",
+		"about": "О сети",
+		"audit": "Пройти тестирование",
+		"contact": "Контакты",
+		"enroll": "Записаться",
+		"openMenu": "Открыть меню",
+		"closeMenu": "Закрыть меню",
+		"mainMenu": "Главное меню"
+	},
+	"hero": {
+		"badge": "Языковая школа №1 в Самарканде",
+		"title": "Создай свое будущее через английский",
+		"subtitle": "Премиальное образование мирового уровня. Оксфордские стандарты в 8 филиалах по всему Самарканду."
+	},
+	"prestige": {
+		"badge": "Официальный рейтинг 2024",
+		"numberWord": "НОМЕР",
+		"oneWord": "ПЕРВЫЙ.",
+		"descriptionBeforeHighlight": "Официально признан Лучшим языковым центром ",
+		"descriptionHighlight": "Узбекистана по версии IDP Uzbekistan.",
+		"videoBadge": "Polyglot School",
+		"videoTitleLine1": "Узнайте историю",
+		"videoTitleLine2": "ведущей языковой школы Узбекистана."
+	},
+	"results": {
+		"badge": "КОМАНДА",
+		"title": "Наша гордость",
+		"subtitle": "6 преподавателей с IELTS 9",
+		"uniqueClaim": "Такого нет ни в одном учебном центре Самарканда",
+		"scoreLabel": "IELTS 9",
+		"roleLabel": "Преподаватель",
+		"teachersStat": "Преподавателей",
+		"maxBandLabel": "Макс. балл",
+		"teachers": [
+			{
+				"name": "Ангус",
+				"image": "Angus.jpeg"
+			},
+			{
+				"name": "Жасур",
+				"image": "Jasur.jpeg"
+			},
+			{
+				"name": "Назира",
+				"image": "NAZIRA.jpeg"
+			},
+			{
+				"name": "Отабек",
+				"image": "Otabek.jpeg"
+			},
+			{
+				"name": "Шахзода",
+				"image": "SHAHZODA.jpeg"
+			},
+			{
+				"name": "Тесни",
+				"image": "Tesni.jpeg"
+			}
+		],
+		"viewAllStaff": "Посмотреть весь состав"
+	},
+	"staffPage": {
+		"title": "Наша команда",
+		"subtitle": "Люди, которые делают Polyglot ведущей языковой школой Самарканда.",
+		"backHome": "На главную",
+		"sectionNiners": "IELTS 9 — Наша гордость",
+		"sectionTeam": "Преподавательский состав",
+		"roleLabel": "Преподаватель",
+		"scoreLabel": "IELTS 9",
+		"allTeachers": [
+			{
+				"nameEn": "Angus",
+				"nameRu": "Ангус",
+				"image": "Angus.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Jasur",
+				"nameRu": "Жасур",
+				"image": "Jasur.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Nazira",
+				"nameRu": "Назира",
+				"image": "NAZIRA.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Otabek",
+				"nameRu": "Отабек",
+				"image": "Otabek.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Shahzoda",
+				"nameRu": "Шахзода",
+				"image": "SHAHZODA.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Tesni",
+				"nameRu": "Тесни",
+				"image": "Tesni.jpeg",
+				"folder": "niners",
+				"ielts9": true
+			},
+			{
+				"nameEn": "Javokhir",
+				"nameRu": "Жавохир",
+				"image": "Javokhir.jpeg",
+				"folder": "team",
+				"ielts9": false
+			},
+			{
+				"nameEn": "Nodir",
+				"nameRu": "Нодир",
+				"image": "Nodir.jpeg",
+				"folder": "team",
+				"ielts9": false
+			},
+			{
+				"nameEn": "Shahrukh",
+				"nameRu": "Шахрух",
+				"image": "Shahrukh.jpeg",
+				"folder": "team",
+				"ielts9": false
+			},
+			{
+				"nameEn": "Siyovush",
+				"nameRu": "Сиёвуш",
+				"image": "Siyovush.jpeg",
+				"folder": "team",
+				"ielts9": false
+			}
+		]
+	},
+	"branches": {
+		"title": "Мы всегда рядом",
+		"subtitle": "Сеть из 8 высокотехнологичных кампусов по всему Самарканду.",
+		"mapRouteText": "Составить маршрут",
+		"list": [
+			"Регистан Центр",
+			"Сиёб Кампус",
+			"Университетский Бульвар",
+			"Вокзал",
+			"Сат-Тепо",
+			"Афросиёб",
+			"Чуст",
+			"Мотрид"
+		]
+	},
+	"methodology": {
+		"title": "Методология",
+		"subtitle": "От тихого слушателя — к уверенному спикеру.",
+		"steps": [
+			{
+				"title": "Современная методика",
+				"desc": "Разработана с зарубежными вузами, соответствует международным стандартам — до высокого уровня за короткий срок."
+			},
+			{
+				"title": "Комфорт и зоны для учёбы",
+				"desc": "Оборудованные кабинеты и зона co-working для самостоятельных занятий."
+			},
+			{
+				"title": "Разговорная практика",
+				"desc": "Отдельные занятия для развития устной речи помимо основного курса."
+			},
+			{
+				"title": "Расписание",
+				"desc": "4 раза в неделю по 90 минут. С A1 — подготовка к IELTS с носителем. Центр открыт ежедневно для Academic Support."
+			},
+			{
+				"title": "Результаты",
+				"desc": "Выпускники в топ-вузах мира; около 90% получают нужный балл по IELTS."
+			},
+			{
+				"title": "Вне уроков",
+				"desc": "По воскресеньям: кино на английском, дебаты, песни, семинары с местными и зарубежными спикерами."
+			},
+			{
+				"title": "Мотивация",
+				"desc": "Активные ученики копят «доллары-полиглоты» и меняют их на призы на аукционе в последнее воскресенье месяца."
+			},
+			{
+				"title": "Для родителей",
+				"desc": "Успеваемость детей — регулярные звонки и SMS."
+			}
+		]
+	},
+	"lifestyle": {
+		"title": "Экосистема",
+		"subtitle": "Изучение английского — это стиль жизни, а не 90 минут за партой.",
+		"items": [
+			{
+				"title": "Разговорные клубы",
+				"label": "Ежедневно"
+			},
+			{
+				"title": "Кинопоказы",
+				"label": "Выходные"
+			},
+			{
+				"title": "Элитная библиотека",
+				"label": "24/7 Доступ"
+			},
+			{
+				"title": "Игровая теория",
+				"label": "Интерактив"
+			}
+		]
+	},
+	"faq": {
+		"title": "Интеллектуальная поддержка",
+		"questions": [
+			{
+				"q": "Сколько времени нужно до IELTS 7.0?",
+				"a": "Обычно 6-9 месяцев интенсивного обучения в зависимости от вашего старта."
+			},
+			{
+				"q": "Ваши учителя сертифицированы?",
+				"a": "Да, 100% нашего персонала имеют международные сертификаты CELTA или DELTA."
+			},
+			{
+				"q": "Могу ли я сменить филиал?",
+				"a": "Конечно. Вы можете перемещаться между любыми из 8 кампусов в Самарканде."
+			}
+		]
+	},
+	"footer": {
+		"rights": "© 2026 Polyglot Network. Лидер образования в Самарканде с 2012 года.",
+		"address": "Университетский бульвар 77",
+		"headlineLine1": "FUTURE",
 		"headlineLine2": "SPEAKS",
 		"headlineHighlight": "ENGLISH.",
-    "navigationTitle": "Навигация",
-    "hqTitle": "Главный офис",
-    "tagline": "Создано для тех, кто выбирает лучшее."
-  },
-  "ai": {
-    "trigger": "AI Консультант",
-    "placeholder": "Какой у вас сейчас уровень?",
-    "title": "AI-консультант Polyglot",
-    "statusOnline": "Онлайн",
-    "greeting": "Здравствуйте! Расскажите о своих целях, и я помогу выбрать идеальный курс.",
-    "fallback": "Простите, я не смог обработать ваш запрос.",
-    "connectionError": "Ошибка подключения к AI-консультанту."
-  },
-  "enrollForm": {
-    "title": "Присоединяйтесь к Polyglot",
-    "subtitle": "Начните свой путь к совершенству в английском сегодня. Наши консультанты скоро свяжутся с вами.",
-    "name": "Ваше полное имя",
-    "phone": "Контактный номер",
-    "branch": "Выберите удобный филиал",
-    "submit": "Отправить заявку",
-    "success": "Добро пожаловать!",
-    "successDetails": "Мы получили вашу заявку. Наш консультант скоро свяжется с вами, чтобы назначить пробный урок.",
-    "backHome": "Вернуться на главную",
-    "namePlaceholder": "Иван Иванов",
-    "branchPlaceholder": "—",
-    "heroAlt": "Присоединяйтесь к нам",
-    "quoteAuthor": "Нодира, студент IELTS",
-    "quoteText": "Начать обучение здесь было лучшим решением для моего академического будущего. Атмосфера действительно мотивирует!"
-  },
-  "diagnostic": {
-    "title": "Диагностика",
-    "subtitle": "Узнайте свой реальный уровень языка за 60 секунд.",
-    "quickCardTime": "60 секунд",
-    "quickCardTitle": "Быстрая диагностика",
-    "quickCardDesc": "Быстрая оценка комфорта в речи и основных целей.",
-    "quickCardCta": "Начать",
-    "deepCardTime": "30 минут",
-    "deepCardTitle": "Глубокий аудит",
-    "deepCardDesc": "Полное профессиональное тестирование: грамматика, лексика и логика.",
-    "deepCardCta": "К тесту",
-    "startBtn": "Начать тест",
-    "nextBtn": "Следующий вопрос",
-    "calculating": "Анализ данных...",
-    "resultTitle": "Диагностика завершена",
-    "recommendation": "Рекомендуемая программа:",
-    "retake": "Пройти снова",
-    "questionLabel": "ВОПРОС",
-    "levelStrong": "Сильный B2+",
-    "levelDeveloping": "Развивающийся A2/B1",
-    "recommendedAlt": "Рекомендуемая программа",
-    "levelLabel": "УРОВЕНЬ ДИАГНОСТИКИ",
-    "pointsLabel": "БАЛЛОВ",
-    "viewProgram": "Смотреть программу",
-    "questions": [
-      {
-        "q": "Как бы вы описали свой комфорт при общении?",
-        "options": [
-          {
-            "a": "Использую отдельные слова и жесты",
-            "score": 1
-          },
-          {
-            "a": "Могу общаться в быту, но сложные темы даются с трудом",
-            "score": 2
-          },
-          {
-            "a": "Говорю свободно, но иногда делаю грамматические ошибки",
-            "score": 3
-          },
-          {
-            "a": "Использую английский профессионально каждый день",
-            "score": 4
-          }
-        ]
-      },
-      {
-        "q": "Какое предложение грамматически верно?",
-        "options": [
-          {
-            "a": "I have seen him yesterday",
-            "score": 1
-          },
-          {
-            "a": "I saw him yesterday",
-            "score": 3
-          },
-          {
-            "a": "I seen him yesterday",
-            "score": 0
-          }
-        ]
-      },
-      {
-        "q": "Какова ваша основная цель обучения?",
-        "options": [
-          {
-            "a": "Академическая (IELTS / Поступление в ВУЗ)",
-            "score": 5
-          },
-          {
-            "a": "Карьерный рост / Бизнес-переговоры",
-            "score": 4
-          },
-          {
-            "a": "Личное развитие / Путешествия",
-            "score": 2
-          }
-        ]
-      }
-    ]
-  },
-  "deepAudit": {
-    "backgroundWord": "АУДИТ",
-    "titleWord": "Нейро",
-    "titleHighlight": "Глубокий аудит.",
-    "subtitle": "Полная 30-минутная профессиональная оценка от Polyglot. Грамматика, лексика и языковая логика.",
-    "timeLabel": "Лимит времени",
-    "timeValue": "30 МИН",
-    "standardsLabel": "Стандарты",
-    "standardsValue": "CEFR",
-    "accuracyLabel": "Точность",
-    "accuracyValue": "98%",
-    "startBtn": "Начать полный тест",
-    "formTitle": "Ваши контактные данные",
-    "formSubtitle": "Мы используем их, чтобы перезвонить вам после теста.",
-    "formNameLabel": "Имя",
-    "formNamePlaceholder": "Иван Иванов",
-    "formPhoneLabel": "Телефон",
-    "formPhonePlaceholder": "+998 (__) ___-__-__",
-    "formContinueBtn": "Перейти к тесту",
-    "leaveWarning": "Если вы обновите страницу или уйдёте назад, прогресс обнулится. Продолжить?",
-    "formLoading": "Загрузка теста…",
-    "formLoadError": "Не удалось загрузить тест. Обновите страницу.",
-    "questionLabel": "Вопрос",
-    "back": "Назад",
-    "next": "Далее",
-    "skipQuestion": "Пропустить вопрос",
-    "finishBtn": "Завершить и анализировать",
-    "completeBadge": "Аудит завершён",
-    "resultSuccessTitle": "Все тесты пройдены",
-    "resultSuccessSubtitle": "В ближайшее время вам перезвонят.",
-    "yourLabel": "Ваш",
-    "standingLabel": "результат.",
-    "metricsTitle": "Показатели диагностики",
-    "levelLabel": "Уровень",
-    "retakeBtn": "Пройти снова",
-    "systemRecLabel": "Рекомендация системы",
-    "readyForLabel": "Вам подойдёт",
-    "reserveSpotBtn": "Записаться",
-    "levels": {
-      "beginner": "Начальный (A1)",
-      "intermediate": "Средний (B1-B2)",
-      "advanced": "Продвинутый (C1)"
-    }
-  },
-  "courses": {
-    "categories": [
-      {
-        "value": "General English",
-        "label": "General_English",
-        "duration": "From Beginning to Fluency",
-        "iconId": "BookOpen"
-      },
-      {
-        "value": "IELTS Intensive",
-        "label": "IELTS_Intensive",
-        "duration": "From Intermediate to Advanced",
-        "iconId": "Target"
-      },
-      {
-        "value": "English kids",
-        "label": "English_kids",
-        "duration": "From Foundation to Beginner",
-        "iconId": "Smile"
-      },
-      {
-        "value": "Подготовка к CEFR/DTM",
-        "label": "Подготовка_к_CEFR/DTM",
-        "duration": "From Foundation to Fluency",
-        "iconId": "Globe"
-      },
-      {
-        "value": "Подготовка к TOEFL",
-        "label": "Подготовка_к_TOEFL",
-        "duration": "From Intermediate to Advanced",
-        "iconId": "Globe2"
-      },
-      {
-        "value": "Подготовка к Duolingo",
-        "label": "Подготовка_к_Duolingo",
-        "duration": "From Intermediate to Advanced",
-        "iconId": "Feather"
-      }
-    ],
-    "list": [
-      {
-        "id": "azero-pre-elementary",
-        "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=800&q=80",
-        "title": "Azero Pre-Elementary",
-        "description": "Базовый курс, сфокусированный на простых описаниях, чтении незнакомых слов и формировании словарного запаса в 700+ слов.",
-        "duration": "2 месяца (40 занятий)",
-        "outcomes": [
-          "Уверенно писать и читать даже незнакомые слова ",
-          "На базовом уровне описывать что и кто находится рядом ",
-          "Использовать минимум 700 слов на английском языке ",
-          "Письменно излагать свои мысли в письме кому-либо ",
-          "Возможность перейти на А2 (минуя А1+) при результате теста 85%+ (для 15+)"
-        ],
-        "level": "Azero",
-        "category": "English_kids",
-        "modules": [
-          {
-            "title": "Учебная программа 1-го и 2-го месяца",
-            "description": "24 занятия с основным учителем, а также уроки с ассистентами и иностранными преподавателями. ",
-            "lessons": [
-              {
-                "title": "Present Simple с 'to be' (ед. число)",
-                "activity": "Говорение: Представление друга "
-              },
-              {
-                "title": "Описание профессий и приветствия",
-                "activity": "Говорение: Ударение в словах и интонация "
-              },
-              {
-                "title": "Present Simple с 'to be' (мн. число)",
-                "activity": "Говорение: Любимый музыкант "
-              },
-              {
-                "title": "Wh- вопросы",
-                "activity": "Говорение: Обмен информацией [cite: 31]"
-              },
-              {
-                "title": "Существительные и указательные местоимения",
-                "activity": "Говорение: Разговор в гардеробе [cite: 32]"
-              },
-              {
-                "title": "Конструкция Has got / Have got",
-                "activity": "Говорение: Члены семьи [cite: 33]"
-              },
-              {
-                "title": "Present Simple (Действие/Мн. число)",
-                "activity": "Аудирование и говорение о распорядке дня [cite: 34]"
-              },
-              {
-                "title": "Вопросы в Present Simple",
-                "activity": "Чтение и говорение о животных [cite: 35]"
-              },
-              {
-                "title": "Present Simple (Действие/Ед. число)",
-                "activity": "Говорение: Свободное время [cite: 36]"
-              },
-              {
-                "title": "Наречия частоты",
-                "activity": "Чтение и обсуждение привычек в еде [cite: 37]"
-              },
-              {
-                "title": "There is/are; some и any",
-                "activity": "Описание города [cite: 38]"
-              },
-              {
-                "title": "Вопросы Is there / Are there",
-                "activity": "Аренда жилья [cite: 39]"
-              },
-              {
-                "title": "Модальный глагол Can/Can't",
-                "activity": "Опрос класса о способностях [cite: 40]"
-              },
-              {
-                "title": "Притяжательный падеж 's",
-                "activity": "Аудирование и разговор о талантливом человеке [cite: 41]"
-              },
-              {
-                "title": "Present Continuous",
-                "activity": "Описание картинки и поиск отличий [cite: 41]"
-              },
-              {
-                "title": "Порядок прилагательных",
-                "activity": "Разговор об одежде [cite: 41]"
-              },
-              {
-                "title": "Past Simple: was/were",
-                "activity": "Вопросы о знаменитости [cite: 42]"
-              },
-              {
-                "title": "Past Simple: правильные глаголы",
-                "activity": "Квиз о знаменитости [cite: 42]"
-              },
-              {
-                "title": "Past Simple: неправильные глаголы",
-                "activity": "Описание мира [cite: 42]"
-              },
-              {
-                "title": "Вопросы в Past Simple",
-                "activity": "Вопросы сверстникам о прошлом опыте [cite: 42]"
-              },
-              {
-                "title": "Предпочтения (like/love/hate)",
-                "activity": "Занятия в свободное время [cite: 42]"
-              },
-              {
-                "title": "Объектные местоимения",
-                "activity": "Поиск суперфаната [cite: 43]"
-              },
-              {
-                "title": "Существительные и путешествия",
-                "activity": "Исчисляемые/неисчисляемые (опыт плохой поездки) [cite: 44]"
-              },
-              {
-                "title": "Present Continuous (Будущее)",
-                "activity": "Планирование идеального отпуска [cite: 44]"
-              }
-            ]
-          }
-        ],
-        "teacher": {
-          "name": "Emily Johnson",
-          "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-          "bio": "Главный преподаватель"
-        }
-      },
-      {
-        "id": "a1-plus-beginner",
-        "image": "https://plus.unsplash.com/premium_photo-1770548404170-6e7cbaabf0bf?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "title": "A1+ Beginner",
-        "description": "Развитие навыков аудирования, базовое описание повседневной жизни и расширение словаря до 2000+ слов.",
-        "duration": "2 месяца (40 занятий)",
-        "outcomes": [
-          "Развитие английского на слух ",
-          "На базовом уровне описывать свою повседневную жизнь и других ",
-          "Использовать минимум +2000 слов на английском языке ",
-          "Письменно излагать свои мысли в письме и онлайн "
-        ],
-        "level": "A1+",
-        "category": "General_English",
-        "modules": [
-          {
-            "title": "Учебная программа",
-            "description": "Комплексная программа из 24 занятий с основным учителем, ассистентами и иностранными преподавателями[cite: 8, 9, 10].",
-            "lessons": [
-              {
-                "title": "Starter Unit: Основы",
-                "activity": "Алфавит, цвета, числа, дни недели, месяцы "
-              },
-              {
-                "title": "Урок 1: Глагол to be",
-                "activity": "Чтение/Говорение: Хобби (утверждение и отрицание) "
-              },
-              {
-                "title": "Урок 2: Владение",
-                "activity": "Аудирование/Письмо: Описание картинки, Have/has got, притяжательные прилагательные "
-              },
-              {
-                "title": "Урок 3: Описание людей",
-                "activity": "Чтение/Говорение: Притяжательный падеж 's, правильные и неправильные существительные "
-              },
-              {
-                "title": "Урок 4: Вопросы и артикли",
-                "activity": "Письмо: Школьный планер, Wh-вопросы, указательные местоимения, артикли "
-              },
-              {
-                "title": "Урок 5: Present Simple I",
-                "activity": "Аудирование: True/False/Not mentioned (Утверждение/Отрицание) "
-              },
-              {
-                "title": "Урок 6: Present Simple II",
-                "activity": "Говорение: Как добраться, общие и специальные вопросы "
-              },
-              {
-                "title": "Урок 7: Местоположение",
-                "activity": "Чтение: Заголовки, There is/There are, предлоги места "
-              },
-              {
-                "title": "Урок 8: Существительные и предложения",
-                "activity": "Как предлагать и отвечать на предложения, исчисляемые/неисчисляемые, some/any/a/an "
-              },
-              {
-                "title": "Урок 9: Способности и частота",
-                "activity": "Запрос и предоставление информации, модальные глаголы: can/can't, наречия частоты "
-              },
-              {
-                "title": "Урок 10: Предпочтения",
-                "activity": "Презентация: Опросник, повелительное наклонение, like/love/hate + Ving "
-              },
-              {
-                "title": "Урок 11: Промежуточное говорение",
-                "activity": "Презентации студентов (говорение) "
-              },
-              {
-                "title": "Урок 12: Present Continuous I",
-                "activity": "Чтение: Сопоставление характеристик, утверждение и отрицание "
-              },
-              {
-                "title": "Урок 13: Continuous против Simple",
-                "activity": "Аудирование: Множественный выбор, вопросы, сравнение Simple и Continuous "
-              },
-              {
-                "title": "Урок 14: Прошедшее время To Be",
-                "activity": "Говорение: Спорт, Past Simple глагола to be / There was/were "
-              },
-              {
-                "title": "Урок 15: Past Simple (утверждение)",
-                "activity": "Письмо: Необычные виды спорта, правильные и неправильные глаголы "
-              },
-              {
-                "title": "Урок 16: Past Simple (отрицание)",
-                "activity": "Письмо: Личное заявление "
-              },
-              {
-                "title": "Урок 17: Past Simple (вопросы)",
-                "activity": "Говорение: Понимание критериев оценки "
-              },
-              {
-                "title": "Урок 18: Презентация",
-                "activity": "Урок говорения (презентация) "
-              },
-              {
-                "title": "Урок 19: Сравнения",
-                "activity": "Чтение: Множественный выбор, сравнительная степень прилагательных "
-              },
-              {
-                "title": "Урок 20: Превосходная степень и опыт",
-                "activity": "Аудирование: Заполнение пропусков, превосходная степень, Present Perfect с ever/never "
-              },
-              {
-                "title": "Урок 21: Планы на будущее",
-                "activity": "Практика языка, To be going to / предлоги времени "
-              },
-              {
-                "title": "Урок 22: Советы и обязательства",
-                "activity": "Письмо в условиях экзамена, Should/shouldn't, must/have to "
-              },
-              {
-                "title": "Урок 23: Финальный обзор",
-                "activity": "Повторение с основным учителем и академической поддержкой "
-              },
-              {
-                "title": "Урок 24: Воркшоп",
-                "activity": "Мастер-класс от старшего преподавателя "
-              }
-            ]
-          }
-        ],
-        "teacher": {
-          "name": "Emily Johnson",
-          "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-          "bio": "Главный преподаватель"
-        }
-      },
-      {
-        "id": "a1-plus-elementary",
-        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
-        "title": "A1+ Elementary",
-        "description": "Формирование базового общения и грамматики английского языка.",
-        "duration": "2 месяца (40 занятий)",
-        "outcomes": [
-          "Развить базовую разговорную речь",
-          "Общаться с туристами и путешествовать",
-          "Уверенно вести переписку на английском",
-          "Освоить базовую грамматику английского"
-        ],
-        "level": "A1+",
-        "category": "General_English",
-        "modules": [
-          {
-            "title": "1-й месяц",
-            "description": "Формирование базового общения и грамматики английского языка.",
-            "lessons": [
-              {
-                "title": "Повторение уровня A1+",
-                "activity": "Говорение: разговор о семье и базовые описания"
-              },
-              {
-                "title": "Present Simple (утвердительная и отрицательная форма)",
-                "activity": "Чтение: True / False / Not Mentioned, Аудирование: сопоставление"
-              },
-              {
-                "title": "Наречия частоты / вопросы в Present Simple",
-                "activity": "Говорение: занятия в свободное время"
-              },
-              {
-                "title": "There is / There are, предлоги места",
-                "activity": "Говорение: описание дома и комнаты"
-              },
-              {
-                "title": "Present Continuous vs Present Simple",
-                "activity": "Use of English: множественный выбор"
-              },
-              {
-                "title": "Can / Can't",
-                "activity": "Говорение: опасные виды спорта"
-              },
-              {
-                "title": "Наречия образа действия / Have to / Must",
-                "activity": "Письмо: объявление о фитнес-программе"
-              },
-              {
-                "title": "Past Simple глаголов To Be и Can",
-                "activity": "Письмо: презентация"
-              },
-              {
-                "title": "Past Simple (утвердительная форма)",
-                "activity": "Говорение: рассказ о прошлых событиях"
-              },
-              {
-                "title": "Past Simple (отрицание и вопросы)",
-                "activity": "Чтение: сопоставление"
-              },
-              {
-                "title": "Past Continuous",
-                "activity": "Аудирование: заполнение заметок"
-              },
-              {
-                "title": "Презентация",
-                "activity": "Любимая книга"
-              },
-              {
-                "title": "Исчисляемые и неисчисляемые существительные",
-                "activity": "Use of English: вставка предложений"
-              },
-              {
-                "title": "A lot of / Much / Many, Should / Shouldn't",
-                "activity": "Письмо: формальный и неформальный стиль"
-              },
-              {
-                "title": "Be going to / Will / Won’t",
-                "activity": "Говорение в парах"
-              },
-              {
-                "title": "Present Continuous для будущего",
-                "activity": "Говорение: предложения и планы"
-              },
-              {
-                "title": "Сравнительная степень прилагательных",
-                "activity": "Говорение: сравнение фотографий"
-              },
-              {
-                "title": "Превосходная степень прилагательных / артикли",
-                "activity": "Письмо: формальное письмо-мнение"
-              },
-              {
-                "title": "Present Perfect (ever / never)",
-                "activity": "Use of English: диалоги в магазине"
-              },
-              {
-                "title": "Present Perfect (already / just / yet)",
-                "activity": "Аудирование: множественный выбор"
-              },
-              {
-                "title": "Презентация",
-                "activity": ""
-              },
-              {
-                "title": "Passive Voice с by",
-                "activity": "Говорение: биография"
-              },
-              {
-                "title": "Zero и First Conditional",
-                "activity": "Письмо: абзацы"
-              },
-              {
-                "title": "Финальное повторение",
-                "activity": ""
-              },
-              {
-                "title": "Мастер-класс старшего преподавателя",
-                "activity": ""
-              }
-            ]
-          }
-        ],
-        "teacher": {
-          "name": "Emily Johnson",
-          "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-          "bio": "Главный преподаватель"
-        }
-      },
-      {
-        "id": "b1-pre-intermediate",
-        "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
-        "title": "B1 Pre-Intermediate",
-        "description": "Развитие уверенного общения и прочной грамматической базы.",
-        "duration": "2 месяца (40 занятий)",
-        "outcomes": [
-          "Свободно использовать сложную грамматику в речи и письме",
-          "Участвовать в обсуждениях и конструктивных спорах",
-          "Писать структурированные эссе и формальные письма",
-          "Подготовиться к национальному экзамену уровня B2"
-        ],
-        "level": "B1",
-        "category": "General_English",
-        "modules": [
-          {
-            "title": "1-й месяц",
-            "description": "Углубление в базовую грамматику и повседневную лексику.",
-            "lessons": [
-              {
-                "title": "Present Simple vs Present Continuous",
-                "activity": "Чтение: тест с вариантами ответа"
-              },
-              {
-                "title": "Артикли",
-                "activity": "Говорение: семейные дискуссии и ролевые игры"
-              },
-              {
-                "title": "Past Simple",
-                "activity": "Рассказы на тему преступлений"
-              },
-              {
-                "title": "Past Continuous",
-                "activity": "Письмо: понимание критериев оценки"
-              },
-              {
-                "title": "Quantifiers",
-                "activity": "Обсуждение социальных сетей"
-              },
-              {
-                "title": "Относительные местоимения",
-                "activity": "Обсуждение определений"
-              },
-              {
-                "title": "Present Perfect (ever / never / for / since)",
-                "activity": "Понимание темы первой помощи"
-              },
-              {
-                "title": "Present Perfect vs Past Simple",
-                "activity": "Письмо: содержание и стиль"
-              },
-              {
-                "title": "Сравнительные и превосходные степени",
-                "activity": "Письмо: мнение о фильмах и ТВ"
-              },
-              {
-                "title": "Модификаторы прилагательных",
-                "activity": "Говорение: переговоры"
-              },
-              {
-                "title": "Презентация",
-                "activity": ""
-              },
-              {
-                "title": "Going to / Will / May / Might",
-                "activity": "Разговор о будущем"
-              },
-              {
-                "title": "Zero и First Conditional",
-                "activity": "Письмо: формальное письмо для экзамена"
-              },
-              {
-                "title": "Модальные глаголы обязательства и совета",
-                "activity": "Написание CV"
-              },
-              {
-                "title": "Second Conditional",
-                "activity": "Говорение: советы"
-              },
-              {
-                "title": "Past Perfect / Used to",
-                "activity": "Описание прошлых событий"
-              },
-              {
-                "title": "Gerunds vs Infinitives",
-                "activity": "Обсуждение интересов в дружбе"
-              },
-              {
-                "title": "Косвенная речь: утверждения",
-                "activity": "Чтение: упражнение на вставку предложений"
-              },
-              {
-                "title": "Косвенная речь: вопросы",
-                "activity": "Аудирование: заполнение заметок"
-              },
-              {
-                "title": "Passive Voice (Present Simple)",
-                "activity": "Говорение: значение интернета"
-              },
-              {
-                "title": "Passive Voice (другие времена)",
-                "activity": "Обсуждение фотографий"
-              },
-              {
-                "title": "Презентация",
-                "activity": ""
-              },
-              {
-                "title": "Повторение",
-                "activity": ""
-              },
-              {
-                "title": "Мастер-класс старшего преподавателя",
-                "activity": ""
-              }
-            ]
-          }
-        ],
-        "teacher": {
-          "name": "Emily Johnson",
-          "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-          "bio": "Главный преподаватель"
-        }
-      },
-      {
-        "id": "b1-plus-intermediate",
-        "image": "https://plus.unsplash.com/premium_photo-1661909267383-58991abdca51?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "title": "B1+ Intermediate",
-        "description": "Развитие продвинутой грамматики и навыков аргументированной речи.",
-        "duration": "2 месяца (40 занятий)",
-        "outcomes": [
-          "Свободно использовать сложную грамматику в речи и письме",
-          "Участвовать в обсуждениях и конструктивных спорах",
-          "Писать структурированные эссе и формальные письма",
-          "Подготовиться к национальному экзамену уровня B2"
-        ],
-        "level": "B1+",
-        "category": "General_English",
-        "modules": [
-          {
-            "title": "1-й месяц",
-            "description": "Развитие продвинутой грамматики и навыков аргументированной речи.",
-            "lessons": [
-              {
-                "title": "Present Simple vs Present Continuous",
-                "activity": "Чтение: True / False / Not Given"
-              },
-              {
-                "title": "State and Action Verbs",
-                "activity": "Аудирование: сопоставление информации, Говорение: описание людей"
-              },
-              {
-                "title": "Past Simple / Past Continuous / Past Perfect",
-                "activity": "Говорение: обмен информацией"
-              },
-              {
-                "title": "Used to / Would",
-                "activity": "Говорение: обсуждение жизни в прошлом"
-              },
-              {
-                "title": "Present Perfect",
-                "activity": "Аудирование: подкаст"
-              },
-              {
-                "title": "Present Perfect Continuous",
-                "activity": "Письмо: объяснение статистики (Writing Task 1)"
-              },
-              {
-                "title": "Future Forms",
-                "activity": "Письмо: рецепт"
-              },
-              {
-                "title": "Future Continuous и Future Perfect",
-                "activity": "Говорение: обсуждение рецепта"
-              },
-              {
-                "title": "Модальные глаголы: обязанность, запрет, совет, разрешение",
-                "activity": "Письмо: формальное письмо-заявка"
-              },
-              {
-                "title": "Zero, First, Second Conditionals",
-                "activity": "Говорение: обсуждение школьных проектов"
-              },
-              {
-                "title": "Презентация",
-                "activity": ""
-              },
-              {
-                "title": "Passive Voice / Have Something Done",
-                "activity": "Говорение: мозговой штурм в команде"
-              },
-              {
-                "title": "Gerunds and Infinitives",
-                "activity": "Письмо: эссе «за и против»"
-              },
-              {
-                "title": "Defining Relative Clauses",
-                "activity": "Чтение и анализ журнальной статьи"
-              },
-              {
-                "title": "Non-defining Relative Clauses",
-                "activity": "Говорение: дебаты (суеверия и ритуалы)"
-              },
-              {
-                "title": "Косвенная речь: утверждения",
-                "activity": "Говорение: отзыв о фильме"
-              },
-              {
-                "title": "Косвенная речь: вопросы и команды",
-                "activity": "Письмо: инструкции"
-              },
-              {
-                "title": "Модальные глаголы предположения",
-                "activity": "Говорение: обсуждение теорий заговора"
-              },
-              {
-                "title": "Third Conditional",
-                "activity": "Письмо: рассказ"
-              },
-              {
-                "title": "Неопределённые местоимения",
-                "activity": "Говорение: диалог в магазине одежды"
-              },
-              {
-                "title": "So / Such / I wish / If only",
-                "activity": "Письмо: формальная жалоба"
-              },
-              {
-                "title": "Презентация",
-                "activity": ""
-              },
-              {
-                "title": "Повторение",
-                "activity": ""
-              },
-              {
-                "title": "Мастер-класс старшего преподавателя",
-                "activity": ""
-              }
-            ]
-          }
-        ],
-        "teacher": {
-          "name": "Emily Johnson",
-          "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-          "bio": "Главный преподаватель"
-        }
-      }
-    ]
-  },
-  "coursesPage": {
-    "titleLine1": "ВЫБЕРИТЕ",
-    "titleLine2": "СВОЙ ПУТЬ.",
-    "allLabel": "ВСЕ",
-    "searchPlaceholder": "Поиск программы...",
-    "loading": "Загрузка..."
-  },
-  "courseDetail": {
-    "durationLabel": "Длительность",
-    "levelLabel": "Уровень",
-    "targetLabel": "Цель",
-    "priceLabel": "Стоимость",
-    "backToCatalog": "Назад в каталог",
-    "enrollNow": "Записаться сейчас",
-    "architecture": "Архитектура курса",
-    "journeyLine1": "Ваше",
-    "journeyLine2": "Путешествие.",
-    "lessonsLabel": "Уроков",
-    "workshopLabel": "Практический воркшоп",
-    "chiefMentor": "Главный ментор",
-    "learnFromLine1": "Учитесь",
-    "learnFromLine2": "у лучших.",
-    "startYourLine1": "Начните",
-    "startYourLine2": "будущее.",
-    "investment": "Инвестиция в себя",
-    "joinProgram": "Записаться на курс",
-    "askQuestion": "Задать вопрос",
-    "trialLine": "Пробный урок бесплатно • Без скрытых платежей • 100% результат",
-    "apply": "Подать заявку"
-  },
-  "contact": {
-    "subtitle": "Мы всегда рядом, чтобы помочь вам начать путь.",
-    "phoneLabel": "Телефон",
-    "emailLabel": "Email",
-    "hoursLabel": "Часы работы",
-    "hoursWeekdays": "Пн - Сб: 09:00 - 20:00",
-    "hoursSunday": "Воскресенье: выходной",
-    "mapTitle": "Интерактивная карта",
-    "mapDescription": "Мы рядом с СамГУ, на пересечении Университетского бульвара.",
-    "showLocations": "Показать все филиалы",
-    "questionsTitle": "Есть конкретные вопросы?",
-    "questionsSubtitle": "Напишите нам, и мы ответим в течение 24 часов.",
-    "telegramCta": "Написать в Telegram"
-  },
-  "homePage": {
-    "heroWord1": "УЧИСЬ.",
-    "heroWord2": "СЛУШАЙ.",
-    "heroWord3": "ГОВОРИ.",
-    "alumni": "С нами уже 15 000+ выпускников",
-    "coursesBadge": "КУРСЫ",
-    "coursesTitleLine1": "Наши",
-    "coursesTitleLine2": "Программы.",
-    "coursesSubtitle": "Созданы для абсолютной беглости.",
-    "fullCatalog": "Полный каталог",
-    "courseTrackHint": "Подберите программу под свой уровень",
-    "locationsBadge": "ФИЛИАЛЫ",
-    "lifestyleAltHub": "Лаунж Polyglot Hub",
-    "lifestyleHubTitle": "Polyglot Hub",
-    "lifestyleHubDesc": "Наши центральные кампусы включают кофейные зоны и лаунжи для разговорной практики с наставниками и одногруппниками.",
-    "lifestyleCommunityTag": "СООБЩЕСТВО ПРЕЖДЕ ВСЕГО",
-    "lifestyleAltCinema": "Киновечер в Polyglot",
-    "lifestyleCinemaTag": "Каждую пятницу",
-    "lifestyleAltLibrary": "Библиотека и учебное пространство Polyglot",
-    "lifestyleAltSpeaking": "Разговорный клуб в Polyglot",
-    "whyChooseUs": "ПОЧЕМУ МЫ",
-    "faqBadge": "FAQ",
-    "ctaLine1": "ХВАТИТ МЕЧТАТЬ.",
-    "ctaLine2": "НАЧНИТЕ ГОВОРИТЬ.",
-    "bookLesson": "Записаться на пробный урок"
-  }
+		"navigationTitle": "Навигация",
+		"hqTitle": "Главный офис",
+		"tagline": "Создано для тех, кто выбирает лучшее."
+	},
+	"ai": {
+		"trigger": "AI Консультант",
+		"placeholder": "Какой у вас сейчас уровень?",
+		"title": "AI-консультант Polyglot",
+		"statusOnline": "Онлайн",
+		"greeting": "Здравствуйте! Расскажите о своих целях, и я помогу выбрать идеальный курс.",
+		"fallback": "Простите, я не смог обработать ваш запрос.",
+		"connectionError": "Ошибка подключения к AI-консультанту."
+	},
+	"enrollForm": {
+		"title": "Присоединяйтесь к Polyglot",
+		"subtitle": "Начните свой путь к совершенству в английском сегодня. Наши консультанты скоро свяжутся с вами.",
+		"name": "Ваше полное имя",
+		"phone": "Контактный номер",
+		"branch": "Выберите удобный филиал",
+		"submit": "Отправить заявку",
+		"success": "Добро пожаловать!",
+		"successDetails": "Мы получили вашу заявку. Наш консультант скоро свяжется с вами, чтобы назначить пробный урок.",
+		"backHome": "Вернуться на главную",
+		"namePlaceholder": "Иван Иванов",
+		"branchPlaceholder": "—",
+		"heroAlt": "Присоединяйтесь к нам",
+		"quoteAuthor": "Нодира, студент IELTS",
+		"quoteText": "Начать обучение здесь было лучшим решением для моего академического будущего. Атмосфера действительно мотивирует!"
+	},
+	"diagnostic": {
+		"title": "Диагностика",
+		"subtitle": "Узнайте свой реальный уровень языка за 60 секунд.",
+		"quickCardTime": "60 секунд",
+		"quickCardTitle": "Быстрая диагностика",
+		"quickCardDesc": "Быстрая оценка комфорта в речи и основных целей.",
+		"quickCardCta": "Начать",
+		"deepCardTime": "30 минут",
+		"deepCardTitle": "Глубокий аудит",
+		"deepCardDesc": "Полное профессиональное тестирование: грамматика, лексика и логика.",
+		"deepCardCta": "К тесту",
+		"startBtn": "Начать тест",
+		"nextBtn": "Следующий вопрос",
+		"calculating": "Анализ данных...",
+		"resultTitle": "Диагностика завершена",
+		"recommendation": "Рекомендуемая программа:",
+		"retake": "Пройти снова",
+		"questionLabel": "ВОПРОС",
+		"levelStrong": "Сильный B2+",
+		"levelDeveloping": "Развивающийся A2/B1",
+		"recommendedAlt": "Рекомендуемая программа",
+		"levelLabel": "УРОВЕНЬ ДИАГНОСТИКИ",
+		"pointsLabel": "БАЛЛОВ",
+		"viewProgram": "Смотреть программу",
+		"questions": [
+			{
+				"q": "Как бы вы описали свой комфорт при общении?",
+				"options": [
+					{
+						"a": "Использую отдельные слова и жесты",
+						"score": 1
+					},
+					{
+						"a": "Могу общаться в быту, но сложные темы даются с трудом",
+						"score": 2
+					},
+					{
+						"a": "Говорю свободно, но иногда делаю грамматические ошибки",
+						"score": 3
+					},
+					{
+						"a": "Использую английский профессионально каждый день",
+						"score": 4
+					}
+				]
+			},
+			{
+				"q": "Какое предложение грамматически верно?",
+				"options": [
+					{
+						"a": "I have seen him yesterday",
+						"score": 1
+					},
+					{
+						"a": "I saw him yesterday",
+						"score": 3
+					},
+					{
+						"a": "I seen him yesterday",
+						"score": 0
+					}
+				]
+			},
+			{
+				"q": "Какова ваша основная цель обучения?",
+				"options": [
+					{
+						"a": "Академическая (IELTS / Поступление в ВУЗ)",
+						"score": 5
+					},
+					{
+						"a": "Карьерный рост / Бизнес-переговоры",
+						"score": 4
+					},
+					{
+						"a": "Личное развитие / Путешествия",
+						"score": 2
+					}
+				]
+			}
+		]
+	},
+	"deepAudit": {
+		"backgroundWord": "АУДИТ",
+		"titleWord": "Нейро",
+		"titleHighlight": "Глубокий аудит.",
+		"subtitle": "Полная 30-минутная профессиональная оценка от Polyglot. Грамматика, лексика и языковая логика.",
+		"timeLabel": "Лимит времени",
+		"timeValue": "30 МИН",
+		"standardsLabel": "Стандарты",
+		"standardsValue": "CEFR",
+		"accuracyLabel": "Точность",
+		"accuracyValue": "98%",
+		"startBtn": "Начать полный тест",
+		"formTitle": "Ваши контактные данные",
+		"formSubtitle": "Мы используем их, чтобы перезвонить вам после теста.",
+		"formNameLabel": "Имя",
+		"formNamePlaceholder": "Иван Иванов",
+		"formPhoneLabel": "Телефон",
+		"formPhonePlaceholder": "+998 (__) ___-__-__",
+		"formContinueBtn": "Перейти к тесту",
+		"leaveWarning": "Если вы обновите страницу или уйдёте назад, прогресс обнулится. Продолжить?",
+		"formLoading": "Загрузка теста…",
+		"formLoadError": "Не удалось загрузить тест. Обновите страницу.",
+		"questionLabel": "Вопрос",
+		"back": "Назад",
+		"next": "Далее",
+		"skipQuestion": "Пропустить вопрос",
+		"finishBtn": "Завершить и анализировать",
+		"completeBadge": "Аудит завершён",
+		"resultSuccessTitle": "Все тесты пройдены",
+		"resultSuccessSubtitle": "В ближайшее время вам перезвонят.",
+		"yourLabel": "Ваш",
+		"standingLabel": "результат.",
+		"metricsTitle": "Показатели диагностики",
+		"levelLabel": "Уровень",
+		"retakeBtn": "Пройти снова",
+		"systemRecLabel": "Рекомендация системы",
+		"readyForLabel": "Вам подойдёт",
+		"reserveSpotBtn": "Записаться",
+		"levels": {
+			"beginner": "Начальный (A1)",
+			"intermediate": "Средний (B1-B2)",
+			"advanced": "Продвинутый (C1)"
+		}
+	},
+	"courses": {
+		"categories": [
+			{
+				"value": "General English",
+				"label": "General_English",
+				"duration": "From Beginning to Fluency",
+				"iconId": "BookOpen"
+			},
+			{
+				"value": "IELTS Intensive",
+				"label": "IELTS_Intensive",
+				"duration": "From Intermediate to Advanced",
+				"iconId": "Target"
+			},
+			{
+				"value": "English kids",
+				"label": "English_kids",
+				"duration": "From Foundation to Beginner",
+				"iconId": "Smile"
+			},
+			{
+				"value": "Подготовка к CEFR/DTM",
+				"label": "Подготовка_к_CEFR/DTM",
+				"duration": "From Foundation to Fluency",
+				"iconId": "Globe"
+			},
+			{
+				"value": "Подготовка к TOEFL",
+				"label": "Подготовка_к_TOEFL",
+				"duration": "From Intermediate to Advanced",
+				"iconId": "Globe2"
+			},
+			{
+				"value": "Подготовка к Duolingo",
+				"label": "Подготовка_к_Duolingo",
+				"duration": "From Intermediate to Advanced",
+				"iconId": "Feather"
+			}
+		],
+		"list": [
+			{
+				"id": "azero-pre-elementary",
+				"image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=800&q=80",
+				"title": "Azero Pre-Elementary",
+				"description": "Базовый курс, сфокусированный на простых описаниях, чтении незнакомых слов и формировании словарного запаса в 700+ слов.",
+				"duration": "2 месяца (40 занятий)",
+				"outcomes": [
+					"Уверенно писать и читать даже незнакомые слова ",
+					"На базовом уровне описывать что и кто находится рядом ",
+					"Использовать минимум 700 слов на английском языке ",
+					"Письменно излагать свои мысли в письме кому-либо ",
+					"Возможность перейти на А2 (минуя А1+) при результате теста 85%+ (для 15+)"
+				],
+				"level": "Azero",
+				"category": "English_kids",
+				"modules": [
+					{
+						"title": "Учебная программа 1-го и 2-го месяца",
+						"description": "24 занятия с основным учителем, а также уроки с ассистентами и иностранными преподавателями. ",
+						"lessons": [
+							{
+								"title": "Present Simple с 'to be' (ед. число)",
+								"activity": "Говорение: Представление друга "
+							},
+							{
+								"title": "Описание профессий и приветствия",
+								"activity": "Говорение: Ударение в словах и интонация "
+							},
+							{
+								"title": "Present Simple с 'to be' (мн. число)",
+								"activity": "Говорение: Любимый музыкант "
+							},
+							{
+								"title": "Wh- вопросы",
+								"activity": "Говорение: Обмен информацией [cite: 31]"
+							},
+							{
+								"title": "Существительные и указательные местоимения",
+								"activity": "Говорение: Разговор в гардеробе [cite: 32]"
+							},
+							{
+								"title": "Конструкция Has got / Have got",
+								"activity": "Говорение: Члены семьи [cite: 33]"
+							},
+							{
+								"title": "Present Simple (Действие/Мн. число)",
+								"activity": "Аудирование и говорение о распорядке дня [cite: 34]"
+							},
+							{
+								"title": "Вопросы в Present Simple",
+								"activity": "Чтение и говорение о животных [cite: 35]"
+							},
+							{
+								"title": "Present Simple (Действие/Ед. число)",
+								"activity": "Говорение: Свободное время [cite: 36]"
+							},
+							{
+								"title": "Наречия частоты",
+								"activity": "Чтение и обсуждение привычек в еде [cite: 37]"
+							},
+							{
+								"title": "There is/are; some и any",
+								"activity": "Описание города [cite: 38]"
+							},
+							{
+								"title": "Вопросы Is there / Are there",
+								"activity": "Аренда жилья [cite: 39]"
+							},
+							{
+								"title": "Модальный глагол Can/Can't",
+								"activity": "Опрос класса о способностях [cite: 40]"
+							},
+							{
+								"title": "Притяжательный падеж 's",
+								"activity": "Аудирование и разговор о талантливом человеке [cite: 41]"
+							},
+							{
+								"title": "Present Continuous",
+								"activity": "Описание картинки и поиск отличий [cite: 41]"
+							},
+							{
+								"title": "Порядок прилагательных",
+								"activity": "Разговор об одежде [cite: 41]"
+							},
+							{
+								"title": "Past Simple: was/were",
+								"activity": "Вопросы о знаменитости [cite: 42]"
+							},
+							{
+								"title": "Past Simple: правильные глаголы",
+								"activity": "Квиз о знаменитости [cite: 42]"
+							},
+							{
+								"title": "Past Simple: неправильные глаголы",
+								"activity": "Описание мира [cite: 42]"
+							},
+							{
+								"title": "Вопросы в Past Simple",
+								"activity": "Вопросы сверстникам о прошлом опыте [cite: 42]"
+							},
+							{
+								"title": "Предпочтения (like/love/hate)",
+								"activity": "Занятия в свободное время [cite: 42]"
+							},
+							{
+								"title": "Объектные местоимения",
+								"activity": "Поиск суперфаната [cite: 43]"
+							},
+							{
+								"title": "Существительные и путешествия",
+								"activity": "Исчисляемые/неисчисляемые (опыт плохой поездки) [cite: 44]"
+							},
+							{
+								"title": "Present Continuous (Будущее)",
+								"activity": "Планирование идеального отпуска [cite: 44]"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Emily Johnson",
+					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+					"bio": "Главный преподаватель"
+				}
+			},
+			{
+				"id": "a1-plus-beginner",
+				"image": "https://plus.unsplash.com/premium_photo-1770548404170-6e7cbaabf0bf?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"title": "A1+ Beginner",
+				"description": "Развитие навыков аудирования, базовое описание повседневной жизни и расширение словаря до 2000+ слов.",
+				"duration": "2 месяца (40 занятий)",
+				"outcomes": [
+					"Развитие английского на слух ",
+					"На базовом уровне описывать свою повседневную жизнь и других ",
+					"Использовать минимум +2000 слов на английском языке ",
+					"Письменно излагать свои мысли в письме и онлайн "
+				],
+				"level": "A1+",
+				"category": "General_English",
+				"modules": [
+					{
+						"title": "Учебная программа",
+						"description": "Комплексная программа из 24 занятий с основным учителем, ассистентами и иностранными преподавателями[cite: 8, 9, 10].",
+						"lessons": [
+							{
+								"title": "Starter Unit: Основы",
+								"activity": "Алфавит, цвета, числа, дни недели, месяцы "
+							},
+							{
+								"title": "Урок 1: Глагол to be",
+								"activity": "Чтение/Говорение: Хобби (утверждение и отрицание) "
+							},
+							{
+								"title": "Урок 2: Владение",
+								"activity": "Аудирование/Письмо: Описание картинки, Have/has got, притяжательные прилагательные "
+							},
+							{
+								"title": "Урок 3: Описание людей",
+								"activity": "Чтение/Говорение: Притяжательный падеж 's, правильные и неправильные существительные "
+							},
+							{
+								"title": "Урок 4: Вопросы и артикли",
+								"activity": "Письмо: Школьный планер, Wh-вопросы, указательные местоимения, артикли "
+							},
+							{
+								"title": "Урок 5: Present Simple I",
+								"activity": "Аудирование: True/False/Not mentioned (Утверждение/Отрицание) "
+							},
+							{
+								"title": "Урок 6: Present Simple II",
+								"activity": "Говорение: Как добраться, общие и специальные вопросы "
+							},
+							{
+								"title": "Урок 7: Местоположение",
+								"activity": "Чтение: Заголовки, There is/There are, предлоги места "
+							},
+							{
+								"title": "Урок 8: Существительные и предложения",
+								"activity": "Как предлагать и отвечать на предложения, исчисляемые/неисчисляемые, some/any/a/an "
+							},
+							{
+								"title": "Урок 9: Способности и частота",
+								"activity": "Запрос и предоставление информации, модальные глаголы: can/can't, наречия частоты "
+							},
+							{
+								"title": "Урок 10: Предпочтения",
+								"activity": "Презентация: Опросник, повелительное наклонение, like/love/hate + Ving "
+							},
+							{
+								"title": "Урок 11: Промежуточное говорение",
+								"activity": "Презентации студентов (говорение) "
+							},
+							{
+								"title": "Урок 12: Present Continuous I",
+								"activity": "Чтение: Сопоставление характеристик, утверждение и отрицание "
+							},
+							{
+								"title": "Урок 13: Continuous против Simple",
+								"activity": "Аудирование: Множественный выбор, вопросы, сравнение Simple и Continuous "
+							},
+							{
+								"title": "Урок 14: Прошедшее время To Be",
+								"activity": "Говорение: Спорт, Past Simple глагола to be / There was/were "
+							},
+							{
+								"title": "Урок 15: Past Simple (утверждение)",
+								"activity": "Письмо: Необычные виды спорта, правильные и неправильные глаголы "
+							},
+							{
+								"title": "Урок 16: Past Simple (отрицание)",
+								"activity": "Письмо: Личное заявление "
+							},
+							{
+								"title": "Урок 17: Past Simple (вопросы)",
+								"activity": "Говорение: Понимание критериев оценки "
+							},
+							{
+								"title": "Урок 18: Презентация",
+								"activity": "Урок говорения (презентация) "
+							},
+							{
+								"title": "Урок 19: Сравнения",
+								"activity": "Чтение: Множественный выбор, сравнительная степень прилагательных "
+							},
+							{
+								"title": "Урок 20: Превосходная степень и опыт",
+								"activity": "Аудирование: Заполнение пропусков, превосходная степень, Present Perfect с ever/never "
+							},
+							{
+								"title": "Урок 21: Планы на будущее",
+								"activity": "Практика языка, To be going to / предлоги времени "
+							},
+							{
+								"title": "Урок 22: Советы и обязательства",
+								"activity": "Письмо в условиях экзамена, Should/shouldn't, must/have to "
+							},
+							{
+								"title": "Урок 23: Финальный обзор",
+								"activity": "Повторение с основным учителем и академической поддержкой "
+							},
+							{
+								"title": "Урок 24: Воркшоп",
+								"activity": "Мастер-класс от старшего преподавателя "
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Emily Johnson",
+					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+					"bio": "Главный преподаватель"
+				}
+			},
+			{
+				"id": "a1-plus-elementary",
+				"image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+				"title": "A1+ Elementary",
+				"description": "Формирование базового общения и грамматики английского языка.",
+				"duration": "2 месяца (40 занятий)",
+				"outcomes": [
+					"Развить базовую разговорную речь",
+					"Общаться с туристами и путешествовать",
+					"Уверенно вести переписку на английском",
+					"Освоить базовую грамматику английского"
+				],
+				"level": "A1+",
+				"category": "General_English",
+				"modules": [
+					{
+						"title": "1-й месяц",
+						"description": "Формирование базового общения и грамматики английского языка.",
+						"lessons": [
+							{
+								"title": "Повторение уровня A1+",
+								"activity": "Говорение: разговор о семье и базовые описания"
+							},
+							{
+								"title": "Present Simple (утвердительная и отрицательная форма)",
+								"activity": "Чтение: True / False / Not Mentioned, Аудирование: сопоставление"
+							},
+							{
+								"title": "Наречия частоты / вопросы в Present Simple",
+								"activity": "Говорение: занятия в свободное время"
+							},
+							{
+								"title": "There is / There are, предлоги места",
+								"activity": "Говорение: описание дома и комнаты"
+							},
+							{
+								"title": "Present Continuous vs Present Simple",
+								"activity": "Use of English: множественный выбор"
+							},
+							{
+								"title": "Can / Can't",
+								"activity": "Говорение: опасные виды спорта"
+							},
+							{
+								"title": "Наречия образа действия / Have to / Must",
+								"activity": "Письмо: объявление о фитнес-программе"
+							},
+							{
+								"title": "Past Simple глаголов To Be и Can",
+								"activity": "Письмо: презентация"
+							},
+							{
+								"title": "Past Simple (утвердительная форма)",
+								"activity": "Говорение: рассказ о прошлых событиях"
+							},
+							{
+								"title": "Past Simple (отрицание и вопросы)",
+								"activity": "Чтение: сопоставление"
+							},
+							{
+								"title": "Past Continuous",
+								"activity": "Аудирование: заполнение заметок"
+							},
+							{
+								"title": "Презентация",
+								"activity": "Любимая книга"
+							},
+							{
+								"title": "Исчисляемые и неисчисляемые существительные",
+								"activity": "Use of English: вставка предложений"
+							},
+							{
+								"title": "A lot of / Much / Many, Should / Shouldn't",
+								"activity": "Письмо: формальный и неформальный стиль"
+							},
+							{
+								"title": "Be going to / Will / Won’t",
+								"activity": "Говорение в парах"
+							},
+							{
+								"title": "Present Continuous для будущего",
+								"activity": "Говорение: предложения и планы"
+							},
+							{
+								"title": "Сравнительная степень прилагательных",
+								"activity": "Говорение: сравнение фотографий"
+							},
+							{
+								"title": "Превосходная степень прилагательных / артикли",
+								"activity": "Письмо: формальное письмо-мнение"
+							},
+							{
+								"title": "Present Perfect (ever / never)",
+								"activity": "Use of English: диалоги в магазине"
+							},
+							{
+								"title": "Present Perfect (already / just / yet)",
+								"activity": "Аудирование: множественный выбор"
+							},
+							{
+								"title": "Презентация",
+								"activity": ""
+							},
+							{
+								"title": "Passive Voice с by",
+								"activity": "Говорение: биография"
+							},
+							{
+								"title": "Zero и First Conditional",
+								"activity": "Письмо: абзацы"
+							},
+							{
+								"title": "Финальное повторение",
+								"activity": ""
+							},
+							{
+								"title": "Мастер-класс старшего преподавателя",
+								"activity": ""
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Emily Johnson",
+					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+					"bio": "Главный преподаватель"
+				}
+			},
+			{
+				"id": "b1-pre-intermediate",
+				"image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
+				"title": "B1 Pre-Intermediate",
+				"description": "Развитие уверенного общения и прочной грамматической базы.",
+				"duration": "2 месяца (40 занятий)",
+				"outcomes": [
+					"Свободно использовать сложную грамматику в речи и письме",
+					"Участвовать в обсуждениях и конструктивных спорах",
+					"Писать структурированные эссе и формальные письма",
+					"Подготовиться к национальному экзамену уровня B2"
+				],
+				"level": "B1",
+				"category": "General_English",
+				"modules": [
+					{
+						"title": "1-й месяц",
+						"description": "Углубление в базовую грамматику и повседневную лексику.",
+						"lessons": [
+							{
+								"title": "Present Simple vs Present Continuous",
+								"activity": "Чтение: тест с вариантами ответа"
+							},
+							{
+								"title": "Артикли",
+								"activity": "Говорение: семейные дискуссии и ролевые игры"
+							},
+							{
+								"title": "Past Simple",
+								"activity": "Рассказы на тему преступлений"
+							},
+							{
+								"title": "Past Continuous",
+								"activity": "Письмо: понимание критериев оценки"
+							},
+							{
+								"title": "Quantifiers",
+								"activity": "Обсуждение социальных сетей"
+							},
+							{
+								"title": "Относительные местоимения",
+								"activity": "Обсуждение определений"
+							},
+							{
+								"title": "Present Perfect (ever / never / for / since)",
+								"activity": "Понимание темы первой помощи"
+							},
+							{
+								"title": "Present Perfect vs Past Simple",
+								"activity": "Письмо: содержание и стиль"
+							},
+							{
+								"title": "Сравнительные и превосходные степени",
+								"activity": "Письмо: мнение о фильмах и ТВ"
+							},
+							{
+								"title": "Модификаторы прилагательных",
+								"activity": "Говорение: переговоры"
+							},
+							{
+								"title": "Презентация",
+								"activity": ""
+							},
+							{
+								"title": "Going to / Will / May / Might",
+								"activity": "Разговор о будущем"
+							},
+							{
+								"title": "Zero и First Conditional",
+								"activity": "Письмо: формальное письмо для экзамена"
+							},
+							{
+								"title": "Модальные глаголы обязательства и совета",
+								"activity": "Написание CV"
+							},
+							{
+								"title": "Second Conditional",
+								"activity": "Говорение: советы"
+							},
+							{
+								"title": "Past Perfect / Used to",
+								"activity": "Описание прошлых событий"
+							},
+							{
+								"title": "Gerunds vs Infinitives",
+								"activity": "Обсуждение интересов в дружбе"
+							},
+							{
+								"title": "Косвенная речь: утверждения",
+								"activity": "Чтение: упражнение на вставку предложений"
+							},
+							{
+								"title": "Косвенная речь: вопросы",
+								"activity": "Аудирование: заполнение заметок"
+							},
+							{
+								"title": "Passive Voice (Present Simple)",
+								"activity": "Говорение: значение интернета"
+							},
+							{
+								"title": "Passive Voice (другие времена)",
+								"activity": "Обсуждение фотографий"
+							},
+							{
+								"title": "Презентация",
+								"activity": ""
+							},
+							{
+								"title": "Повторение",
+								"activity": ""
+							},
+							{
+								"title": "Мастер-класс старшего преподавателя",
+								"activity": ""
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Emily Johnson",
+					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+					"bio": "Главный преподаватель"
+				}
+			},
+			{
+				"id": "b1-plus-intermediate",
+				"image": "https://plus.unsplash.com/premium_photo-1661909267383-58991abdca51?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				"title": "B1+ Intermediate",
+				"description": "Развитие продвинутой грамматики и навыков аргументированной речи.",
+				"duration": "2 месяца (40 занятий)",
+				"outcomes": [
+					"Свободно использовать сложную грамматику в речи и письме",
+					"Участвовать в обсуждениях и конструктивных спорах",
+					"Писать структурированные эссе и формальные письма",
+					"Подготовиться к национальному экзамену уровня B2"
+				],
+				"level": "B1+",
+				"category": "General_English",
+				"modules": [
+					{
+						"title": "1-й месяц",
+						"description": "Развитие продвинутой грамматики и навыков аргументированной речи.",
+						"lessons": [
+							{
+								"title": "Present Simple vs Present Continuous",
+								"activity": "Чтение: True / False / Not Given"
+							},
+							{
+								"title": "State and Action Verbs",
+								"activity": "Аудирование: сопоставление информации, Говорение: описание людей"
+							},
+							{
+								"title": "Past Simple / Past Continuous / Past Perfect",
+								"activity": "Говорение: обмен информацией"
+							},
+							{
+								"title": "Used to / Would",
+								"activity": "Говорение: обсуждение жизни в прошлом"
+							},
+							{
+								"title": "Present Perfect",
+								"activity": "Аудирование: подкаст"
+							},
+							{
+								"title": "Present Perfect Continuous",
+								"activity": "Письмо: объяснение статистики (Writing Task 1)"
+							},
+							{
+								"title": "Future Forms",
+								"activity": "Письмо: рецепт"
+							},
+							{
+								"title": "Future Continuous и Future Perfect",
+								"activity": "Говорение: обсуждение рецепта"
+							},
+							{
+								"title": "Модальные глаголы: обязанность, запрет, совет, разрешение",
+								"activity": "Письмо: формальное письмо-заявка"
+							},
+							{
+								"title": "Zero, First, Second Conditionals",
+								"activity": "Говорение: обсуждение школьных проектов"
+							},
+							{
+								"title": "Презентация",
+								"activity": ""
+							},
+							{
+								"title": "Passive Voice / Have Something Done",
+								"activity": "Говорение: мозговой штурм в команде"
+							},
+							{
+								"title": "Gerunds and Infinitives",
+								"activity": "Письмо: эссе «за и против»"
+							},
+							{
+								"title": "Defining Relative Clauses",
+								"activity": "Чтение и анализ журнальной статьи"
+							},
+							{
+								"title": "Non-defining Relative Clauses",
+								"activity": "Говорение: дебаты (суеверия и ритуалы)"
+							},
+							{
+								"title": "Косвенная речь: утверждения",
+								"activity": "Говорение: отзыв о фильме"
+							},
+							{
+								"title": "Косвенная речь: вопросы и команды",
+								"activity": "Письмо: инструкции"
+							},
+							{
+								"title": "Модальные глаголы предположения",
+								"activity": "Говорение: обсуждение теорий заговора"
+							},
+							{
+								"title": "Third Conditional",
+								"activity": "Письмо: рассказ"
+							},
+							{
+								"title": "Неопределённые местоимения",
+								"activity": "Говорение: диалог в магазине одежды"
+							},
+							{
+								"title": "So / Such / I wish / If only",
+								"activity": "Письмо: формальная жалоба"
+							},
+							{
+								"title": "Презентация",
+								"activity": ""
+							},
+							{
+								"title": "Повторение",
+								"activity": ""
+							},
+							{
+								"title": "Мастер-класс старшего преподавателя",
+								"activity": ""
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Нодир",
+					"image": "Nodir.jpeg",
+					"bio": "Главный преподаватель"
+				}
+			}
+		]
+	},
+	"coursesPage": {
+		"titleLine1": "ВЫБЕРИТЕ",
+		"titleLine2": "СВОЙ ПУТЬ.",
+		"allLabel": "ВСЕ",
+		"searchPlaceholder": "Поиск программы...",
+		"loading": "Загрузка..."
+	},
+	"courseDetail": {
+		"durationLabel": "Длительность",
+		"levelLabel": "Уровень",
+		"targetLabel": "Цель",
+		"priceLabel": "Стоимость",
+		"backToCatalog": "Назад в каталог",
+		"enrollNow": "Записаться сейчас",
+		"architecture": "Архитектура курса",
+		"journeyLine1": "Ваше",
+		"journeyLine2": "Путешествие.",
+		"lessonsLabel": "Уроков",
+		"workshopLabel": "Практический воркшоп",
+		"chiefMentor": "Главный ментор",
+		"learnFromLine1": "Учитесь",
+		"learnFromLine2": "у лучших.",
+		"startYourLine1": "Начни свое",
+		"startYourLine2": "будущее.",
+		"investment": "Инвестиция в себя",
+		"joinProgram": "Записаться на курс",
+		"askQuestion": "Задать вопрос",
+		"trialLine": "Пробный урок бесплатно • Без скрытых платежей • 100% результат",
+		"apply": "Подать заявку"
+	},
+	"contact": {
+		"subtitle": "Мы всегда рядом, чтобы помочь вам начать путь.",
+		"phoneLabel": "Телефон",
+		"emailLabel": "Email",
+		"hoursLabel": "Часы работы",
+		"hoursWeekdays": "Пн - Сб: 09:00 - 20:00",
+		"hoursSunday": "Воскресенье: выходной",
+		"mapTitle": "Интерактивная карта",
+		"mapDescription": "Мы рядом с СамГУ, на пересечении Университетского бульвара.",
+		"showLocations": "Показать все филиалы",
+		"questionsTitle": "Есть конкретные вопросы?",
+		"questionsSubtitle": "Напишите нам, и мы ответим в течение 24 часов.",
+		"telegramCta": "Написать в Telegram"
+	},
+	"homePage": {
+		"heroWord1": "УЧИСЬ.",
+		"heroWord2": "СЛУШАЙ.",
+		"heroWord3": "ГОВОРИ.",
+		"alumni": "С нами уже 15 000+ выпускников",
+		"coursesBadge": "КУРСЫ",
+		"coursesTitleLine1": "Наши",
+		"coursesTitleLine2": "Программы.",
+		"coursesSubtitle": "Созданы для абсолютной беглости.",
+		"fullCatalog": "Полный каталог",
+		"courseTrackHint": "Подберите программу под свой уровень",
+		"locationsBadge": "ФИЛИАЛЫ",
+		"lifestyleAltHub": "Лаунж Polyglot Hub",
+		"lifestyleHubTitle": "Polyglot Hub",
+		"lifestyleHubDesc": "Наши центральные кампусы включают кофейные зоны и лаунжи для разговорной практики с наставниками и одногруппниками.",
+		"lifestyleCommunityTag": "СООБЩЕСТВО ПРЕЖДЕ ВСЕГО",
+		"lifestyleAltCinema": "Киновечер в Polyglot",
+		"lifestyleCinemaTag": "Каждую пятницу",
+		"lifestyleAltLibrary": "Библиотека и учебное пространство Polyglot",
+		"lifestyleAltSpeaking": "Разговорный клуб в Polyglot",
+		"whyChooseUs": "ПОЧЕМУ МЫ",
+		"faqBadge": "FAQ",
+		"ctaLine1": "ХВАТИТ МЕЧТАТЬ.",
+		"ctaLine2": "НАЧНИТЕ ГОВОРИТЬ.",
+		"bookLesson": "Записаться на пробный урок"
+	}
 }
