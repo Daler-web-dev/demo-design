@@ -1,7 +1,7 @@
 "use client";
 
 // Import necessary components and hooks
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import {
 	ArrowRight,
@@ -30,6 +30,25 @@ import MethodologySection from "@/components/MethodologySection";
 export default function Home() {
 	const { t, lang } = useLanguage();
 	const [activeFaq, setActiveFaq] = useState<number | null>(null);
+	const heroVideoSrc = "https://samplelib.com/mp4/sample-5s.mp4";
+
+	useEffect(() => {
+		const existingPreload = document.querySelector(
+			`link[rel="preload"][as="video"][href="${heroVideoSrc}"]`
+		);
+
+		if (existingPreload) return;
+
+		const link = document.createElement("link");
+		link.rel = "preload";
+		link.as = "video";
+		link.href = heroVideoSrc;
+		document.head.appendChild(link);
+
+		return () => {
+			document.head.removeChild(link);
+		};
+	}, [heroVideoSrc]);
 
 	const courseCategories = t.courses?.categories ?? [];
 
@@ -110,17 +129,24 @@ export default function Home() {
 			<div className="gradient-blur gradient-blur-hero w-[400px] h-[400px] bg-gold/25 bottom-[-100px] left-[-200px] [animation-delay:_-4s]"></div>
 
 			<section className="max-h-[96vh] relative flex flex-col justify-center overflow-hidden rounded-3xl m-3">
-				{/* Hero full-height image + soft blur toward text */}
+				{/* Hero full-height video + soft blur toward text */}
 				<div className="absolute inset-0 -z-10">
-					<img
-						src="https://polyglot-school.uz/_next/image?url=%2Fimages%2Foffices%2Fphoto-25.webp&w=2048&q=75"
-						alt=""
-						className="h-full w-full"
-						loading="lazy"
-						decoding="async"
+					<video
+						src={heroVideoSrc}
+						className="h-full w-full object-cover"
+						autoPlay
+						loop
+						muted
+						playsInline
+						preload="auto"
+						onCanPlay={(event) => {
+							event.currentTarget.play().catch(() => {
+								// Ignore autoplay race conditions on first paint.
+							});
+						}}
 					/>
 					{/* Central blur / fade around text with soft edges */}
-					<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,1)_0%,rgba(255,255,255,0.95)_28%,rgba(255,255,255,0.75)_52%,rgba(255,255,255,0.4)_70%,transparent_100%)] backdrop-blur-sm" />
+					<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.45)_0%,rgba(255,255,255,0.35)_28%,rgba(255,255,255,0.2)_52%,rgba(255,255,255,0.1)_70%,transparent_100%)] backdrop-blur-[1px]" />
 					<div className="absolute inset-0 bg-gradient-to-b from-white/75 via-brand-50/55 to-white/90" />
 					<div className="absolute inset-0 bg-gradient-to-r from-brand-900/20 via-transparent to-indigo-600/10" />
 				</div>
