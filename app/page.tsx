@@ -34,7 +34,7 @@ export default function Home() {
 
 	useEffect(() => {
 		const existingPreload = document.querySelector(
-			`link[rel="preload"][as="video"][href="${heroVideoSrc}"]`
+			`link[rel="preload"][as="video"][href="${heroVideoSrc}"]`,
 		);
 
 		if (existingPreload) return;
@@ -145,10 +145,10 @@ export default function Home() {
 							});
 						}}
 					/>
-					{/* Central blur / fade around text with soft edges */}
-					<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.45)_0%,rgba(255,255,255,0.35)_28%,rgba(255,255,255,0.2)_52%,rgba(255,255,255,0.1)_70%,transparent_100%)] backdrop-blur-[1px]" />
-					<div className="absolute inset-0 bg-gradient-to-b from-white/75 via-brand-50/55 to-white/90" />
-					<div className="absolute inset-0 bg-gradient-to-r from-brand-900/20 via-transparent to-indigo-600/10" />
+					{/* Lightweight overlays for text contrast without expensive backdrop blur */}
+					<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.22)_0%,rgba(255,255,255,0.14)_35%,rgba(255,255,255,0.06)_60%,transparent_100%)]" />
+					<div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/12 to-white/40" />
+					<div className="absolute inset-0 bg-gradient-to-r from-brand-900/10 via-transparent to-indigo-600/5" />
 				</div>
 
 				<div className="max-w-7xl mx-auto px-6 relative pt-32 pb-12 lg:pt-32 lg:pb-16">
@@ -183,8 +183,8 @@ export default function Home() {
 								{[1, 2, 3, 4].map((i) => (
 									<img
 										key={i}
-										src={`https://i.pravatar.cc/100?u=${i + 10}`}
-										className={`hero-avatar-pop w-10 h-10 sm:w-12 sm:h-12 rounded-full border-4 border-white shadow-lg ${
+										src={`students/st${i}.jpeg`}
+										className={`hero-avatar-pop object-cover w-10 h-10 sm:w-12 sm:h-12 rounded-full border-4 border-white shadow-lg ${
 											i === 1
 												? "hero-delay-avatar-1"
 												: i === 2
@@ -196,7 +196,7 @@ export default function Home() {
 										alt=""
 									/>
 								))}
-								<div className="pl-5 text-xs sm:text-sm font-bold text-slate-400">
+								<div className="pl-5 text-xs sm:text-sm font-bold text-indigo-600">
 									{t.homePage.alumni}
 								</div>
 							</div>
