@@ -125,7 +125,7 @@ export default function Home() {
 
 	return (
 		<div className="relative overflow-x-hidden overflow-y-hidden ">
-			<section className="md:h-[96vh] h-[60vh] relative flex flex-col justify-center overflow-hidden rounded-3xl m-3 bg-gradient-to-t from-indigo-900 via-brand-100/10 to-transparent">
+			<section className="md:h-[96vh] h-[60vh] md:mt-4 mt-[120px] relative flex flex-col justify-center overflow-hidden rounded-3xl m-3 bg-gradient-to-t from-indigo-900 via-brand-100/10 to-transparent">
 				{/* Hero full-height video + soft blur toward text */}
 				<div className="absolute inset-0 -z-10">
 					<video
