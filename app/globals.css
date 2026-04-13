@@ -58,12 +58,8 @@ body {
 
 /* Hollow outline on video is hard to read — light fill + stroke + soft shadow (no backdrop box). */
 .text-outline-brand-hero {
-	color: #f4f6ff;
-	-webkit-text-stroke: 1.5px #121a4d;
-	text-shadow:
-		0 1px 0 rgba(13, 18, 51, 0.35),
-		0 2px 18px rgba(0, 0, 0, 0.4),
-		0 0 22px rgba(255, 255, 255, 0.35);
+	-webkit-text-stroke: 1px #fff;
+	color: transparent;
 }
 
 .text-outline-white {

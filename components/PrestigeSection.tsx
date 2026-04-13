@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 const PrestigeSection = ({ lang }: { lang: string }) => {
 	const { t } = useLanguage();
@@ -65,7 +66,15 @@ const PrestigeSection = ({ lang }: { lang: string }) => {
 						<div className="relative">
 							<div className="absolute -inset-10 bg-gold/10 blur-[120px] rounded-full pointer-events-none" />
 
-							<div className="relative z-10 overflow-hidden rounded-[3rem] border border-brand-100 bg-brand-900 shadow-2xl">
+							<Image
+								src="/aww.png"
+								alt="Prestige"
+								width={500}
+								height={500}
+								className="w-full h-[400px] object-cover rounded-[20px] select-none"
+							/>
+
+							{/* <div className="relative z-10 overflow-hidden rounded-[3rem] border border-brand-100 bg-brand-900 shadow-2xl">
 								<div className="aspect-video w-full relative">
 									{isPlaying ? (
 										<iframe
@@ -121,7 +130,7 @@ const PrestigeSection = ({ lang }: { lang: string }) => {
 										</>
 									)}
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

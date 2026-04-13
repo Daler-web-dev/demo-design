@@ -125,7 +125,7 @@ export default function Home() {
 
 	return (
 		<div className="relative overflow-x-hidden overflow-y-hidden ">
-			<section className="md:h-[96vh] h-[60vh] relative flex flex-col justify-center overflow-hidden rounded-3xl m-3">
+			<section className="md:h-[96vh] h-[60vh] relative flex flex-col justify-center overflow-hidden rounded-3xl m-3 bg-gradient-to-t from-indigo-900 via-brand-100/10 to-transparent">
 				{/* Hero full-height video + soft blur toward text */}
 				<div className="absolute inset-0 -z-10">
 					<video
@@ -155,10 +155,10 @@ export default function Home() {
 								<span className="hero-line hero-delay-1 block text-gold">
 									{t.homePage.heroWord1}
 								</span>
-								<span className="hero-line hero-delay-2 block text-outline-brand-hero">
+								<span className="hero-line hero-delay-2 block text-indigo-600">
 									{t.homePage.heroWord2}
 								</span>
-								<span className="hero-line hero-delay-3 block text-indigo-600">
+								<span className="hero-line hero-delay-3 block text-outline-brand-hero">
 									{t.homePage.heroWord3}
 								</span>
 							</h1>
@@ -190,7 +190,7 @@ export default function Home() {
 											alt=""
 										/>
 									))}
-									<div className="pl-5 text-xs sm:text-sm font-bold text-indigo-600">
+									<div className="pl-5 text-xs sm:text-sm font-bold text-gold">
 										{t.homePage.alumni}
 									</div>
 								</div>
