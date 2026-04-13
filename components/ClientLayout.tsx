@@ -49,7 +49,7 @@ export default function ClientLayout({
 			{!hideSiteChrome && <Navbar />}
 			<main className="flex-grow">{children}</main>
 			{!hideSiteChrome && <Footer />}
-			{!hideSiteChrome && <GeminiAdvisor />}
+			{/* {!hideSiteChrome && <GeminiAdvisor />} */}
 		</div>
 	);
 }

@@ -30,7 +30,7 @@ import MethodologySection from "@/components/MethodologySection";
 export default function Home() {
 	const { t, lang } = useLanguage();
 	const [activeFaq, setActiveFaq] = useState<number | null>(null);
-	const heroVideoSrc = "https://samplelib.com/mp4/sample-5s.mp4";
+	const heroVideoSrc = "bgvideo.webm";
 
 	useEffect(() => {
 		const existingPreload = document.querySelector(
@@ -124,11 +124,8 @@ export default function Home() {
 	};
 
 	return (
-		<div className="relative overflow-x-hidden overflow-y-hidden">
-			<div className="gradient-blur gradient-blur-hero w-[600px] h-[600px] bg-indigo-500/35 top-[-200px] right-[-200px]"></div>
-			<div className="gradient-blur gradient-blur-hero w-[400px] h-[400px] bg-gold/25 bottom-[-100px] left-[-200px] [animation-delay:_-4s]"></div>
-
-			<section className="max-h-[96vh] relative flex flex-col justify-center overflow-hidden rounded-3xl m-3">
+		<div className="relative overflow-x-hidden overflow-y-hidden ">
+			<section className="md:h-[96vh] h-[60vh] relative flex flex-col justify-center overflow-hidden rounded-3xl m-3">
 				{/* Hero full-height video + soft blur toward text */}
 				<div className="absolute inset-0 -z-10">
 					<video
@@ -145,65 +142,94 @@ export default function Home() {
 							});
 						}}
 					/>
-					{/* Lightweight overlays for text contrast without expensive backdrop blur */}
-					<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.22)_0%,rgba(255,255,255,0.14)_35%,rgba(255,255,255,0.06)_60%,transparent_100%)]" />
-					<div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/12 to-white/40" />
-					<div className="absolute inset-0 bg-gradient-to-r from-brand-900/10 via-transparent to-indigo-600/5" />
 				</div>
 
-				<div className="max-w-7xl mx-auto px-6 relative pt-32 pb-12 lg:pt-32 lg:pb-16">
-					<div className="flex flex-col items-center text-center">
-						<div className="hero-badge-in hero-delay-0 inline-flex items-center space-x-2 px-5 py-1.5 bg-indigo-600 text-white rounded-full text-[10px] font-black uppercase tracking-[0.28em] mb-8 animate-pulse-slow">
-							<Zap className="w-3 h-3 text-gold" />
+				<div className="w-[92%] mx-auto px-6 relative h-full flex items-end pt-24 pb-10 lg:pt-28 lg:pb-14">
+					<div className="w-full flex flex-col items-start text-start">
+						{/* <div className="hero-badge-in hero-delay-0 inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-white/25 bg-white/10 text-white/95 backdrop-blur-md text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.16em] mb-6 shadow-sm">
+							<Zap className="w-2.5 h-2.5 text-gold shrink-0" strokeWidth={2.5} />
 							<span>{t.hero.badge}</span>
-						</div>
-						<h1 className="text-[clamp(2.5rem,12vw,6.75rem)] lg:text-[9.25rem] font-display font-black leading-[0.82] tracking-tighter text-brand-800 uppercase mb-6 overflow-hidden">
-							<span className="hero-line hero-delay-1 block text-gold">
-								{t.homePage.heroWord1}
-							</span>
-							<span className="hero-line hero-delay-2 block text-outline-brand">
-								{t.homePage.heroWord2}
-							</span>
-							<span className="hero-line hero-delay-3 block text-indigo-600">
-								{t.homePage.heroWord3}
-							</span>
-						</h1>
-						{/* <p className="hero-subtitle-in hero-delay-4 text-xl md:text-2xl text-indigo-600/80 max-w-3xl leading-relaxed mb-16 font-medium tracking-normal">
-							{t.hero.subtitle}
-						</p> */}
-						<div className="hero-cta-in hero-delay-5 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-							<Link
-								href="/enroll"
-								className="hero-btn-shine w-56 sm:w-64 py-5 bg-indigo-600 text-white rounded-2xl font-black text-lg sm:text-xl hover:bg-indigo-500 hover:shadow-indigo-400/30 transition-all flex items-center justify-center group shadow-2xl shadow-indigo-500/25"
-							>
-								{t.nav.enroll}
-								<ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-2 transition-transform" />
-							</Link>
-							<div className="flex items-center -space-x-3">
-								{[1, 2, 3, 4].map((i) => (
-									<img
-										key={i}
-										src={`students/st${i}.jpeg`}
-										className={`hero-avatar-pop object-cover w-10 h-10 sm:w-12 sm:h-12 rounded-full border-4 border-white shadow-lg ${
-											i === 1
-												? "hero-delay-avatar-1"
-												: i === 2
-													? "hero-delay-avatar-2"
-													: i === 3
-														? "hero-delay-avatar-3"
-														: "hero-delay-avatar-4"
-										}`}
-										alt=""
-									/>
-								))}
-								<div className="pl-5 text-xs sm:text-sm font-bold text-indigo-600">
-									{t.homePage.alumni}
+						</div> */}
+						<div className="w-full flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
+							<h1 className="text-[clamp(1.75rem,8vw,4.5rem)] lg:text-[6rem] font-display font-black leading-[0.86] tracking-tight text-brand-800 uppercase overflow-hidden">
+								<span className="hero-line hero-delay-1 block text-gold">
+									{t.homePage.heroWord1}
+								</span>
+								<span className="hero-line hero-delay-2 block text-outline-brand-hero">
+									{t.homePage.heroWord2}
+								</span>
+								<span className="hero-line hero-delay-3 block text-indigo-600">
+									{t.homePage.heroWord3}
+								</span>
+							</h1>
+							{/* <p className="hero-subtitle-in hero-delay-4 text-xl md:text-2xl text-indigo-600/80 max-w-3xl leading-relaxed mb-16 font-medium tracking-normal">
+								{t.hero.subtitle}
+							</p> */}
+							<div className="hidden hero-cta-in hero-delay-5 md:flex flex-col items-start gap-4 sm:gap-6 lg:items-end lg:pb-2">
+								<Link
+									href="/enroll"
+									className="hero-btn-shine w-52 sm:w-56 py-4 bg-indigo-600 text-white rounded-2xl font-black text-base sm:text-lg hover:bg-indigo-500 hover:shadow-indigo-400/30 transition-all flex items-center justify-center group shadow-2xl shadow-indigo-500/25"
+								>
+									{t.nav.enroll}
+									<ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform" />
+								</Link>
+								<div className="flex items-center -space-x-3 lg:self-end">
+									{[1, 2, 3, 4].map((i) => (
+										<img
+											key={i}
+											src={`students/st${i}.jpeg`}
+											className={`hero-avatar-pop object-cover w-10 h-10 sm:w-11 sm:h-11 rounded-full border-4 border-white shadow-lg ${
+												i === 1
+													? "hero-delay-avatar-1"
+													: i === 2
+														? "hero-delay-avatar-2"
+														: i === 3
+															? "hero-delay-avatar-3"
+															: "hero-delay-avatar-4"
+											}`}
+											alt=""
+										/>
+									))}
+									<div className="pl-5 text-xs sm:text-sm font-bold text-indigo-600">
+										{t.homePage.alumni}
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
+			<div className="w-full mx-auto px-6 pt-6 md:hidden hero-cta-in hero-delay-5 flex flex-col items-start gap-4 sm:gap-6 lg:items-end lg:pb-2">
+				<Link
+					href="/enroll"
+					className="hero-btn-shine w-52 sm:w-56 py-4 bg-indigo-600 text-white rounded-2xl font-black text-base sm:text-lg hover:bg-indigo-500 hover:shadow-indigo-400/30 transition-all flex items-center justify-center group shadow-2xl shadow-indigo-500/25"
+				>
+					{t.nav.enroll}
+					<ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform" />
+				</Link>
+				<div className="flex items-center -space-x-3 lg:self-end">
+					{[1, 2, 3, 4].map((i) => (
+						<img
+							key={i}
+							src={`students/st${i}.jpeg`}
+							className={`hero-avatar-pop object-cover w-10 h-10 sm:w-11 sm:h-11 rounded-full border-4 border-white shadow-lg ${
+								i === 1
+									? "hero-delay-avatar-1"
+									: i === 2
+										? "hero-delay-avatar-2"
+										: i === 3
+											? "hero-delay-avatar-3"
+											: "hero-delay-avatar-4"
+							}`}
+							alt=""
+						/>
+					))}
+					<div className="pl-5 text-xs sm:text-sm font-bold text-indigo-600">
+						{t.homePage.alumni}
+					</div>
+				</div>
+			</div>
 
 			<PrestigeSection lang={lang} />
 
