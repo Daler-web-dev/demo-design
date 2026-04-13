@@ -30,7 +30,17 @@ import MethodologySection from "@/components/MethodologySection";
 export default function Home() {
 	const { t, lang } = useLanguage();
 	const [activeFaq, setActiveFaq] = useState<number | null>(null);
-	const heroVideoSrc = "bgvideo.webm";
+	const HERO_VIDEO_WEBM = "bgvideo.webm";
+	const HERO_VIDEO_MP4 = "bgvideo.mp4";
+	const [heroVideoSrc, setHeroVideoSrc] = useState(HERO_VIDEO_WEBM);
+
+	useEffect(() => {
+		const ua = navigator.userAgent;
+		const isSafari =
+			/safari/i.test(ua) &&
+			!/chrome|crios|chromium|fxios|edgios|edg\//i.test(ua);
+		setHeroVideoSrc(isSafari ? HERO_VIDEO_MP4 : HERO_VIDEO_WEBM);
+	}, []);
 
 	useEffect(() => {
 		const existingPreload = document.querySelector(
