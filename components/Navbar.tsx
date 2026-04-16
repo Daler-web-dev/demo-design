@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Instagram, Menu, Phone, Send, X } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const SCROLL_THRESHOLD = 50;
@@ -95,7 +95,11 @@ export default function Navbar() {
 						<div className="flex items-center gap-4">
 							<select
 								value={lang}
-								onChange={(e) => setLang(e.target.value as "EN" | "RU" | "UZ")}
+								onChange={(e) =>
+									setLang(
+										e.target.value as "EN" | "RU" | "UZ",
+									)
+								}
 								className={`text-xs font-black p-2 rounded-lg transition-all border bg-transparent ${scrolled ? "text-white border-white/20" : "text-obsidian border-obsidian/20"}`}
 								aria-label={t.nav.languageSelect ?? "Language"}
 							>
@@ -109,21 +113,27 @@ export default function Navbar() {
 									UZ
 								</option>
 							</select>
-							<Link
-								href="/enroll"
-								className="hidden sm:flex items-center bg-gold text-obsidian px-8 py-3 rounded-2xl text-sm font-black hover:scale-105 transition-all shadow-lg shadow-gold/20"
+							<a
+								href="tel:+998905033030"
+								className="hidden sm:flex items-center bg-indigo-600 text-obsidian px-8 py-3 rounded-2xl text-sm font-black hover:scale-105 transition-all shadow-lg shadow-gold/20"
 							>
-								{t.nav.enroll}
-							</Link>
+								<Phone className="w-4 h-4" color="white" />
+							</a>
 							<button
 								type="button"
 								onClick={() => setMenuOpen((prev) => !prev)}
 								className={`md:hidden p-2 ${navTextClass}`}
-								aria-label={menuOpen ? t.nav.closeMenu : t.nav.openMenu}
+								aria-label={
+									menuOpen ? t.nav.closeMenu : t.nav.openMenu
+								}
 								aria-expanded={menuOpen}
 								aria-controls="mobile-menu"
 							>
-								{menuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+								{menuOpen ? (
+									<X className="w-8 h-8" />
+								) : (
+									<Menu className="w-8 h-8" />
+								)}
 							</button>
 						</div>
 					</div>
@@ -131,7 +141,9 @@ export default function Navbar() {
 					<div
 						id="mobile-menu"
 						className={`md:hidden grid transition-all duration-500 ease-out ${
-							menuOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+							menuOpen
+								? "grid-rows-[1fr] opacity-100"
+								: "grid-rows-[0fr] opacity-0"
 						}`}
 						aria-hidden={!menuOpen}
 					>
@@ -146,7 +158,9 @@ export default function Navbar() {
 										<li key={link.path}>
 											<Link
 												href={link.path}
-												onClick={() => setMenuOpen(false)}
+												onClick={() =>
+													setMenuOpen(false)
+												}
 												className={`group flex items-center justify-between rounded-[1.25rem] px-4 py-3 text-[15px] font-semibold uppercase tracking-[0.08em] transition-all duration-300 ${
 													pathname === link.path
 														? `${navTextClass} bg-gold/20 shadow-[inset_0_0_0_1px_rgba(255,215,0,0.14)]`
@@ -168,14 +182,39 @@ export default function Navbar() {
 									))}
 								</ul>
 
-								<div className={`mt-3 border-t pt-3 ${navDividerClass}`}>
-									<Link
-										href="/enroll"
+								<div
+									className={`flex items-center gap-3 mt-3 border-t pt-3 ${navDividerClass}`}
+								>
+									<a
+										href="tel:+998905033030"
 										onClick={() => setMenuOpen(false)}
-										className="block w-full rounded-[1.25rem] py-3.5 text-center text-sm font-black uppercase tracking-[0.18em] bg-gold text-obsidian shadow-lg shadow-gold/20 transition-transform duration-300 hover:scale-[1.01]"
+										className="w-fit flex items-center bg-indigo-600 text-white px-8 py-3 rounded-2xl text-sm font-black hover:scale-105 transition-all shadow-lg shadow-gold/20"
 									>
-										{t.nav.enroll}
-									</Link>
+										<Phone
+											className="w-4 h-4"
+											color="white"
+										/>
+									</a>
+									<a
+										href="https://www.instagram.com/polyglot_language_school_/"
+										onClick={() => setMenuOpen(false)}
+										className="w-fit flex items-center bg-indigo-600 text-white px-8 py-3 rounded-2xl text-sm font-black hover:scale-105 transition-all shadow-lg shadow-gold/20"
+									>
+										<Instagram
+											className="w-4 h-4"
+											color="white"
+										/>
+									</a>
+									<a
+										href="https://t.me/polyglot_language_school"
+										onClick={() => setMenuOpen(false)}
+										className="w-fit flex items-center bg-indigo-600 text-white px-8 py-3 rounded-2xl text-sm font-black hover:scale-105 transition-all shadow-lg shadow-gold/20"
+									>
+										<Send
+											className="w-4 h-4"
+											color="white"
+										/>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -188,8 +227,7 @@ export default function Navbar() {
 					className="fixed inset-0 z-[90] md:hidden bg-transparent"
 					onClick={() => setMenuOpen(false)}
 					aria-hidden="true"
-				>
-				</div>
+				></div>
 			)}
 		</>
 	);
