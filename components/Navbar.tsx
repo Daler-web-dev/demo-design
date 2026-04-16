@@ -15,6 +15,15 @@ export default function Navbar() {
 	const [scrolled, setScrolled] = useState(false);
 	const pathname = usePathname();
 	const lastScrolled = useRef(false);
+	const navSurfaceClass = scrolled
+		? "bg-obsidian/90 backdrop-blur-2xl shadow-2xl border border-white/10"
+		: "bg-white/50 backdrop-blur-md border border-obsidian/5";
+	const navTextClass = scrolled ? "text-white" : "text-obsidian";
+	const navMutedTextClass = scrolled
+		? "text-white/60 hover:text-white"
+		: "text-obsidian/60 hover:text-obsidian";
+	const navDividerClass = scrolled ? "border-white/10" : "border-obsidian/10";
+	const navHoverClass = scrolled ? "hover:bg-white/5" : "hover:bg-obsidian/5";
 
 	const navLinks = [
 		{ name: t.nav.home, path: "/" },
@@ -37,159 +46,149 @@ export default function Navbar() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
-	useEffect(() => {
-		if (menuOpen) {
-			document.body.style.overflow = "hidden";
-		} else {
-			document.body.style.overflow = "";
-		}
-		return () => {
-			document.body.style.overflow = "";
-		};
-	}, [menuOpen]);
-
 	return (
 		<>
 			<nav
 				className={`fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[95%] max-w-7xl transition-all duration-500`}
 			>
 				<div
-					className={`rounded-[2.5rem] flex items-center justify-between px-8 h-20 transition-all duration-500 ${
-						scrolled
-							? "bg-obsidian/90 backdrop-blur-2xl shadow-2xl border border-white/10"
-							: "bg-white/50 backdrop-blur-md border border-obsidian/5"
+					className={`overflow-hidden transition-all duration-500 ${navSurfaceClass} ${
+						menuOpen ? "rounded-[2rem]" : "rounded-[2.5rem]"
 					}`}
 				>
-					<Link href="/" className="flex items-center space-x-3">
-						<div className="relative w-10 h-10 min-w-10 rounded-xl overflow-hidden shrink-0">
-							<Image
-								src="/logo.png"
-								alt="Polyglot"
-								fill
-								className="object-contain"
-								sizes="56px"
-								priority
-							/>
-						</div>
-						{/* <span
-							className={`text-2xl font-display font-black tracking-tighter ${scrolled ? "text-white" : "text-obsidian"}`}
-						>
-							POLYGLOT
-						</span> */}
-					</Link>
-
-					<div className="hidden md:flex items-center space-x-10">
-						{navLinks.map((link) => (
-							<Link
-								key={link.path}
-								href={link.path}
-								className={`text-sm font-black uppercase tracking-widest transition-all relative group ${
-									scrolled
-										? "text-white/60 hover:text-white"
-										: "text-obsidian/60 hover:text-obsidian"
-								} ${pathname === link.path ? (scrolled ? "text-white" : "text-obsidian") : ""}`}
+					<div className="flex items-center justify-between px-8 h-20">
+						<Link href="/" className="flex items-center space-x-3">
+							<div className="relative w-10 h-10 min-w-10 rounded-xl overflow-hidden shrink-0">
+								<Image
+									src="/logo.png"
+									alt="Polyglot"
+									fill
+									className="object-contain"
+									sizes="56px"
+									priority
+								/>
+							</div>
+							{/* <span
+								className={`text-2xl font-display font-black tracking-tighter ${scrolled ? "text-white" : "text-obsidian"}`}
 							>
-								{link.name}
-								<span
-									className={`absolute -bottom-1 left-0 h-0.5 bg-gold transition-all duration-500 ${pathname === link.path ? "w-full" : "w-0 group-hover:w-full"}`}
-								></span>
+								POLYGLOT
+							</span> */}
+						</Link>
+
+						<div className="hidden md:flex items-center space-x-10">
+							{navLinks.map((link) => (
+								<Link
+									key={link.path}
+									href={link.path}
+									className={`text-sm font-black uppercase tracking-widest transition-all relative group ${
+										navMutedTextClass
+									} ${pathname === link.path ? navTextClass : ""}`}
+								>
+									{link.name}
+									<span
+										className={`absolute -bottom-1 left-0 h-0.5 bg-gold transition-all duration-500 ${pathname === link.path ? "w-full" : "w-0 group-hover:w-full"}`}
+									></span>
+								</Link>
+							))}
+						</div>
+
+						<div className="flex items-center gap-4">
+							<select
+								value={lang}
+								onChange={(e) => setLang(e.target.value as "EN" | "RU" | "UZ")}
+								className={`text-xs font-black p-2 rounded-lg transition-all border bg-transparent ${scrolled ? "text-white border-white/20" : "text-obsidian border-obsidian/20"}`}
+								aria-label={t.nav.languageSelect ?? "Language"}
+							>
+								<option value="EN" className="text-obsidian">
+									EN
+								</option>
+								<option value="RU" className="text-obsidian">
+									RU
+								</option>
+								<option value="UZ" className="text-obsidian">
+									UZ
+								</option>
+							</select>
+							<Link
+								href="/enroll"
+								className="hidden sm:flex items-center bg-gold text-obsidian px-8 py-3 rounded-2xl text-sm font-black hover:scale-105 transition-all shadow-lg shadow-gold/20"
+							>
+								{t.nav.enroll}
 							</Link>
-						))}
+							<button
+								type="button"
+								onClick={() => setMenuOpen((prev) => !prev)}
+								className={`md:hidden p-2 ${navTextClass}`}
+								aria-label={menuOpen ? t.nav.closeMenu : t.nav.openMenu}
+								aria-expanded={menuOpen}
+								aria-controls="mobile-menu"
+							>
+								{menuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+							</button>
+						</div>
 					</div>
 
-					<div className="flex items-center gap-4">
-						<select
-							value={lang}
-							onChange={(e) => setLang(e.target.value as "EN" | "RU" | "UZ")}
-							className={`text-xs font-black p-2 rounded-lg transition-all border bg-transparent ${scrolled ? "text-white border-white/20" : "text-obsidian border-obsidian/20"}`}
-							aria-label={t.nav.languageSelect ?? "Language"}
-						>
-							<option value="EN" className="text-obsidian">
-								EN
-							</option>
-							<option value="RU" className="text-obsidian">
-								RU
-							</option>
-							<option value="UZ" className="text-obsidian">
-								UZ
-							</option>
-						</select>
-						<Link
-							href="/enroll"
-							className="hidden sm:flex items-center bg-gold text-obsidian px-8 py-3 rounded-2xl text-sm font-black hover:scale-105 transition-all shadow-lg shadow-gold/20"
-						>
-							{t.nav.enroll}
-						</Link>
-						<button
-							type="button"
-							onClick={() => setMenuOpen(true)}
-							className={`md:hidden p-2 ${scrolled ? "text-white" : "text-obsidian"}`}
-							aria-label={t.nav.openMenu}
-						>
-							<Menu className="w-8 h-8" />
-						</button>
+					<div
+						id="mobile-menu"
+						className={`md:hidden grid transition-all duration-500 ease-out ${
+							menuOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+						}`}
+						aria-hidden={!menuOpen}
+					>
+						<div className="overflow-hidden">
+							<div
+								className={`border-t px-3 pb-3 pt-2 transition-all duration-500 ${
+									navDividerClass
+								} ${menuOpen ? "translate-y-0 scale-100" : "-translate-y-3 scale-[0.98]"}`}
+							>
+								<ul className="space-y-1">
+									{navLinks.map((link) => (
+										<li key={link.path}>
+											<Link
+												href={link.path}
+												onClick={() => setMenuOpen(false)}
+												className={`group flex items-center justify-between rounded-[1.25rem] px-4 py-3 text-[15px] font-semibold uppercase tracking-[0.08em] transition-all duration-300 ${
+													pathname === link.path
+														? `${navTextClass} bg-gold/20 shadow-[inset_0_0_0_1px_rgba(255,215,0,0.14)]`
+														: `${navMutedTextClass} ${navHoverClass}`
+												}`}
+											>
+												<span>{link.name}</span>
+												<span
+													className={`h-1.5 w-1.5 rounded-full transition-all duration-300 ${
+														pathname === link.path
+															? "bg-gold opacity-100"
+															: scrolled
+																? "bg-white/20 opacity-0 group-hover:opacity-100"
+																: "bg-obsidian/20 opacity-0 group-hover:opacity-100"
+													}`}
+												></span>
+											</Link>
+										</li>
+									))}
+								</ul>
+
+								<div className={`mt-3 border-t pt-3 ${navDividerClass}`}>
+									<Link
+										href="/enroll"
+										onClick={() => setMenuOpen(false)}
+										className="block w-full rounded-[1.25rem] py-3.5 text-center text-sm font-black uppercase tracking-[0.18em] bg-gold text-obsidian shadow-lg shadow-gold/20 transition-transform duration-300 hover:scale-[1.01]"
+									>
+										{t.nav.enroll}
+									</Link>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</nav>
 
-			{/* Mobile menu — отдельный слой, без вложенности в nav */}
 			{menuOpen && (
 				<div
-					className="fixed inset-0 z-[200] bg-obsidian"
-					aria-modal
-					aria-label={t.nav.mainMenu}
+					className="fixed inset-0 z-[90] md:hidden bg-transparent"
+					onClick={() => setMenuOpen(false)}
+					aria-hidden="true"
 				>
-					<div className="h-full flex flex-col">
-						<div className="flex justify-between items-center px-6 py-5 border-b border-white/10">
-							<Link
-								href="/"
-								onClick={() => setMenuOpen(false)}
-								className="block w-12 h-12 relative rounded-xl overflow-hidden"
-							>
-								<Image
-									src="/logo-colorfull.png"
-									alt="Polyglot"
-									fill
-									className="object-contain"
-									sizes="48px"
-								/>
-							</Link>
-							<button
-								type="button"
-								onClick={() => setMenuOpen(false)}
-								className="p-2 text-white"
-								aria-label={t.nav.closeMenu}
-							>
-								<X className="w-8 h-8" />
-							</button>
-						</div>
-
-						<div className="flex-1 py-8 px-6">
-							<ul className="space-y-1">
-								{navLinks.map((link) => (
-									<li key={link.path}>
-										<Link
-											href={link.path}
-											onClick={() => setMenuOpen(false)}
-											className="block py-4 px-4 text-xl font-bold text-white hover:text-gold hover:bg-white/5 rounded-xl"
-										>
-											{link.name}
-										</Link>
-									</li>
-								))}
-							</ul>
-
-							<div className="mt-8 pt-6 border-t border-white/10">
-								<Link
-									href="/enroll"
-									onClick={() => setMenuOpen(false)}
-									className="block w-full py-4 text-center bg-gold text-obsidian font-black rounded-2xl text-lg"
-								>
-									{t.nav.enroll}
-								</Link>
-							</div>
-						</div>
-					</div>
 				</div>
 			)}
 		</>
