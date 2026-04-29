@@ -1,184 +1,228 @@
 "use client";
 
 import React, { useState, useEffect, useCallback, useRef } from "react";
-import Link from "next/link";
-import { MapPin, MapPinned } from "lucide-react";
 import { BRANCHES } from "@/config/branches";
 
 const AUTO_ADVANCE_MS = 4500;
-const CROSSFADE_MS = 500;
+
+function YandexPin() {
+	return (
+		<svg
+			width="16"
+			height="16"
+			viewBox="0 0 24 24"
+			fill="none"
+			aria-hidden="true"
+		>
+			<path
+				d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+				fill="#E12222"
+			/>
+		</svg>
+	);
+}
 
 export type BranchLocationsProps = {
 	badge?: string;
 	title: string;
 	subtitle: string;
-	/** Текст кнопки перехода на карту, например "Составить маршрут" */
-	mapRouteText: string;
-	/** Язык для отображения названий: nameEn / nameRu */
+	yandexMapsText?: string;
 	lang: "EN" | "RU" | "UZ";
-	/** URL карты по умолчанию, если у филиала нет своего mapUrl */
-	defaultMapUrl?: string;
 };
 
 export default function BranchLocations({
 	badge = "LOCATIONS",
 	title,
 	subtitle,
-	mapRouteText,
+	yandexMapsText = "Yandex Maps",
 	lang,
-	defaultMapUrl = "https://www.google.com/maps",
 }: BranchLocationsProps) {
 	const count = BRANCHES.length;
 	const [selectedIndex, setSelectedIndex] = useState(0);
-	const [fromIndex, setFromIndex] = useState<number | null>(null);
-	const [transitionActive, setTransitionActive] = useState(false);
-	const [frontImageLoaded, setFrontImageLoaded] = useState(false);
-	const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+	const containerRef = useRef<HTMLDivElement>(null);
+	const trackRef = useRef<HTMLDivElement>(null);
+	const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-	const selectedBranch = BRANCHES[selectedIndex];
-	const nameByLang = {
-		EN: selectedBranch.nameEn,
-		RU: selectedBranch.nameRu,
-		UZ: selectedBranch.nameEn,
+	const getDisplayName = (branch: (typeof BRANCHES)[0]) => {
+		const map = { EN: branch.nameEn, RU: branch.nameRu, UZ: branch.nameEn };
+		return map[lang] ?? branch.nameEn;
 	};
-	const displayName = nameByLang[lang] ?? selectedBranch.nameEn;
-	const mapUrl = selectedBranch.mapUrl ?? defaultMapUrl;
 
-	const advance = useCallback(() => {
-		if (count <= 1) return;
-		setFrontImageLoaded(false);
-		setSelectedIndex((prev) => {
-			const next = (prev + 1) % count;
-			setFromIndex(prev);
-			return next;
-		});
-	}, [count]);
+	const updateTransform = useCallback(
+		(instant = false) => {
+			const container = containerRef.current;
+			const track = trackRef.current;
+			if (!container || !track) return;
 
-	// Запуск анимации только после загрузки нового изображения — тогда плавное появление без мигания
+			const cards = Array.from(track.children) as HTMLElement[];
+			const card = cards[selectedIndex];
+			if (!card) return;
+
+			const containerCenter = container.clientWidth / 2;
+			const cardCenter = card.offsetLeft + card.clientWidth / 2;
+			const tx = containerCenter - cardCenter;
+
+			if (instant) {
+				track.style.transition = "none";
+				track.style.transform = `translateX(${tx}px)`;
+				track.offsetHeight; // force reflow
+				track.style.transition = "";
+			} else {
+				track.style.transform = `translateX(${tx}px)`;
+			}
+		},
+		[selectedIndex],
+	);
+
 	useEffect(() => {
-		if (fromIndex === null) return;
-		if (!frontImageLoaded) return;
-		const raf = requestAnimationFrame(() => setTransitionActive(true));
-		timeoutRef.current = setTimeout(() => {
-			setFromIndex(null);
-			setTransitionActive(false);
-			timeoutRef.current = null;
-		}, CROSSFADE_MS);
+		const raf = requestAnimationFrame(() => updateTransform());
+		const onResize = () =>
+			requestAnimationFrame(() => updateTransform(true));
+		window.addEventListener("resize", onResize);
 		return () => {
 			cancelAnimationFrame(raf);
-			if (timeoutRef.current) clearTimeout(timeoutRef.current);
+			window.removeEventListener("resize", onResize);
 		};
-	}, [fromIndex, frontImageLoaded]);
+	}, [updateTransform]);
 
-	// Таймер автосмены
+	const startTimer = useCallback(() => {
+		if (timerRef.current) clearInterval(timerRef.current);
+		timerRef.current = setInterval(() => {
+			setSelectedIndex((prev) => (prev + 1) % count);
+		}, AUTO_ADVANCE_MS);
+	}, [count]);
+
 	useEffect(() => {
-		if (count <= 1) return;
-		const t = setInterval(advance, AUTO_ADVANCE_MS);
-		return () => clearInterval(t);
-	}, [advance, count]);
+		startTimer();
+		return () => {
+			if (timerRef.current) clearInterval(timerRef.current);
+		};
+	}, [startTimer]);
 
 	const handleSelect = (i: number) => {
-		if (timeoutRef.current) {
-			clearTimeout(timeoutRef.current);
-			timeoutRef.current = null;
-		}
-		setFromIndex(null);
-		setTransitionActive(false);
-		setFrontImageLoaded(true);
 		setSelectedIndex(i);
+		startTimer();
 	};
 
-	const isTransitioning = fromIndex !== null;
-	// Два слоя всегда в DOM — в конце перехода не размонтируем, только меняем opacity/src, без мигания
-	const backSrc = isTransitioning
-		? BRANCHES[fromIndex!].image
-		: BRANCHES[selectedIndex].image;
-	const backOpacity = isTransitioning ? (transitionActive ? 0 : 1) : 1;
-	const frontOpacity = isTransitioning ? (transitionActive ? 1 : 0) : 0;
-	const imgClass =
-		"absolute inset-0 w-full h-full object-cover transition-opacity duration-[500ms] ease-in-out";
+	const handlePrev = () => handleSelect((selectedIndex - 1 + count) % count);
+	const handleNext = () => handleSelect((selectedIndex + 1) % count);
 
 	return (
-		<section className="min-h-fit py-32 px-6 bg-white" id="locations">
-			<div className="max-w-7xl mx-auto">
-				<div className="grid lg:grid-cols-2 gap-20 items-center">
-					<div>
-						<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
-							<span className="w-8 h-0.5 bg-gold" />
-							{badge}
-						</div>
-						<h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-brand-800 leading-[0.95] mb-10 break-words max-w-full">
-							{title}
-						</h2>
-						<p className="text-xl text-indigo-600/80 mb-12">
-							{subtitle}
-						</p>
-						<div className="grid grid-cols-2 gap-4">
-							{BRANCHES.map((branch, i) => {
-								const nameByLang = {
-									EN: branch.nameEn,
-									RU: branch.nameRu,
-									UZ: branch.nameEn,
-								};
-								const name = nameByLang[lang] ?? branch.nameEn;
-								const isSelected = selectedIndex === i;
-								return (
-									<button
-										key={branch.id}
-										type="button"
-										onClick={() => handleSelect(i)}
-										className={`flex items-center space-x-3 p-4 rounded-2xl border font-bold text-left transition-colors cursor-pointer ${
-											isSelected
-												? "bg-brand-100 border-indigo-500 text-indigo-700 ring-2 ring-indigo-400/50"
-												: "bg-brand-50 border-brand-200/50 text-indigo-700 hover:bg-brand-100"
-										}`}
-									>
-										<MapPin className="w-5 h-5 shrink-0 text-indigo-600" />
-										<span>{name}</span>
-									</button>
-								);
-							})}
-						</div>
-					</div>
-					<div className="relative aspect-[4/3] min-h-[280px]">
-						<div className="absolute inset-0 bg-indigo-600 rounded-[4rem] rotate-3 -z-10 opacity-10" />
-						<div className="absolute inset-0 rounded-[3.5rem] overflow-hidden shadow-2xl">
-							<img
-								src={backSrc}
-								alt={displayName}
-								className={imgClass}
-								style={{ opacity: backOpacity }}
-							/>
-							<img
-								src={BRANCHES[selectedIndex].image}
-								alt={displayName}
-								className={imgClass}
-								style={{ opacity: frontOpacity }}
-								onLoad={() =>
-									isTransitioning && setFrontImageLoaded(true)
-								}
-							/>
-						</div>
-						<Link
-							href={mapUrl}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="absolute -bottom-8 -right-8 bg-white p-6 rounded-3xl shadow-2xl border border-slate-100 flex items-center gap-4 hover:bg-brand-50 hover:border-indigo-200 transition-colors group"
-						>
-							<div className="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center group-hover:bg-indigo-500 transition-colors">
-								<MapPinned className="text-white w-7 h-7" />
-							</div>
-							<div>
-								<div className="text-lg font-black text-brand-800 group-hover:text-indigo-700">
-									{mapRouteText}
-								</div>
-								<div className="text-xs font-bold text-slate-500 uppercase tracking-widest">
-									{displayName}
-								</div>
-							</div>
-						</Link>
-					</div>
+		<section className="py-24 md:py-32 bg-white overflow-hidden" id="locations">
+			{/* Header */}
+			<div className="max-w-7xl mx-auto px-6 mb-12 md:mb-16 text-center">
+				<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
+					<span className="w-8 h-0.5 bg-gold" />
+					{badge}
+					<span className="w-8 h-0.5 bg-gold" />
 				</div>
+				<h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-black text-brand-900 leading-[0.95] tracking-tighter uppercase mb-6 break-words">
+					{title}
+				</h2>
+				<p className="text-lg text-brand-500 font-medium max-w-2xl mx-auto">
+					{subtitle}
+				</p>
+			</div>
+
+			{/* Carousel */}
+			<div ref={containerRef} className="relative w-full">
+				{/* Arrow buttons */}
+				<button
+					onClick={handlePrev}
+					aria-label="Previous branch"
+					className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-brand-100 hover:bg-brand-200 border border-brand-200 flex items-center justify-center transition-colors"
+				>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1b2666" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+						<polyline points="15 18 9 12 15 6" />
+					</svg>
+				</button>
+
+				<button
+					onClick={handleNext}
+					aria-label="Next branch"
+					className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-brand-100 hover:bg-brand-200 border border-brand-200 flex items-center justify-center transition-colors"
+				>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1b2666" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+						<polyline points="9 18 15 12 9 6" />
+					</svg>
+				</button>
+
+				{/* Track */}
+				<div
+					ref={trackRef}
+					className="relative flex gap-4 md:gap-5 transition-transform duration-500 ease-out will-change-transform"
+				>
+					{BRANCHES.map((branch, i) => {
+						const isSelected = selectedIndex === i;
+						const name = getDisplayName(branch);
+						const mapUrl =
+							branch.yandexMapUrl ??
+							`https://yandex.uz/maps/?text=${encodeURIComponent(name + " Samarkand")}`;
+
+						return (
+							<div
+								key={branch.id}
+								onClick={() => handleSelect(i)}
+								className={`flex-none w-[80vw] sm:w-[68vw] md:w-[56vw] lg:w-[52vw] max-w-[680px] aspect-[4/3] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden cursor-pointer transition-all duration-500 ${
+									isSelected
+										? "opacity-100 scale-100"
+										: "opacity-40 scale-[0.97]"
+								}`}
+							>
+								<div className="relative w-full h-full">
+									<img
+										src={branch.image}
+										alt={name}
+										className="absolute inset-0 w-full h-full object-cover"
+										draggable={false}
+									/>
+									{/* Gradient overlay */}
+									<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+									{/* Card content */}
+									<div className="absolute bottom-6 left-6 right-6 md:bottom-8 md:left-8 md:right-8">
+										<h3 className="text-2xl sm:text-3xl md:text-4xl font-display font-black text-white leading-tight mb-1">
+											{name}
+										</h3>
+										<p className="text-sm text-white/65 font-medium mb-4 md:mb-5 leading-snug">
+											{branch.address}
+										</p>
+										<a
+											href={mapUrl}
+											target="_blank"
+											rel="noopener noreferrer"
+											onClick={(e) => e.stopPropagation()}
+											className={`inline-flex items-center gap-2 px-4 py-2.5 bg-white/90 backdrop-blur-sm hover:bg-white rounded-xl text-sm font-bold text-brand-900 transition-all duration-200 ${
+												isSelected
+													? "opacity-100 translate-y-0"
+													: "opacity-0 translate-y-2"
+											}`}
+										>
+											<YandexPin />
+											{yandexMapsText}
+										</a>
+									</div>
+								</div>
+							</div>
+						);
+					})}
+				</div>
+			</div>
+
+			{/* Navigation dots */}
+			<div className="flex justify-center gap-2 mt-8 md:mt-10">
+				{BRANCHES.map((_, i) => (
+					<button
+						key={i}
+						onClick={() => handleSelect(i)}
+						aria-label={`Branch ${i + 1}`}
+						className={`transition-all duration-300 rounded-full h-2 ${
+							selectedIndex === i
+								? "bg-gold w-6"
+								: "bg-brand-200 hover:bg-brand-300 w-2"
+						}`}
+					/>
+				))}
 			</div>
 		</section>
 	);

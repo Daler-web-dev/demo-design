@@ -15,15 +15,6 @@ type Step = { title: string; desc: string };
 const CARD_ROW_CLASS =
 	"flex-none w-[min(88vw,20rem)] sm:w-[22rem] lg:w-[24rem] p-8 sm:p-10 md:p-12 bg-gold rounded-[2.5rem] sm:rounded-[3.5rem] border-2 border-gold text-brand-900 hover:bg-gold/90 transition-all duration-500 group";
 
-const OFFSET_EPS = 0.5;
-const SECTION_PIN_TOP_PX = 8;
-const SECTION_MIN_VISIBLE_BOTTOM = 80;
-const HEADER_TOP_CAP_PX = 200;
-const HEADER_TOP_VH_RATIO = 0.36;
-const HEADER_MIN_VISIBLE = 48;
-const TRACK_VIEWPORT_MARGIN = 32;
-const TRACK_MIN_VISIBLE = 48;
-
 function StepCard({
 	step,
 	i,
@@ -50,12 +41,7 @@ function StepCard({
 
 const SectionHeader = forwardRef<
 	HTMLDivElement,
-	{
-		whyLabel: string;
-		title: string;
-		subtitle: string;
-		marginClass: string;
-	}
+	{ whyLabel: string; title: string; subtitle: string; marginClass: string }
 >(function SectionHeader({ whyLabel, title, subtitle, marginClass }, ref) {
 	return (
 		<div ref={ref} className={`text-center ${marginClass}`}>
@@ -73,10 +59,8 @@ const SectionHeader = forwardRef<
 		</div>
 	);
 });
-
 SectionHeader.displayName = "SectionHeader";
 
-/** reduced-motion → grid; coarse pointer → native horizontal strip; fine → wheel-driven sticky */
 function useMethodologyInteractionMode() {
 	const [reducedMotion, setReducedMotion] = useState(false);
 	const [finePointer, setFinePointer] = useState(true);
@@ -97,150 +81,119 @@ function useMethodologyInteractionMode() {
 		};
 	}, []);
 
-	return {
-		reducedMotion,
-		/** true = перехват wheel + translate; false = overflow-x на тач */
-		wheelLock: finePointer,
-	};
+	return { reducedMotion, wheelLock: finePointer };
 }
 
 /**
- * Горизонтальный сдвиг только через DOM (без лишних ре-рендеров).
- * Горизонталь начинается только когда заголовок в верхней зоне и лента карточек в кадре;
- * при offset > 0 колесо по-прежнему откатывает ленту назад.
+ * Scroll jail with JS-driven "fake sticky":
+ * - Outer section gets extra height = maxHorizontalScroll
+ * - Inner div is pinned via position:fixed while in the active scroll zone
+ * - Native scroll position drives horizontal card offset
+ * - Works even when an ancestor has overflow:hidden (which breaks CSS sticky)
  */
-function useWheelDrivenTrack(
+function useScrollJailTrack(
 	enabled: boolean,
 	sectionRef: React.RefObject<HTMLElement | null>,
-	headerRef: React.RefObject<HTMLDivElement | null>,
+	innerRef: React.RefObject<HTMLDivElement | null>,
 	viewportRef: React.RefObject<HTMLDivElement | null>,
 	trackRef: React.RefObject<HTMLDivElement | null>,
 	resetToken: string,
 ) {
-	const offsetRef = useRef(0);
-	const maxRef = useRef(0);
-
-	const paintTransform = useCallback(() => {
+	const paintAll = useCallback(() => {
+		const sec = sectionRef.current;
+		const inner = innerRef.current;
 		const tr = trackRef.current;
-		if (!tr) return;
-		const max = maxRef.current;
-		if (max <= OFFSET_EPS) {
+		if (!sec || !inner || !tr) return;
+
+		const max = Number(sec.dataset.scrollMax ?? 0);
+		if (max <= 0) {
+			inner.style.cssText = "";
 			tr.style.transform = "";
 			return;
 		}
-		tr.style.transform = `translate3d(${-offsetRef.current}px,0,0)`;
-	}, []);
+
+		const secTop = sec.getBoundingClientRect().top;
+
+		if (secTop > 0) {
+			// Before section: normal flow
+			inner.style.cssText = "";
+			tr.style.transform = "";
+		} else if (secTop >= -max) {
+			// Active zone: fix the inner panel to viewport
+			inner.style.cssText =
+				"position:fixed;top:0;left:0;width:100%;z-index:20;";
+			const offset = Math.min(max, -secTop);
+			tr.style.transform =
+				offset > 0 ? `translate3d(${-offset}px,0,0)` : "";
+		} else {
+			// Past section: pin to section bottom
+			inner.style.cssText =
+				"position:absolute;bottom:0;left:0;width:100%;";
+			tr.style.transform = `translate3d(${-max}px,0,0)`;
+		}
+	}, [sectionRef, innerRef, trackRef]);
 
 	const syncMetrics = useCallback(() => {
 		const vp = viewportRef.current;
 		const tr = trackRef.current;
-		if (!vp || !tr) return;
+		const sec = sectionRef.current;
+		const inner = innerRef.current;
+		if (!vp || !tr || !sec || !inner) return;
+
+		// Temporarily reset inner position to get natural scrollWidth
+		const savedCss = inner.style.cssText;
+		inner.style.cssText = "";
 		const max = Math.max(0, tr.scrollWidth - vp.clientWidth);
-		maxRef.current = max;
-		offsetRef.current = Math.min(offsetRef.current, max);
-		paintTransform();
-	}, [paintTransform]);
+		inner.style.cssText = savedCss;
+
+		sec.dataset.scrollMax = String(max);
+		sec.style.height = max > 0 ? `${window.innerHeight + max}px` : "";
+		paintAll();
+	}, [sectionRef, innerRef, viewportRef, trackRef, paintAll]);
 
 	useEffect(() => {
 		if (!enabled) return;
-		offsetRef.current = 0;
-		let id = requestAnimationFrame(() => syncMetrics());
+		const id = requestAnimationFrame(syncMetrics);
 		return () => cancelAnimationFrame(id);
 	}, [enabled, resetToken, syncMetrics]);
 
 	useEffect(() => {
 		if (!enabled) return;
 
-		const onWheel = (e: WheelEvent) => {
-			const sec = sectionRef.current;
-			const tr = trackRef.current;
-			const head = headerRef.current;
-			if (!sec || !tr || !head) return;
-
-			const max = maxRef.current;
-			if (max <= OFFSET_EPS) return;
-
-			const s = sec.getBoundingClientRect();
-			if (s.top > SECTION_PIN_TOP_PX || s.bottom < SECTION_MIN_VISIBLE_BOTTOM) {
-				return;
-			}
-
-			const vh = window.innerHeight;
-			const headBox = head.getBoundingClientRect();
-			const trackBox = tr.getBoundingClientRect();
-
-			const headerTopLimit = Math.min(HEADER_TOP_CAP_PX, vh * HEADER_TOP_VH_RATIO);
-			const headerAnchored =
-				headBox.top <= headerTopLimit && headBox.bottom > HEADER_MIN_VISIBLE;
-			const trackVisible =
-				trackBox.top < vh - TRACK_VIEWPORT_MARGIN &&
-				trackBox.bottom > TRACK_MIN_VISIBLE;
-			const readyToStart = headerAnchored && trackVisible;
-
-			const offset = offsetRef.current;
-			const dy = e.deltaY;
-
-			if (offset <= OFFSET_EPS) {
-				if (!readyToStart) return;
-				if (dy <= 0) return;
-				e.preventDefault();
-				offsetRef.current = Math.min(max, offset + dy);
-				paintTransform();
-				return;
-			}
-
-			if (dy > 0) {
-				if (offset >= max - OFFSET_EPS) return;
-				e.preventDefault();
-				offsetRef.current = Math.min(max, offset + dy);
-				paintTransform();
-				return;
-			}
-
-			e.preventDefault();
-			offsetRef.current = Math.max(0, offset + dy);
-			paintTransform();
-		};
-
-		window.addEventListener("wheel", onWheel, { passive: false });
-		return () => window.removeEventListener("wheel", onWheel);
-	}, [enabled, paintTransform, sectionRef, headerRef, trackRef]);
-
-	useEffect(() => {
-		if (!enabled) return;
-
-		let innerRaf = 0;
-		const outerRaf = requestAnimationFrame(() => {
-			innerRaf = requestAnimationFrame(syncMetrics);
-		});
-
 		const ro =
 			typeof ResizeObserver !== "undefined"
 				? new ResizeObserver(syncMetrics)
 				: null;
 
-		const attachTargets = () => {
+		const attachRo = () => {
+			if (!ro) return;
 			const tr = trackRef.current;
 			const vp = viewportRef.current;
-			if (!ro) return;
 			if (tr) ro.observe(tr);
 			if (vp) ro.observe(vp);
 		};
-		attachTargets();
-		const obsRaf = requestAnimationFrame(attachTargets);
+		attachRo();
+		const rafId = requestAnimationFrame(attachRo);
 
+		window.addEventListener("scroll", paintAll, { passive: true });
 		window.addEventListener("resize", syncMetrics);
 
 		return () => {
-			cancelAnimationFrame(outerRaf);
-			cancelAnimationFrame(innerRaf);
-			cancelAnimationFrame(obsRaf);
+			cancelAnimationFrame(rafId);
 			ro?.disconnect();
+			window.removeEventListener("scroll", paintAll);
 			window.removeEventListener("resize", syncMetrics);
+			const sec = sectionRef.current;
 			const tr = trackRef.current;
+			const inner = innerRef.current;
+			if (sec) {
+				sec.style.height = "";
+				delete sec.dataset.scrollMax;
+			}
 			if (tr) tr.style.transform = "";
+			if (inner) inner.style.cssText = "";
 		};
-	}, [enabled, syncMetrics, resetToken]);
+	}, [enabled, syncMetrics, paintAll, resetToken, sectionRef, innerRef, trackRef, viewportRef]);
 }
 
 export default function MethodologySection() {
@@ -253,16 +206,16 @@ export default function MethodologySection() {
 	const { reducedMotion, wheelLock } = useMethodologyInteractionMode();
 
 	const sectionRef = useRef<HTMLElement>(null);
-	const headerRef = useRef<HTMLDivElement>(null);
+	const innerRef = useRef<HTMLDivElement>(null);
 	const viewportRef = useRef<HTMLDivElement>(null);
 	const trackRef = useRef<HTMLDivElement>(null);
 
 	const resetToken = `${lang}:${steps.length}`;
 
-	useWheelDrivenTrack(
+	useScrollJailTrack(
 		!reducedMotion && wheelLock,
 		sectionRef,
-		headerRef,
+		innerRef,
 		viewportRef,
 		trackRef,
 		resetToken,
@@ -307,7 +260,10 @@ export default function MethodologySection() {
 
 	if (!wheelLock) {
 		return (
-			<section ref={sectionRef} className="relative bg-white py-16 md:py-24">
+			<section
+				ref={sectionRef}
+				className="relative bg-white py-16 md:py-24"
+			>
 				<div className="max-w-7xl mx-auto px-6 w-full">
 					<SectionHeader
 						whyLabel={why}
@@ -331,12 +287,16 @@ export default function MethodologySection() {
 		);
 	}
 
+	// Desktop: scroll jail + JS fake sticky
 	return (
 		<section ref={sectionRef} className="relative bg-white">
-			<div className="sticky top-0 min-h-screen flex flex-col justify-start pt-16 md:pt-24 pb-10 md:pb-16 overflow-hidden">
+			{/* innerRef: position is controlled via JS (fixed → absolute → static) */}
+			<div
+				ref={innerRef}
+				className="bg-white min-h-screen flex flex-col justify-start pt-16 md:pt-24 pb-10 md:pb-16 overflow-hidden"
+			>
 				<div className="max-w-7xl mx-auto px-6 w-full shrink-0">
 					<SectionHeader
-						ref={headerRef}
 						whyLabel={why}
 						title={title}
 						subtitle={subtitle}

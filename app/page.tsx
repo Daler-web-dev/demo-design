@@ -6,13 +6,10 @@ import Link from "next/link";
 import {
 	ArrowRight,
 	Trophy,
-	Users,
 	ArrowUpRight,
 	Zap,
 	ChevronDown,
 	BookOpen,
-	Coffee,
-	PlayCircle,
 	Medal,
 	Award,
 	Target,
@@ -26,6 +23,8 @@ import QuickDiagnostic from "@/components/QuickDiagnostic";
 import BranchLocations from "@/components/BranchLocations";
 import PrestigeSection from "@/components/PrestigeSection";
 import MethodologySection from "@/components/MethodologySection";
+import AboutSection from "@/components/AboutSection";
+import VacanciesSection from "@/components/VacanciesSection";
 
 export default function Home() {
 	const { t, lang } = useLanguage();
@@ -61,6 +60,66 @@ export default function Home() {
 	}, [heroVideoSrc]);
 
 	const courseCategories = t.courses?.categories ?? [];
+	const studentsContent =
+		lang === "RU"
+			? {
+					heroTitle: "НАШИ СТУДЕНТЫ",
+					heroSubtitle:
+						"Результат, атмосфера и живая студенческая среда внутри Polyglot.",
+					heroCardTitle: "СТУДЕНЧЕСКАЯ ЖИЗНЬ",
+					heroCardDesc:
+						"Современные аудитории, сильное комьюнити и реальная практика английского каждый день.",
+					heroTag: "POLYGLOT COMMUNITY",
+					journeyTitle: "ПУТЬ К РЕЗУЛЬТАТУ",
+					journeyTag: "Открыть",
+					journeyDesc:
+						"Каждый студент идет по понятному маршруту: уроки, speaking practice, обратная связь и стабильный прогресс.",
+					communityTitle: "АТМОСФЕРА ГРУППЫ",
+					communityDesc:
+						"Поддержка внутри группы помогает говорить свободнее и не выпадать из темпа.",
+					supportTitle: "ПОДДЕРЖКА МЕНТОРА",
+					supportDesc:
+						"Преподаватели сопровождают студентов не только на уроке, но и на пути к цели.",
+				}
+			: lang === "UZ"
+				? {
+						heroTitle: "BIZNING TALABALAR",
+						heroSubtitle:
+							"Polyglot ichidagi natija, muhit va jonli talabalar hayoti.",
+						heroCardTitle: "TALABALAR MUHITI",
+						heroCardDesc:
+							"Zamonaviy auditoriyalar, kuchli community va har kuni haqiqiy ingliz tili amaliyoti.",
+						heroTag: "POLYGLOT COMMUNITY",
+						journeyTitle: "NATIJAGA YO'L",
+						journeyTag: "Ochish",
+						journeyDesc:
+							"Har bir talaba aniq yo'l bo'yicha o'sadi: darslar, speaking practice, feedback va barqaror progress.",
+						communityTitle: "GURUH MUHITI",
+						communityDesc:
+							"Guruhdagi support erkinroq gapirish va tempdan chiqib ketmaslikka yordam beradi.",
+						supportTitle: "MENTOR YORDAMI",
+						supportDesc:
+							"Ustozlar talabalarni faqat darsda emas, balki maqsad sari yo'lda ham kuzatib boradi.",
+					}
+				: {
+						heroTitle: "OUR STUDENTS",
+						heroSubtitle:
+							"Results, atmosphere, and a real student environment inside Polyglot.",
+						heroCardTitle: "STUDENT LIFE",
+						heroCardDesc:
+							"Modern classrooms, a strong community, and real English practice every day.",
+						heroTag: "POLYGLOT COMMUNITY",
+						journeyTitle: "THE ROAD TO RESULTS",
+						journeyTag: "Open",
+						journeyDesc:
+							"Each student follows a clear path: lessons, speaking practice, feedback, and steady progress.",
+						communityTitle: "GROUP ATMOSPHERE",
+						communityDesc:
+							"A supportive group helps students speak more freely and stay in rhythm.",
+						supportTitle: "MENTOR SUPPORT",
+						supportDesc:
+							"Teachers support students not only in class, but throughout the journey to their goal.",
+					};
 
 	const iconById: Record<string, React.ComponentType<any>> = {
 		BookOpen,
@@ -135,7 +194,7 @@ export default function Home() {
 
 	return (
 		<div className="relative overflow-x-hidden overflow-y-hidden ">
-			<section className="md:h-[96vh] h-[60vh] md:mt-4 mt-[120px] relative flex flex-col justify-center overflow-hidden rounded-3xl m-3 bg-gradient-to-t from-indigo-900 via-brand-100/10 to-transparent">
+			<section className="md:h-[96vh] h-[60vh] md:mt-4 mt-[120px] relative flex flex-col justify-center overflow-hidden rounded-3xl m-3 bg-gradient-to-t from-black via-brand-100/10 to-transparent">
 				{/* Hero full-height video + soft blur toward text */}
 				<div className="absolute inset-0 -z-10">
 					<video
@@ -156,12 +215,8 @@ export default function Home() {
 
 				<div className="w-[92%] mx-auto px-6 relative h-full flex items-end pt-24 pb-10 lg:pt-28 lg:pb-14">
 					<div className="w-full flex flex-col items-start text-start">
-						{/* <div className="hero-badge-in hero-delay-0 inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-white/25 bg-white/10 text-white/95 backdrop-blur-md text-[9px] sm:text-[10px] font-bold uppercase tracking-[0.16em] mb-6 shadow-sm">
-							<Zap className="w-2.5 h-2.5 text-gold shrink-0" strokeWidth={2.5} />
-							<span>{t.hero.badge}</span>
-						</div> */}
-						<div className="w-full flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
-							<h1 className="text-[clamp(1.75rem,8vw,4.5rem)] lg:text-[6rem] font-display font-black leading-[0.86] tracking-tight text-brand-800 uppercase overflow-hidden">
+						<div className="w-full flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
+							<h1 className="text-[clamp(1.5rem,6.8vw,3.9rem)] lg:text-[5rem] font-display font-black leading-[0.88] tracking-tight text-brand-800 uppercase overflow-hidden">
 								<span className="hero-line hero-delay-1 block text-gold">
 									{t.homePage.heroWord1}
 								</span>
@@ -172,79 +227,80 @@ export default function Home() {
 									{t.homePage.heroWord3}
 								</span>
 							</h1>
-							{/* <p className="hero-subtitle-in hero-delay-4 text-xl md:text-2xl text-indigo-600/80 max-w-3xl leading-relaxed mb-16 font-medium tracking-normal">
-								{t.hero.subtitle}
-							</p> */}
-							<div className="hidden hero-cta-in hero-delay-5 md:flex flex-col items-start gap-4 sm:gap-6 lg:items-end lg:pb-2">
+							<div className="hidden hero-cta-in hero-delay-5 md:flex flex-col items-start gap-3 sm:gap-5 lg:items-end lg:pb-2">
 								<Link
 									href="/enroll"
-									className="hero-btn-shine w-52 sm:w-56 py-4 bg-indigo-600 text-white rounded-2xl font-black text-base sm:text-lg hover:bg-indigo-500 hover:shadow-indigo-400/30 transition-all flex items-center justify-center group shadow-2xl shadow-indigo-500/25"
+									className="hero-btn-shine w-44 sm:w-48 py-3.5 bg-gold text-white rounded-2xl font-black text-sm sm:text-base hover:bg-indigo-500 hover:shadow-indigo-400/30 transition-all flex items-center justify-center group shadow-2xl shadow-indigo-500/25"
 								>
 									{t.nav.enroll}
-									<ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform" />
+									<ArrowRight className="ml-2.5 w-4.5 h-4.5 group-hover:translate-x-2 transition-transform" />
 								</Link>
-								<div className="flex items-center -space-x-3 lg:self-end">
-									{[1, 2, 3, 4].map((i) => (
-										<img
-											key={i}
-											src={`students/st${i}.jpeg`}
-											className={`hero-avatar-pop object-cover w-10 h-10 sm:w-11 sm:h-11 rounded-full border-4 border-white shadow-lg ${
-												i === 1
-													? "hero-delay-avatar-1"
-													: i === 2
-														? "hero-delay-avatar-2"
-														: i === 3
-															? "hero-delay-avatar-3"
-															: "hero-delay-avatar-4"
-											}`}
-											alt=""
-										/>
-									))}
-									<div className="pl-5 text-xs sm:text-sm font-bold text-gold">
-										{t.homePage.alumni}
+								<Link href="#students">
+									<div className="flex items-center -space-x-3 lg:self-end">
+										{[1, 2, 3, 4].map((i) => (
+											<img
+												key={i}
+												src={`students/st${i}.jpeg`}
+												className={`hero-avatar-pop object-cover w-9 h-9 sm:w-10 sm:h-10 rounded-full border-[3px] border-white shadow-lg ${
+													i === 1
+														? "hero-delay-avatar-1"
+														: i === 2
+															? "hero-delay-avatar-2"
+															: i === 3
+																? "hero-delay-avatar-3"
+																: "hero-delay-avatar-4"
+												}`}
+												alt=""
+											/>
+										))}
+										<div className="pl-4 text-[11px] sm:text-xs font-bold text-gold">
+											{t.homePage.alumni}
+										</div>
 									</div>
-								</div>
+								</Link>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<div className="w-full mx-auto px-6 pt-6 md:hidden hero-cta-in hero-delay-5 flex flex-col items-start gap-4 sm:gap-6 lg:items-end lg:pb-2">
+			<div className="w-full mx-auto px-6 pt-5 md:hidden hero-cta-in hero-delay-5 flex flex-col items-start gap-3 sm:gap-5 lg:items-end lg:pb-2">
 				<Link
 					href="/enroll"
-					className="hero-btn-shine w-52 sm:w-56 py-4 bg-indigo-600 text-white rounded-2xl font-black text-base sm:text-lg hover:bg-indigo-500 hover:shadow-indigo-400/30 transition-all flex items-center justify-center group shadow-2xl shadow-indigo-500/25"
+					className="hero-btn-shine w-44 sm:w-48 py-3.5 bg-indigo-600 text-white rounded-2xl font-black text-sm sm:text-base hover:bg-indigo-500 hover:shadow-indigo-400/30 transition-all flex items-center justify-center group shadow-2xl shadow-indigo-500/25"
 				>
 					{t.nav.enroll}
-					<ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform" />
+					<ArrowRight className="ml-2.5 w-4.5 h-4.5 group-hover:translate-x-2 transition-transform" />
 				</Link>
-				<div className="flex items-center -space-x-3 lg:self-end">
-					{[1, 2, 3, 4].map((i) => (
-						<img
-							key={i}
-							src={`students/st${i}.jpeg`}
-							className={`hero-avatar-pop object-cover w-10 h-10 sm:w-11 sm:h-11 rounded-full border-4 border-white shadow-lg ${
-								i === 1
-									? "hero-delay-avatar-1"
-									: i === 2
-										? "hero-delay-avatar-2"
-										: i === 3
-											? "hero-delay-avatar-3"
-											: "hero-delay-avatar-4"
-							}`}
-							alt=""
-						/>
-					))}
-					<div className="pl-5 text-xs sm:text-sm font-bold text-indigo-600">
-						{t.homePage.alumni}
+				<Link href="#students">
+					<div className="flex items-center -space-x-3 lg:self-end">
+						{[1, 2, 3, 4].map((i) => (
+							<img
+								key={i}
+								src={`students/st${i}.jpeg`}
+								className={`hero-avatar-pop object-cover w-9 h-9 sm:w-10 sm:h-10 rounded-full border-[3px] border-white shadow-lg ${
+									i === 1
+										? "hero-delay-avatar-1"
+										: i === 2
+											? "hero-delay-avatar-2"
+											: i === 3
+												? "hero-delay-avatar-3"
+												: "hero-delay-avatar-4"
+								}`}
+								alt=""
+							/>
+						))}
+						<div className="pl-4 text-[11px] sm:text-xs font-bold text-indigo-600">
+							{t.homePage.alumni}
+						</div>
 					</div>
-				</div>
+				</Link>
 			</div>
 
 			<PrestigeSection lang={lang} />
 
-			{/* 2. OUR PRIDE — TEACHERS WITH IELTS 9 */}
-			<section className="min-h-fit py-32 bg-gradient-to-br from-brand-800 via-brand-900 to-indigo-900 text-white relative overflow-hidden">
+			{/* COURSES — immediate relevance */}
+			<section className="min-h-fit py-40 bg-brand-900" id="courses-home">
 				<div className="absolute top-1/2 left-0 w-full text-[20vw] font-black text-white/5 whitespace-nowrap -translate-y-1/2 select-none pointer-events-none uppercase tracking-tighter italic">
 					IELTS 9 • IELTS 9 • IELTS 9
 				</div>
@@ -258,7 +314,7 @@ export default function Home() {
 									{t.results.badge}
 								</span>
 							</div>
-							<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.95] italic uppercase tracking-tighter break-words max-w-full">
+							<h2 className="text-white text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.95] italic uppercase tracking-tighter break-words max-w-full">
 								{t.results.title}
 							</h2>
 							<p className="text-xl md:text-2xl text-slate-400 font-medium mt-6 max-w-lg leading-relaxed">
@@ -443,92 +499,69 @@ export default function Home() {
 				badge={t.homePage.locationsBadge}
 				title={t.branches.title}
 				subtitle={t.branches.subtitle}
-				mapRouteText={t.branches.mapRouteText}
+				yandexMapsText={t.branches.yandexMaps}
 				lang={lang}
 			/>
 
-			<section className="min-h-fit py-16 md:py-40 bg-gradient-to-br from-brand-800 via-brand-900 to-indigo-900 text-white">
+			<section
+				id="students"
+				className="min-h-fit py-16 md:py-40 bg-gradient-to-br from-brand-800 via-brand-900 to-indigo-900 text-white"
+			>
 				<div className="max-w-7xl mx-auto px-4 sm:px-6">
 					<div className="flex flex-col lg:flex-row justify-between items-start mb-12 md:mb-24 gap-6 lg:gap-0">
 						<h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-display font-black leading-[0.95] md:leading-[0.8] tracking-tighter uppercase break-words max-w-full">
-							{t.lifestyle.title}
+							{studentsContent.heroTitle}
 						</h2>
 						<p className="text-base sm:text-lg md:text-xl text-slate-400 font-bold max-w-sm">
-							{t.lifestyle.subtitle}
+							{studentsContent.heroSubtitle}
 						</p>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-3 sm:gap-4 md:h-[600px]">
-						<div className="md:col-span-2 md:row-span-2 bg-indigo-600 rounded-[2rem] sm:rounded-[3.5rem] p-8 sm:p-12 relative overflow-hidden group min-h-[200px] md:min-h-0">
+						<div className="md:col-span-2 md:row-span-2 rounded-[2rem] sm:rounded-[3.5rem] relative overflow-hidden min-h-[260px] md:min-h-0">
 							<img
-								src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=1600"
-								alt={t.homePage.lifestyleAltHub}
-								className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
+								src="/students/st0.jpeg"
+								alt="Polyglot students"
+								className="absolute inset-0 w-full h-full object-cover"
 								loading="lazy"
 							/>
-							<div className="absolute inset-0 bg-gradient-to-tr from-brand-900/80 via-brand-900/40 to-transparent pointer-events-none" />
-							<div className="relative z-10 flex flex-col h-full">
-								<Coffee className="absolute top-6 right-6 sm:top-10 sm:right-10 w-16 h-16 sm:w-20 sm:h-20 opacity-40 group-hover:scale-125 transition-transform" />
-								<h4 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 md:mb-6 uppercase tracking-tighter leading-tight mt-auto">
-									{t.homePage.lifestyleHubTitle}
-								</h4>
-								<p className="text-indigo-100 text-base sm:text-lg max-w-md">
-									{t.homePage.lifestyleHubDesc}
+							<div className="absolute inset-0 bg-gradient-to-t from-brand-950/55 via-transparent to-transparent pointer-events-none" />
+							<div className="absolute left-4 right-4 bottom-4 sm:left-6 sm:right-auto sm:bottom-6 sm:max-w-xl rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-3 backdrop-blur-md">
+								<p className="text-xs sm:text-sm md:text-base font-semibold leading-relaxed text-white/90">
+									{t.homePage.studentStatsOverlay}
 								</p>
-								<div className="mt-6 sm:mt-8 px-4 py-1.5 sm:px-6 sm:py-2 bg-white/15 rounded-full font-bold text-[10px] sm:text-xs tracking-[0.25em] uppercase inline-flex items-center gap-2">
-									<span className="w-2 h-2 rounded-full bg-gold" />
-									{t.homePage.lifestyleCommunityTag}
-								</div>
 							</div>
 						</div>
-						<div className="md:col-span-2 bg-brand-800 rounded-[2rem] sm:rounded-[3.5rem] p-6 sm:p-12 flex flex-col justify-between group min-h-[140px] md:min-h-0 relative overflow-hidden">
-							<img
-								src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&q=80&w=1600"
-								alt={t.homePage.lifestyleAltCinema}
-								className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
-								loading="lazy"
+						<div className="md:col-span-2 rounded-[2rem] sm:rounded-[3.5rem] relative overflow-hidden min-h-[180px] md:min-h-0">
+							<iframe
+								src={
+									lang === "RU"
+										? "https://www.youtube.com/embed/wn-h1-9ofwg"
+										: "https://www.youtube.com/embed/hYLCpAvfkrA"
+								}
+								title="Polyglot student video"
+								className="absolute inset-0 h-full w-full"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerPolicy="strict-origin-when-cross-origin"
+								allowFullScreen
 							/>
-							<div className="absolute inset-0 bg-gradient-to-tr from-brand-900/70 via-brand-900/40 to-transparent pointer-events-none" />
-							<div className="relative z-10">
-								<div className="flex justify-between items-start">
-									<PlayCircle className="w-8 h-8 sm:w-12 sm:h-12 text-gold shrink-0" />
-									<span className="text-[10px] font-black uppercase tracking-widest text-slate-200">
-										{t.homePage.lifestyleCinemaTag}
-									</span>
-								</div>
-								<h4 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tighter mt-4 md:mt-0">
-									{t.lifestyle.items[1].title}
-								</h4>
-							</div>
 						</div>
-						<div className="bg-brand-700 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group hover:bg-indigo-500 transition-colors min-h-[120px] md:min-h-0 relative overflow-hidden">
+						<div className="rounded-[1.5rem] sm:rounded-[3rem] relative overflow-hidden min-h-[180px] md:min-h-0">
 							<img
-								src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=1200"
-								alt={t.homePage.lifestyleAltLibrary}
-								className="absolute inset-0 w-full h-full object-cover opacity-18 pointer-events-none"
+								src="/students/st2.jpeg"
+								alt="Student atmosphere"
+								className="absolute inset-0 w-full h-full object-cover"
 								loading="lazy"
 							/>
-							<div className="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-brand-900/40 to-transparent pointer-events-none" />
-							<div className="relative z-10">
-								<BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-400 group-hover:text-white shrink-0" />
-								<h4 className="text-lg sm:text-xl font-black uppercase tracking-tighter mt-2 md:mt-0">
-									{t.lifestyle.items[2].title}
-								</h4>
-							</div>
+							<div className="absolute inset-0 bg-gradient-to-t from-brand-950/45 via-transparent to-transparent pointer-events-none" />
 						</div>
-						<div className="bg-gold/20 text-brand-900 rounded-[1.5rem] sm:rounded-[3rem] p-6 sm:p-8 flex flex-col justify-between group border border-gold/30 min-h-[120px] md:min-h-0 relative overflow-hidden">
+						<div className="rounded-[1.5rem] sm:rounded-[3rem] relative overflow-hidden min-h-[180px] md:min-h-0">
 							<img
-								src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&q=80&w=1200"
-								alt={t.homePage.lifestyleAltSpeaking}
-								className="absolute inset-0 w-full h-full object-cover opacity-22 pointer-events-none"
+								src="/students/st3.jpeg"
+								alt="Student support"
+								className="absolute inset-0 w-full h-full object-cover"
 								loading="lazy"
 							/>
-							<div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 via-brand-900/20 to-transparent pointer-events-none" />
-							<div className="relative z-10">
-								<Users className="w-6 h-6 sm:w-8 sm:h-8 text-gold shrink-0" />
-								<h4 className="text-lg sm:text-xl font-black uppercase tracking-tighter mt-2 md:mt-0">
-									{t.lifestyle.items[0].title}
-								</h4>
-							</div>
+							<div className="absolute inset-0 bg-gradient-to-t from-brand-950/35 via-transparent to-transparent pointer-events-none" />
 						</div>
 					</div>
 				</div>
@@ -592,6 +625,8 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			<VacanciesSection />
 
 			<section className="min-h-screen py-32 px-6 flex flex-col justify-center bg-gradient-to-b from-transparent via-brand-50/30 to-transparent">
 				<div className="max-w-7xl mx-auto bg-gradient-to-br from-indigo-600 via-indigo-600 to-brand-700 rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden shadow-2xl shadow-indigo-500/20">

@@ -147,6 +147,7 @@
 		"title": "Closest to You",
 		"subtitle": "A network of 8 high-tech campuses across Samarkand.",
 		"mapRouteText": "Build route",
+		"yandexMaps": "Yandex Maps",
 		"list": [
 			"Registan Center",
 			"Siyob Campus",
@@ -1222,8 +1223,57 @@
 		"lifestyleAltSpeaking": "Speaking club at Polyglot",
 		"whyChooseUs": "WHY CHOOSE US",
 		"faqBadge": "FAQ",
+		"studentStatsOverlay": "More than 100,000 students have earned IELTS, CEFR, and other international results with us.",
 		"ctaLine1": "STOP DREAMING.",
 		"ctaLine2": "START SPEAKING.",
 		"bookLesson": "Book Free Lesson"
+	},
+	"about": {
+		"badge": "ABOUT",
+		"title": "Our Story",
+		"subtitle": "Over a decade of shaping Samarkand's English speakers.",
+		"stat1Value": "2012",
+		"stat1Label": "Year Founded",
+		"stat2Value": "9",
+		"stat2Label": "Branches",
+		"stat3Value": "7000+",
+		"stat3Label": "Graduates",
+		"stat4Value": "IELTS 9",
+		"stat4Label": "Top Score",
+		"mission": "Polyglot was built in Samarkand with one vision: give every motivated student access to world-class English education. Today we are Uzbekistan's highest-ranked language school — with 9 campuses, 6 teachers holding IELTS Band 9, and thousands of alumni working and studying across the globe.",
+		"readMore": "Our Full Story"
+	},
+	"vacancies": {
+		"badge": "CAREERS",
+		"title": "Join the Team",
+		"subtitle": "We are looking for driven people to help shape the future of English education in Samarkand.",
+		"applyText": "Apply via Telegram",
+		"contactHint": "Send your CV and a short intro",
+		"positions": [
+			{
+				"title": "English Teacher",
+				"type": "Full-time",
+				"requirement": "IELTS Band 7.0 or equivalent",
+				"desc": "Teach communicative English to motivated groups of 8–12 students. Full curriculum and materials provided."
+			},
+			{
+				"title": "Academic Coordinator",
+				"type": "Full-time",
+				"requirement": "3+ years in education",
+				"desc": "Drive academic quality across branches, support teachers, and champion student outcomes."
+			},
+			{
+				"title": "Content Creator",
+				"type": "Full / Part-time",
+				"requirement": "Portfolio required",
+				"desc": "Shoot and edit Reels, TikToks, and YouTube content. Full creative freedom with a clear brief."
+			},
+			{
+				"title": "Sales Consultant",
+				"type": "Full-time",
+				"requirement": "Fluent in Uzbek & Russian",
+				"desc": "Help prospective students find their perfect course. Goal-oriented, supportive work environment."
+			}
+		]
 	}
 }

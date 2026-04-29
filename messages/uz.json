@@ -147,6 +147,7 @@
 		"title": "Sizga eng yaqin filial",
 		"subtitle": "Samarqand bo'ylab 8 ta zamonaviy kampus tarmog'i.",
 		"mapRouteText": "Yo'nalish qurish",
+		"yandexMaps": "Yandex Xarita",
 		"list": [
 			"Регистан Центр",
 			"Сиёб Кампус",
@@ -1222,8 +1223,57 @@
 		"lifestyleAltSpeaking": "Polyglot speaking club",
 		"whyChooseUs": "NEGA BIZ",
 		"faqBadge": "FAQ",
+		"studentStatsOverlay": "Biz bilan 100 mingdan ortiq o'quvchilar IELTS, CEFR va boshqa xalqaro natijalarga erishgan.",
 		"ctaLine1": "ORZU BILAN CHEKLANMANG.",
 		"ctaLine2": "GAPIRISHNI BOSHLANG.",
 		"bookLesson": "Bepul sinov darsiga yozilish"
+	},
+	"about": {
+		"badge": "BIZ HAQIMIZDA",
+		"title": "Bizning tarix",
+		"subtitle": "O'n yildan ortiq vaqt davomida Samarqandda ingliz tilida so'zlashuvchilarni shakllantirib kelmoqdamiz.",
+		"stat1Value": "2012",
+		"stat1Label": "Tashkil etilgan yil",
+		"stat2Value": "9",
+		"stat2Label": "Filiallar",
+		"stat3Value": "7000+",
+		"stat3Label": "Bitiruvchilar",
+		"stat4Value": "IELTS 9",
+		"stat4Label": "Eng yuqori ball",
+		"mission": "Polyglot Samarqandda bitta maqsad bilan tashkil etilgan: har bir motivatsiyali talabaga jahon darajasidagi ingliz tili ta'limini taqdim etish. Bugun biz O'zbekistonning eng yuqori reytingli til maktabimiz — 9 ta kampus, IELTS Band 9 darajasida 6 ta o'qituvchi va dunyoning turli burchaklarida ishlayotgan va o'qiyotgan minglab bitiruvchilar.",
+		"readMore": "Biz haqimizda batafsil"
+	},
+	"vacancies": {
+		"badge": "VAKANSIYALAR",
+		"title": "Jamoaga qo'shiling",
+		"subtitle": "Samarqandda ingliz tili ta'limining kelajagini shakllantirishga tayyor faol odamlarni qidiryapmiz.",
+		"applyText": "Telegram orqali murojaat qiling",
+		"contactHint": "Rezyumeingiz va qisqa tanishuv xatini yuboring",
+		"positions": [
+			{
+				"title": "Ingliz tili o'qituvchisi",
+				"type": "To'liq ish kuni",
+				"requirement": "IELTS Band 7.0 yoki unga teng",
+				"desc": "8–12 nafar motivatsiyali talabalar guruhiga kommunikativ ingliz tilini o'rgating. To'liq o'quv dasturi va materiallar taqdim etiladi."
+			},
+			{
+				"title": "Akademik koordinator",
+				"type": "To'liq ish kuni",
+				"requirement": "Ta'lim sohasida 3+ yil tajriba",
+				"desc": "Barcha filiallarda ta'lim sifatini nazorat qiling, o'qituvchilarni qo'llab-quvvatlang va talabalar natijalarini oshiring."
+			},
+			{
+				"title": "Kontent yaratuvchi",
+				"type": "To'liq / qisman ish kuni",
+				"requirement": "Portfolio talab qilinadi",
+				"desc": "Reels, TikTok va YouTube kontentlarini surating va montaj qiling. Aniq brifda to'liq ijodiy erkinlik."
+			},
+			{
+				"title": "Savdo bo'yicha konsultant",
+				"type": "To'liq ish kuni",
+				"requirement": "O'zbek va rus tillarini erkin bilish",
+				"desc": "Istiqbolli talabalarga o'zlari uchun eng mos kursni topishga yordam bering. Natijaga yo'naltirilgan qulay ish muhiti."
+			}
+		]
 	}
 }
