@@ -8,7 +8,8 @@
 		"enroll": "Join Now",
 		"openMenu": "Open menu",
 		"closeMenu": "Close menu",
-		"mainMenu": "Main menu"
+		"mainMenu": "Main menu",
+		"vacancies": "Careers"
 	},
 	"hero": {
 		"badge": "Samarkand's #1 Language Institution",
@@ -245,7 +246,8 @@
 		"navigationTitle": "Navigation",
 		"hqTitle": "Headquarters",
 		"tagline": "Designed for the Elite.",
-		"privacyPolicy": "Privacy Policy"
+		"privacyPolicy": "Privacy Policy",
+		"oferta": "Public Offer"
 	},
 	"ai": {
 		"trigger": "AI Advisor",
@@ -1273,6 +1275,115 @@
 				"type": "Full-time",
 				"requirement": "Fluent in Uzbek & Russian",
 				"desc": "Help prospective students find their perfect course. Goal-oriented, supportive work environment."
+			}
+		]
+	},
+	"ofertaPage": {
+		"title": "Public Offer Agreement",
+		"updated": "Effective from January 1, 2025",
+		"intro": "This Public Offer Agreement (hereinafter — the 'Agreement') is an official proposal by the 'Polyglot' language school (hereinafter — the 'Service Provider') to enter into a paid educational services agreement on the terms set out below. This Agreement is drawn up in accordance with Articles 367–370 of the Civil Code of the Republic of Uzbekistan.",
+		"backHome": "Back to Home",
+		"contactBlockTitle": "Questions & Inquiries",
+		"contactPageLink": "Go to Contact Page →",
+		"sections": [
+			{
+				"title": "1. General Provisions",
+				"paragraphs": [
+					"1.1. This public offer is addressed to individuals and legal entities and constitutes an official proposal by the Service Provider to enter into an educational services agreement.",
+					"1.2. Acceptance of this offer occurs when the Customer performs any of the following actions: payment of an invoice, submission of an application on the website, or verbal or written confirmation of enrollment.",
+					"1.3. From the moment of acceptance, this offer has the legal force of a bilateral agreement in accordance with the legislation of the Republic of Uzbekistan."
+				]
+			},
+			{
+				"title": "2. Terms and Definitions",
+				"paragraphs": [
+					"'Service Provider' — the 'Polyglot' language school carrying out educational activities in the Republic of Uzbekistan.",
+					"'Customer' — an individual or legal entity who has accepted this offer.",
+					"'Student' — the person directly attending classes (may coincide with the Customer).",
+					"'Services' — educational services for teaching foreign languages provided in accordance with the Service Provider's curricula."
+				]
+			},
+			{
+				"title": "3. Subject of the Agreement",
+				"paragraphs": [
+					"3.1. The Service Provider undertakes to provide the Customer with educational services for the selected course (General English, IELTS, TOEFL, Duolingo, CEFR/DTM, English for Kids and others), and the Customer undertakes to accept and pay for these services.",
+					"3.2. The specific course, schedule, level, and duration of study are determined upon enrollment based on the results of a diagnostic test.",
+					"3.3. Services are provided at the Service Provider's learning centres in Samarkand, Uzbekistan, or remotely where available."
+				]
+			},
+			{
+				"title": "4. Enrollment and Service Delivery",
+				"paragraphs": [
+					"4.1. To enroll, the Customer submits an application on the website, by phone, or in person at one of the Service Provider's branches.",
+					"4.2. The Service Provider conducts a free diagnostic test to determine the Student's language level.",
+					"4.3. Based on the test results, the Customer is offered a suitable course and group taking the schedule into account.",
+					"4.4. Classes are held according to the approved schedule. The Service Provider notifies the Customer of any postponement or cancellation at least 24 hours in advance."
+				]
+			},
+			{
+				"title": "5. Cost and Payment Procedure",
+				"paragraphs": [
+					"5.1. The cost of services is determined by the Service Provider's current price list at the time of signing the agreement.",
+					"5.2. Payment is made monthly by the 5th day of the current month of study. The Service Provider may accept payment for several months in advance.",
+					"5.3. Payment is accepted in cash at the Service Provider's office or by bank transfer to the details specified in Section 12 of this Agreement.",
+					"5.4. If payment is overdue by more than 10 business days, the Service Provider may temporarily suspend service delivery until the debt is settled.",
+					"5.5. If the Agreement is terminated at the Customer's initiative, a refund for unused classes will be issued in the amount of 80% of the paid amount minus the actual classes held."
+				]
+			},
+			{
+				"title": "6. Rights and Obligations of the Service Provider",
+				"paragraphs": [
+					"6.1. The Service Provider undertakes to: conduct quality classes in accordance with the curriculum; provide the Student with necessary learning materials; notify the Customer of changes to the schedule and learning conditions.",
+					"6.2. The Service Provider is entitled to: make changes to curricula to improve their effectiveness; transfer the Student to another group when there are objective grounds; unilaterally terminate the agreement if the Customer systematically violates the terms of this offer."
+				]
+			},
+			{
+				"title": "7. Rights and Obligations of the Customer",
+				"paragraphs": [
+					"7.1. The Customer undertakes to: make timely payments for services; ensure that the Student complies with the Service Provider's internal rules; notify the Service Provider of class absences at least 2 hours before they begin.",
+					"7.2. The Customer is entitled to: receive information about the Student's learning progress; demand the rectification of identified deficiencies in service quality; terminate the agreement early with written notice to the Service Provider 5 business days in advance."
+				]
+			},
+			{
+				"title": "8. Liability",
+				"paragraphs": [
+					"8.1. The parties bear responsibility for non-performance or improper performance of their obligations in accordance with the legislation of the Republic of Uzbekistan.",
+					"8.2. The Service Provider is not liable for the Student's learning outcomes if the Student systematically misses classes or fails to complete homework.",
+					"8.3. The parties are released from liability in the event of force majeure circumstances, which must be notified to the other party within 3 business days."
+				]
+			},
+			{
+				"title": "9. Confidentiality and Personal Data",
+				"paragraphs": [
+					"9.1. The Customer consents to the processing of their personal data and the Student's personal data for the purposes of fulfilling this agreement.",
+					"9.2. The Service Provider undertakes to store personal data in accordance with the Law of the Republic of Uzbekistan 'On Personal Data' and not to transfer it to third parties without the Customer's consent.",
+					"9.3. The Service Provider may use photographs and videos featuring the Student exclusively for educational and marketing purposes with the Customer's written consent."
+				]
+			},
+			{
+				"title": "10. Amendment and Termination",
+				"paragraphs": [
+					"10.1. The Service Provider may unilaterally amend the terms of this offer by publishing a new version on the website. Changes take effect 10 calendar days after publication.",
+					"10.2. The Agreement may be terminated by mutual consent, at the Customer's initiative (with 5 business days' notice) or at the Service Provider's initiative (with 10 business days' notice and full settlement)."
+				]
+			},
+			{
+				"title": "11. Dispute Resolution",
+				"paragraphs": [
+					"11.1. All disputes and disagreements arising from this agreement shall be resolved through negotiation.",
+					"11.2. If a pre-trial resolution is not possible, the dispute shall be submitted to the court at the Service Provider's location in accordance with the legislation of the Republic of Uzbekistan.",
+					"11.3. Complaints are reviewed within 15 business days from the date of receipt."
+				]
+			},
+			{
+				"title": "12. Service Provider Details",
+				"paragraphs": [
+					"Full name: O'quv markazi «Polyglot»",
+					"Address: Samarkand, Republic of Uzbekistan",
+					"Phone: +998 (55) 705 30 30 · +998 (90) 503 30 30",
+					"Instagram: @polyglot_school_sam",
+					"Telegram: @polyglot_language_school"
+				]
 			}
 		]
 	}

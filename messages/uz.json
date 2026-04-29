@@ -8,7 +8,8 @@
 		"enroll": "Yozilish",
 		"openMenu": "Menyuni ochish",
 		"closeMenu": "Menyuni yopish",
-		"mainMenu": "Asosiy menyu"
+		"mainMenu": "Asosiy menyu",
+		"vacancies": "Vakansiyalar"
 	},
 	"hero": {
 		"badge": "Samarqanddagi #1 til maktabi",
@@ -245,7 +246,8 @@
 		"navigationTitle": "Navigatsiya",
 		"hqTitle": "Bosh ofis",
 		"tagline": "Eng yaxshisini tanlaganlar uchun.",
-		"privacyPolicy": "Maxfiylik siyosati"
+		"privacyPolicy": "Maxfiylik siyosati",
+		"oferta": "Ommaviy oferta"
 	},
 	"ai": {
 		"trigger": "AI maslahatchi",
@@ -1273,6 +1275,115 @@
 				"type": "To'liq ish kuni",
 				"requirement": "O'zbek va rus tillarini erkin bilish",
 				"desc": "Istiqbolli talabalarga o'zlari uchun eng mos kursni topishga yordam bering. Natijaga yo'naltirilgan qulay ish muhiti."
+			}
+		]
+	},
+	"ofertaPage": {
+		"title": "Ommaviy oferta shartnomasi",
+		"updated": "2025-yil 1-yanvardan kuchga kiradi",
+		"intro": "Ushbu Ommaviy oferta (keyingi o'rinlarda — «Shartnoma») «Polyglot» til maktabi (keyingi o'rinlarda — «Ijrochi») tomonidan quyida bayon etilgan shartlar asosida ta'lim xizmatlari ko'rsatish shartnomasini tuzish bo'yicha rasmiy taklif hisoblanadi. Shartnoma O'zbekiston Respublikasi Fuqarolik kodeksining 367–370-moddalari asosida tuzilgan.",
+		"backHome": "Bosh sahifaga",
+		"contactBlockTitle": "Savollar va murojaatlar",
+		"contactPageLink": "Kontaktlar sahifasiga o'tish →",
+		"sections": [
+			{
+				"title": "1. Umumiy qoidalar",
+				"paragraphs": [
+					"1.1. Ushbu ommaviy oferta jismoniy va yuridik shaxslarga yo'naltirilgan bo'lib, Ijrochining ta'lim xizmatlari shartnomasini tuzish bo'yicha rasmiy taklifi hisoblanadi.",
+					"1.2. Ofertani qabul qilish (aksept) Buyurtmachining quyidagi harakatlaridan birini amalga oshirishi bilan sodir bo'ladi: hisob-fakturani to'lash, veb-saytda ariza topshirish yoki ro'yxatdan o'tishni og'zaki yoki yozma tasdiqlash.",
+					"1.3. Aksept momentidan boshlab ushbu oferta O'zbekiston Respublikasi qonunchiligiga muvofiq ikki tomonlama shartnoma kuchini kasb etadi."
+				]
+			},
+			{
+				"title": "2. Atamalar va ta'riflar",
+				"paragraphs": [
+					"«Ijrochi» — O'zbekiston Respublikasi hududida ta'lim faoliyatini amalga oshiruvchi «Polyglot» til maktabi.",
+					"«Buyurtmachi» — ushbu ofertani qabul qilgan jismoniy yoki yuridik shaxs.",
+					"«O'quvchi» — darslarni bevosita qatnashuvchi shaxs (Buyurtmachi bilan bir xil bo'lishi mumkin).",
+					"«Xizmatlar» — Ijrochining o'quv dasturlari asosida ko'rsatiladigan chet tillarini o'rgatish bo'yicha ta'lim xizmatlari."
+				]
+			},
+			{
+				"title": "3. Shartnoma predmeti",
+				"paragraphs": [
+					"3.1. Ijrochi Buyurtmachiga tanlangan kurs bo'yicha ta'lim xizmatlarini ko'rsatish majburiyatini oladi (General English, IELTS, TOEFL, Duolingo, CEFR/DTM, Bolalar uchun ingliz tili va boshqalar), Buyurtmachi esa ushbu xizmatlarni qabul qilish va to'lash majburiyatini oladi.",
+					"3.2. Muayyan kurs, jadval, daraja va o'qish muddati diagnostik test natijalari asosida ro'yxatdan o'tishda aniqlanadi.",
+					"3.3. Xizmatlar Samarqand shahridagi Ijrochi o'quv markazlarida yoki imkoniyat mavjud bo'lganda masofaviy formatda ko'rsatiladi."
+				]
+			},
+			{
+				"title": "4. Ro'yxatdan o'tish va xizmat ko'rsatish tartibi",
+				"paragraphs": [
+					"4.1. Ro'yxatdan o'tish uchun Buyurtmachi veb-saytda, telefon orqali yoki Ijrochining filiallaridan birida shaxsan ariza topshiradi.",
+					"4.2. Ijrochi O'quvchining til darajasini aniqlash uchun bepul diagnostik test o'tkazadi.",
+					"4.3. Test natijalari asosida Buyurtmachiga jadvalini hisobga olgan holda mos kurs va guruh taklif etiladi.",
+					"4.4. Darslar tasdiqlangan jadvalga muvofiq o'tkaziladi. Darsni ko'chirish yoki bekor qilish haqida Ijrochi Buyurtmachini kamida 24 soat oldin xabardor qiladi."
+				]
+			},
+			{
+				"title": "5. Narx va to'lov tartibi",
+				"paragraphs": [
+					"5.1. Xizmatlar narxi shartnoma tuzilgan paytdagi Ijrochining amaldagi narx ro'yxati bilan belgilanadi.",
+					"5.2. To'lov joriy o'quv oyining 5-kuniga qadar oylik to'lanadi. Ijrochi bir necha oy oldindan to'lovni qabul qilishi mumkin.",
+					"5.3. To'lov Ijrochi kassasida naqd pul shaklida yoki ushbu Shartnomaning 12-bo'limida ko'rsatilgan rekvizitlarga naqd pulsiz to'lov shaklida qabul qilinadi.",
+					"5.4. To'lov 10 ish kunidan ko'proq kechiktirilgan taqdirda Ijrochi qarz to'langunga qadar xizmat ko'rsatishni vaqtincha to'xtatish huquqiga ega.",
+					"5.5. Shartnoma Buyurtmachi tashabbusi bilan bekor qilingan taqdirda foydalanilmagan darslar uchun to'langan summaning 80% miqdorida qaytarib beriladi."
+				]
+			},
+			{
+				"title": "6. Ijrochining huquq va majburiyatlari",
+				"paragraphs": [
+					"6.1. Ijrochi quyidagilarga majbur: o'quv dasturiga muvofiq sifatli dars o'tkazish; O'quvchini zarur o'quv materiallari bilan ta'minlash; jadval va o'qish shartlaridagi o'zgarishlar haqida Buyurtmachini xabardor qilish.",
+					"6.2. Ijrochining huquqlari: o'quv dasturlarini samaradorlikni oshirish maqsadida o'zgartirish; ob'ektiv asoslar mavjud bo'lganda O'quvchini boshqa guruhga o'tkazish; Buyurtmachi ushbu oferta shartlarini tizimli ravishda buzgan taqdirda shartnomani bir tomonlama bekor qilish."
+				]
+			},
+			{
+				"title": "7. Buyurtmachining huquq va majburiyatlari",
+				"paragraphs": [
+					"7.1. Buyurtmachi quyidagilarga majbur: xizmatlar uchun o'z vaqtida to'lov amalga oshirish; O'quvchining Ijrochi ichki tartib-qoidalariga rioya qilishini ta'minlash; darsni qoldirib ketish haqida Ijrochini darsdan kamida 2 soat oldin xabardor qilish.",
+					"7.2. Buyurtmachining huquqlari: O'quvchining o'qish jarayoni haqida ma'lumot olish; xizmatlar sifatidagi aniqlangan kamchiliklarni bartaraf etishni talab qilish; Ijrochiga 5 ish kuni oldin yozma xabarnoma bilan shartnomani muddatidan oldin bekor qilish."
+				]
+			},
+			{
+				"title": "8. Tomonlarning javobgarligi",
+				"paragraphs": [
+					"8.1. Tomonlar O'zbekiston Respublikasi qonunchiligiga muvofiq o'z majburiyatlarini bajarmaganlik yoki lozim darajada bajarmaganlik uchun javobgarlik ko'taradilar.",
+					"8.2. Ijrochi O'quvchi tizimli ravishda darslarga qatnashmasa yoki uy vazifalarini bajarmasa, O'quvchining o'qish natijalari uchun javobgar emas.",
+					"8.3. Tomonlar fors-major holatlari yuz berganda javobgarlikdan ozod qilinadilar, bunda bir tomon boshqa tomonni 3 ish kuni ichida xabardor qilishi shart."
+				]
+			},
+			{
+				"title": "9. Maxfiylik va shaxsiy ma'lumotlar",
+				"paragraphs": [
+					"9.1. Buyurtmachi ushbu shartnomani bajarish maqsadida o'zining va O'quvchining shaxsiy ma'lumotlarini qayta ishlashga rozilik beradi.",
+					"9.2. Ijrochi shaxsiy ma'lumotlarni O'zbekiston Respublikasining «Shaxsiy ma'lumotlar to'g'risida»gi Qonuniga muvofiq saqlash va Buyurtmachining roziligisiz uchinchi shaxslarga bermaslik majburiyatini oladi.",
+					"9.3. Ijrochi Buyurtmachining yozma roziligi bilan O'quvchi ishtirokidagi fotosuratlar va video materiallardan faqat ta'lim va marketing maqsadlarida foydalanishi mumkin."
+				]
+			},
+			{
+				"title": "10. Shartnomani o'zgartirish va bekor qilish tartibi",
+				"paragraphs": [
+					"10.1. Ijrochi ushbu oferta shartlarini yangi tahririni veb-saytda e'lon qilish yo'li bilan bir tomonlama o'zgartirishi mumkin. O'zgartirishlar e'lon qilinganidan keyin 10 kalendar kunda kuchga kiradi.",
+					"10.2. Shartnoma tomonlarning o'zaro kelishuvi bilan, Buyurtmachi tashabbusi bilan (5 ish kuni oldin xabarnoma bilan) yoki Ijrochi tashabbusi bilan (10 ish kuni oldin xabarnoma va to'liq hisob-kitob bilan) bekor qilinishi mumkin."
+				]
+			},
+			{
+				"title": "11. Nizolarni hal qilish tartibi",
+				"paragraphs": [
+					"11.1. Ushbu shartnomadan kelib chiqadigan barcha nizo va kelishmovchiliklar muzokaralar yo'li bilan hal qilinadi.",
+					"11.2. Sud oldidan hal qilish imkonsiz bo'lgan taqdirda nizo O'zbekiston Respublikasi qonunchiligi asosida Ijrochi joylashgan yer bo'yicha sudga topshiriladi.",
+					"11.3. Da'volarni ko'rib chiqish muddati — ularni olgan kundan boshlab 15 ish kuni."
+				]
+			},
+			{
+				"title": "12. Ijrochining rekvizitlari",
+				"paragraphs": [
+					"To'liq nomi: O'quv markazi «Polyglot»",
+					"Manzil: Samarqand shahri, O'zbekiston Respublikasi",
+					"Telefon: +998 (55) 705 30 30 · +998 (90) 503 30 30",
+					"Instagram: @polyglot_school_sam",
+					"Telegram: @polyglot_language_school"
+				]
 			}
 		]
 	}

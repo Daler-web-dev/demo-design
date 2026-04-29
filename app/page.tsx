@@ -1,7 +1,7 @@
 "use client";
 
 // Import necessary components and hooks
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import {
 	ArrowRight,
@@ -32,6 +32,7 @@ export default function Home() {
 	const HERO_VIDEO_WEBM = "bgvideo.webm";
 	const HERO_VIDEO_MP4 = "bgvideo.mp4";
 	const [heroVideoSrc, setHeroVideoSrc] = useState(HERO_VIDEO_WEBM);
+	const videoRef = useRef<HTMLVideoElement>(null);
 
 	useEffect(() => {
 		const ua = navigator.userAgent;
@@ -40,6 +41,17 @@ export default function Home() {
 			!/chrome|crios|chromium|fxios|edgios|edg\//i.test(ua);
 		setHeroVideoSrc(isSafari ? HERO_VIDEO_MP4 : HERO_VIDEO_WEBM);
 	}, []);
+
+	useEffect(() => {
+		const video = videoRef.current;
+		if (!video) return;
+		video.play().catch(() => {});
+		const onVisible = () => {
+			if (document.visibilityState === "visible") video.play().catch(() => {});
+		};
+		document.addEventListener("visibilitychange", onVisible);
+		return () => document.removeEventListener("visibilitychange", onVisible);
+	}, [heroVideoSrc]);
 
 	useEffect(() => {
 		const existingPreload = document.querySelector(
@@ -198,6 +210,8 @@ export default function Home() {
 				{/* Hero full-height video + soft blur toward text */}
 				<div className="absolute inset-0 -z-10">
 					<video
+						ref={videoRef}
+						key={heroVideoSrc}
 						src={heroVideoSrc}
 						className="h-full w-full object-cover"
 						autoPlay
@@ -205,10 +219,9 @@ export default function Home() {
 						muted
 						playsInline
 						preload="auto"
+						disablePictureInPicture
 						onCanPlay={(event) => {
-							event.currentTarget.play().catch(() => {
-								// Ignore autoplay race conditions on first paint.
-							});
+							event.currentTarget.play().catch(() => {});
 						}}
 					/>
 				</div>

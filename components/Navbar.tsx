@@ -29,6 +29,7 @@ export default function Navbar() {
 		{ name: t.nav.home, path: "/" },
 		{ name: t.nav.courses, path: "/courses" },
 		{ name: t.nav.audit, path: "/#audit" },
+		{ name: t.nav.vacancies, path: "/#vacancies" },
 		{ name: t.nav.contact, path: "/contact" },
 	];
 
