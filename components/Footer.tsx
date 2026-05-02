@@ -25,11 +25,9 @@ export default function Footer() {
 							</div>
 						</Link>
 						<h2 className="text-7xl font-display font-black mb-10 leading-[0.9] tracking-tighter">
-							{t.footer.headlineLine1} <br />
-							{t.footer.headlineLine2}{" "}
-							<span className="text-indigo-500">
-								{t.footer.headlineHighlight}
-							</span>
+							POLYGLOT <br />
+							CHANGES <br />
+							<span className="text-indigo-500">LIVES</span>
 						</h2>
 						<div className="flex space-x-4">
 							<a
