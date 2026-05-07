@@ -1253,28 +1253,46 @@
 		"contactHint": "Send your CV and a short intro",
 		"positions": [
 			{
+				"title": "Academic Support",
+				"type": "6-day week",
+				"requirement": "English IELTS 6.5+",
+				"desc": "Support teachers with methodology and materials, check homework and student progress, and work with students outside lessons. Salary: 1,500,000 – 5,000,000 UZS."
+			},
+			{
 				"title": "English Teacher",
-				"type": "Full-time",
-				"requirement": "IELTS Band 7.0 or equivalent",
-				"desc": "Teach communicative English to motivated groups of 8–12 students. Full curriculum and materials provided."
+				"type": "6/1 or 3/4 schedule",
+				"requirement": "IELTS 7.5+ and 1+ year teaching experience",
+				"desc": "Teach communicative English, prepare General English students, manage CRM records and keep students motivated. Salary: from 10,000,000 UZS."
 			},
 			{
-				"title": "Academic Coordinator",
-				"type": "Full-time",
-				"requirement": "3+ years in education",
-				"desc": "Drive academic quality across branches, support teachers, and champion student outcomes."
+				"title": "Kids English Teacher",
+				"type": "6-day week",
+				"requirement": "IELTS 7.0+ and child teaching skills",
+				"desc": "Teach children aged 6–12 using interactive and play-based methods, provide regular feedback to parents. Salary: from 9,000,000 UZS."
 			},
 			{
-				"title": "Content Creator",
-				"type": "Full / Part-time",
-				"requirement": "Portfolio required",
-				"desc": "Shoot and edit Reels, TikToks, and YouTube content. Full creative freedom with a clear brief."
+				"title": "Chinese Language Teacher",
+				"type": "6-day week",
+				"requirement": "Chinese HSK 4+",
+				"desc": "Conduct Chinese language lessons, prepare teaching materials and develop students' speaking skills. Salary: from 9,000,000 UZS."
 			},
 			{
-				"title": "Sales Consultant",
-				"type": "Full-time",
-				"requirement": "Fluent in Uzbek & Russian",
-				"desc": "Help prospective students find their perfect course. Goal-oriented, supportive work environment."
+				"title": "Learning Centre Administrator",
+				"type": "6-day week",
+				"requirement": "Strong communication, Russian & Uzbek required",
+				"desc": "Welcome and advise clients, manage schedules and groups, monitor payments and liaise with students and parents. Salary: from 4,000,000 UZS."
+			},
+			{
+				"title": "Call Centre Operator",
+				"type": "6-day week",
+				"requirement": "Clear speech and persuasion skills",
+				"desc": "Handle inbound and outbound calls, advise clients on courses, register them for trial lessons and maintain the client database. Salary: from 3,000,000 UZS + bonuses."
+			},
+			{
+				"title": "Cleaner",
+				"type": "6-day week",
+				"requirement": "Tidiness and punctuality",
+				"desc": "Maintain cleanliness across the learning centre: classrooms, hallways and office spaces. Salary: from 3,000,000 UZS."
 			}
 		]
 	},

@@ -1253,28 +1253,46 @@
 		"contactHint": "Rezyumeingiz va qisqa tanishuv xatini yuboring",
 		"positions": [
 			{
+				"title": "Academic Support",
+				"type": "6/1 jadval",
+				"requirement": "Ingliz tili IELTS 6.5+ darajasi",
+				"desc": "O'qituvchilarga metodik yordam berish, uy vazifalarini tekshirish va dars tashqarisida talabalar bilan ishlash. Maosh: 1 500 000 – 5 000 000 so'm."
+			},
+			{
 				"title": "Ingliz tili o'qituvchisi",
-				"type": "To'liq ish kuni",
-				"requirement": "IELTS Band 7.0 yoki unga teng",
-				"desc": "8–12 nafar motivatsiyali talabalar guruhiga kommunikativ ingliz tilini o'rgating. To'liq o'quv dasturi va materiallar taqdim etiladi."
+				"type": "6/1 yoki 3/4 jadval",
+				"requirement": "IELTS 7.5+ va 1+ yil o'qitish tajribasi",
+				"desc": "Kommunikativ metodikada dars o'tish, General English talabalarini tayyorlash, CRM bilan ishlash va talabalarni motivatsiya qilish. Maosh: 10 000 000 so'mdan."
 			},
 			{
-				"title": "Akademik koordinator",
-				"type": "To'liq ish kuni",
-				"requirement": "Ta'lim sohasida 3+ yil tajriba",
-				"desc": "Barcha filiallarda ta'lim sifatini nazorat qiling, o'qituvchilarni qo'llab-quvvatlang va talabalar natijalarini oshiring."
+				"title": "Bolalar ingliz tili o'qituvchisi",
+				"type": "6/1 jadval",
+				"requirement": "IELTS 7.0+ va bolalar bilan ishlash qobiliyati",
+				"desc": "6–12 yoshli bolalarga o'yin va interaktiv usullarda dars o'tish, ota-onalarga muntazam fikr-mulohaza bildirish. Maosh: 9 000 000 so'mdan."
 			},
 			{
-				"title": "Kontent yaratuvchi",
-				"type": "To'liq / qisman ish kuni",
-				"requirement": "Portfolio talab qilinadi",
-				"desc": "Reels, TikTok va YouTube kontentlarini surating va montaj qiling. Aniq brifda to'liq ijodiy erkinlik."
+				"title": "Xitoy tili o'qituvchisi",
+				"type": "6/1 jadval",
+				"requirement": "Xitoy tili HSK 4+ darajasi",
+				"desc": "Xitoy tili bo'yicha darslar o'tish, o'quv materiallarini tayyorlash va talabalarning suhbat ko'nikmalarini rivojlantirish. Maosh: 9 000 000 so'mdan."
 			},
 			{
-				"title": "Savdo bo'yicha konsultant",
-				"type": "To'liq ish kuni",
-				"requirement": "O'zbek va rus tillarini erkin bilish",
-				"desc": "Istiqbolli talabalarga o'zlari uchun eng mos kursni topishga yordam bering. Natijaga yo'naltirilgan qulay ish muhiti."
+				"title": "O'quv markazi administratori",
+				"type": "6/1 jadval",
+				"requirement": "Muloqotchanlik, rus va o'zbek tillari talab qilinadi",
+				"desc": "Mijozlarni qabul qilish va maslahat berish, jadval va guruhlar bilan ishlash, to'lovlarni nazorat qilish. Maosh: 4 000 000 so'mdan."
+			},
+			{
+				"title": "Koll-markaz operatori",
+				"type": "6/1 jadval",
+				"requirement": "To'g'ri nutq va ishontirish qobiliyati",
+				"desc": "Kiruvchi va chiquvchi qo'ng'iroqlarni qayta ishlash, kurslar bo'yicha maslahat berish, sinov darslariga yozish va mijozlar bazasini yuritish. Maosh: 3 000 000 so'mdan + bonuslar."
+			},
+			{
+				"title": "Tozalovchi",
+				"type": "6/1 jadval",
+				"requirement": "Tartiblilik va o'z vaqtidalik",
+				"desc": "O'quv markazida tozalikni saqlash: sinflar, yo'laklar va ofis xonalarini tozalash. Maosh: 3 000 000 so'mdan."
 			}
 		]
 	},
