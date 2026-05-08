@@ -650,7 +650,7 @@
 				"teacher": {
 					"name": "Javokhir",
 					"image": "Javokhir.jpeg",
-					"bio": "Lead Instructor"
+					"bio": "Children's English Instructor"
 				}
 			},
 			{
@@ -778,7 +778,7 @@
 				"teacher": {
 					"name": "Nodir",
 					"image": "Nodir.jpeg",
-					"bio": "Lead Instructor"
+					"bio": "General English Instructor"
 				}
 			},
 			{
@@ -906,7 +906,7 @@
 				"teacher": {
 					"name": "Shahrukh",
 					"image": "Shahrukh.jpeg",
-					"bio": "Lead Instructor"
+					"bio": "General English Instructor"
 				}
 			},
 			{
@@ -1030,7 +1030,7 @@
 				"teacher": {
 					"name": "Siyovush",
 					"image": "Siyovush.jpeg",
-					"bio": "Lead Instructor"
+					"bio": "B1–B2+ Instructor"
 				}
 			},
 			{
@@ -1152,9 +1152,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Nodir",
-					"image": "Nodir.jpeg",
-					"bio": "Lead Instructor"
+					"name": "Siyovush",
+					"image": "Siyovush.jpeg",
+					"bio": "B1–B2+ Instructor"
 				}
 			},
 			{
@@ -1254,7 +1254,7 @@
 				"teacher": {
 					"name": "Siyovush",
 					"image": "Siyovush.jpeg",
-					"bio": "Upper Intermediate & Advanced Instructor"
+					"bio": "B1–B2+ Instructor"
 				}
 			},
 			{
@@ -1352,9 +1352,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Shahrukh",
-					"image": "Shahrukh.jpeg",
-					"bio": "Advanced & IELTS Instructor"
+					"name": "Siyovush",
+					"image": "Siyovush.jpeg",
+					"bio": "B1–B2+ Instructor"
 				}
 			},
 			{
@@ -1652,8 +1652,8 @@
 					}
 				],
 				"teacher": {
-					"name": "Javokhir",
-					"image": "Javokhir.jpeg",
+					"name": "Shahrukh",
+					"image": "Shahrukh.jpeg",
 					"bio": "Children's English Instructor"
 				}
 			},
@@ -1700,9 +1700,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Shahrukh",
-					"image": "Shahrukh.jpeg",
-					"bio": "CEFR/DTM Preparation Instructor"
+					"name": "Otabek",
+					"image": "niners/Otabek.jpeg",
+					"bio": "CEFR/DTM Instructor, Band 9.0"
 				}
 			},
 			{
@@ -1748,9 +1748,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Siyovush",
-					"image": "Siyovush.jpeg",
-					"bio": "TOEFL Preparation Instructor"
+					"name": "Angus",
+					"image": "niners/Angus.jpeg",
+					"bio": "TOEFL Instructor, Band 9.0"
 				}
 			},
 			{
@@ -1796,9 +1796,119 @@
 					}
 				],
 				"teacher": {
-					"name": "Nodir",
-					"image": "Nodir.jpeg",
-					"bio": "Duolingo English Test Instructor"
+					"name": "Nazira",
+					"image": "niners/NAZIRA.jpeg",
+					"bio": "Duolingo Instructor, Band 9.0"
+				}
+			},
+			{
+				"id": "ielts-intensive",
+				"image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80",
+				"title": "IELTS Intensive",
+				"description": "A 16-week IELTS preparation programme covering all four skills: Listening, Reading, Writing and Speaking. Strategy, practice and a full final simulation.",
+				"duration": "4 Months (16 Weeks)",
+				"level": "B1–C1",
+				"category": "IELTS_Intensive",
+				"outcomes": [
+					"Master the strategy for every IELTS section and manage your time under exam conditions",
+					"Complete full practice tests with in-depth error analysis",
+					"Write Task 1 and Task 2 essays to Band 7.0+ standard",
+					"Deliver confident, structured answers across Speaking Parts 1, 2 and 3"
+				],
+				"modules": [
+					{
+						"title": "Weeks 1–4 — Listening",
+						"description": "Test mechanics, common traps, section-by-section strategy and two full Listening tests with error analysis.",
+						"lessons": [
+							{
+								"title": "Week 1 — IELTS Listening Mechanics",
+								"activity": "Test design, common traps, numbers, names, spelling drills, Section 1 forms & tables"
+							},
+							{
+								"title": "Week 2 — Maps, Plans & Following Speech",
+								"activity": "Section 2 maps & diagrams, signposting language, prediction, distractors training"
+							},
+							{
+								"title": "Week 3 — Section 3 Domination",
+								"activity": "Multi-speaker conversations, multiple choice strategy, matching opinions, trap recognition"
+							},
+							{
+								"title": "Week 4 — Section 4 & Full Tests",
+								"activity": "Note completion mastery, lecture structure, 2 full Listening tests, error analysis method"
+							}
+						]
+					},
+					{
+						"title": "Weeks 5–8 — Reading",
+						"description": "Passage anatomy, complex question types, time control and three full Reading tests.",
+						"lessons": [
+							{
+								"title": "Week 5 — Reading Foundations",
+								"activity": "Passage anatomy, skimming & scanning system, True/False/Not Given, Matching Headings"
+							},
+							{
+								"title": "Week 6 — Complex Question Types",
+								"activity": "Matching Information, sentence completion, summary completion, keyword tables"
+							},
+							{
+								"title": "Week 7 — Passage Strategy & Time Control",
+								"activity": "20-20-20 timing method, order of passages, handling unknown vocabulary"
+							},
+							{
+								"title": "Week 8 — Full Reading Tests",
+								"activity": "3 full tests, deep error analysis, speed improvement drills"
+							}
+						]
+					},
+					{
+						"title": "Weeks 9–13 — Writing",
+						"description": "All Task 2 essay types, Task 1 formats (charts, maps, processes) and timed writing under exam conditions.",
+						"lessons": [
+							{
+								"title": "Week 9 — Structure & Essay Types",
+								"activity": "All Task 2 essay types, paragraph structure for TR & CC, Opinion & Discussion essays"
+							},
+							{
+								"title": "Week 10 — Idea Development & Cohesion",
+								"activity": "'Domino effect' explanation logic, linking naturally, Problem / Advantage-Disadvantage essays"
+							},
+							{
+								"title": "Week 11 — Writing Under Time Pressure",
+								"activity": "Task 2 in 35 minutes, introductions & conclusions workshop, live correction & band scoring"
+							},
+							{
+								"title": "Week 12 — Task 1: Charts",
+								"activity": "Line, bar, pie charts — grouping data, overview mastery, key features vs details"
+							},
+							{
+								"title": "Week 13 — Task 1: Maps & Processes",
+								"activity": "Map language, process stages, 3 timed Task 1 writings"
+							}
+						]
+					},
+					{
+						"title": "Weeks 14–16 — Speaking & Final",
+						"description": "Natural answers, Part 2 story structure, advanced Part 3 responses and a full IELTS simulation with individual feedback.",
+						"lessons": [
+							{
+								"title": "Week 14 — Speaking Parts 1 & 2",
+								"activity": "Natural answers, story structure for Part 2, fluency drills"
+							},
+							{
+								"title": "Week 15 — Part 3 Advanced Answers",
+								"activity": "Developing abstract ideas, extending answers logically, mock interviews"
+							},
+							{
+								"title": "Week 16 — Full IELTS Simulation & Feedback",
+								"activity": "Full Listening + Reading + Writing + Speaking mock, individual feedback, exam day strategy"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Jasur",
+					"image": "niners/Jasur.jpeg",
+					"bio": "IELTS Instructor, Band 9.0"
 				}
 			}
 		]

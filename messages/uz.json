@@ -650,7 +650,7 @@
 				"teacher": {
 					"name": "Javokhir",
 					"image": "Javokhir.jpeg",
-					"bio": "Bosh o'qituvchi"
+					"bio": "Bolalar ingliz tili o'qituvchisi"
 				}
 			},
 			{
@@ -778,7 +778,7 @@
 				"teacher": {
 					"name": "Nodir",
 					"image": "Nodir.jpeg",
-					"bio": "Bosh o'qituvchi"
+					"bio": "General English o'qituvchisi"
 				}
 			},
 			{
@@ -906,7 +906,7 @@
 				"teacher": {
 					"name": "Shahrukh",
 					"image": "Shahrukh.jpeg",
-					"bio": "Bosh o'qituvchi"
+					"bio": "General English o'qituvchisi"
 				}
 			},
 			{
@@ -1030,7 +1030,7 @@
 				"teacher": {
 					"name": "Siyovush",
 					"image": "Siyovush.jpeg",
-					"bio": "Bosh o'qituvchi"
+					"bio": "B1–B2+ o'qituvchisi"
 				}
 			},
 			{
@@ -1152,9 +1152,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Nodir",
-					"image": "Nodir.jpeg",
-					"bio": "Bosh o'qituvchi"
+					"name": "Siyovush",
+					"image": "Siyovush.jpeg",
+					"bio": "B1–B2+ o'qituvchisi"
 				}
 			},
 			{
@@ -1254,7 +1254,7 @@
 				"teacher": {
 					"name": "Siyovush",
 					"image": "Siyovush.jpeg",
-					"bio": "Upper Intermediate va Advanced o'qituvchisi"
+					"bio": "B1–B2+ o'qituvchisi"
 				}
 			},
 			{
@@ -1352,9 +1352,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Shahrukh",
-					"image": "Shahrukh.jpeg",
-					"bio": "Advanced va IELTS o'qituvchisi"
+					"name": "Siyovush",
+					"image": "Siyovush.jpeg",
+					"bio": "B1–B2+ o'qituvchisi"
 				}
 			},
 			{
@@ -1652,8 +1652,8 @@
 					}
 				],
 				"teacher": {
-					"name": "Javokhir",
-					"image": "Javokhir.jpeg",
+					"name": "Shahrukh",
+					"image": "Shahrukh.jpeg",
 					"bio": "Bolalar ingliz tili o'qituvchisi"
 				}
 			},
@@ -1700,9 +1700,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Shahrukh",
-					"image": "Shahrukh.jpeg",
-					"bio": "CEFR/DTM tayyorgarlik o'qituvchisi"
+					"name": "Otabek",
+					"image": "niners/Otabek.jpeg",
+					"bio": "CEFR/DTM o'qituvchisi, Band 9.0"
 				}
 			},
 			{
@@ -1748,9 +1748,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Siyovush",
-					"image": "Siyovush.jpeg",
-					"bio": "TOEFL tayyorgarlik o'qituvchisi"
+					"name": "Angus",
+					"image": "niners/Angus.jpeg",
+					"bio": "TOEFL o'qituvchisi, Band 9.0"
 				}
 			},
 			{
@@ -1796,9 +1796,119 @@
 					}
 				],
 				"teacher": {
-					"name": "Nodir",
-					"image": "Nodir.jpeg",
-					"bio": "Duolingo English Test o'qituvchisi"
+					"name": "Nazira",
+					"image": "niners/NAZIRA.jpeg",
+					"bio": "Duolingo o'qituvchisi, Band 9.0"
+				}
+			},
+			{
+				"id": "ielts-intensive",
+				"image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80",
+				"title": "IELTS Intensive",
+				"description": "IELTS ga 16 haftalik tayyorgarlik dasturi: Listening, Reading, Writing va Speaking bo'yicha strategiya, amaliyot va yakuniy to'liq simulyatsiya.",
+				"duration": "4 oy (16 hafta)",
+				"level": "B1–C1",
+				"category": "IELTS_Intensive",
+				"outcomes": [
+					"IELTS ning har bir bo'limi uchun strategiyani egallash va vaqtni boshqarish",
+					"Xatolarni chuqur tahlil qilish bilan to'liq sinov testlarini yechish",
+					"Task 1 va Task 2 insholarini Band 7.0+ darajasida yozish",
+					"Speaking Parts 1, 2 va 3 da ishonchli, tuzilgan javoblar berish"
+				],
+				"modules": [
+					{
+						"title": "1–4 haftalar — Listening",
+						"description": "Test mexanikasi, tuzoqlar, bo'limlar bo'yicha strategiya va xatolarni tahlil qilish bilan ikki to'liq Listening testi.",
+						"lessons": [
+							{
+								"title": "1-hafta — IELTS Listening mexanikasi",
+								"activity": "Test tuzilishi, tuzoqlar, sonlar, ismlar, imlo mashqlari, Section 1"
+							},
+							{
+								"title": "2-hafta — Xaritalar, rejalar va Speech Following",
+								"activity": "Section 2 xaritalar va diagrammalar, yo'naltiruvchi til, bashorat, chalg'ituvchilar"
+							},
+							{
+								"title": "3-hafta — Section 3: bir nechta spiker suhbati",
+								"activity": "Ko'p tanlovli strategiya, fikrlarni solishtirish, tuzoqlarni aniqlash mashqlari"
+							},
+							{
+								"title": "4-hafta — Section 4 va to'liq testlar",
+								"activity": "Note completion, ma'ruza tuzilishi, 2 ta to'liq Listening testi, xatolar tahlili"
+							}
+						]
+					},
+					{
+						"title": "5–8 haftalar — Reading",
+						"description": "Matn anatomiyasi, murakkab savol turlari, vaqt nazorati va uchta to'liq Reading testi.",
+						"lessons": [
+							{
+								"title": "5-hafta — Reading asoslari",
+								"activity": "Matn anatomiyasi, skimming & scanning, True/False/Not Given, Matching Headings"
+							},
+							{
+								"title": "6-hafta — Murakkab savol turlari",
+								"activity": "Matching Information, gapni to'ldirish, xulosa to'ldirish, kalit so'z jadvallari"
+							},
+							{
+								"title": "7-hafta — Strategiya va vaqt nazorati",
+								"activity": "20-20-20 usuli, matnlar tartibi, noma'lum lug'at bilan ishlash"
+							},
+							{
+								"title": "8-hafta — To'liq Reading testlari",
+								"activity": "3 ta to'liq test, chuqur xatolar tahlili, tezlikni oshirish mashqlari"
+							}
+						]
+					},
+					{
+						"title": "9–13 haftalar — Writing",
+						"description": "Barcha Task 2 insho turlari, Task 1 formatlari (grafiklar, xaritalar, jarayonlar) va vaqt bosimi ostida yozish.",
+						"lessons": [
+							{
+								"title": "9-hafta — Tuzilish va insho turlari",
+								"activity": "Barcha Task 2 turlari, abzats tuzilishi (TR & CC), Opinion & Discussion insholar"
+							},
+							{
+								"title": "10-hafta — G'oyalarni rivojlantirish va izchillik",
+								"activity": "'Domino effekti' mantiq, tabiiy bog'lovchilar, muammo va afzallik insholar"
+							},
+							{
+								"title": "11-hafta — Vaqt bosimi ostida yozish",
+								"activity": "35 daqiqada Task 2, kirish va xulosa ustaxonasi, band bo'yicha baholash"
+							},
+							{
+								"title": "12-hafta — Task 1: grafiklar",
+								"activity": "Chiziqli, ustunli, doiraviy grafiklar — ma'lumotlarni guruhlash, overview"
+							},
+							{
+								"title": "13-hafta — Task 1: xaritalar va jarayonlar",
+								"activity": "Xarita tili, jarayon bosqichlari, vaqt bilan 3 ta Task 1"
+							}
+						]
+					},
+					{
+						"title": "14–16 haftalar — Speaking va Final",
+						"description": "Tabiiy javoblar, Part 2 hikoya tuzilishi, Part 3 ilg'or javoblar va individual fikr-mulohaza bilan to'liq IELTS simulyatsiyasi.",
+						"lessons": [
+							{
+								"title": "14-hafta — Speaking Parts 1 va 2",
+								"activity": "Tabiiy javoblar, Part 2 uchun hikoya tuzilishi, ravonlik mashqlari"
+							},
+							{
+								"title": "15-hafta — Part 3: ilg'or javoblar",
+								"activity": "Mavhum g'oyalarni rivojlantirish, javoblarni kengaytirish, mock-intervyular"
+							},
+							{
+								"title": "16-hafta — To'liq IELTS simulyatsiyasi",
+								"activity": "To'liq Listening + Reading + Writing + Speaking mock, individual fikr-mulohaza, imtihon kuni strategiyasi"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Jasur",
+					"image": "niners/Jasur.jpeg",
+					"bio": "IELTS o'qituvchisi, Band 9.0"
 				}
 			}
 		]

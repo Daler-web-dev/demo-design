@@ -25,8 +25,9 @@ const SCROLL_THRESHOLD = 400;
 function resolveTeamPhoto(src: string | undefined): string {
 	if (!src?.trim()) return "";
 	if (/^https?:\/\//i.test(src)) return src;
-	const clean = src.replace(/^\/+/, "").replace(/^team\//, "");
-	return `/team/${clean}`;
+	const clean = src.replace(/^\/+/, "");
+	if (clean.startsWith("niners/")) return `/${clean}`;
+	return `/team/${clean.replace(/^team\//, "")}`;
 }
 
 export default function CourseDetail() {

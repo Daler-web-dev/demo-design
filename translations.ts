@@ -972,12 +972,12 @@ export const COURSES: Course[] = [
 		],
 
 		teacher: {
-			name: "Emily Johnson",
+			name: "Nodir Rustamov",
 			bio: {
 				EN: "Lead Instructor",
 				RU: "Главный преподаватель",
 			},
-			image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+			image: "/team/Nodir.jpeg",
 		},
 	},
 	{
@@ -1285,12 +1285,12 @@ export const COURSES: Course[] = [
 		],
 
 		teacher: {
-			name: "Emily Johnson",
+			name: "Javokhir Matnazarov",
 			bio: {
 				EN: "Lead Instructor",
 				RU: "Главный преподаватель",
 			},
-			image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+			image: "Javokhir.jpeg",
 		},
 	},
 	{
@@ -1624,12 +1624,12 @@ export const COURSES: Course[] = [
 		],
 
 		teacher: {
-			name: "Emily Johnson",
+			name: "Nodir Rustamov",
 			bio: {
 				EN: "Lead Instructor",
 				RU: "Главный преподаватель",
 			},
-			image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+			image: "/team/Nodir.jpeg",
 		},
 	},
 	{
@@ -1947,12 +1947,12 @@ export const COURSES: Course[] = [
 			},
 		],
 		teacher: {
-			name: "Emily Johnson",
+			name: "Siyovush Burikulov",
 			bio: {
 				EN: "Lead Instructor",
 				RU: "Главный преподаватель",
 			},
-			image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+			image: "Siyovush.jpeg",
 		},
 	},
 	{
@@ -2274,12 +2274,12 @@ export const COURSES: Course[] = [
 			},
 		],
 		teacher: {
-			name: "Emily Johnson",
+			name: "Siyovush Burikulov",
 			bio: {
 				EN: "Lead Instructor",
 				RU: "Главный преподаватель",
 			},
-			image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
+			image: "Siyovush.jpeg",
 		},
 	},
 ];

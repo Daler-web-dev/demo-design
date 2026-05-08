@@ -648,9 +648,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Emily Johnson",
-					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-					"bio": "Главный преподаватель"
+					"name": "Жавохир",
+					"image": "Javokhir.jpeg",
+					"bio": "Преподаватель курсов для детей"
 				}
 			},
 			{
@@ -776,9 +776,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Emily Johnson",
-					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-					"bio": "Главный преподаватель"
+					"name": "Нодир",
+					"image": "Nodir.jpeg",
+					"bio": "Преподаватель General English"
 				}
 			},
 			{
@@ -904,9 +904,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Emily Johnson",
-					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-					"bio": "Главный преподаватель"
+					"name": "Шахрух",
+					"image": "Shahrukh.jpeg",
+					"bio": "Преподаватель General English"
 				}
 			},
 			{
@@ -1028,9 +1028,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Emily Johnson",
-					"image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&q=80&w=800",
-					"bio": "Главный преподаватель"
+					"name": "Сиёвуш",
+					"image": "Siyovush.jpeg",
+					"bio": "Преподаватель B1–B2+"
 				}
 			},
 			{
@@ -1152,9 +1152,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Нодир",
-					"image": "Nodir.jpeg",
-					"bio": "Главный преподаватель"
+					"name": "Сиёвуш",
+					"image": "Siyovush.jpeg",
+					"bio": "Преподаватель B1–B2+"
 				}
 			},
 			{
@@ -1254,7 +1254,7 @@
 				"teacher": {
 					"name": "Сиёвуш",
 					"image": "Siyovush.jpeg",
-					"bio": "Преподаватель Upper Intermediate и Advanced"
+					"bio": "Преподаватель B1–B2+"
 				}
 			},
 			{
@@ -1352,9 +1352,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Шахрух",
-					"image": "Shahrukh.jpeg",
-					"bio": "Преподаватель Advanced и IELTS"
+					"name": "Сиёвуш",
+					"image": "Siyovush.jpeg",
+					"bio": "Преподаватель B1–B2+"
 				}
 			},
 			{
@@ -1652,8 +1652,8 @@
 					}
 				],
 				"teacher": {
-					"name": "Жавохир",
-					"image": "Javokhir.jpeg",
+					"name": "Шахрух",
+					"image": "Shahrukh.jpeg",
 					"bio": "Преподаватель курсов для детей"
 				}
 			},
@@ -1700,9 +1700,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Шахрух",
-					"image": "Shahrukh.jpeg",
-					"bio": "Преподаватель подготовки к CEFR/DTM"
+					"name": "Отабек",
+					"image": "niners/Otabek.jpeg",
+					"bio": "Преподаватель CEFR/DTM, балл 9.0"
 				}
 			},
 			{
@@ -1748,9 +1748,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Сиёвуш",
-					"image": "Siyovush.jpeg",
-					"bio": "Преподаватель подготовки к TOEFL"
+					"name": "Ангус",
+					"image": "niners/Angus.jpeg",
+					"bio": "Преподаватель TOEFL, балл 9.0"
 				}
 			},
 			{
@@ -1796,9 +1796,119 @@
 					}
 				],
 				"teacher": {
-					"name": "Нодир",
-					"image": "Nodir.jpeg",
-					"bio": "Преподаватель подготовки к Duolingo English Test"
+					"name": "Назира",
+					"image": "niners/NAZIRA.jpeg",
+					"bio": "Преподаватель Duolingo, балл 9.0"
+				}
+			},
+			{
+				"id": "ielts-intensive",
+				"image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80",
+				"title": "IELTS Intensive",
+				"description": "16-недельная программа подготовки к IELTS с разбором всех четырёх навыков: Listening, Reading, Writing, Speaking. Стратегия, практика и финальная симуляция.",
+				"duration": "4 месяца (16 недель)",
+				"level": "B1–C1",
+				"category": "IELTS_Intensive",
+				"outcomes": [
+					"Освоить стратегию каждого раздела IELTS и научиться управлять временем",
+					"Пройти полные практические тесты с детальным разбором ошибок",
+					"Писать эссе Task 1 и Task 2 на уровне Band 7.0+",
+					"Уверенно отвечать на вопросы Speaking Parts 1, 2 и 3"
+				],
+				"modules": [
+					{
+						"title": "Недели 1–4 — Listening",
+						"description": "Механика теста, ловушки, стратегия по секциям и два полных Listening-теста с разбором ошибок.",
+						"lessons": [
+							{
+								"title": "Неделя 1 — Механика IELTS Listening",
+								"activity": "Устройство теста, типичные ловушки, числа, имена, диктовка, Section 1"
+							},
+							{
+								"title": "Неделя 2 — Карты, схемы и Speech Following",
+								"activity": "Section 2: карты и диаграммы, signposting language, предсказание, отвлекающие факторы"
+							},
+							{
+								"title": "Неделя 3 — Section 3: разговоры нескольких спикеров",
+								"activity": "Multiple choice стратегия, matching opinions, тренировка распознавания ловушек"
+							},
+							{
+								"title": "Неделя 4 — Section 4 и полные тесты",
+								"activity": "Note completion, структура лекции, 2 полных Listening-теста, метод анализа ошибок"
+							}
+						]
+					},
+					{
+						"title": "Недели 5–8 — Reading",
+						"description": "Анатомия текстов, сложные типы вопросов, контроль времени и три полных Reading-теста.",
+						"lessons": [
+							{
+								"title": "Неделя 5 — Основы Reading",
+								"activity": "Анатомия текста, система skimming & scanning, True/False/Not Given, Matching Headings"
+							},
+							{
+								"title": "Неделя 6 — Сложные типы вопросов",
+								"activity": "Matching Information, sentence completion, summary completion, keyword tables"
+							},
+							{
+								"title": "Неделя 7 — Стратегия и тайм-менеджмент",
+								"activity": "Метод 20-20-20, порядок текстов, работа с незнакомой лексикой"
+							},
+							{
+								"title": "Неделя 8 — Полные Reading-тесты",
+								"activity": "3 полных теста, глубокий анализ ошибок, тренировка скорости"
+							}
+						]
+					},
+					{
+						"title": "Недели 9–13 — Writing",
+						"description": "Все типы эссе Task 2, структура Task 1 (графики, карты, процессы) и написание в условиях реального времени.",
+						"lessons": [
+							{
+								"title": "Неделя 9 — Структура и типы эссе Task 2",
+								"activity": "Все типы эссе, структура абзаца (TR & CC), Opinion & Discussion essays"
+							},
+							{
+								"title": "Неделя 10 — Развитие идей и связность",
+								"activity": "Логика «эффекта домино», естественные связки, Problem / Advantage-Disadvantage essays"
+							},
+							{
+								"title": "Неделя 11 — Writing под давлением времени",
+								"activity": "Task 2 за 35 минут, мастерская введений и заключений, разбор и оценка по band"
+							},
+							{
+								"title": "Неделя 12 — Task 1: графики",
+								"activity": "Line, bar, pie charts — группировка данных, overview, ключевые детали"
+							},
+							{
+								"title": "Неделя 13 — Task 1: карты и процессы",
+								"activity": "Язык карт, описание этапов процесса, 3 Task 1 на время"
+							}
+						]
+					},
+					{
+						"title": "Недели 14–16 — Speaking и финал",
+						"description": "Натуральные ответы, структура Part 2, продвинутые ответы Part 3 и полная симуляция IELTS с индивидуальной обратной связью.",
+						"lessons": [
+							{
+								"title": "Неделя 14 — Speaking Parts 1 и 2",
+								"activity": "Натуральные ответы, story structure для Part 2, тренировка беглости"
+							},
+							{
+								"title": "Неделя 15 — Speaking Part 3: продвинутые ответы",
+								"activity": "Развитие абстрактных идей, расширение ответов, mock-интервью"
+							},
+							{
+								"title": "Неделя 16 — Полная симуляция IELTS",
+								"activity": "Полный Listening + Reading + Writing + Speaking mock, индивидуальный фидбек, стратегия в день экзамена"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Жасур",
+					"image": "niners/Jasur.jpeg",
+					"bio": "Преподаватель IELTS, балл 9.0"
 				}
 			}
 		]
