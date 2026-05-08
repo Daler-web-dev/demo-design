@@ -1156,6 +1156,650 @@
 					"image": "Nodir.jpeg",
 					"bio": "Lead Instructor"
 				}
+			},
+			{
+				"id": "b2-upper-intermediate",
+				"image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+				"title": "B2 Upper Intermediate",
+				"description": "Achieve professional and academic English fluency. Master debates, complex essays, and confident job interviews.",
+				"duration": "3 Months (54 lessons)",
+				"level": "B2",
+				"category": "General_English",
+				"outcomes": [
+					"Take part in discussions using idiomatic and advanced vocabulary",
+					"Handle job interviews and negotiate professional terms confidently",
+					"Write complex essays, reports, and formal letters of complaint",
+					"Master all passive forms, mixed conditionals, and reported speech"
+				],
+				"modules": [
+					{
+						"title": "Month 1 — Study, Work, Travel",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + Mid-term Assessment.",
+						"lessons": [
+							{
+								"title": "Unit 1 — Study helpline",
+								"activity": "Studying at university; Present Tenses; Informal emails"
+							},
+							{
+								"title": "Unit 2 — Nine to five",
+								"activity": "Work conditions; Present Perfect Simple/Continuous; Opinion essays"
+							},
+							{
+								"title": "Unit 3 — On the move",
+								"activity": "Transport & travel vocabulary; Past Tenses; Transport debate"
+							},
+							{
+								"title": "Gateway to Exams: Units 1–2",
+								"activity": "Exam-format reading and listening practice"
+							},
+							{
+								"title": "Gateway to Exams: Units 3–4",
+								"activity": "Progress Check / Mid-term Assessment"
+							}
+						]
+					},
+					{
+						"title": "Month 2 — Talents, Money, Health",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + Student Presentations.",
+						"lessons": [
+							{
+								"title": "Unit 4 — Extraordinary talents",
+								"activity": "Personality adjectives; Future Forms; Presentations"
+							},
+							{
+								"title": "Unit 5 — Money matters",
+								"activity": "Buying/selling; Modal Verbs; Formal complaints"
+							},
+							{
+								"title": "Unit 6 — Healthy living",
+								"activity": "Body and health idioms; Conditionals; For-and-against essays"
+							},
+							{
+								"title": "Vocabulary & Grammar Catch-up",
+								"activity": "Month review and consolidation"
+							},
+							{
+								"title": "Student Presentations",
+								"activity": "Student presentations on chosen topics"
+							}
+						]
+					},
+					{
+						"title": "Month 3 — Arts, Disaster, Tech & News",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + Final Project.",
+						"lessons": [
+							{
+								"title": "Unit 7 — Creative arts",
+								"activity": "Music and film; Reported Speech; Reviews"
+							},
+							{
+								"title": "Unit 8 — Surviving disaster",
+								"activity": "Natural disasters; The Passive; Opinion essays with statistics"
+							},
+							{
+								"title": "Unit 9 — Digital world",
+								"activity": "Technology; Relative Clauses; Report writing"
+							},
+							{
+								"title": "Unit 10 — News feed",
+								"activity": "News headlines; Mixed Conditionals; News analysis"
+							},
+							{
+								"title": "Final Project: News Analysis",
+								"activity": "Final project and end-of-course exam"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Siyovush",
+					"image": "Siyovush.jpeg",
+					"bio": "Upper Intermediate & Advanced Instructor"
+				}
+			},
+			{
+				"id": "b2-plus-advanced-foundation",
+				"image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+				"title": "B2+ Advanced Foundation",
+				"description": "Bridge to C1 with deep understanding of language nuance, advanced rhetoric, and academic writing.",
+				"duration": "3 Months (54 lessons)",
+				"level": "B2+",
+				"category": "General_English",
+				"outcomes": [
+					"Recognise and use different registers — from formal to slang — and understand complex metaphors",
+					"Critically evaluate scientific data, advertising, and news in English",
+					"Draft project proposals, literature reviews, and lead negotiations",
+					"Use inversion, participle clauses, and complex modal structures"
+				],
+				"modules": [
+					{
+						"title": "Month 1 — Communication, Habits, Mind",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + Mid-term Assessment.",
+						"lessons": [
+							{
+								"title": "Unit 1 — Interact!",
+								"activity": "Body idioms; Past Tenses; Personal interviews and story writing"
+							},
+							{
+								"title": "Unit 2 — Road trips",
+								"activity": "Compound nouns; Present/past habits; Opinion essays"
+							},
+							{
+								"title": "Unit 3 — Mind power",
+								"activity": "The human mind; Modal Verbs (obligation/speculation); Reviews"
+							},
+							{
+								"title": "Gateway to Exams: Units 1–2",
+								"activity": "Exam-format reading and listening practice"
+							},
+							{
+								"title": "Mid-term Assessment",
+								"activity": "Academic mid-term assessment"
+							}
+						]
+					},
+					{
+						"title": "Month 2 — Science, Society, Home",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + Collaborative Tasks.",
+						"lessons": [
+							{
+								"title": "Unit 4 — Mad science",
+								"activity": "Scientific research; Conditionals 0–3; Critical thinking presentations"
+							},
+							{
+								"title": "Unit 5 — Big brother",
+								"activity": "Minor offences; Formal register; Advanced future forms; Role-plays"
+							},
+							{
+								"title": "Unit 6 — Moving home",
+								"activity": "Finding a place; Reporting Structures; Describing cities"
+							},
+							{
+								"title": "Gateway to Exams: Units 5–8",
+								"activity": "Advanced exam practice"
+							},
+							{
+								"title": "Collaborative Task Practice",
+								"activity": "Team debates and collaborative tasks"
+							}
+						]
+					},
+					{
+						"title": "Month 3 — Marketing, Career, Language",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + Final Exam.",
+						"lessons": [
+							{
+								"title": "Unit 7 — Marketing campaign",
+								"activity": "Advertising; Passives & Causatives; Report writing"
+							},
+							{
+								"title": "Unit 8 — One life, live it",
+								"activity": "Happiness metaphors; Comparison; Literature appreciation"
+							},
+							{
+								"title": "Unit 9 — Career openings",
+								"activity": "Internships; Participle Clauses; Covering letters"
+							},
+							{
+								"title": "Unit 10 — Found in translation",
+								"activity": "Phrasal verbs; Gerunds/Infinitives; Proposals"
+							},
+							{
+								"title": "Final Exam & Academic Writing Check",
+								"activity": "Final exam and academic writing assessment"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Shahrukh",
+					"image": "Shahrukh.jpeg",
+					"bio": "Advanced & IELTS Instructor"
+				}
+			},
+			{
+				"id": "kids-family-friends-1",
+				"image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+				"title": "Family & Friends 1",
+				"description": "Introduction to the English alphabet, basic vocabulary and simple sentence structures for children.",
+				"duration": "3 Months (54 lessons)",
+				"level": "A1",
+				"category": "English_kids",
+				"outcomes": [
+					"Name classroom objects, toys, body parts and family members",
+					"Use basic greetings and describe surroundings",
+					"Read and write words using core phonics sounds",
+					"Use to be, This is / These are, I've got and can"
+				],
+				"modules": [
+					{
+						"title": "Month 1 — Hello & School",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor (game-based Speaking Clubs) + Mid-term Assessment.",
+						"lessons": [
+							{
+								"title": "Starter: Hello!",
+								"activity": "Greetings, numbers 1–10, colours — songs and meet the characters"
+							},
+							{
+								"title": "Unit 1 — What's this?",
+								"activity": "School items; Sounds a, b, c, d; Describing school"
+							},
+							{
+								"title": "Unit 2 — Playtime!",
+								"activity": "Toys; my/your; Sounds e, f, g, h; Toy poem"
+							},
+							{
+								"title": "Unit 3 — This is my nose!",
+								"activity": "Body parts; This is / These are; Sounds i, j, k, l"
+							},
+							{
+								"title": "Unit 4 — He's a hero!",
+								"activity": "Jobs; Is he/she a...?; Sounds m–p; Family story"
+							}
+						]
+					},
+					{
+						"title": "Month 2 — Home & Nature",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + progress check.",
+						"lessons": [
+							{
+								"title": "Unit 5 — Where's the ball?",
+								"activity": "Prepositions in, on, under; Sounds q–u; Finding things in the park"
+							},
+							{
+								"title": "Unit 6 — Billy's teddy!",
+								"activity": "Family; Possessive 's; Sounds v–z"
+							},
+							{
+								"title": "Unit 7 — Are these his trousers?",
+								"activity": "Clothes; Are these his/her...?; Digraph sh"
+							},
+							{
+								"title": "Unit 8 — Where's Grandma?",
+								"activity": "Rooms in the house; Where's...?; Digraph ch"
+							},
+							{
+								"title": "Unit 9 — Lunchtime!",
+								"activity": "Food; I've got / I haven't got; Digraph th; Menu"
+							}
+						]
+					},
+					{
+						"title": "Month 3 — Animals & Actions",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + Final Assessment.",
+						"lessons": [
+							{
+								"title": "Unit 10 — A new friend!",
+								"activity": "Appearance; He's got...; Long vowel a_e"
+							},
+							{
+								"title": "Unit 11 — I like monkeys!",
+								"activity": "Animals; I like / I don't like; Long vowel i_e"
+							},
+							{
+								"title": "Unit 12 — Dinnertime!",
+								"activity": "Food; Do you like...?; Long vowels o_e, u_e"
+							},
+							{
+								"title": "Unit 13 — Tidy up!",
+								"activity": "Furniture; There is / There are; Blends cl, gl, sl"
+							},
+							{
+								"title": "Unit 14–15 — Action & Beach",
+								"activity": "I can / I can't; Let's...; Holiday postcard; Final Assessment"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Javokhir",
+					"image": "Javokhir.jpeg",
+					"bio": "Children's English Instructor"
+				}
+			},
+			{
+				"id": "kids-family-friends-2",
+				"image": "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80",
+				"title": "Family & Friends 2",
+				"description": "Strengthen English foundations and develop skills to describe everyday actions and events for children.",
+				"duration": "3 Months (54 lessons)",
+				"level": "A1+",
+				"category": "English_kids",
+				"outcomes": [
+					"Share impressions about school, hobbies, and express feelings",
+					"Discuss school timetables, jobs, rules, and holidays",
+					"Write short letters and invitations",
+					"Use Present Continuous, comparatives, and Past Simple (was/were)"
+				],
+				"modules": [
+					{
+						"title": "Month 1 — Feelings & Activities",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + progress check.",
+						"lessons": [
+							{
+								"title": "Starter: Welcome back!",
+								"activity": "Review family, numbers and colours — revision songs"
+							},
+							{
+								"title": "Unit 1 — Our new things",
+								"activity": "Classroom objects; This/That/These/Those; Describing the class"
+							},
+							{
+								"title": "Unit 2 — They're happy now!",
+								"activity": "Feelings; We're/They're; Digraphs ch, sh, th"
+							},
+							{
+								"title": "Unit 3 — I can ride a bike!",
+								"activity": "Activities; Can/Can't; Blends br, cr, dr, fr"
+							},
+							{
+								"title": "Unit 4 — Have you got a milkshake?",
+								"activity": "Food; Have you got...?; Blends gr, pr, tr; Café ordering"
+							}
+						]
+					},
+					{
+						"title": "Month 2 — School & Daily Routines",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + progress check.",
+						"lessons": [
+							{
+								"title": "Unit 5 — We've got English!",
+								"activity": "School subjects; We've got...; Blends bl, cl, fl; Timetable"
+							},
+							{
+								"title": "Unit 6 — Let's play after school!",
+								"activity": "After-school activities; Present Simple; Weekly plans"
+							},
+							{
+								"title": "Unit 7 — Let's buy presents!",
+								"activity": "Gifts and celebrations; Present Simple 3rd person; Invitation"
+							},
+							{
+								"title": "Unit 8 — What's the time?",
+								"activity": "Daily routines; Telling the time; My day story"
+							},
+							{
+								"title": "Unit 9 — Where does she work?",
+								"activity": "Places of work; Where does...?; Jobs interview"
+							}
+						]
+					},
+					{
+						"title": "Month 3 — Nature & Celebrations",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + Final Assessment.",
+						"lessons": [
+							{
+								"title": "Unit 10 — It's hot today!",
+								"activity": "Weather; Present Continuous; Weather forecast"
+							},
+							{
+								"title": "Unit 11 — What are you wearing?",
+								"activity": "Clothes; Questions in Present Continuous; Describing people"
+							},
+							{
+								"title": "Unit 12 — You're sleeping!",
+								"activity": "Getting ready for a celebration; Present Continuous; Email"
+							},
+							{
+								"title": "Unit 13 — Look at all the animals!",
+								"activity": "Farm animals; Comparatives (bigger than)"
+							},
+							{
+								"title": "Unit 14–15 — Photos & Well done!",
+								"activity": "Was/Were; Past Simple; School celebration story; Final Assessment"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Nodir",
+					"image": "Nodir.jpeg",
+					"bio": "Children's English Instructor"
+				}
+			},
+			{
+				"id": "kids-family-friends-3",
+				"image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
+				"title": "Family & Friends 3",
+				"description": "Develop spoken fluency and confident use of verb tenses in everyday communication for children.",
+				"duration": "3 Months (54 lessons)",
+				"level": "A2",
+				"category": "English_kids",
+				"outcomes": [
+					"Describe past events and make future plans using going to",
+					"Compare objects and discuss travel, the environment, and ancient history",
+					"Write detailed essays, recipes, film reviews, and reports",
+					"Master Past Simple, superlatives, and the modal must"
+				],
+				"modules": [
+					{
+						"title": "Month 1 — Family & Hobbies",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + Mid-term Assessment.",
+						"lessons": [
+							{
+								"title": "Starter: My family",
+								"activity": "Family members, months, comparisons — revision"
+							},
+							{
+								"title": "Unit 1 — They're from Australia!",
+								"activity": "Countries and seasons; be from; About me story"
+							},
+							{
+								"title": "Unit 2 — My weekend",
+								"activity": "Hobbies; like + -ing; Pen pal website"
+							},
+							{
+								"title": "Unit 3 — My things",
+								"activity": "Collections; Possessive pronouns; Sound ar; School project"
+							},
+							{
+								"title": "Unit 4 — We're having fun!",
+								"activity": "Water sports; Present Continuous; Tourist brochure"
+							}
+						]
+					},
+					{
+						"title": "Month 2 — City, Food & Records",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + progress check.",
+						"lessons": [
+							{
+								"title": "Unit 5 — A naughty monkey!",
+								"activity": "Zoo and emotions; Questions in Present Continuous; Fable"
+							},
+							{
+								"title": "Unit 6 — Jim's day",
+								"activity": "Daily routine; Present Simple (all forms); Student blog"
+							},
+							{
+								"title": "Unit 7 — Places to go!",
+								"activity": "The city; Adverbs of frequency; Film review"
+							},
+							{
+								"title": "Unit 8 — I'd like a melon!",
+								"activity": "Food; Countable and uncountable nouns; Recipes"
+							},
+							{
+								"title": "Unit 9 — Fastest animal",
+								"activity": "Records; Superlative adjectives; World records"
+							}
+						]
+					},
+					{
+						"title": "Month 3 — History & Travel",
+						"description": "10 lessons with the main teacher, 4 with an assistant, 3 with an international instructor + Final Assessment.",
+						"lessons": [
+							{
+								"title": "Unit 10 — In the park!",
+								"activity": "Rules; Modal must; The Gingerbread Man story"
+							},
+							{
+								"title": "Unit 11 — In the museum",
+								"activity": "Transport; Past Simple (was/were); Viking history"
+							},
+							{
+								"title": "Unit 12–13 — Past Simple",
+								"activity": "Regular Past Simple verbs; Ancient Egyptians story"
+							},
+							{
+								"title": "Unit 14 — Did you have a good day?",
+								"activity": "Camping; Past Simple questions; Holiday interview"
+							},
+							{
+								"title": "Unit 15 — Our holiday!",
+								"activity": "Travel; going to; Holiday postcard; Final Assessment"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Javokhir",
+					"image": "Javokhir.jpeg",
+					"bio": "Children's English Instructor"
+				}
+			},
+			{
+				"id": "cefr-dtm-prep",
+				"image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+				"title": "CEFR / DTM",
+				"description": "Targeted preparation for the national DTM exam and CEFR international certificate. Grammar, vocabulary and test-taking strategy.",
+				"duration": "2–3 Months",
+				"level": "B1–B2",
+				"category": "Подготовка_к_CEFR/DTM",
+				"outcomes": [
+					"Understand the structure and format of the CEFR/DTM exam",
+					"Confidently handle grammar and vocabulary test items",
+					"Apply multiple-choice strategies to maximise your score",
+					"Reach the target score required for university admission"
+				],
+				"modules": [
+					{
+						"title": "Course Programme",
+						"description": "Systematic exam preparation: test format, B1–B2 grammar, DTM topic vocabulary, task walkthroughs and mock tests.",
+						"lessons": [
+							{
+								"title": "Exam Format & Structure",
+								"activity": "Overview of task types and scoring system"
+							},
+							{
+								"title": "B1–B2 Grammar",
+								"activity": "Tenses, modals, conditionals, passive voice"
+							},
+							{
+								"title": "DTM Topic Vocabulary",
+								"activity": "Thematic wordlists and word formation"
+							},
+							{
+								"title": "Test-Taking Strategy",
+								"activity": "Time management, elimination techniques, avoiding traps"
+							},
+							{
+								"title": "Mock Tests",
+								"activity": "Full test practice with error analysis and score prediction"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Shahrukh",
+					"image": "Shahrukh.jpeg",
+					"bio": "CEFR/DTM Preparation Instructor"
+				}
+			},
+			{
+				"id": "toefl-prep",
+				"image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+				"title": "TOEFL",
+				"description": "Intensive TOEFL iBT preparation covering all four sections: Reading, Listening, Speaking and Writing.",
+				"duration": "2–3 Months",
+				"level": "B2–C1",
+				"category": "Подготовка_к_TOEFL",
+				"outcomes": [
+					"Know the TOEFL iBT format and requirements inside out",
+					"Handle all four exam sections with confidence",
+					"Write academic essays and integrated tasks to a high standard",
+					"Reach the target score for admission to a top international university"
+				],
+				"modules": [
+					{
+						"title": "Course Programme",
+						"description": "Full TOEFL iBT preparation: test structure, section-by-section strategies, academic English and scored mock exams.",
+						"lessons": [
+							{
+								"title": "Reading — Strategy & Task Types",
+								"activity": "Skimming, scanning, inference and detail questions"
+							},
+							{
+								"title": "Listening — Lectures & Dialogues",
+								"activity": "Note-taking, question types and common traps"
+							},
+							{
+								"title": "Speaking — Independent & Integrated Tasks",
+								"activity": "Response templates, pace and coherence"
+							},
+							{
+								"title": "Writing — Independent & Integrated Essays",
+								"activity": "Essay structure, academic style and cohesion"
+							},
+							{
+								"title": "Mock Tests",
+								"activity": "Full TOEFL iBT simulation with detailed feedback"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Siyovush",
+					"image": "Siyovush.jpeg",
+					"bio": "TOEFL Preparation Instructor"
+				}
+			},
+			{
+				"id": "duolingo-prep",
+				"image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80",
+				"title": "Duolingo",
+				"description": "Fast and effective preparation for the Duolingo English Test (DET) — the online alternative to IELTS and TOEFL accepted by top universities.",
+				"duration": "1–2 Months",
+				"level": "B1–C1",
+				"category": "Подготовка_к_Duolingo",
+				"outcomes": [
+					"Understand the adaptive format and unique features of the DET",
+					"Practise all task types: reading, listening, speaking and writing",
+					"Achieve a target score of 110–130+ for university admission",
+					"Complete mock tests and address weak areas before exam day"
+				],
+				"modules": [
+					{
+						"title": "Course Programme",
+						"description": "DET preparation: adaptive test format, training on all task types, scoring strategy and timed mock sessions.",
+						"lessons": [
+							{
+								"title": "DET Format & Adaptive Algorithm",
+								"activity": "How the algorithm works, task types and scoring"
+							},
+							{
+								"title": "Read & Select / Read Aloud",
+								"activity": "Vocabulary strategy and pronunciation techniques"
+							},
+							{
+								"title": "Listen & Type / Interactive Listening",
+								"activity": "Typing speed, academic-level listening"
+							},
+							{
+								"title": "Speaking & Writing Samples",
+								"activity": "Templates, structure and common mistakes to avoid"
+							},
+							{
+								"title": "Mock Sessions",
+								"activity": "Full test simulation with result breakdown"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Nodir",
+					"image": "Nodir.jpeg",
+					"bio": "Duolingo English Test Instructor"
+				}
 			}
 		]
 	},

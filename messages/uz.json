@@ -1156,6 +1156,650 @@
 					"image": "Nodir.jpeg",
 					"bio": "Bosh o'qituvchi"
 				}
+			},
+			{
+				"id": "b2-upper-intermediate",
+				"image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+				"title": "B2 Upper Intermediate",
+				"description": "Kasbiy va akademik vaziyatlarda ingliz tilida erkin muloqot qilish. Munozaralar, murakkab insholar va ishga kirish suhbatlari.",
+				"duration": "3 oy (54 dars)",
+				"level": "B2",
+				"category": "General_English",
+				"outcomes": [
+					"Muhokamalar va bahs-munozaralarda idiomalar va keng lug'at bilan faol ishtirok etish",
+					"Ishga kirish suhbatlarida ishonch bilan qatnashish va kasbiy shartlarni muzokarа qilish",
+					"Murakkab insholar, hisobotlar va rasmiy shikoyat xatlari yozish",
+					"Passiv fe'lning barcha shakllarini va aralash shart qurilmalarini egallash"
+				],
+				"modules": [
+					{
+						"title": "1-oy — O'qish, Ish, Sayohat",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + o'rta muddatli baholash.",
+						"lessons": [
+							{
+								"title": "Unit 1 — Study helpline",
+								"activity": "Universitetda o'qish; Present Tenses; Norasmiy xatlar"
+							},
+							{
+								"title": "Unit 2 — Nine to five",
+								"activity": "Ish sharoitlari; Present Perfect Simple/Continuous; Fikr insholari"
+							},
+							{
+								"title": "Unit 3 — On the move",
+								"activity": "Transport va sayohat; O'tgan zamonlar; Transport munozarasi"
+							},
+							{
+								"title": "Gateway to Exams: Units 1–2",
+								"activity": "Imtihon formatida o'qish va tinglash"
+							},
+							{
+								"title": "Gateway to Exams: Units 3–4",
+								"activity": "Nazorat ishi + o'rta muddatli baholash"
+							}
+						]
+					},
+					{
+						"title": "2-oy — Iste'dod, Pul, Sog'liq",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + talabalar taqdimotlari.",
+						"lessons": [
+							{
+								"title": "Unit 4 — Extraordinary talents",
+								"activity": "Shaxsiy sifatlar; Future Forms; Og'zaki taqdimotlar"
+							},
+							{
+								"title": "Unit 5 — Money matters",
+								"activity": "Xarid va sotuv; Modal fe'llar; Rasmiy shikoyatlar"
+							},
+							{
+								"title": "Unit 6 — Healthy living",
+								"activity": "Tana va sog'liq; Shart gaplari; Taqqoslama insholar"
+							},
+							{
+								"title": "Vocabulary & Grammar Catch-up",
+								"activity": "Lug'at va grammatikani mustahkamlash"
+							},
+							{
+								"title": "Talabalar taqdimotlari",
+								"activity": "Tanlangan mavzularda talabalar taqdimoti"
+							}
+						]
+					},
+					{
+						"title": "3-oy — San'at, Texnologiya, Yangiliklar",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + yakuniy loyiha.",
+						"lessons": [
+							{
+								"title": "Unit 7 — Creative arts",
+								"activity": "Musiqa va kino; Bilvosita nutq; Sharh va sharhlar"
+							},
+							{
+								"title": "Unit 8 — Surviving disaster",
+								"activity": "Tabiiy ofatlar; Passiv; Statistikali fikr inshosi"
+							},
+							{
+								"title": "Unit 9 — Digital world",
+								"activity": "Texnologiya; Relative Clauses; Hisobot yozish"
+							},
+							{
+								"title": "Unit 10 — News feed",
+								"activity": "Yangilik sarlavhalari; Aralash shart gaplari; Tahlil"
+							},
+							{
+								"title": "Yakuniy loyiha: Yangiliklar tahlili",
+								"activity": "Yakuniy loyiha va imtihon"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Siyovush",
+					"image": "Siyovush.jpeg",
+					"bio": "Upper Intermediate va Advanced o'qituvchisi"
+				}
+			},
+			{
+				"id": "b2-plus-advanced-foundation",
+				"image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+				"title": "B2+ Advanced Foundation",
+				"description": "C1 darajasiga tayyorgarlik va tilning nozik tomonlarini chuqur o'rganish. Bahs-munozaralar, biznes muzokaralari va akademik yozuv.",
+				"duration": "3 oy (54 dars)",
+				"level": "B2+",
+				"category": "General_English",
+				"outcomes": [
+					"Rasmiydan slengga qadar turli nutq uslublarini tanib ishlatish",
+					"Ingliz tilida ilmiy ma'lumotlar, reklama va yangiliklar tahlil qilish",
+					"Loyiha takliflari, adabiyot sharhlari yozish va muzokaralar olib borish",
+					"Inversiya, sifatdosh birikmalar va murakkab modal qurilmalardan foydalanish"
+				],
+				"modules": [
+					{
+						"title": "1-oy — Muloqot, Odatlar, Tafakkur",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + o'rta muddatli baholash.",
+						"lessons": [
+							{
+								"title": "Unit 1 — Interact!",
+								"activity": "Tana idiomalar; O'tgan zamonlar; Shaxsiy intervyular"
+							},
+							{
+								"title": "Unit 2 — Road trips",
+								"activity": "Murakkab otlar; Hozirgi/o'tgan odatlar; Fikr inshosi"
+							},
+							{
+								"title": "Unit 3 — Mind power",
+								"activity": "Inson aql-idroki; Modal fe'llar; Sharhlar"
+							},
+							{
+								"title": "Gateway to Exams: Units 1–2",
+								"activity": "Imtihon formatida mashq"
+							},
+							{
+								"title": "O'rta muddatli baholash",
+								"activity": "Akademik o'rta muddatli nazorat"
+							}
+						]
+					},
+					{
+						"title": "2-oy — Fan, Jamiyat, Uy",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + hamkorlik vazifalari.",
+						"lessons": [
+							{
+								"title": "Unit 4 — Mad science",
+								"activity": "Ilmiy tadqiqot; Shart gaplari 0–3; Taqdimot"
+							},
+							{
+								"title": "Unit 5 — Big brother",
+								"activity": "Qonunbuzarlik; Rasmiy uslub; Kelajak shakllari"
+							},
+							{
+								"title": "Unit 6 — Moving home",
+								"activity": "Uy qidirish; Bilvosita qurilmalar; Shaharlar tavsifi"
+							},
+							{
+								"title": "Gateway to Exams: Units 5–8",
+								"activity": "Chuqur imtihon mashqi"
+							},
+							{
+								"title": "Hamkorlik vazifalari",
+								"activity": "Jamoaviy bahs va vazifalar"
+							}
+						]
+					},
+					{
+						"title": "3-oy — Marketing, Kasb, Til",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + yakuniy imtihon.",
+						"lessons": [
+							{
+								"title": "Unit 7 — Marketing campaign",
+								"activity": "Reklama; Passiv va sababli qurilmalar; Hisobot"
+							},
+							{
+								"title": "Unit 8 — One life, live it",
+								"activity": "Baxt metaforalari; Taqqoslash; Adabiyot"
+							},
+							{
+								"title": "Unit 9 — Career openings",
+								"activity": "Stajirovkalar; Sifatdosh birikmalar; Qoʻshimcha xatlar"
+							},
+							{
+								"title": "Unit 10 — Found in translation",
+								"activity": "Frazeologik fe'llar; Gerund/Infinitiv; Taklifnomalar"
+							},
+							{
+								"title": "Yakuniy imtihon va akademik yozuv",
+								"activity": "Yakuniy imtihon va yozuv baholash"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Shahrukh",
+					"image": "Shahrukh.jpeg",
+					"bio": "Advanced va IELTS o'qituvchisi"
+				}
+			},
+			{
+				"id": "kids-family-friends-1",
+				"image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+				"title": "Family & Friends 1",
+				"description": "Bolalar uchun ingliz alifbosini o'rganish, asosiy so'z boyligi va oddiy gap tuzilishini shakllantirish.",
+				"duration": "3 oy (54 dars)",
+				"level": "A1",
+				"category": "English_kids",
+				"outcomes": [
+					"Sinfdagi narsalar, o'yinchoqlar, tana a'zolari va oila a'zolarini nomlash",
+					"Asosiy salomlashuvlardan foydalanish va atrofni tasvirlash",
+					"Fonetik tovushlar asosida so'zlarni o'qish va yozish",
+					"To be, This is / These are, I've got va can qurilmalarini egallash"
+				],
+				"modules": [
+					{
+						"title": "1-oy — Salom va maktab",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan (o'yinli Speaking Clubs) + o'rta muddatli baholash.",
+						"lessons": [
+							{
+								"title": "Starter: Hello!",
+								"activity": "Salomlashuvlar, 1–10 sonlar, ranglar — qo'shiqlar"
+							},
+							{
+								"title": "Unit 1 — What's this?",
+								"activity": "Maktab buyumlari; a, b, c, d tovushlari; Maktabni tasvirlash"
+							},
+							{
+								"title": "Unit 2 — Playtime!",
+								"activity": "O'yinchoqlar; my/your; e, f, g, h tovushlari"
+							},
+							{
+								"title": "Unit 3 — This is my nose!",
+								"activity": "Tana a'zolari; This is / These are; i, j, k, l tovushlari"
+							},
+							{
+								"title": "Unit 4 — He's a hero!",
+								"activity": "Kasblar; Is he/she a...?; m–p tovushlari; Oila haqida hikoya"
+							}
+						]
+					},
+					{
+						"title": "2-oy — Uy va tabiat",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + oraliq nazorat.",
+						"lessons": [
+							{
+								"title": "Unit 5 — Where's the ball?",
+								"activity": "in, on, under predloglari; q–u tovushlari; Parkda narsalarni topish"
+							},
+							{
+								"title": "Unit 6 — Billy's teddy!",
+								"activity": "Oila; Egalik kelishigi 's; v–z tovushlari"
+							},
+							{
+								"title": "Unit 7 — Are these his trousers?",
+								"activity": "Kiyimlar; Are these his/her...?; sh digrafı"
+							},
+							{
+								"title": "Unit 8 — Where's Grandma?",
+								"activity": "Uy xonalari; Where's...?; ch digrafı"
+							},
+							{
+								"title": "Unit 9 — Lunchtime!",
+								"activity": "Ovqatlar; I've got / I haven't got; th digrafı; Menyu"
+							}
+						]
+					},
+					{
+						"title": "3-oy — Hayvonlar va faoliyat",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + yakuniy baholash.",
+						"lessons": [
+							{
+								"title": "Unit 10 — A new friend!",
+								"activity": "Tashqi ko'rinish; He's got...; Uzun unli a_e"
+							},
+							{
+								"title": "Unit 11 — I like monkeys!",
+								"activity": "Hayvonlar; I like / I don't like; Uzun unli i_e"
+							},
+							{
+								"title": "Unit 12 — Dinnertime!",
+								"activity": "Mahsulotlar; Do you like...?; Uzun unlilar o_e, u_e"
+							},
+							{
+								"title": "Unit 13 — Tidy up!",
+								"activity": "Mebel; There is / There are; cl, gl, sl birikmalari"
+							},
+							{
+								"title": "Unit 14–15 — Harakatlar va plyaj",
+								"activity": "I can / I can't; Let's...; Dam olish otkritka; Yakuniy baholash"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Javokhir",
+					"image": "Javokhir.jpeg",
+					"bio": "Bolalar ingliz tili o'qituvchisi"
+				}
+			},
+			{
+				"id": "kids-family-friends-2",
+				"image": "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80",
+				"title": "Family & Friends 2",
+				"description": "Bolalar uchun ingliz tili asoslarini mustahkamlash va kundalik harakatlarni tasvirlash ko'nikmalarini rivojlantirish.",
+				"duration": "3 oy (54 dars)",
+				"level": "A1+",
+				"category": "English_kids",
+				"outcomes": [
+					"Maktab va hobby haqida fikr almashish, his-tuyg'ularni ifodalash",
+					"Dars jadvali, ota-onalar ishi, qoidalar va bayramlar haqida suhbat",
+					"Qisqa xatlar va taklifnomalar yozish",
+					"Present Continuous, qiyoslash darajasi va was/were ni ishlatish"
+				],
+				"modules": [
+					{
+						"title": "1-oy — His-tuyg'ular va faoliyat",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + oraliq nazorat.",
+						"lessons": [
+							{
+								"title": "Starter: Welcome back!",
+								"activity": "Oila, sonlar va ranglarni takrorlash — qo'shiqlar"
+							},
+							{
+								"title": "Unit 1 — Our new things",
+								"activity": "Sinf buyumlari; This/That/These/Those; Sinfni tasvirlash"
+							},
+							{
+								"title": "Unit 2 — They're happy now!",
+								"activity": "His-tuyg'ular; We're/They're; ch, sh, th digraflar"
+							},
+							{
+								"title": "Unit 3 — I can ride a bike!",
+								"activity": "Faoliyatlar; Can/Can't; br, cr, dr, fr birikmalari"
+							},
+							{
+								"title": "Unit 4 — Have you got a milkshake?",
+								"activity": "Oziq-ovqat; Have you got...?; Kafe buyurtmasi"
+							}
+						]
+					},
+					{
+						"title": "2-oy — Maktab va kundalik tartib",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + oraliq nazorat.",
+						"lessons": [
+							{
+								"title": "Unit 5 — We've got English!",
+								"activity": "Maktab fanlari; We've got...; Dars jadvali"
+							},
+							{
+								"title": "Unit 6 — Let's play after school!",
+								"activity": "Darsdan keyin mashg'ulotlar; Present Simple; Haftalik rejalar"
+							},
+							{
+								"title": "Unit 7 — Let's buy presents!",
+								"activity": "Sovg'alar; Present Simple 3-shaxs; Taklifnoma"
+							},
+							{
+								"title": "Unit 8 — What's the time?",
+								"activity": "Kundalik tartib; Soatni o'qish; Kun haqida hikoya"
+							},
+							{
+								"title": "Unit 9 — Where does she work?",
+								"activity": "Ish joylari; Where does...?; Kasb haqida intervyu"
+							}
+						]
+					},
+					{
+						"title": "3-oy — Tabiat va bayramlar",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + yakuniy baholash.",
+						"lessons": [
+							{
+								"title": "Unit 10 — It's hot today!",
+								"activity": "Ob-havo; Present Continuous; Ob-havo bashorati"
+							},
+							{
+								"title": "Unit 11 — What are you wearing?",
+								"activity": "Kiyimlar; Present Continuous savollari; Odamlarni tasvirlash"
+							},
+							{
+								"title": "Unit 12 — You're sleeping!",
+								"activity": "Bayramga tayyorlanish; Present Continuous; Elektron xat"
+							},
+							{
+								"title": "Unit 13 — Look at all the animals!",
+								"activity": "Ferma hayvonlari; Qiyoslash (bigger than)"
+							},
+							{
+								"title": "Unit 14–15 — Fotosuratlar va Barakalla!",
+								"activity": "Was/Were; Past Simple; Maktab bayrami hikoyasi; Yakuniy baholash"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Nodir",
+					"image": "Nodir.jpeg",
+					"bio": "Bolalar ingliz tili o'qituvchisi"
+				}
+			},
+			{
+				"id": "kids-family-friends-3",
+				"image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
+				"title": "Family & Friends 3",
+				"description": "Bolalar uchun kundalik muloqotda turli zamon shakllarini ishonch bilan ishlatishni rivojlantirish.",
+				"duration": "3 oy (54 dars)",
+				"level": "A2",
+				"category": "English_kids",
+				"outcomes": [
+					"O'tgan voqealarni tasvirlash va going to yordamida kelajak rejalarini tuzish",
+					"Narsalarni solishtirish, sayohat, ekologiya va qadimiy tarix haqida suhbat",
+					"Batafsil insholar, retseptlar, film sharhlari va hisobotlar yozish",
+					"Past Simple, ustun daraja va must modal fe'lini egallash"
+				],
+				"modules": [
+					{
+						"title": "1-oy — Oila va hobbi",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + o'rta muddatli baholash.",
+						"lessons": [
+							{
+								"title": "Starter: My family",
+								"activity": "Oila a'zolari, oylar, taqqoslash — takrorlash"
+							},
+							{
+								"title": "Unit 1 — They're from Australia!",
+								"activity": "Mamlakatlar va fasllar; be from; O'zim haqimda hikoya"
+							},
+							{
+								"title": "Unit 2 — My weekend",
+								"activity": "Hobbi; like + -ing; Qalamkash do'stlar sayti"
+							},
+							{
+								"title": "Unit 3 — My things",
+								"activity": "Kolleksiyalar; Egalik olmoshlari; ar tovushi; Maktab loyihasi"
+							},
+							{
+								"title": "Unit 4 — We're having fun!",
+								"activity": "Suv sporti; Present Continuous; Turistik broshyura"
+							}
+						]
+					},
+					{
+						"title": "2-oy — Shahar, oziq-ovqat va rekordlar",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + oraliq nazorat.",
+						"lessons": [
+							{
+								"title": "Unit 5 — A naughty monkey!",
+								"activity": "Hayvonot bog'i; Present Continuous savollari; Ertak"
+							},
+							{
+								"title": "Unit 6 — Jim's day",
+								"activity": "Kundalik tartib; Present Simple (barcha shakllari); Blog"
+							},
+							{
+								"title": "Unit 7 — Places to go!",
+								"activity": "Shahar; Chastotlik ravishlar; Film sharhi"
+							},
+							{
+								"title": "Unit 8 — I'd like a melon!",
+								"activity": "Oziq-ovqat; Sanaladigan/sanab bo'lmaydigan otlar; Retseptlar"
+							},
+							{
+								"title": "Unit 9 — Fastest animal",
+								"activity": "Rekordlar; Ustun daraja sifatdoshlari; Jahon rekordi"
+							}
+						]
+					},
+					{
+						"title": "3-oy — Tarix va sayohat",
+						"description": "10 dars asosiy o'qituvchi bilan, 4 assistant bilan, 3 xalqaro o'qituvchi bilan + yakuniy baholash.",
+						"lessons": [
+							{
+								"title": "Unit 10 — In the park!",
+								"activity": "Qoidalar; Must modal fe'li; Zanjir non haqida ertak"
+							},
+							{
+								"title": "Unit 11 — In the museum",
+								"activity": "Transport; was/were; Viking tarixi"
+							},
+							{
+								"title": "Unit 12–13 — Past Simple",
+								"activity": "To'g'ri fe'llar Past Simple; Qadimgi Misr hikoyasi"
+							},
+							{
+								"title": "Unit 14 — Did you have a good day?",
+								"activity": "Lager; Past Simple savollari; Ta'til haqida intervyu"
+							},
+							{
+								"title": "Unit 15 — Our holiday!",
+								"activity": "Sayohat; going to; Otkritka; Yakuniy baholash"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Javokhir",
+					"image": "Javokhir.jpeg",
+					"bio": "Bolalar ingliz tili o'qituvchisi"
+				}
+			},
+			{
+				"id": "cefr-dtm-prep",
+				"image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+				"title": "CEFR / DTM",
+				"description": "Milliy DTM imtihoni va xalqaro CEFR sertifikatiga maqsadli tayyorgarlik. Grammatika, lug'at va test strategiyasi.",
+				"duration": "2–3 oy",
+				"level": "B1–B2",
+				"category": "Подготовка_к_CEFR/DTM",
+				"outcomes": [
+					"CEFR/DTM imtihonining tuzilishi va formatini bilish",
+					"Grammatika va lug'at test topshiriqlarini ishonch bilan bajarish",
+					"Ko'p tanlovli savollarda strategiyani qo'llash",
+					"Universitetga kirish uchun kerakli ballni to'plash"
+				],
+				"modules": [
+					{
+						"title": "Kurs dasturi",
+						"description": "Imtihonga tizimli tayyorgarlik: test formati, B1–B2 grammatikasi, DTM mavzulariga oid lug'at, topshiriqlarni tahlil qilish va sinov testlar.",
+						"lessons": [
+							{
+								"title": "Imtihon formati va tuzilishi",
+								"activity": "Topshiriq turlari va baholash tizimiga umumiy nazar"
+							},
+							{
+								"title": "B1–B2 grammatikasi",
+								"activity": "Zamonlar, modal fe'llar, shart gaplari, passiv"
+							},
+							{
+								"title": "DTM mavzulariga oid lug'at",
+								"activity": "Mavzuli so'z ro'yxatlari va so'z yasalishi"
+							},
+							{
+								"title": "Test strategiyasi",
+								"activity": "Vaqt boshqaruvi, variantlarni yo'q qilish, xatolardan qochish"
+							},
+							{
+								"title": "Sinov testlar (Mock Tests)",
+								"activity": "To'liq test mashqi va xatolarni tahlil qilish"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Shahrukh",
+					"image": "Shahrukh.jpeg",
+					"bio": "CEFR/DTM tayyorgarlik o'qituvchisi"
+				}
+			},
+			{
+				"id": "toefl-prep",
+				"image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+				"title": "TOEFL",
+				"description": "TOEFL iBT imtihoniga intensiv tayyorgarlik. To'rtta bo'lim: Reading, Listening, Speaking, Writing.",
+				"duration": "2–3 oy",
+				"level": "B2–C1",
+				"category": "Подготовка_к_TOEFL",
+				"outcomes": [
+					"TOEFL iBT formatini va talablarini chuqur bilish",
+					"To'rtta bo'limda ishonch bilan ishlash",
+					"Akademik insholar va integratsiyalashgan topshiriqlarni yozish",
+					"Xorijiy universitetga kirish uchun kerakli ballni olish"
+				],
+				"modules": [
+					{
+						"title": "Kurs dasturi",
+						"description": "TOEFL iBT ga to'liq tayyorgarlik: test tuzilishi, bo'limlar bo'yicha strategiyalar, akademik ingliz tili va sinov imtihonlar.",
+						"lessons": [
+							{
+								"title": "Reading — strategiya va topshiriq turlari",
+								"activity": "Skimming, scanning, xulosa va batafsil savollar"
+							},
+							{
+								"title": "Listening — ma'ruzalar va dialoglar",
+								"activity": "Konspekt olish, savol turlari va tuzoqlar"
+							},
+							{
+								"title": "Speaking — mustaqil va integratsiyalashgan",
+								"activity": "Javob shablonlari, nutq sur'ati, izchillik"
+							},
+							{
+								"title": "Writing — mustaqil va integratsiyalashgan insholar",
+								"activity": "Inshо tuzilishi, akademik uslub"
+							},
+							{
+								"title": "Sinov testlar (Mock Tests)",
+								"activity": "To'liq TOEFL iBT simulyatsiyasi va tahlil"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Siyovush",
+					"image": "Siyovush.jpeg",
+					"bio": "TOEFL tayyorgarlik o'qituvchisi"
+				}
+			},
+			{
+				"id": "duolingo-prep",
+				"image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80",
+				"title": "Duolingo",
+				"description": "Duolingo English Test (DET) ga tez va samarali tayyorgarlik — universitetlar uchun IELTS va TOEFL ning onlayn muqobili.",
+				"duration": "1–2 oy",
+				"level": "B1–C1",
+				"category": "Подготовка_к_Duolingo",
+				"outcomes": [
+					"DETning adaptiv formati va o'ziga xos xususiyatlarini tushunish",
+					"Barcha topshiriq turlarini mashq qilish: o'qish, tinglash, gapirish, yozish",
+					"Universitetga kirish uchun 110–130+ ball to'plash",
+					"Sinov testlardan o'tish va zaif joylarni bartaraf etish"
+				],
+				"modules": [
+					{
+						"title": "Kurs dasturi",
+						"description": "DET tayyorgarlik: adaptiv test formati, barcha topshiriq turlari, ball strategiyasi va vaqtli sinov sessiyalar.",
+						"lessons": [
+							{
+								"title": "DET formati va adaptiv algoritm",
+								"activity": "Algoritm qanday ishlaydi, topshiriq turlari va baholash"
+							},
+							{
+								"title": "Read & Select / Read Aloud",
+								"activity": "Lug'at strategiyasi va talaffuz usullari"
+							},
+							{
+								"title": "Listen & Type / Interactive Listening",
+								"activity": "Yozish tezligi, akademik darajada tinglash"
+							},
+							{
+								"title": "Speaking & Writing namunalari",
+								"activity": "Shablonlar, tuzilish va keng tarqalgan xatolar"
+							},
+							{
+								"title": "Sinov sessiyalari",
+								"activity": "To'liq test simulyatsiyasi va natijalar tahlili"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Nodir",
+					"image": "Nodir.jpeg",
+					"bio": "Duolingo English Test o'qituvchisi"
+				}
 			}
 		]
 	},

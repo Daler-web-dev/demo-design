@@ -1156,6 +1156,650 @@
 					"image": "Nodir.jpeg",
 					"bio": "Главный преподаватель"
 				}
+			},
+			{
+				"id": "b2-upper-intermediate",
+				"image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+				"title": "B2 Upper Intermediate",
+				"description": "Свободное владение английским в профессиональных и академических ситуациях. Дискуссии, сложные эссе и уверенное прохождение собеседований.",
+				"duration": "3 месяца (54 занятия)",
+				"level": "B2",
+				"category": "General_English",
+				"outcomes": [
+					"Активно участвовать в дискуссиях и использовать идиоматические выражения",
+					"Уверенно проходить собеседования и обсуждать карьерные перспективы",
+					"Писать сложные эссе, отчёты и официальные письма",
+					"Владеть всеми формами пассивного залога и смешанными условными предложениями"
+				],
+				"modules": [
+					{
+						"title": "Месяц 1 — Учёба, Работа, Путешествия",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + 1 Mid-term Assessment.",
+						"lessons": [
+							{
+								"title": "Unit 1 — Study helpline",
+								"activity": "Университет и необычные специальности; Present Tenses; Неформальные письма"
+							},
+							{
+								"title": "Unit 2 — Nine to five",
+								"activity": "Условия труда; Present Perfect Simple/Continuous; Эссе-мнение"
+							},
+							{
+								"title": "Unit 3 — On the move",
+								"activity": "Транспорт и путешествия; Времена прошедшего; Дебаты о транспорте"
+							},
+							{
+								"title": "Gateway to Exams: Units 1–2",
+								"activity": "Экзаменационная практика по чтению и аудированию"
+							},
+							{
+								"title": "Gateway to Exams: Units 3–4",
+								"activity": "Контрольная работа + Mid-term Assessment"
+							}
+						]
+					},
+					{
+						"title": "Месяц 2 — Таланты, Деньги, Здоровье",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + Студенческие презентации.",
+						"lessons": [
+							{
+								"title": "Unit 4 — Extraordinary talents",
+								"activity": "Прилагательные личности; Future Forms; Публичные выступления"
+							},
+							{
+								"title": "Unit 5 — Money matters",
+								"activity": "Покупки и продажи; Modal Verbs; Формальные жалобы"
+							},
+							{
+								"title": "Unit 6 — Healthy living",
+								"activity": "Части тела; Zero/1st/2nd Conditionals; Эссе за и против"
+							},
+							{
+								"title": "Vocabulary & Grammar Catch-up",
+								"activity": "Повторение лексики и грамматики месяца"
+							},
+							{
+								"title": "Student Presentations",
+								"activity": "Презентации студентов на выбранные темы"
+							}
+						]
+					},
+					{
+						"title": "Месяц 3 — Искусство, Технологии, Новости",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + Final Project.",
+						"lessons": [
+							{
+								"title": "Unit 7 — Creative arts",
+								"activity": "Музыка и кино; Reported Speech; Рецензии и краудфандинг"
+							},
+							{
+								"title": "Unit 8 — Surviving disaster",
+								"activity": "Стихийные бедствия; The Passive; Эссе-мнение со статистикой"
+							},
+							{
+								"title": "Unit 9 — Digital world",
+								"activity": "Технологические глаголы; Relative Clauses; Написание отчёта"
+							},
+							{
+								"title": "Unit 10 — News feed",
+								"activity": "Заголовки новостей; Mixed Conditionals; Анализ новостей"
+							},
+							{
+								"title": "Final Project: News Analysis",
+								"activity": "Итоговый проект и финальный экзамен"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Сиёвуш",
+					"image": "Siyovush.jpeg",
+					"bio": "Преподаватель Upper Intermediate и Advanced"
+				}
+			},
+			{
+				"id": "b2-plus-advanced-foundation",
+				"image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+				"title": "B2+ Advanced Foundation",
+				"description": "Подготовка к уровню C1 и глубокое понимание нюансов языка. Дебаты, бизнес-переговоры и академическое письмо.",
+				"duration": "3 месяца (54 занятия)",
+				"level": "B2+",
+				"category": "General_English",
+				"outcomes": [
+					"Распознавать и использовать разные регистры речи — от формального до сленга",
+					"Критически оценивать научные данные, рекламу и новости на английском",
+					"Составлять проектные предложения, литературные обзоры и вести переговоры",
+					"Использовать инверсию, причастные обороты и сложные модальные конструкции"
+				],
+				"modules": [
+					{
+						"title": "Месяц 1 — Общение, Привычки, Мышление",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + Mid-term Assessment.",
+						"lessons": [
+							{
+								"title": "Unit 1 — Interact!",
+								"activity": "Идиомы тела; Past Tenses; Личные интервью и сторителлинг"
+							},
+							{
+								"title": "Unit 2 — Road trips",
+								"activity": "Составные существительные; Привычки в настоящем/прошлом; Эссе-мнение"
+							},
+							{
+								"title": "Unit 3 — Mind power",
+								"activity": "Человеческий мозг; Modal Verbs (obligation/speculation); Рецензии"
+							},
+							{
+								"title": "Gateway to Exams: Units 1–2",
+								"activity": "Практика форматов экзамена — чтение и аудирование"
+							},
+							{
+								"title": "Mid-term Assessment",
+								"activity": "Промежуточный академический контроль"
+							}
+						]
+					},
+					{
+						"title": "Месяц 2 — Наука, Технологии, Дом",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + Collaborative Tasks.",
+						"lessons": [
+							{
+								"title": "Unit 4 — Mad science",
+								"activity": "Научные исследования; Conditionals 0–3; Презентации"
+							},
+							{
+								"title": "Unit 5 — Big brother",
+								"activity": "Мелкие правонарушения; Advanced Future Forms; Ролевые игры"
+							},
+							{
+								"title": "Unit 6 — Moving home",
+								"activity": "Поиск жилья; Reporting Structures; Описание городов"
+							},
+							{
+								"title": "Gateway to Exams: Units 5–8",
+								"activity": "Углублённая экзаменационная практика"
+							},
+							{
+								"title": "Collaborative Task Practice",
+								"activity": "Командные задания и дебаты"
+							}
+						]
+					},
+					{
+						"title": "Месяц 3 — Маркетинг, Карьера, Коммуникация",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + итоговый экзамен.",
+						"lessons": [
+							{
+								"title": "Unit 7 — Marketing campaign",
+								"activity": "Реклама; Passives & Causatives; Написание отчёта"
+							},
+							{
+								"title": "Unit 8 — One life, live it",
+								"activity": "Метафоры счастья; Сравнения; Экстремальный спорт"
+							},
+							{
+								"title": "Unit 9 — Career openings",
+								"activity": "Стажировки; Participle Clauses; Сопроводительные письма"
+							},
+							{
+								"title": "Unit 10 — Found in translation",
+								"activity": "Фразовые глаголы; Gerunds/Infinitives; Предложения-проекты"
+							},
+							{
+								"title": "Final Exam & Academic Writing Check",
+								"activity": "Итоговый экзамен и оценка академического письма"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Шахрух",
+					"image": "Shahrukh.jpeg",
+					"bio": "Преподаватель Advanced и IELTS"
+				}
+			},
+			{
+				"id": "kids-family-friends-1",
+				"image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+				"title": "Family & Friends 1",
+				"description": "Знакомство с английским алфавитом, базовым словарным запасом и построением простых предложений для детей.",
+				"duration": "3 месяца (54 занятия)",
+				"level": "A1",
+				"category": "English_kids",
+				"outcomes": [
+					"Называть предметы в классе, игрушки, части тела и членов семьи",
+					"Использовать базовые приветствия и описывать окружающую обстановку",
+					"Читать и писать слова с основными звуками (фониксами)",
+					"Владеть глаголом to be, конструкциями This is / I've got и глаголом can"
+				],
+				"modules": [
+					{
+						"title": "Месяц 1 — Знакомство и школа",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем (игровые Speaking Clubs) + 1 Mid-term Assessment.",
+						"lessons": [
+							{
+								"title": "Starter: Hello!",
+								"activity": "Приветствия, числа 1–10, цвета — песни и знакомство с героями"
+							},
+							{
+								"title": "Unit 1 — What's this?",
+								"activity": "Школьные принадлежности; Звуки a, b, c, d; Описание школы"
+							},
+							{
+								"title": "Unit 2 — Playtime!",
+								"activity": "Игрушки; Притяжательные my/your; Звуки e, f, g, h"
+							},
+							{
+								"title": "Unit 3 — This is my nose!",
+								"activity": "Части тела; This is / These are; Звуки i, j, k, l"
+							},
+							{
+								"title": "Unit 4 — He's a hero!",
+								"activity": "Профессии; Is he/she a...?; Звуки m, n, o, p; Рассказ о семье"
+							}
+						]
+					},
+					{
+						"title": "Месяц 2 — Дом и природа",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + промежуточный контроль.",
+						"lessons": [
+							{
+								"title": "Unit 5 — Where's the ball?",
+								"activity": "Предлоги in, on, under; Звуки q–u; Поиск предметов в парке"
+							},
+							{
+								"title": "Unit 6 — Billy's teddy!",
+								"activity": "Семья; Притяжательный падеж 's; Звуки v–z"
+							},
+							{
+								"title": "Unit 7 — Are these his trousers?",
+								"activity": "Одежда; Are these his/her...?; Диграф sh"
+							},
+							{
+								"title": "Unit 8 — Where's Grandma?",
+								"activity": "Комнаты в доме; Where's...?; Диграф ch"
+							},
+							{
+								"title": "Unit 9 — Lunchtime!",
+								"activity": "Еда; I've got / I haven't got; Диграф th; Меню"
+							}
+						]
+					},
+					{
+						"title": "Месяц 3 — Животные и активности",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + Final Assessment.",
+						"lessons": [
+							{
+								"title": "Unit 10 — A new friend!",
+								"activity": "Описание внешности; He's got...; Долгие гласные (a_e)"
+							},
+							{
+								"title": "Unit 11 — I like monkeys!",
+								"activity": "Животные; I like / I don't like; Долгие гласные (i_e)"
+							},
+							{
+								"title": "Unit 12 — Dinnertime!",
+								"activity": "Продукты; Do you like...?; Долгие гласные (o_e, u_e)"
+							},
+							{
+								"title": "Unit 13 — Tidy up!",
+								"activity": "Мебель; There is / There are; Сочетания cl, gl, sl"
+							},
+							{
+								"title": "Unit 14–15 — Action & Beach",
+								"activity": "I can / I can't; Let's...; Открытка с отдыха; Final Assessment"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Жавохир",
+					"image": "Javokhir.jpeg",
+					"bio": "Преподаватель курсов для детей"
+				}
+			},
+			{
+				"id": "kids-family-friends-2",
+				"image": "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80",
+				"title": "Family & Friends 2",
+				"description": "Укрепление базы английского языка, развитие навыков описания повседневных действий и событий для детей.",
+				"duration": "3 месяца (54 занятия)",
+				"level": "A1+",
+				"category": "English_kids",
+				"outcomes": [
+					"Делиться впечатлениями о школе, хобби и выражать чувства",
+					"Обсуждать расписание, правила поведения и праздники",
+					"Писать короткие письма и приглашения",
+					"Использовать Present Continuous, сравнительную степень и Past Simple (was/were)"
+				],
+				"modules": [
+					{
+						"title": "Месяц 1 — Чувства и активности",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + Mid-term контроль.",
+						"lessons": [
+							{
+								"title": "Starter: Welcome back!",
+								"activity": "Повторение семьи, чисел и цветов — песни"
+							},
+							{
+								"title": "Unit 1 — Our new things",
+								"activity": "Предметы в классе; This/That/These/Those; Описание класса"
+							},
+							{
+								"title": "Unit 2 — They're happy now!",
+								"activity": "Чувства; We're/They're; Диграфы ch, sh, th"
+							},
+							{
+								"title": "Unit 3 — I can ride a bike!",
+								"activity": "Активности; Can/Can't; Сочетания br, cr, dr, fr"
+							},
+							{
+								"title": "Unit 4 — Have you got a milkshake?",
+								"activity": "Продукты питания; Have you got...?; Заказ в кафе"
+							}
+						]
+					},
+					{
+						"title": "Месяц 2 — Школа и распорядок дня",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + промежуточный контроль.",
+						"lessons": [
+							{
+								"title": "Unit 5 — We've got English!",
+								"activity": "Школьные предметы; We've got...; Расписание уроков"
+							},
+							{
+								"title": "Unit 6 — Let's play after school!",
+								"activity": "Занятия после школы; Present Simple; Планы на неделю"
+							},
+							{
+								"title": "Unit 7 — Let's buy presents!",
+								"activity": "Подарки; Present Simple (3 л. ед.); Приглашение"
+							},
+							{
+								"title": "Unit 8 — What's the time?",
+								"activity": "Распорядок дня; Время (часы); Рассказ о своём дне"
+							},
+							{
+								"title": "Unit 9 — Where does she work?",
+								"activity": "Места работы; Where does...?; Интервью о работе"
+							}
+						]
+					},
+					{
+						"title": "Месяц 3 — Природа и праздники",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + Final Assessment.",
+						"lessons": [
+							{
+								"title": "Unit 10 — It's hot today!",
+								"activity": "Погода; Present Continuous; Прогноз погоды"
+							},
+							{
+								"title": "Unit 11 — What are you wearing?",
+								"activity": "Одежда; Вопросы в Present Continuous; Описание людей"
+							},
+							{
+								"title": "Unit 12 — You're sleeping!",
+								"activity": "Подготовка к празднику; Present Continuous; Электронное письмо"
+							},
+							{
+								"title": "Unit 13 — Look at all the animals!",
+								"activity": "Животные на ферме; Сравнение (bigger than)"
+							},
+							{
+								"title": "Unit 14–15 — Photos & Well done!",
+								"activity": "Was/Were; Past Simple; Рассказ о школьном празднике; Final Assessment"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Нодир",
+					"image": "Nodir.jpeg",
+					"bio": "Преподаватель курсов для детей"
+				}
+			},
+			{
+				"id": "kids-family-friends-3",
+				"image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
+				"title": "Family & Friends 3",
+				"description": "Развитие беглости речи и уверенного использования временных форм в повседневном общении для детей.",
+				"duration": "3 месяца (54 занятия)",
+				"level": "A2",
+				"category": "English_kids",
+				"outcomes": [
+					"Описывать события в прошлом и строить планы на будущее",
+					"Сравнивать предметы и явления, обсуждать путешествия и экологию",
+					"Писать эссе, рецепты, отзывы на фильмы и отчёты",
+					"Владеть Past Simple, going to, превосходной степенью и модальным глаголом must"
+				],
+				"modules": [
+					{
+						"title": "Месяц 1 — Семья и хобби",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + Mid-term Assessment.",
+						"lessons": [
+							{
+								"title": "Starter: My family",
+								"activity": "Члены семьи, месяцы, сравнения — повторение основ"
+							},
+							{
+								"title": "Unit 1 — They're from Australia!",
+								"activity": "Страны и сезоны; be from; Рассказ о себе"
+							},
+							{
+								"title": "Unit 2 — My weekend",
+								"activity": "Хобби; like + -ing; Сайт для друзей по переписке"
+							},
+							{
+								"title": "Unit 3 — My things",
+								"activity": "Коллекции; Притяжательные местоимения; Звук ar"
+							},
+							{
+								"title": "Unit 4 — We're having fun!",
+								"activity": "Водные виды спорта; Present Continuous; Туристическая брошюра"
+							}
+						]
+					},
+					{
+						"title": "Месяц 2 — Город, еда и рекорды",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + промежуточный контроль.",
+						"lessons": [
+							{
+								"title": "Unit 5 — A naughty monkey!",
+								"activity": "Зоопарк и эмоции; Вопросы в Present Continuous; Сказка"
+							},
+							{
+								"title": "Unit 6 — Jim's day",
+								"activity": "Распорядок дня; Present Simple (все формы); Блог ученика"
+							},
+							{
+								"title": "Unit 7 — Places to go!",
+								"activity": "Город; Наречия частотности; Отзыв на фильм"
+							},
+							{
+								"title": "Unit 8 — I'd like a melon!",
+								"activity": "Еда; Исчисляемые и неисчисляемые; Рецепты"
+							},
+							{
+								"title": "Unit 9 — Fastest animal",
+								"activity": "Рекорды; Превосходная степень прилагательных; Мировые рекорды"
+							}
+						]
+					},
+					{
+						"title": "Месяц 3 — История и путешествия",
+						"description": "10 занятий с основным учителем, 4 с ассистентом, 3 с иностранным преподавателем + Final Assessment.",
+						"lessons": [
+							{
+								"title": "Unit 10 — In the park!",
+								"activity": "Правила; Модальный глагол must; Сказка о Пряничном человечке"
+							},
+							{
+								"title": "Unit 11 — In the museum",
+								"activity": "Транспорт; Прошедшее время was/were; История викингов"
+							},
+							{
+								"title": "Unit 12–13 — Past Simple",
+								"activity": "Past Simple (правильные глаголы); Рассказ о Древнем Египте"
+							},
+							{
+								"title": "Unit 14 — Did you have a good day?",
+								"activity": "Кемпинг; Past Simple (вопросы); Интервью о каникулах"
+							},
+							{
+								"title": "Unit 15 — Our holiday!",
+								"activity": "Путешествие; going to; Открытка; Final Assessment"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Жавохир",
+					"image": "Javokhir.jpeg",
+					"bio": "Преподаватель курсов для детей"
+				}
+			},
+			{
+				"id": "cefr-dtm-prep",
+				"image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
+				"title": "CEFR / DTM",
+				"description": "Целевая подготовка к национальному экзамену DTM и международному сертификату CEFR. Грамматика, лексика и стратегия сдачи.",
+				"duration": "2–3 месяца",
+				"level": "B1–B2",
+				"category": "Подготовка_к_CEFR/DTM",
+				"outcomes": [
+					"Знать структуру и формат экзамена CEFR/DTM",
+					"Уверенно работать с тестовыми заданиями по грамматике и лексике",
+					"Владеть стратегиями ответа на вопросы с вариантами",
+					"Выйти на целевой балл для поступления в ВУЗ"
+				],
+				"modules": [
+					{
+						"title": "Программа курса",
+						"description": "Систематическая подготовка к экзамену: формат теста, грамматика уровня B1–B2, лексика по темам DTM, разбор типовых заданий и пробные тесты.",
+						"lessons": [
+							{
+								"title": "Формат и структура экзамена",
+								"activity": "Обзор типов заданий и системы оценивания"
+							},
+							{
+								"title": "Грамматика B1–B2",
+								"activity": "Времена, модальные глаголы, условные предложения, пассив"
+							},
+							{
+								"title": "Лексика по темам DTM",
+								"activity": "Тематический словарный запас, словообразование"
+							},
+							{
+								"title": "Стратегия сдачи теста",
+								"activity": "Тайм-менеджмент, работа с вариантами, исключение ошибок"
+							},
+							{
+								"title": "Пробные тесты (Mock Tests)",
+								"activity": "Разбор ошибок и финальный прогноз результата"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Шахрух",
+					"image": "Shahrukh.jpeg",
+					"bio": "Преподаватель подготовки к CEFR/DTM"
+				}
+			},
+			{
+				"id": "toefl-prep",
+				"image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
+				"title": "TOEFL",
+				"description": "Интенсивная подготовка к экзамену TOEFL iBT. Все четыре раздела: Reading, Listening, Speaking, Writing.",
+				"duration": "2–3 месяца",
+				"level": "B2–C1",
+				"category": "Подготовка_к_TOEFL",
+				"outcomes": [
+					"Знать формат и требования TOEFL iBT",
+					"Уверенно работать со всеми четырьмя секциями экзамена",
+					"Писать академические эссе и интегрированные задания",
+					"Выйти на целевой балл для поступления в зарубежный ВУЗ"
+				],
+				"modules": [
+					{
+						"title": "Программа курса",
+						"description": "Полная подготовка к TOEFL iBT: структура теста, стратегии по каждому разделу, академический английский и пробные экзамены с разбором.",
+						"lessons": [
+							{
+								"title": "Reading — стратегия и типы заданий",
+								"activity": "Скимминг, сканирование, вопросы на вывод и детали"
+							},
+							{
+								"title": "Listening — академические лекции и диалоги",
+								"activity": "Note-taking, типы вопросов, ловушки"
+							},
+							{
+								"title": "Speaking — Independent & Integrated Tasks",
+								"activity": "Шаблоны ответов, темп речи, связность"
+							},
+							{
+								"title": "Writing — Independent & Integrated Essays",
+								"activity": "Структура эссе, академический стиль, связки"
+							},
+							{
+								"title": "Пробные тесты (Mock Tests)",
+								"activity": "Полный формат TOEFL iBT с детальным разбором"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Сиёвуш",
+					"image": "Siyovush.jpeg",
+					"bio": "Преподаватель подготовки к TOEFL"
+				}
+			},
+			{
+				"id": "duolingo-prep",
+				"image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80",
+				"title": "Duolingo",
+				"description": "Быстрая и эффективная подготовка к Duolingo English Test (DET) — онлайн-альтернативе IELTS и TOEFL для поступления в университеты.",
+				"duration": "1–2 месяца",
+				"level": "B1–C1",
+				"category": "Подготовка_к_Duolingo",
+				"outcomes": [
+					"Понять формат и особенности Duolingo English Test",
+					"Тренировать адаптивные задания: чтение, аудирование, речь, письмо",
+					"Набрать целевой балл (110–130+) для поступления",
+					"Пройти пробные тесты и скорректировать слабые места"
+				],
+				"modules": [
+					{
+						"title": "Программа курса",
+						"description": "Подготовка к DET: адаптивный формат теста, тренировка всех типов заданий, стратегия набора баллов и пробные сессии.",
+						"lessons": [
+							{
+								"title": "Формат DET и адаптивная система",
+								"activity": "Как работает алгоритм, типы заданий и оценивание"
+							},
+							{
+								"title": "Read & Select / Read Aloud",
+								"activity": "Стратегия работы с лексикой и произношением"
+							},
+							{
+								"title": "Listen & Type / Interactive Listening",
+								"activity": "Скорость печати, аудирование академического уровня"
+							},
+							{
+								"title": "Speaking Sample & Writing Sample",
+								"activity": "Шаблоны, структура, типичные ошибки"
+							},
+							{
+								"title": "Пробные тесты (Mock Sessions)",
+								"activity": "Симуляция реального теста и разбор результатов"
+							}
+						]
+					}
+				],
+				"teacher": {
+					"name": "Нодир",
+					"image": "Nodir.jpeg",
+					"bio": "Преподаватель подготовки к Duolingo English Test"
+				}
 			}
 		]
 	},
