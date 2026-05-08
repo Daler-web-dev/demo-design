@@ -530,20 +530,27 @@ export default function Home() {
 						</p>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-3 sm:gap-4 md:h-[600px]">
-						<div className="md:col-span-2 md:row-span-2 rounded-[2rem] sm:rounded-[3.5rem] relative overflow-hidden min-h-[260px] md:min-h-0">
+						<Link
+							href="/students"
+							className="md:col-span-2 md:row-span-2 rounded-[2rem] sm:rounded-[3.5rem] relative overflow-hidden min-h-[260px] md:min-h-0 group cursor-pointer"
+						>
 							<img
 								src="/students/st0.jpeg"
 								alt="Polyglot students"
-								className="absolute inset-0 w-full h-full object-cover"
+								className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
 								loading="lazy"
 							/>
-							<div className="absolute inset-0 bg-gradient-to-t from-brand-950/55 via-transparent to-transparent pointer-events-none" />
+							<div className="absolute inset-0 bg-gradient-to-t from-brand-950/65 via-transparent to-transparent pointer-events-none" />
+							<div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-300 pointer-events-none" />
 							<div className="absolute left-4 right-4 bottom-4 sm:left-6 sm:right-auto sm:bottom-6 sm:max-w-xl rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-3 backdrop-blur-md">
 								<p className="text-xs sm:text-sm md:text-base font-semibold leading-relaxed text-white/90">
 									{t.homePage.studentStatsOverlay}
 								</p>
 							</div>
-						</div>
+							<div className="absolute top-4 right-4 sm:top-6 sm:right-6 w-10 h-10 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+								<ArrowUpRight className="w-5 h-5 text-white" />
+							</div>
+						</Link>
 						<div className="md:col-span-2 rounded-[2rem] sm:rounded-[3.5rem] relative overflow-hidden min-h-[180px] md:min-h-0">
 							<iframe
 								src={
@@ -558,24 +565,47 @@ export default function Home() {
 								allowFullScreen
 							/>
 						</div>
-						<div className="rounded-[1.5rem] sm:rounded-[3rem] relative overflow-hidden min-h-[180px] md:min-h-0">
+						<Link
+							href="/ielts-hub"
+							className="rounded-[1.5rem] sm:rounded-[3rem] relative overflow-hidden min-h-[180px] md:min-h-0 group cursor-pointer"
+						>
 							<img
-								src="/students/st2.jpeg"
-								alt="Student atmosphere"
-								className="absolute inset-0 w-full h-full object-cover"
+								src="/ieltshub.jpeg"
+								alt="IELTS Hub"
+								className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
 								loading="lazy"
 							/>
-							<div className="absolute inset-0 bg-gradient-to-t from-brand-950/45 via-transparent to-transparent pointer-events-none" />
-						</div>
-						<div className="rounded-[1.5rem] sm:rounded-[3rem] relative overflow-hidden min-h-[180px] md:min-h-0">
-							<img
-								src="/students/st3.jpeg"
-								alt="Student support"
-								className="absolute inset-0 w-full h-full object-cover"
-								loading="lazy"
-							/>
-							<div className="absolute inset-0 bg-gradient-to-t from-brand-950/35 via-transparent to-transparent pointer-events-none" />
-						</div>
+							<div className="absolute inset-0 bg-gradient-to-t from-brand-950/70 via-brand-950/20 to-transparent pointer-events-none" />
+							<div className="absolute bottom-4 left-4 right-4">
+								<p className="text-[10px] font-black uppercase tracking-[0.2em] text-gold mb-1">Polyglot</p>
+								<p className="text-sm font-black uppercase tracking-tight text-white leading-tight">IELTS Hub</p>
+							</div>
+							<div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+								<ArrowUpRight className="w-4 h-4 text-white" />
+							</div>
+						</Link>
+						<Link
+							href="/events"
+							className="rounded-[1.5rem] sm:rounded-[3rem] relative overflow-hidden min-h-[180px] md:min-h-0 group cursor-pointer bg-brand-800"
+						>
+							<div className="absolute inset-0 bg-gradient-to-br from-indigo-600/30 to-brand-900/80 pointer-events-none" />
+							<div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-5">
+								<div>
+									<p className="text-[10px] font-black uppercase tracking-[0.2em] text-gold mb-1">Polyglot</p>
+									<p className="text-sm font-black uppercase tracking-tight text-white leading-tight">Events</p>
+								</div>
+								<div className="flex flex-wrap gap-1.5">
+									{["Speaking Club", "Workshop", "Open Day"].map((tag) => (
+										<span key={tag} className="text-[9px] font-black uppercase tracking-wider px-2 py-0.5 bg-white/10 border border-white/15 rounded-full text-white/80">
+											{tag}
+										</span>
+									))}
+								</div>
+							</div>
+							<div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+								<ArrowUpRight className="w-4 h-4 text-white" />
+							</div>
+						</Link>
 					</div>
 				</div>
 			</section>
