@@ -73,12 +73,28 @@
 		"scoreLabel": "IELTS 9",
 		"allTeachers": [
 			{
-				"nameEn": "Mr. Siyavush",
-				"nameRu": "Mr. Siyavush",
-				"image": "Siyovush.jpeg",
-				"folder": "team",
-				"ielts9": false,
-				"role": "IELTS-инструктор / General English"
+				"nameEn": "Mr. Angus",
+				"nameRu": "Mr. Angus",
+				"image": "Angus.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "IELTS-инструктор"
+			},
+			{
+				"nameEn": "Mr. Otabek",
+				"nameRu": "Mr. Otabek",
+				"image": "Otabek.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "IELTS-инструктор"
+			},
+			{
+				"nameEn": "Ms. Tesni",
+				"nameRu": "Ms. Tesni",
+				"image": "Tesni.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "IELTS-инструктор"
 			},
 			{
 				"nameEn": "Mr. Jasur",
@@ -97,22 +113,6 @@
 				"role": "General English"
 			},
 			{
-				"nameEn": "Mr. Nodir",
-				"nameRu": "Mr. Nodir",
-				"image": "Nodir.jpeg",
-				"folder": "team",
-				"ielts9": false,
-				"role": "General English"
-			},
-			{
-				"nameEn": "Mr. Javoxir",
-				"nameRu": "Mr. Javoxir",
-				"image": "Javokhir.jpeg",
-				"folder": "team",
-				"ielts9": false,
-				"role": "IELTS-инструктор / General English"
-			},
-			{
 				"nameEn": "Ms. Nazira",
 				"nameRu": "Ms. Nazira",
 				"image": "NAZIRA.jpeg",
@@ -121,17 +121,33 @@
 				"role": "TOEFL / IELTS-инструктор"
 			},
 			{
-				"nameEn": "Ms. Jasmina",
-				"nameRu": "Ms. Jasmina",
-				"image": "",
+				"nameEn": "Mr. Siyavush",
+				"nameRu": "Mr. Siyavush",
+				"image": "Siyovush_01.jpeg",
 				"folder": "team",
 				"ielts9": false,
-				"role": "English KIDS"
+				"role": "IELTS-инструктор / General English"
 			},
 			{
-				"nameEn": "Mr. Azam",
-				"nameRu": "Mr. Azam",
-				"image": "",
+				"nameEn": "Mr. Khamidillo",
+				"nameRu": "Mr. Khamidillo",
+				"image": "Khamidillo_02.jpeg",
+				"folder": "team",
+				"ielts9": false,
+				"role": "Преподаватель General English"
+			},
+			{
+				"nameEn": "Mr. Shaxruz",
+				"nameRu": "Mr. Shaxruz",
+				"image": "Shaxruz_03.jpeg",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English / English KIDS"
+			},
+			{
+				"nameEn": "Mr. Nodir",
+				"nameRu": "Mr. Nodir",
+				"image": "Nodir_04.jpeg",
 				"folder": "team",
 				"ielts9": false,
 				"role": "General English"
@@ -139,26 +155,42 @@
 			{
 				"nameEn": "Mr. Said",
 				"nameRu": "Mr. Said",
-				"image": "",
+				"image": "Said_05.jpeg",
 				"folder": "team",
 				"ielts9": false,
 				"role": "General English"
 			},
 			{
-				"nameEn": "Mr. Shaxruz",
-				"nameRu": "Mr. Shaxruz",
-				"image": "",
+				"nameEn": "Mr. Javoxir",
+				"nameRu": "Mr. Javoxir",
+				"image": "Javokhir_06.jpeg",
+				"folder": "team",
+				"ielts9": false,
+				"role": "IELTS-инструктор / General English"
+			},
+			{
+				"nameEn": "Ms. Jasmina",
+				"nameRu": "Ms. Jasmina",
+				"image": "Jasmina_07.jpeg",
+				"folder": "team",
+				"ielts9": false,
+				"role": "English KIDS"
+			},
+			{
+				"nameEn": "Ms. Bahora",
+				"nameRu": "Ms. Bahora",
+				"image": "Bahora_08.jpeg",
 				"folder": "team",
 				"ielts9": false,
 				"role": "General English / English KIDS"
 			},
 			{
-				"nameEn": "Ms. Bahora",
-				"nameRu": "Ms. Bahora",
-				"image": "",
+				"nameEn": "Mr. Azam",
+				"nameRu": "Mr. Azam",
+				"image": "Azam_09.jpeg",
 				"folder": "team",
 				"ielts9": false,
-				"role": "General English / English KIDS"
+				"role": "General English"
 			}
 		]
 	},
@@ -675,7 +707,7 @@
 				],
 				"teacher": {
 					"name": "Mr. Said",
-					"image": "",
+					"image": "Said_05.jpeg",
 					"bio": "Преподаватель General English"
 				}
 			},
@@ -803,7 +835,7 @@
 				],
 				"teacher": {
 					"name": "Mr. Azam",
-					"image": "",
+					"image": "Azam_09.jpeg",
 					"bio": "Преподаватель General English"
 				}
 			},
@@ -931,7 +963,7 @@
 				],
 				"teacher": {
 					"name": "Mr. Nodir",
-					"image": "Nodir.jpeg",
+					"image": "Nodir_04.jpeg",
 					"bio": "Преподаватель General English"
 				}
 			},
@@ -1055,7 +1087,7 @@
 				],
 				"teacher": {
 					"name": "Mr. Siyavush",
-					"image": "Siyovush.jpeg",
+					"image": "Siyovush_01.jpeg",
 					"bio": "IELTS-инструктор / General English"
 				}
 			},
@@ -1179,7 +1211,7 @@
 				],
 				"teacher": {
 					"name": "Mr. Javoxir",
-					"image": "Javokhir.jpeg",
+					"image": "Javokhir_06.jpeg",
 					"bio": "IELTS-инструктор / General English"
 				}
 			},
@@ -1379,7 +1411,7 @@
 				],
 				"teacher": {
 					"name": "Mr. Siyavush",
-					"image": "Siyovush.jpeg",
+					"image": "Siyovush_01.jpeg",
 					"bio": "IELTS-инструктор / General English"
 				}
 			},
@@ -1479,7 +1511,7 @@
 				],
 				"teacher": {
 					"name": "Ms. Jasmina",
-					"image": "",
+					"image": "Jasmina_07.jpeg",
 					"bio": "Преподаватель English KIDS"
 				}
 			},
@@ -1579,7 +1611,7 @@
 				],
 				"teacher": {
 					"name": "Ms. Bahora",
-					"image": "",
+					"image": "Bahora_08.jpeg",
 					"bio": "Преподаватель General English / English KIDS"
 				}
 			},
@@ -1679,7 +1711,7 @@
 				],
 				"teacher": {
 					"name": "Mr. Shaxruz",
-					"image": "",
+					"image": "Shaxruz_03.jpeg",
 					"bio": "Преподаватель General English / English KIDS"
 				}
 			},
@@ -1727,7 +1759,7 @@
 				],
 				"teacher": {
 					"name": "Mr. Siyavush",
-					"image": "Siyovush.jpeg",
+					"image": "Siyovush_01.jpeg",
 					"bio": "IELTS-инструктор / General English"
 				}
 			},
