@@ -2,10 +2,10 @@
 	"nav": {
 		"home": "Bosh sahifa",
 		"courses": "Kurslar",
-		"about": "Tarmoq haqida",
-		"audit": "Testdan o'tish",
-		"contact": "Kontaktlar",
-		"enroll": "Yozilish",
+		"about": "Filiallar",
+		"audit": "Testdan o'ting",
+		"contact": "Biz bilan bog'laning",
+		"enroll": "Ro'yxatdan o'tish",
 		"openMenu": "Menyuni ochish",
 		"closeMenu": "Menyuni yopish",
 		"mainMenu": "Asosiy menyu",
@@ -13,60 +13,60 @@
 	},
 	"hero": {
 		"badge": "Samarqanddagi #1 til maktabi",
-		"title": "Kelajagingizni ingliz tili bilan quring",
-		"subtitle": "Jahon darajasidagi premium ta'lim. Samarqand bo'ylab 8 filialda Oxford standartlari."
+		"title": "Ingliz tili bilan kelajagingizni oching",
+		"subtitle": "Jahon standartidagi ta'lim. Samarqand bo'ylab 10 ta filial."
 	},
 	"prestige": {
 		"badge": "Rasmiy reyting 2024 va 2025",
-		"numberWord": "RAQAM",
-		"oneWord": "BIRINCHI.",
-		"descriptionBeforeHighlight": "IDP Uzbekistan talqiniga ko'ra, ",
-		"descriptionHighlight": "O'zbekistondagi eng yaxshi ta'lim markazi sifatida rasman e'tirof etilgan.",
+		"numberWord": "BIRINCHI",
+		"oneWord": "RAQAM.",
+		"descriptionBeforeHighlight": "IDP Uzbekistan tomonidan ",
+		"descriptionHighlight": "O'zbekistondagi eng yaxshi ta'lim markazi deb e'tirof etilgan.",
 		"videoBadge": "Polyglot School",
-		"videoTitleLine1": "Tarixini tomosha qiling:",
-		"videoTitleLine2": "O'zbekistonning yetakchi til maktabi."
+		"videoTitleLine1": "Biz haqimizda:",
+		"videoTitleLine2": "O'zbekistonning #1 til maktabi."
 	},
 	"results": {
 		"badge": "JAMOA",
-		"title": "Bizning faxrimiz",
-		"subtitle": "IELTS 9 olgan 6 nafar o'qituvchi",
-		"uniqueClaim": "Samarqanddagi boshqa markazlarda bunday natija yo'q",
+		"title": "Bizning o'qituvchilarimiz",
+		"subtitle": "IELTS 9 ball olgan 6 o'qituvchi",
+		"uniqueClaim": "Samarqandda bunday natijani hech qaysi markaz ko'rsatmagan",
 		"scoreLabel": "IELTS 9",
 		"roleLabel": "O'qituvchi",
 		"teachersStat": "O'qituvchi",
 		"maxBandLabel": "Maks. ball",
 		"teachers": [
 			{
-				"name": "Ангус",
+				"name": "Angus",
 				"image": "Angus.jpeg"
 			},
 			{
-				"name": "Жасур",
+				"name": "Jasur",
 				"image": "Jasur.jpeg"
 			},
 			{
-				"name": "Назира",
+				"name": "Nazira",
 				"image": "NAZIRA.jpeg"
 			},
 			{
-				"name": "Отабек",
+				"name": "Otabek",
 				"image": "Otabek.jpeg"
 			},
 			{
-				"name": "Шахзода",
+				"name": "Shaxzoda",
 				"image": "SHAHZODA.jpeg"
 			},
 			{
-				"name": "Тесни",
+				"name": "Tesni",
 				"image": "Tesni.jpeg"
 			}
 		],
-		"viewAllStaff": "Barcha jamoani ko'rish"
+		"viewAllStaff": "Barcha o'qituvchilarni ko'rish"
 	},
 	"staffPage": {
 		"title": "Bizning jamoa",
-		"subtitle": "Polyglotni Samarqanddagi yetakchi til maktabiga aylantirgan insonlar.",
-		"backHome": "Bosh sahifaga",
+		"subtitle": "Polyglotni Samarqanddagi eng yaxshi til maktabiga aylantirgan jamoa.",
+		"backHome": "Bosh sahifaga qaytish",
 		"sectionNiners": "IELTS 9 — Bizning faxrimiz",
 		"sectionTeam": "O'qituvchilar jamoasi",
 		"roleLabel": "O'qituvchi",
@@ -163,78 +163,78 @@
 		]
 	},
 	"branches": {
-		"title": "Sizga eng yaqin filial",
-		"subtitle": "Samarqand bo'ylab 10 ta zamonaviy kampus tarmog'i.",
+		"title": "Bizning filiallarimiz",
+		"subtitle": "Samarqand bo'ylab 10 ta zamonaviy filial.",
 		"mapRouteText": "Yo'nalish qurish",
 		"yandexMaps": "Yandex Xarita",
 		"list": [
-			"Регистан Центр",
-			"Сиёб Кампус",
-			"Университетский Бульвар",
-			"Вокзал",
-			"Сат-Тепо",
-			"Афросиёб",
-			"Чуст",
-			"Мотрид"
+			"Registon Markaz",
+			"Siyob Kampus",
+			"Universitet Bulvari",
+			"Vokzal",
+			"Sat-Tepa",
+			"Afrosiyob",
+			"Chust",
+			"Motrid"
 		]
 	},
 	"methodology": {
 		"title": "Bizning metodikamiz",
-		"subtitle": "Sizni jim tinglovchidan ishonchli so'zlashuvchiga qanday olib chiqamiz.",
+		"subtitle": "Jim tinglovchidan ishonchli so'zlashuvchiga — biz bilan.",
 		"steps": [
 			{
-				"title": "Eng yaxshi metodika",
-				"desc": "Xorijiy universitetlar bilan birgalikda ishlab chiqilgan, xalqaro standartlarga mos — qisqa muddatda yuqori darajaga erishish."
+				"title": "Kuchli metodika",
+				"desc": "Xalqaro universitetlar bilan birgalikda ishlab chiqilgan dastur — qisqa vaqtda yuqori darajaga olib chiqadi."
 			},
 			{
 				"title": "Sertifikatlangan o'qituvchilar",
-				"desc": "O'qituvchilarimiz CELTA va IELTS 9.0 xalqaro sertifikatlariga ega va sizga ham shunday yuqori natijalarga erishishga yordam beradi."
+				"desc": "O'qituvchilarimizning barchasida CELTA va IELTS 9.0 sertifikatlari bor — shu natijalarga siz ham erisha olasiz."
 			},
 			{
 				"title": "Xorijiy o'qituvchilar",
-				"desc": "Ona tili ingliz tili bo'lgan o'qituvchilar bilan suhbatlashish imkoniyati."
+				"desc": "Xorijiy o'qituvchilar bilan jonli ingliz tilida muloqot qilish imkoniyati."
 			},
 			{
 				"title": "Qulay jadval",
-				"desc": "Darslar haftada 4 marta bo'ladi: 3 marta asosiy o'qituvchi bilan, 1 marta xorijiy o'qituvchi bilan."
+				"desc": "Darslar haftada 4 marta: 3 marta asosiy o'qituvchi bilan, 1 marta xorijiy o'qituvchi bilan."
 			},
 			{
 				"title": "Natijalar",
 				"desc": "1000+ o'quvchimiz IELTS 7.0 va undan yuqori ball oldi, 100 dan ortiq talabamiz dunyoning TOP-100 universitetlarida o'qimoqda."
 			},
 			{
-				"title": "Ko'p qirrali ta'lim",
-				"desc": "Yakshanbalari ingliz tilida kino kechalari, munozaralar va qo'shiq, shuningdek mahalliy va xorijiy spikerlar seminarlari va treninglari."
+				"title": "Darsdan tashqari",
+				"desc": "Yakshanbalari: inglizcha kino, munozaralar, qo'shiqlar va xorijiy mehmonlar bilan treninglar."
 			},
 			{
 				"title": "Motivatsiya",
-				"desc": "Polyglotda faol o'quvchilar ichki valyuta — Polyglot Dollars — to'playdi va uni sovg'alarga almashtiradi."
+				"desc": "Faol o'quvchilar Polyglot Dollars to'playdi va uni sovg'alarga almashtiradi."
 			},
 			{
 				"title": "Ota-onalar uchun",
-				"desc": "Farzandingiz o'zlashtirishi ustidan to'liq nazorat — muntazam qo'ng'iroqlar va SMS-xabarlar."
+				"desc": "Farzandingiz o'zlashtirishi to'liq nazorat ostida — muntazam qo'ng'iroq va SMS xabarnomalar."
 			}
 		]
 	},
 	"lifestyle": {
-		"title": "Ekotizim",
-		"subtitle": "Ingliz tilini o'rganish 90 daqiqalik dars emas, balki hayot tarzi.",
+		"title": "Ekosistema",
+		"subtitle": "Ingliz tili — faqat dars emas, bu hayot tarzi.",
 		"items": [
 			{
-				"title": "Разговорные клубы",
-				"label": "Ежедневно"
+				"title": "Speaking klublar",
+				"label": "Har kuni"
 			},
 			{
-				"title": "Кинопоказы",
-				"label": "Выходные"
+				"title": "Kino kechalari",
+				"label": "Dam olish kunlari"
 			},
 			{
-				"title": "Элитная библиотека",
-				"label": "24/7 Доступ"
+				"title": "Kutubxona",
+				"label": "24/7 ochiq"
 			},
 			{
-				"title": "Игровая теория",
-				"label": "Интерактив"
+				"title": "Interaktiv ta'lim",
+				"label": "O'yin-asosli"
 			}
 		]
 	},
@@ -243,35 +243,35 @@
 		"questions": [
 			{
 				"q": "O'qituvchilaringiz sertifikatlangan mi?",
-				"a": "Ha, o'qituvchilarimizning 100% CELTA, DELTA va boshqa xalqaro sertifikatlarga ega."
+				"a": "Ha, o'qituvchilarimizning 100%i CELTA, DELTA va boshqa xalqaro sertifikatlarga ega."
 			},
 			{
 				"q": "Filial almashtira olamanmi?",
-				"a": "Albatta, siz Polyglotning 10 ta filialidan istalganiga o'tishingiz mumkin."
+				"a": "Albatta — Polyglotning 10 ta filialidan istalganiga o'tishingiz mumkin."
 			},
 			{
-				"q": "Polyglotda necha yoshdan o'qish mumkin?",
-				"a": "Kids guruhlariga 6 yoshdan qabul qilamiz."
+				"q": "Qancha yoshdan o'qish mumkin?",
+				"a": "Kids guruhlariga 6 yoshdan bola qabul qilamiz."
 			},
 			{
-				"q": "Guruhda nechta o'quvchi bo'ladi?",
-				"a": "Darslar 15 kishigacha bo'lgan kichik guruhlarda o'tiladi."
+				"q": "Guruhda necha kishi bo'ladi?",
+				"a": "Biz kichik guruhlar bilan ishlaymiz — maksimum 15 kishi."
 			},
 			{
-				"q": "Ona tili ingliz tili bo'lgan o'qituvchilar bilan darslar bormi?",
-				"a": "Ha, barcha General English kurslari uchun xorijiy o'qituvchi bilan darslar nazarda tutilgan."
+				"q": "Xorijiy o'qituvchilar bilan dars bormi?",
+				"a": "Ha, barcha General English kurslarida xorijiy o'qituvchi bilan alohida darslar mavjud."
 			}
 		]
 	},
 	"footer": {
-		"rights": "© 2026 Polyglot Network. 2012-yildan beri Samarqandda ta'lim yetakchisi.",
+		"rights": "© 2026 Polyglot Network. 2012-yildan Samarqandda.",
 		"address": "Universitet bulvari 77",
 		"headlineLine1": "FUTURE",
 		"headlineLine2": "SPEAKS",
 		"headlineHighlight": "ENGLISH.",
 		"navigationTitle": "Navigatsiya",
 		"hqTitle": "Bosh ofis",
-		"tagline": "Eng yaxshisini tanlaganlar uchun.",
+		"tagline": "Sifatni tanlaganlar uchun.",
 		"privacyPolicy": "Maxfiylik siyosati",
 		"oferta": "Ommaviy oferta"
 	},
@@ -285,21 +285,21 @@
 		"connectionError": "AI maslahatchiga ulanishda xatolik yuz berdi."
 	},
 	"enrollForm": {
-		"title": "Polyglot'ga qo'shiling",
-		"subtitle": "Bugunoq ingliz tilini mukammal o'rganish yo'lingizni boshlang. Maslahatchilarimiz tez orada siz bilan bog'lanadi.",
+		"title": "Polyglotga qo'shiling",
+		"subtitle": "Bugun ingliz tili yo'lingizni boshlang. Maslahatchilarimiz tez orada siz bilan bog'lanadi.",
 		"name": "To'liq ism-familiya",
 		"phone": "Aloqa raqami",
 		"branch": "Qulay filialni tanlang",
 		"submit": "Ariza yuborish",
 		"success": "Xush kelibsiz!",
-		"successDetails": "Arizangiz qabul qilindi. Maslahatchimiz tez orada sinov darsini belgilash uchun siz bilan bog'lanadi.",
+		"successDetails": "Arizangiz qabul qilindi. Maslahatchimiz tez orada sinov darsini belgilash uchun qo'ng'iroq qiladi.",
 		"backHome": "Bosh sahifaga qaytish",
 		"namePlaceholder": "Ali Valiyev",
 		"branchPlaceholder": "—",
 		"heroAlt": "Bizga qo'shiling",
 		"quoteAuthor": "Nodira, IELTS talabasi",
-		"quoteText": "Bu yerda o'qishni boshlash akademik kelajagim uchun eng to'g'ri qaror bo'ldi. Muhit juda ilhomlantiradi!",
-		"privacyNotice": "Formani yuborish orqali quyidagi hujjat bilan tanishganingizni tasdiqlaysiz:",
+		"quoteText": "Bu yerda o'qishni boshlash — hayotimdagi eng to'g'ri qarorlardan biri bo'ldi. Muhit juda ilhomlantiradi!",
+		"privacyNotice": "Ariza yuborish orqali siz",
 		"privacyLink": "Maxfiylik siyosati"
 	},
 	"privacyPage": {
@@ -389,10 +389,10 @@
 		]
 	},
 	"diagnostic": {
-		"title": "Diagnostika",
+		"title": "Testdan o'ting",
 		"subtitle": "Til darajangizni 60 soniyada bilib oling.",
 		"quickCardTime": "60 soniya",
-		"quickCardTitle": "Tezkor diagnostika",
+		"quickCardTitle": "Tezkor test",
 		"quickCardDesc": "Nutqdagi qulaylik va asosiy maqsadlaringizning tezkor bahosi.",
 		"quickCardCta": "Boshlash",
 		"deepCardTime": "30 daqiqa",
@@ -402,14 +402,14 @@
 		"startBtn": "Testni boshlash",
 		"nextBtn": "Keyingi savol",
 		"calculating": "Ma'lumotlar tahlil qilinmoqda...",
-		"resultTitle": "Diagnostika yakunlandi",
+		"resultTitle": "Test yakunlandi",
 		"recommendation": "Tavsiya etilgan dastur:",
 		"retake": "Qayta topshirish",
 		"questionLabel": "SAVOL",
 		"levelStrong": "Kuchli B2+",
 		"levelDeveloping": "Rivojlanayotgan A2/B1",
 		"recommendedAlt": "Tavsiya etilgan dastur",
-		"levelLabel": "DIAGNOSTIKA DARAJASI",
+		"levelLabel": "TEST DARAJASI",
 		"pointsLabel": "BALL",
 		"viewProgram": "Dasturni ko'rish",
 		"questions": [
@@ -473,8 +473,8 @@
 	"deepAudit": {
 		"backgroundWord": "AUDIT",
 		"titleWord": "Neyro",
-		"titleHighlight": "Chuqur audit.",
-		"subtitle": "Polyglotdan 30 daqiqalik professional baholash: grammatika, lug'at va til mantigi.",
+		"titleHighlight": "Chuqur test.",
+		"subtitle": "Polyglotdan 30 daqiqalik professional baholash: grammatika, lug'at va til mantiq.",
 		"timeLabel": "Vaqt cheklovi",
 		"timeValue": "30 DAQ",
 		"standardsLabel": "Standartlar",
@@ -497,7 +497,7 @@
 		"next": "Keyingi",
 		"skipQuestion": "Savolni o'tkazib yuborish",
 		"finishBtn": "Yakunlash va tahlil qilish",
-		"completeBadge": "Audit yakunlandi",
+		"completeBadge": "Test yakunlandi",
 		"resultSuccessTitle": "Testlar muvaffaqiyatli yakunlandi",
 		"resultSuccessSubtitle": "Tez orada siz bilan bog'lanamiz.",
 		"yourLabel": "Sizning",
@@ -1941,9 +1941,9 @@
 	},
 	"coursesPage": {
 		"titleLine1": "O'Z YO'LINGIZNI",
-		"titleLine2": "TANLANG",
+		"titleLine2": "TANLANG.",
 		"allLabel": "BARCHASI",
-		"searchPlaceholder": "Dastur bo'yicha qidirish...",
+		"searchPlaceholder": "Kurs qidirish...",
 		"loading": "Yuklanmoqda..."
 	},
 	"courseDetail": {
@@ -1952,22 +1952,22 @@
 		"targetLabel": "Maqsad",
 		"priceLabel": "Narx",
 		"backToCatalog": "Katalogga qaytish",
-		"enrollNow": "Hozir yozilish",
-		"architecture": "Kurs arxitekturasi",
+		"enrollNow": "Yozilish",
+		"architecture": "Kurs tuzilmasi",
 		"journeyLine1": "Sizning",
 		"journeyLine2": "Yo'lingiz.",
 		"lessonsLabel": "Dars",
 		"workshopLabel": "Amaliy workshop",
-		"chiefMentor": "Bosh mentor",
-		"learnFromLine1": "Eng zo'rlardan",
+		"chiefMentor": "Asosiy mentor",
+		"learnFromLine1": "Eng yaxshilardan",
 		"learnFromLine2": "o'rganing.",
 		"startYourLine1": "Kelajagingizni",
 		"startYourLine2": "boshlang.",
 		"investment": "O'zingizga investitsiya",
-		"joinProgram": "Dasturga qo'shilish",
+		"joinProgram": "Dasturga yozilish",
 		"askQuestion": "Savol berish",
-		"trialLine": "Sinov darsi bepul • Yashirin to'lovlarsiz • 100% natija",
-		"apply": "Ariza topshirish"
+		"trialLine": "Birinchi dars bepul — xavf yo'q",
+		"apply": "Yozilish"
 	},
 	"contact": {
 		"subtitle": "Yo'lingizni boshlashingiz uchun har doim yordam berishga tayyormiz.",
@@ -1987,50 +1987,50 @@
 		"heroWord1": "INSONLAR.",
 		"heroWord2": "HAYOTINI.",
 		"heroWord3": "O'ZGARTIRAMIZ.",
-		"alumni": "100,000+ bitiruvchi biz bilan",
+		"alumni": "100 000+ o'quvchi biz bilan",
 		"coursesBadge": "KURSLAR",
 		"coursesTitleLine1": "Bizning",
 		"coursesTitleLine2": "Dasturlar.",
-		"coursesSubtitle": "Mukammal ravonlik uchun ishlab chiqilgan.",
-		"fullCatalog": "To'liq katalog",
-		"courseTrackHint": "Darajangizga mos dasturni tanlang",
+		"coursesSubtitle": "Har daraja uchun — aniq natijaga yo'naltirilgan kurs.",
+		"fullCatalog": "Barcha kurslar",
+		"courseTrackHint": "Ushbu yo'nalishdagi barcha dasturlarni ko'ring",
 		"locationsBadge": "FILIALLAR",
 		"lifestyleAltHub": "Polyglot Hub lounge",
 		"lifestyleHubTitle": "Polyglot Hub",
-		"lifestyleHubDesc": "Markaziy kampuslarimizda mentorlar va guruhdoshlar bilan erkin suhbat mashqi uchun coffee-zone va lounge maydonlari mavjud.",
-		"lifestyleCommunityTag": "HAMJAMIYAT BIRINCHI O'RINDA",
+		"lifestyleHubDesc": "Markaziy filiallarimizda coffee-zone va lounge zonalar bor — mentorlar va guruhdoshlar bilan erkin suhbat qilish uchun.",
+		"lifestyleCommunityTag": "JAMOA — KUCH",
 		"lifestyleAltCinema": "Polyglot'da kino kechasi",
-		"lifestyleCinemaTag": "Har juma",
+		"lifestyleCinemaTag": "Har juma kechasi",
 		"lifestyleAltLibrary": "Polyglot kutubxonasi va o'quv zonasi",
 		"lifestyleAltSpeaking": "Polyglot speaking club",
-		"whyChooseUs": "NEGA BIZ",
+		"whyChooseUs": "NIMA UCHUN BIZ",
 		"faqBadge": "FAQ",
-		"studentStatsOverlay": "Biz bilan 100 mingdan ortiq o'quvchilar IELTS, CEFR va boshqa xalqaro natijalarga erishgan.",
-		"ctaLine1": "ORZU BILAN CHEKLANMANG.",
-		"ctaLine2": "GAPIRISHNI BOSHLANG.",
-		"bookLesson": "Bepul sinov darsiga yozilish"
+		"studentStatsOverlay": "100 000+ o'quvchi biz bilan IELTS, CEFR va boshqa xalqaro sertifikatlarni oldi.",
+		"ctaLine1": "ORZUDAN",
+		"ctaLine2": "NATIJAGA O'TING.",
+		"bookLesson": "Bepul darsga yozilish"
 	},
 	"about": {
 		"badge": "BIZ HAQIMIZDA",
-		"title": "Bizning tarix",
-		"subtitle": "O'n yildan ortiq vaqt davomida Samarqandda ingliz tilida so'zlashuvchilarni shakllantirib kelmoqdamiz.",
+		"title": "Bizning tariximiz",
+		"subtitle": "10 yildan ortiq vaqt davomida Samarqandda ingliz tilini o'rgatib kelmoqdamiz.",
 		"stat1Value": "2012",
 		"stat1Label": "Tashkil etilgan yil",
 		"stat2Value": "9",
-		"stat2Label": "Filiallar",
+		"stat2Label": "Filial",
 		"stat3Value": "7000+",
-		"stat3Label": "Bitiruvchilar",
+		"stat3Label": "Bitiruvchi",
 		"stat4Value": "IELTS 9",
 		"stat4Label": "Eng yuqori ball",
-		"mission": "Polyglot Samarqandda bitta maqsad bilan tashkil etilgan: har bir motivatsiyali talabaga jahon darajasidagi ingliz tili ta'limini taqdim etish. Bugun biz O'zbekistonning eng yuqori reytingli til maktabimiz — 9 ta kampus, IELTS Band 9 darajasida 6 ta o'qituvchi va dunyoning turli burchaklarida ishlayotgan va o'qiyotgan minglab bitiruvchilar.",
-		"readMore": "Biz haqimizda batafsil"
+		"mission": "Polyglot bitta maqsad bilan tashkil etilgan: Samarqanddagi har bir o'quvchiga jahon darajasidagi ingliz tili ta'limini taqdim etish. Bugun biz O'zbekistonning reytingdagi eng yaxshi til maktabimiz — 9 ta filial, IELTS Band 9 darajasida 6 ta o'qituvchi va dunyoning turli burchaklarida ishlayotgan va o'qiyotgan minglab bitiruvchilar.",
+		"readMore": "Batafsil o'qish"
 	},
 	"vacancies": {
 		"badge": "VAKANSIYALAR",
 		"title": "Jamoaga qo'shiling",
-		"subtitle": "Samarqandda ingliz tili ta'limining kelajagini shakllantirishga tayyor faol odamlarni qidiryapmiz.",
-		"applyText": "Telegram orqali murojaat qiling",
-		"contactHint": "Rezyumeingiz va qisqa tanishuv xatini yuboring",
+		"subtitle": "Samarqandda ingliz tili ta'limini rivojlantirishga tayyor odamlarni qidiryapmiz.",
+		"applyText": "Telegram orqali murojaat",
+		"contactHint": "Rezyume va qisqa tanishuv xatini yuboring",
 		"positions": [
 			{
 				"title": "Academic Support",
