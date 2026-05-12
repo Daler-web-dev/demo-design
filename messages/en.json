@@ -73,80 +73,98 @@
 		"scoreLabel": "IELTS 9",
 		"allTeachers": [
 			{
-				"nameEn": "Angus",
-				"nameRu": "Ангус",
-				"image": "Angus.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Jasur",
-				"nameRu": "Жасур",
-				"image": "Jasur.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Nazira",
-				"nameRu": "Назира",
-				"image": "NAZIRA.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Otabek",
-				"nameRu": "Отабек",
-				"image": "Otabek.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Shahzoda",
-				"nameRu": "Шахзода",
-				"image": "SHAHZODA.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Tesni",
-				"nameRu": "Тесни",
-				"image": "Tesni.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Javokhir",
-				"nameRu": "Жавохир",
-				"image": "Javokhir.jpeg",
-				"folder": "team",
-				"ielts9": false
-			},
-			{
-				"nameEn": "Nodir",
-				"nameRu": "Нодир",
-				"image": "Nodir.jpeg",
-				"folder": "team",
-				"ielts9": false
-			},
-			{
-				"nameEn": "Shahrukh",
-				"nameRu": "Шахрух",
-				"image": "Shahrukh.jpeg",
-				"folder": "team",
-				"ielts9": false
-			},
-			{
-				"nameEn": "Siyovush",
-				"nameRu": "Сиёвуш",
+				"nameEn": "Mr. Siyavush",
+				"nameRu": "Mr. Siyavush",
 				"image": "Siyovush.jpeg",
 				"folder": "team",
-				"ielts9": false
+				"ielts9": false,
+				"role": "IELTS Instructor / General English"
+			},
+			{
+				"nameEn": "Mr. Jasur",
+				"nameRu": "Mr. Jasur",
+				"image": "Jasur.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "IELTS Instructor"
+			},
+			{
+				"nameEn": "Ms. Shaxzoda",
+				"nameRu": "Ms. Shaxzoda",
+				"image": "SHAHZODA.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Nodir",
+				"nameRu": "Mr. Nodir",
+				"image": "Nodir.jpeg",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Javoxir",
+				"nameRu": "Mr. Javoxir",
+				"image": "Javokhir.jpeg",
+				"folder": "team",
+				"ielts9": false,
+				"role": "IELTS Instructor / General English"
+			},
+			{
+				"nameEn": "Ms. Nazira",
+				"nameRu": "Ms. Nazira",
+				"image": "NAZIRA.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "TOEFL / IELTS Instructor"
+			},
+			{
+				"nameEn": "Ms. Jasmina",
+				"nameRu": "Ms. Jasmina",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "English KIDS"
+			},
+			{
+				"nameEn": "Mr. Azam",
+				"nameRu": "Mr. Azam",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Said",
+				"nameRu": "Mr. Said",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Shaxruz",
+				"nameRu": "Mr. Shaxruz",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English / English KIDS"
+			},
+			{
+				"nameEn": "Ms. Bahora",
+				"nameRu": "Ms. Bahora",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English / English KIDS"
 			}
 		]
 	},
 	"branches": {
 		"title": "Closest to You",
-		"subtitle": "A network of 8 high-tech campuses across Samarkand.",
+		"subtitle": "A network of 10 high-tech campuses across Samarkand.",
 		"mapRouteText": "Build route",
 		"yandexMaps": "Yandex Maps",
 		"list": [
@@ -161,40 +179,40 @@
 		]
 	},
 	"methodology": {
-		"title": "The Protocol",
+		"title": "Our Methodology",
 		"subtitle": "How we take you from quiet listener to confident speaker.",
 		"steps": [
 			{
-				"title": "Innovative methodology",
-				"desc": "Developed with international universities and aligned with global standards—so you can reach advanced proficiency in a focused timeframe."
+				"title": "Best Methodology",
+				"desc": "Developed with international universities, aligned with global standards — reach a high level in a short time."
 			},
 			{
-				"title": "Comfort built in",
-				"desc": "Fully equipped classrooms plus a dedicated co-working zone for independent study."
+				"title": "Certified Teachers",
+				"desc": "Our teachers hold international CELTA certificates and IELTS 9.0 scores and will help you achieve the same outstanding results."
 			},
 			{
-				"title": "Speaking practice",
-				"desc": "Extra practical sessions beyond core lessons to build fluency and confidence."
+				"title": "Native Speaker Teachers",
+				"desc": "Opportunity to practice speaking with native English speakers."
 			},
 			{
-				"title": "Class rhythm",
-				"desc": "Four 90-minute lessons per week. From A1, IELTS prep with a native speaker. Visit daily for extra Academic Support."
+				"title": "Flexible Schedule",
+				"desc": "Classes run 4 times a week: 3 sessions with the main teacher, 1 session with a native speaker."
 			},
 			{
-				"title": "Proven outcomes",
-				"desc": "Our alumni study at leading universities worldwide. About 90% hit their target IELTS scores."
+				"title": "Results",
+				"desc": "1000+ of our students scored IELTS 7.0 and above, and over 100 are studying at the world's top-100 universities."
 			},
 			{
 				"title": "Life around learning",
 				"desc": "Sundays: English film nights, debates, music, plus seminars and trainings with local and international speakers."
 			},
 			{
-				"title": "Motivation in class",
-				"desc": "Active students earn Polyglot dollars and redeem them for prizes at the auction on the last Sunday of each month."
+				"title": "Motivation",
+				"desc": "At Polyglot, active students earn an internal currency — Polyglot Dollars — and exchange it for prizes."
 			},
 			{
-				"title": "Parents in the loop",
-				"desc": "Regular calls and SMS keep parents updated on their children’s progress."
+				"title": "For Parents",
+				"desc": "Full visibility into your child's progress — regular calls and SMS notifications."
 			}
 		]
 	},
@@ -221,19 +239,27 @@
 		]
 	},
 	"faq": {
-		"title": "Intelligent Support",
+		"title": "Frequently Asked Questions",
 		"questions": [
 			{
-				"q": "How long to reach IELTS 7.0?",
-				"a": "Typically 6-9 months of intensive study depending on your starting point."
-			},
-			{
 				"q": "Are your teachers certified?",
-				"a": "Yes, 100% of our staff hold CELTA, DELTA or equivalent international certificates."
+				"a": "Yes, 100% of our teachers hold CELTA, DELTA and other international certificates."
 			},
 			{
 				"q": "Can I change my branch?",
-				"a": "Absolutely. You can move between any of our 8 campuses in Samarkand."
+				"a": "Of course, you can move between any of the 10 Polyglot branches."
+			},
+			{
+				"q": "From what age can I study at Polyglot?",
+				"a": "Our kids groups accept students from age 6."
+			},
+			{
+				"q": "How many students are in a group?",
+				"a": "We teach in small groups of up to 15 students."
+			},
+			{
+				"q": "Are there classes with native speakers?",
+				"a": "Yes, all General English courses include sessions with a native-speaking teacher."
 			}
 		]
 	},
@@ -648,9 +674,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Javokhir",
-					"image": "Javokhir.jpeg",
-					"bio": "Children's English Instructor"
+					"name": "Mr. Said",
+					"image": "",
+					"bio": "General English Teacher"
 				}
 			},
 			{
@@ -776,9 +802,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Nodir",
-					"image": "Nodir.jpeg",
-					"bio": "General English Instructor"
+					"name": "Mr. Azam",
+					"image": "",
+					"bio": "General English Teacher"
 				}
 			},
 			{
@@ -904,9 +930,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Shahrukh",
-					"image": "Shahrukh.jpeg",
-					"bio": "General English Instructor"
+					"name": "Mr. Nodir",
+					"image": "Nodir.jpeg",
+					"bio": "General English Teacher"
 				}
 			},
 			{
@@ -1028,9 +1054,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Siyovush",
+					"name": "Mr. Siyavush",
 					"image": "Siyovush.jpeg",
-					"bio": "B1–B2+ Instructor"
+					"bio": "IELTS Instructor / General English"
 				}
 			},
 			{
@@ -1152,9 +1178,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Siyovush",
-					"image": "Siyovush.jpeg",
-					"bio": "B1–B2+ Instructor"
+					"name": "Mr. Javoxir",
+					"image": "Javokhir.jpeg",
+					"bio": "IELTS Instructor / General English"
 				}
 			},
 			{
@@ -1252,9 +1278,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Siyovush",
-					"image": "Siyovush.jpeg",
-					"bio": "B1–B2+ Instructor"
+					"name": "Ms. Shaxzoda",
+					"image": "niners/SHAHZODA.jpeg",
+					"bio": "General English Teacher"
 				}
 			},
 			{
@@ -1352,9 +1378,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Siyovush",
+					"name": "Mr. Siyavush",
 					"image": "Siyovush.jpeg",
-					"bio": "B1–B2+ Instructor"
+					"bio": "IELTS Instructor / General English"
 				}
 			},
 			{
@@ -1452,9 +1478,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Javokhir",
-					"image": "Javokhir.jpeg",
-					"bio": "Children's English Instructor"
+					"name": "Ms. Jasmina",
+					"image": "",
+					"bio": "English KIDS Teacher"
 				}
 			},
 			{
@@ -1552,9 +1578,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Nodir",
-					"image": "Nodir.jpeg",
-					"bio": "Children's English Instructor"
+					"name": "Ms. Bahora",
+					"image": "",
+					"bio": "General English / English KIDS Teacher"
 				}
 			},
 			{
@@ -1652,9 +1678,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Shahrukh",
-					"image": "Shahrukh.jpeg",
-					"bio": "Children's English Instructor"
+					"name": "Mr. Shaxruz",
+					"image": "",
+					"bio": "General English / English KIDS Teacher"
 				}
 			},
 			{
@@ -1700,9 +1726,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Otabek",
-					"image": "niners/Otabek.jpeg",
-					"bio": "CEFR/DTM Instructor, Band 9.0"
+					"name": "Mr. Siyavush",
+					"image": "Siyovush.jpeg",
+					"bio": "IELTS Instructor / General English"
 				}
 			},
 			{
@@ -1748,9 +1774,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Angus",
-					"image": "niners/Angus.jpeg",
-					"bio": "TOEFL Instructor, Band 9.0"
+					"name": "Ms. Nazira",
+					"image": "niners/NAZIRA.jpeg",
+					"bio": "TOEFL / IELTS Instructor"
 				}
 			},
 			{
@@ -1796,9 +1822,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Nazira",
-					"image": "niners/NAZIRA.jpeg",
-					"bio": "Duolingo Instructor, Band 9.0"
+					"name": "Ms. Shaxzoda",
+					"image": "niners/SHAHZODA.jpeg",
+					"bio": "General English Teacher"
 				}
 			},
 			{
@@ -1906,9 +1932,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Jasur",
+					"name": "Mr. Jasur",
 					"image": "niners/Jasur.jpeg",
-					"bio": "IELTS Instructor, Band 9.0"
+					"bio": "IELTS Instructor"
 				}
 			}
 		]

@@ -16,16 +16,15 @@ export const BRANCHES: Branch[] = [
 		id: "ayniy",
 		nameEn: "Ayniy Branch",
 		nameRu: "Филиал Айний",
-		address: "Садриддин Айний кўчаси, Самарқанд",
+		address: "ул. Садриддина Айний, 2А",
 		image: "/locations/ayniy.jpeg",
-		yandexMapUrl:
-			"https://yandex.uz/maps/?text=Polyglot+Samarkand+Ayniy",
+		yandexMapUrl: "https://yandex.uz/maps/?text=Polyglot+Samarkand+Ayniy",
 	},
 	{
 		id: "gagarina",
 		nameEn: "Gagarina Branch",
 		nameRu: "Филиал Гагарина",
-		address: "Гагарин кўчаси, Самарқанд",
+		address: "ул. Гагарина, 86(2 этаж)",
 		image: "/locations/gagrina.jpeg",
 		yandexMapUrl:
 			"https://yandex.uz/maps/?text=Polyglot+Samarkand+Gagarina",
@@ -34,19 +33,17 @@ export const BRANCHES: Branch[] = [
 		id: "gelion",
 		nameEn: "Gelion Branch",
 		nameRu: "Филиал Гелион",
-		address: "Гелион бизнес маркази, Самарқанд",
+		address: "ул. Ибн Сины, 8А",
 		image: "/locations/gelion.jpeg",
-		yandexMapUrl:
-			"https://yandex.uz/maps/?text=Polyglot+Samarkand+Gelion",
+		yandexMapUrl: "https://yandex.uz/maps/?text=Polyglot+Samarkand+Gelion",
 	},
 	{
 		id: "vokzal",
 		nameEn: "Vokzal Branch",
 		nameRu: "Филиал Вокзал",
-		address: "Темир йўл вокзали яқини, Самарқанд",
+		address: "ул. Ибн Холдуна, 1",
 		image: "/locations/vokzal.jpeg",
-		yandexMapUrl:
-			"https://yandex.uz/maps/?text=Polyglot+Samarkand+Vokzal",
+		yandexMapUrl: "https://yandex.uz/maps/?text=Polyglot+Samarkand+Vokzal",
 	},
 	{
 		id: "marhabo",
@@ -54,14 +51,13 @@ export const BRANCHES: Branch[] = [
 		nameRu: "Филиал Мархабо",
 		address: "Мархабо маҳалласи, Самарқанд",
 		image: "/locations/marhabo.jpeg",
-		yandexMapUrl:
-			"https://yandex.uz/maps/?text=Polyglot+Samarkand+Marhabo",
+		yandexMapUrl: "https://yandex.uz/maps/?text=Polyglot+Samarkand+Marhabo",
 	},
 	{
 		id: "oqmachit",
 		nameEn: "Oqmachit Branch",
 		nameRu: "Филиал Оқмачит",
-		address: "Оқмачит, Самарқанд",
+		address: "ул. Термез, 513",
 		image: "/locations/oqmachit.jpeg",
 		yandexMapUrl:
 			"https://yandex.uz/maps/?text=Polyglot+Samarkand+Oqmachit",
@@ -70,27 +66,33 @@ export const BRANCHES: Branch[] = [
 		id: "qorasuv",
 		nameEn: "Qorasuv Branch",
 		nameRu: "Филиал Корасув",
-		address: "Қорасув тумани, Самарқанд",
+		address: "массив Корасув, 136",
 		image: "/locations/qorasuv.jpeg",
-		yandexMapUrl:
-			"https://yandex.uz/maps/?text=Polyglot+Samarkand+Qorasuv",
+		yandexMapUrl: "https://yandex.uz/maps/?text=Polyglot+Samarkand+Qorasuv",
 	},
 	{
 		id: "chinese",
 		nameEn: "Chinese Branch",
 		nameRu: "Китайский филиал",
-		address: "Хитой кўчаси, Самарқанд",
+		address: "ул. Гагарина, 86(1 этаж)",
 		image: "/locations/polyglot_chinese.jpeg",
-		yandexMapUrl:
-			"https://yandex.uz/maps/?text=Polyglot+Samarkand+Chinese",
+		yandexMapUrl: "https://yandex.uz/maps/?text=Polyglot+Samarkand+Chinese",
 	},
 	{
 		id: "urgut",
-		nameEn: "Urgut — Coming Soon",
-		nameRu: "Ургут — скоро",
-		address: "Ургут шаҳри, Самарқанд вилояти",
+		nameEn: "Urgut",
+		nameRu: "Ургут",
+		address: "Ургут, ул. Амира Темура(ориентир: автосалон KIA)",
 		image: "/locations/urgut.jpeg",
+		yandexMapUrl: "https://yandex.uz/maps/?text=Urgut+Samarkand",
+	},
+	{
+		id: "ielts_hub",
+		nameEn: "Uzbekistan st",
+		nameRu: "Ул Узбекистанская",
+		address: "Yoshlar Creative Shaharchasi Самарканд",
+		image: "/ieltshub.jpeg",
 		yandexMapUrl:
-			"https://yandex.uz/maps/?text=Urgut+Samarkand",
+			"https://yandex.ru/maps?text=39.642667,66.949712&si=qzk6nfbr7691ut1hakv07dnup4",
 	},
 ];

@@ -108,7 +108,10 @@ export default function BranchLocations({
 	const handleNext = () => handleSelect((selectedIndex + 1) % count);
 
 	return (
-		<section className="py-24 md:py-32 bg-white overflow-hidden" id="locations">
+		<section
+			className="py-24 md:py-32 bg-white overflow-hidden"
+			id="locations"
+		>
 			{/* Header */}
 			<div className="max-w-7xl mx-auto px-6 mb-12 md:mb-16 text-center">
 				<div className="inline-flex items-center gap-2 text-gold font-black uppercase tracking-[0.3em] text-[10px] mb-6">
@@ -132,7 +135,16 @@ export default function BranchLocations({
 					aria-label="Previous branch"
 					className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-brand-100 hover:bg-brand-200 border border-brand-200 flex items-center justify-center transition-colors"
 				>
-					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1b2666" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+					<svg
+						width="20"
+						height="20"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#1b2666"
+						strokeWidth="2.5"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+					>
 						<polyline points="15 18 9 12 15 6" />
 					</svg>
 				</button>
@@ -142,7 +154,16 @@ export default function BranchLocations({
 					aria-label="Next branch"
 					className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-brand-100 hover:bg-brand-200 border border-brand-200 flex items-center justify-center transition-colors"
 				>
-					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1b2666" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+					<svg
+						width="20"
+						height="20"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#1b2666"
+						strokeWidth="2.5"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+					>
 						<polyline points="9 18 15 12 9 6" />
 					</svg>
 				</button>

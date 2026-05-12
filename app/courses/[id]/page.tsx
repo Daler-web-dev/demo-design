@@ -4,18 +4,11 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import {
-	CheckCircle2,
-	Clock,
-	Target,
-	Wallet,
-	GraduationCap,
 	ChevronLeft,
-	ShieldCheck,
 	Zap,
 	Award,
 	Users,
 	MessageSquare,
-	Play,
 	Badge,
 } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
@@ -62,21 +55,6 @@ export default function CourseDetail() {
 		router.replace("/courses");
 		return null;
 	}
-
-	const specs = [
-		{
-			icon: Clock,
-			label: t.courseDetail.durationLabel,
-			value: course.duration,
-		},
-		{
-			icon: GraduationCap,
-			label: t.courseDetail.levelLabel,
-			value: course.level,
-		},
-		{ icon: Target, label: t.courseDetail.targetLabel, value: "" },
-		{ icon: Wallet, label: t.courseDetail.priceLabel, value: "" },
-	];
 
 	return (
 		<div className="bg-white min-h-screen relative selection:bg-gold selection:text-obsidian">
@@ -130,35 +108,8 @@ export default function CourseDetail() {
 								>
 									{t.courseDetail.enrollNow}
 								</Link>
-								{/* <button className="flex items-center space-x-4 group text-white">
-									<div className="w-14 h-14 rounded-full border-2 border-white/20 flex items-center justify-center group-hover:bg-indigo-600 group-hover:border-indigo-600 transition-all">
-										<Play className="w-5 h-5 fill-current" />
-									</div>
-									<span className="text-xs font-black uppercase tracking-widest">
-										{lang === "RU"
-											? "Смотреть интро"
-											: "Watch Intro"}
-									</span>
-								</button> */}
 							</div>
 						</div>
-
-						{/* <div className="hidden lg:grid grid-cols-2 gap-4">
-							{specs.map((spec, i) => (
-								<div
-									key={i}
-									className="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-[2.5rem] group hover:bg-white hover:text-obsidian transition-all cursor-default"
-								>
-									<spec.icon className="w-8 h-8 text-gold mb-6 group-hover:text-indigo-600 transition-colors" />
-									<div className="text-xs font-black uppercase tracking-widest opacity-40 mb-2">
-										{spec.label}
-									</div>
-									<div className="text-2xl font-black tracking-tight">
-										{spec.value}
-									</div>
-								</div>
-							))}
-						</div> */}
 					</div>
 				</div>
 			</section>
@@ -181,30 +132,6 @@ export default function CourseDetail() {
 							<p className="text-xl text-slate-400 font-bold mb-12 leading-relaxed">
 								{course.description}
 							</p>
-
-							{/* <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100">
-								<h4 className="text-xl font-black uppercase tracking-tighter mb-6 flex items-center">
-									<ShieldCheck className="w-6 h-6 mr-3 text-indigo-600" />
-									Guaranteed Outcomes
-								</h4>
-								<ul className="space-y-4">
-									{course.outcomes.map(
-										(outcome, idx) => (
-											<li
-												key={idx}
-												className="flex items-start space-x-4 group"
-											>
-												<div className="w-6 h-6 bg-white rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:bg-indigo-600 transition-colors">
-													<CheckCircle2 className="w-4 h-4 text-indigo-600 group-hover:text-white" />
-												</div>
-												<span className="text-slate-600 font-bold">
-													{outcome}
-												</span>
-											</li>
-										),
-									)}
-								</ul>
-							</div> */}
 						</div>
 
 						<div className="lg:col-span-7">
@@ -328,12 +255,20 @@ export default function CourseDetail() {
 							</div>
 							<Users className="absolute -bottom-10 -right-10 w-64 h-64 text-white/5 group-hover:scale-110 transition-transform duration-1000" />
 						</div>
-						<div className="relative rounded-[4rem] overflow-hidden group">
-							<img
-								src={resolveTeamPhoto(course.teacher.image)}
-								className="w-full h-full object-cover transition-all duration-1000 scale-105 group-hover:scale-100 min-h-[400px]"
-								alt={course.teacher.name}
-							/>
+						<div className="relative rounded-[4rem] overflow-hidden group min-h-[400px] bg-white/5">
+							{resolveTeamPhoto(course.teacher.image) ? (
+								<img
+									src={resolveTeamPhoto(course.teacher.image)}
+									className="w-full h-full object-cover transition-all duration-1000 scale-105 group-hover:scale-100 min-h-[400px]"
+									alt={course.teacher.name}
+								/>
+							) : (
+								<div className="w-full min-h-[400px] flex items-center justify-center bg-obsidian/40">
+									<span className="text-[12rem] font-black text-white/10 select-none leading-none">
+										{course.teacher.name.replace(/^M[rs]+\.\s*/, "")[0]}
+									</span>
+								</div>
+							)}
 							<div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent opacity-60"></div>
 							<div className="absolute bottom-12 left-12 flex space-x-4">
 								<div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-obsidian shadow-2xl hover:bg-gold transition-colors cursor-pointer">

@@ -3,7 +3,7 @@
 		"home": "Главная",
 		"courses": "Курсы",
 		"about": "О сети",
-		"audit": "Пройти тестирование",
+		"audit": "Проверить уровень",
 		"contact": "Контакты",
 		"enroll": "Записаться",
 		"openMenu": "Открыть меню",
@@ -19,9 +19,9 @@
 	"prestige": {
 		"badge": "Официальный рейтинг 2024 и 2025",
 		"numberWord": "НОМЕР",
-		"oneWord": "ПЕРВЫЙ.",
-		"descriptionBeforeHighlight": "Официально признан Лучшим языковым центром ",
-		"descriptionHighlight": "Узбекистана по версии IDP Uzbekistan.",
+		"oneWord": "ОДИН.",
+		"descriptionBeforeHighlight": "Официально призван учебным центром",
+		"descriptionHighlight": " с лучшими результатами в Узбекистане по версии IDP Uzbekistan.",
 		"videoBadge": "Polyglot School",
 		"videoTitleLine1": "Узнайте историю",
 		"videoTitleLine2": "ведущей языковой школы Узбекистана."
@@ -73,80 +73,98 @@
 		"scoreLabel": "IELTS 9",
 		"allTeachers": [
 			{
-				"nameEn": "Angus",
-				"nameRu": "Ангус",
-				"image": "Angus.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Jasur",
-				"nameRu": "Жасур",
-				"image": "Jasur.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Nazira",
-				"nameRu": "Назира",
-				"image": "NAZIRA.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Otabek",
-				"nameRu": "Отабек",
-				"image": "Otabek.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Shahzoda",
-				"nameRu": "Шахзода",
-				"image": "SHAHZODA.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Tesni",
-				"nameRu": "Тесни",
-				"image": "Tesni.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Javokhir",
-				"nameRu": "Жавохир",
-				"image": "Javokhir.jpeg",
-				"folder": "team",
-				"ielts9": false
-			},
-			{
-				"nameEn": "Nodir",
-				"nameRu": "Нодир",
-				"image": "Nodir.jpeg",
-				"folder": "team",
-				"ielts9": false
-			},
-			{
-				"nameEn": "Shahrukh",
-				"nameRu": "Шахрух",
-				"image": "Shahrukh.jpeg",
-				"folder": "team",
-				"ielts9": false
-			},
-			{
-				"nameEn": "Siyovush",
-				"nameRu": "Сиёвуш",
+				"nameEn": "Mr. Siyavush",
+				"nameRu": "Mr. Siyavush",
 				"image": "Siyovush.jpeg",
 				"folder": "team",
-				"ielts9": false
+				"ielts9": false,
+				"role": "IELTS-инструктор / General English"
+			},
+			{
+				"nameEn": "Mr. Jasur",
+				"nameRu": "Mr. Jasur",
+				"image": "Jasur.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "IELTS-инструктор"
+			},
+			{
+				"nameEn": "Ms. Shaxzoda",
+				"nameRu": "Ms. Shaxzoda",
+				"image": "SHAHZODA.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Nodir",
+				"nameRu": "Mr. Nodir",
+				"image": "Nodir.jpeg",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Javoxir",
+				"nameRu": "Mr. Javoxir",
+				"image": "Javokhir.jpeg",
+				"folder": "team",
+				"ielts9": false,
+				"role": "IELTS-инструктор / General English"
+			},
+			{
+				"nameEn": "Ms. Nazira",
+				"nameRu": "Ms. Nazira",
+				"image": "NAZIRA.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "TOEFL / IELTS-инструктор"
+			},
+			{
+				"nameEn": "Ms. Jasmina",
+				"nameRu": "Ms. Jasmina",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "English KIDS"
+			},
+			{
+				"nameEn": "Mr. Azam",
+				"nameRu": "Mr. Azam",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Said",
+				"nameRu": "Mr. Said",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Shaxruz",
+				"nameRu": "Mr. Shaxruz",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English / English KIDS"
+			},
+			{
+				"nameEn": "Ms. Bahora",
+				"nameRu": "Ms. Bahora",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English / English KIDS"
 			}
 		]
 	},
 	"branches": {
 		"title": "Мы всегда рядом",
-		"subtitle": "Сеть из 8 высокотехнологичных кампусов по всему Самарканду.",
+		"subtitle": "Сеть из 10 высокотехнологичных кампусов по всему Самарканду.",
 		"mapRouteText": "Составить маршрут",
 		"yandexMaps": "Яндекс Карты",
 		"list": [
@@ -161,28 +179,28 @@
 		]
 	},
 	"methodology": {
-		"title": "Методология",
+		"title": "Наша методика",
 		"subtitle": "От тихого слушателя — к уверенному спикеру.",
 		"steps": [
 			{
-				"title": "Современная методика",
+				"title": "Лучшая методика",
 				"desc": "Разработана с зарубежными вузами, соответствует международным стандартам — до высокого уровня за короткий срок."
 			},
 			{
-				"title": "Комфорт и зоны для учёбы",
-				"desc": "Оборудованные кабинеты и зона co-working для самостоятельных занятий."
+				"title": "Сертифицированные преподаватели",
+				"desc": "Наши преподаватели имеют международные сертификаты CELTA и IELTS 9.0 и помогут вам добиться таких же высоких результатов."
 			},
 			{
-				"title": "Разговорная практика",
-				"desc": "Отдельные занятия для развития устной речи помимо основного курса."
+				"title": "Иностранные преподаватели",
+				"desc": "Возможность практики разговорной речи с носителями языка."
 			},
 			{
-				"title": "Расписание",
-				"desc": "4 раза в неделю по 90 минут. С A1 — подготовка к IELTS с носителем. Центр открыт ежедневно для Academic Support."
+				"title": "Удобное расписание",
+				"desc": "Занятия проходят 4 раза в неделю: 3 раза с основным преподавателем, 1 раз с иностранным преподавателем."
 			},
 			{
 				"title": "Результаты",
-				"desc": "Выпускники в топ-вузах мира; около 90% получают нужный балл по IELTS."
+				"desc": "1000+ наших учеников получили IELTS 7.0 и выше, а более 100 студентов обучаются в ТОП-100 университетах мира."
 			},
 			{
 				"title": "Вне уроков",
@@ -190,11 +208,11 @@
 			},
 			{
 				"title": "Мотивация",
-				"desc": "Активные ученики копят «доллары-полиглоты» и меняют их на призы на аукционе в последнее воскресенье месяца."
+				"desc": "В Polyglot активные ученики получают внутреннюю валюту — Polyglot Dollars — и обменивают её на призы."
 			},
 			{
 				"title": "Для родителей",
-				"desc": "Успеваемость детей — регулярные звонки и SMS."
+				"desc": "Полный контроль успеваемости детей — регулярные звонки и SMS-уведомления."
 			}
 		]
 	},
@@ -221,19 +239,27 @@
 		]
 	},
 	"faq": {
-		"title": "Интеллектуальная поддержка",
+		"title": "Часто задаваемые вопросы",
 		"questions": [
 			{
-				"q": "Сколько времени нужно до IELTS 7.0?",
-				"a": "Обычно 6-9 месяцев интенсивного обучения в зависимости от вашего старта."
-			},
-			{
 				"q": "Ваши учителя сертифицированы?",
-				"a": "Да, 100% нашего персонала имеют международные сертификаты CELTA или DELTA."
+				"a": "Да, 100% наших преподавателей имеют CELTA, DELTA и другие международные сертификаты."
 			},
 			{
 				"q": "Могу ли я сменить филиал?",
-				"a": "Конечно. Вы можете перемещаться между любыми из 8 кампусов в Самарканде."
+				"a": "Конечно, вы можете перемещаться между любыми из 10 филиалов Polyglot."
+			},
+			{
+				"q": "С какого возраста можно обучаться в Polyglot?",
+				"a": "В kids-группах мы принимаем с 6 лет."
+			},
+			{
+				"q": "Сколько человек в группе?",
+				"a": "Занятия у нас проходят в небольших группах до 15 человек."
+			},
+			{
+				"q": "Есть ли занятия с носителями языка?",
+				"a": "Да, для всех курсов General English предусмотрены занятия с иностранным преподавателем."
 			}
 		]
 	},
@@ -363,14 +389,14 @@
 		]
 	},
 	"diagnostic": {
-		"title": "Диагностика",
+		"title": "ПРОВЕРКА УРОВНЯ",
 		"subtitle": "Узнайте свой реальный уровень языка за 60 секунд.",
 		"quickCardTime": "60 секунд",
-		"quickCardTitle": "Быстрая диагностика",
+		"quickCardTitle": "Быстрая проверка",
 		"quickCardDesc": "Быстрая оценка комфорта в речи и основных целей.",
 		"quickCardCta": "Начать",
 		"deepCardTime": "30 минут",
-		"deepCardTitle": "Глубокий аудит",
+		"deepCardTitle": "Пройти тест",
 		"deepCardDesc": "Полное профессиональное тестирование: грамматика, лексика и логика.",
 		"deepCardCta": "К тесту",
 		"startBtn": "Начать тест",
@@ -447,15 +473,15 @@
 	"deepAudit": {
 		"backgroundWord": "АУДИТ",
 		"titleWord": "Нейро",
-		"titleHighlight": "Глубокий аудит.",
-		"subtitle": "Полная 30-минутная профессиональная оценка от Polyglot. Грамматика, лексика и языковая логика.",
+		"titleHighlight": "Проверка уровня.",
+		"subtitle": "30-минутная профессиональная оценка вашего уровня от Polyglot.",
 		"timeLabel": "Лимит времени",
 		"timeValue": "30 МИН",
 		"standardsLabel": "Стандарты",
 		"standardsValue": "CEFR",
 		"accuracyLabel": "Точность",
 		"accuracyValue": "98%",
-		"startBtn": "Начать полный тест",
+		"startBtn": "Начать тест",
 		"formTitle": "Ваши контактные данные",
 		"formSubtitle": "Мы используем их, чтобы перезвонить вам после теста.",
 		"formNameLabel": "Имя",
@@ -493,37 +519,37 @@
 			{
 				"value": "General English",
 				"label": "General_English",
-				"duration": "From Beginning to Fluency",
+				"duration": "От начального уровня по продвинутого",
 				"iconId": "BookOpen"
 			},
 			{
 				"value": "IELTS Intensive",
 				"label": "IELTS_Intensive",
-				"duration": "From Intermediate to Advanced",
+				"duration": "Интересная подготовка к экзамену",
 				"iconId": "Target"
 			},
 			{
 				"value": "English kids",
 				"label": "English_kids",
-				"duration": "From Foundation to Beginner",
+				"duration": "От нулевого уровня до начального",
 				"iconId": "Smile"
 			},
 			{
 				"value": "Подготовка к CEFR/DTM",
 				"label": "Подготовка_к_CEFR/DTM",
-				"duration": "From Foundation to Fluency",
+				"duration": "Эффективная подготовка к экзаменам",
 				"iconId": "Globe"
 			},
 			{
 				"value": "Подготовка к TOEFL",
 				"label": "Подготовка_к_TOEFL",
-				"duration": "From Intermediate to Advanced",
+				"duration": "Эффективная подготовка к экзамену",
 				"iconId": "Globe2"
 			},
 			{
 				"value": "Подготовка к Duolingo",
 				"label": "Подготовка_к_Duolingo",
-				"duration": "From Intermediate to Advanced",
+				"duration": "Эффективная подготовка к экзамену",
 				"iconId": "Feather"
 			}
 		],
@@ -542,7 +568,7 @@
 					"Возможность перейти на А2 (минуя А1+) при результате теста 85%+ (для 15+)"
 				],
 				"level": "Azero",
-				"category": "English_kids",
+				"category": "General_English",
 				"modules": [
 					{
 						"title": "Учебная программа 1-го и 2-го месяца",
@@ -648,9 +674,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Жавохир",
-					"image": "Javokhir.jpeg",
-					"bio": "Преподаватель курсов для детей"
+					"name": "Mr. Said",
+					"image": "",
+					"bio": "Преподаватель General English"
 				}
 			},
 			{
@@ -776,8 +802,8 @@
 					}
 				],
 				"teacher": {
-					"name": "Нодир",
-					"image": "Nodir.jpeg",
+					"name": "Mr. Azam",
+					"image": "",
 					"bio": "Преподаватель General English"
 				}
 			},
@@ -904,8 +930,8 @@
 					}
 				],
 				"teacher": {
-					"name": "Шахрух",
-					"image": "Shahrukh.jpeg",
+					"name": "Mr. Nodir",
+					"image": "Nodir.jpeg",
 					"bio": "Преподаватель General English"
 				}
 			},
@@ -1028,9 +1054,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Сиёвуш",
+					"name": "Mr. Siyavush",
 					"image": "Siyovush.jpeg",
-					"bio": "Преподаватель B1–B2+"
+					"bio": "IELTS-инструктор / General English"
 				}
 			},
 			{
@@ -1152,9 +1178,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Сиёвуш",
-					"image": "Siyovush.jpeg",
-					"bio": "Преподаватель B1–B2+"
+					"name": "Mr. Javoxir",
+					"image": "Javokhir.jpeg",
+					"bio": "IELTS-инструктор / General English"
 				}
 			},
 			{
@@ -1252,9 +1278,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Сиёвуш",
-					"image": "Siyovush.jpeg",
-					"bio": "Преподаватель B1–B2+"
+					"name": "Ms. Shaxzoda",
+					"image": "niners/SHAHZODA.jpeg",
+					"bio": "Преподаватель General English"
 				}
 			},
 			{
@@ -1352,9 +1378,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Сиёвуш",
+					"name": "Mr. Siyavush",
 					"image": "Siyovush.jpeg",
-					"bio": "Преподаватель B1–B2+"
+					"bio": "IELTS-инструктор / General English"
 				}
 			},
 			{
@@ -1452,9 +1478,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Жавохир",
-					"image": "Javokhir.jpeg",
-					"bio": "Преподаватель курсов для детей"
+					"name": "Ms. Jasmina",
+					"image": "",
+					"bio": "Преподаватель English KIDS"
 				}
 			},
 			{
@@ -1552,9 +1578,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Нодир",
-					"image": "Nodir.jpeg",
-					"bio": "Преподаватель курсов для детей"
+					"name": "Ms. Bahora",
+					"image": "",
+					"bio": "Преподаватель General English / English KIDS"
 				}
 			},
 			{
@@ -1652,9 +1678,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Шахрух",
-					"image": "Shahrukh.jpeg",
-					"bio": "Преподаватель курсов для детей"
+					"name": "Mr. Shaxruz",
+					"image": "",
+					"bio": "Преподаватель General English / English KIDS"
 				}
 			},
 			{
@@ -1700,9 +1726,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Отабек",
-					"image": "niners/Otabek.jpeg",
-					"bio": "Преподаватель CEFR/DTM, балл 9.0"
+					"name": "Mr. Siyavush",
+					"image": "Siyovush.jpeg",
+					"bio": "IELTS-инструктор / General English"
 				}
 			},
 			{
@@ -1748,9 +1774,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Ангус",
-					"image": "niners/Angus.jpeg",
-					"bio": "Преподаватель TOEFL, балл 9.0"
+					"name": "Ms. Nazira",
+					"image": "niners/NAZIRA.jpeg",
+					"bio": "TOEFL / IELTS-инструктор"
 				}
 			},
 			{
@@ -1796,9 +1822,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Назира",
-					"image": "niners/NAZIRA.jpeg",
-					"bio": "Преподаватель Duolingo, балл 9.0"
+					"name": "Ms. Shaxzoda",
+					"image": "niners/SHAHZODA.jpeg",
+					"bio": "Преподаватель General English"
 				}
 			},
 			{
@@ -1906,16 +1932,16 @@
 					}
 				],
 				"teacher": {
-					"name": "Жасур",
+					"name": "Mr. Jasur",
 					"image": "niners/Jasur.jpeg",
-					"bio": "Преподаватель IELTS, балл 9.0"
+					"bio": "IELTS-инструктор"
 				}
 			}
 		]
 	},
 	"coursesPage": {
 		"titleLine1": "ВЫБЕРИТЕ",
-		"titleLine2": "СВОЙ ПУТЬ.",
+		"titleLine2": "ПОДХОДЯЩИЙ КУРС.",
 		"allLabel": "ВСЕ",
 		"searchPlaceholder": "Поиск программы...",
 		"loading": "Загрузка..."
@@ -1927,9 +1953,9 @@
 		"priceLabel": "Стоимость",
 		"backToCatalog": "Назад в каталог",
 		"enrollNow": "Записаться сейчас",
-		"architecture": "Архитектура курса",
-		"journeyLine1": "Ваше",
-		"journeyLine2": "Путешествие.",
+		"architecture": "Структура курса",
+		"journeyLine1": "ПРОГРАММА",
+		"journeyLine2": "ОБУЧЕНИЯ.",
 		"lessonsLabel": "Уроков",
 		"workshopLabel": "Практический воркшоп",
 		"chiefMentor": "Главный ментор",
@@ -1965,7 +1991,7 @@
 		"coursesBadge": "КУРСЫ",
 		"coursesTitleLine1": "Наши",
 		"coursesTitleLine2": "Программы.",
-		"coursesSubtitle": "Созданы для абсолютной беглости.",
+		"coursesSubtitle": "Лучшая методика обучения в городе.",
 		"fullCatalog": "Полный каталог",
 		"courseTrackHint": "Подберите программу под свой уровень",
 		"locationsBadge": "ФИЛИАЛЫ",

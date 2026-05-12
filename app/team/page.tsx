@@ -11,6 +11,7 @@ type Teacher = {
 	image: string;
 	folder: string;
 	ielts9: boolean;
+	role?: string;
 };
 
 export default function TeamPage() {
@@ -48,12 +49,20 @@ export default function TeamPage() {
 					<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-8">
 						{teachers.map((teacher, idx) => (
 							<div key={idx} className="group relative">
-								<div className="relative shadow-2xl ">
-									<img
-										src={`/${teacher.folder}/${teacher.image}`}
-										alt={teacher[nameKey]}
-										className="w-full h-full object-cover "
-									/>
+								<div className="relative shadow-2xl aspect-[3/4] bg-white/5 rounded-xl overflow-hidden">
+									{teacher.image ? (
+										<img
+											src={`/${teacher.folder}/${teacher.image}`}
+											alt={teacher[nameKey]}
+											className="w-full h-full object-cover"
+										/>
+									) : (
+										<div className="w-full h-full flex items-center justify-center bg-white/5">
+											<span className="text-5xl font-black text-white/20">
+												{teacher[nameKey].replace(/^M[rs]+\.\s*/, "")[0]}
+											</span>
+										</div>
+									)}
 									<div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent opacity-85" />
 									{teacher.ielts9 && (
 										<div className="absolute top-4 right-4">
@@ -68,12 +77,14 @@ export default function TeamPage() {
 										</div>
 									)}
 									<div className="absolute bottom-4 left-4 right-4">
-										<div className="flex items-center gap-2 mb-2">
-											<Award className="w-4 h-4 text-gold" />
-											<span className="text-[8px] font-black uppercase tracking-widest text-gold">
-												{t.staffPage.roleLabel}
-											</span>
-										</div>
+										{teacher.role && (
+											<div className="flex items-center gap-2 mb-2">
+												<Award className="w-4 h-4 text-gold shrink-0" />
+												<span className="text-[8px] font-black uppercase tracking-widest text-gold leading-tight">
+													{teacher.role}
+												</span>
+											</div>
+										)}
 										<h3 className="text-lg md:text-xl font-display font-black uppercase tracking-tighter group-hover:text-gold transition-colors">
 											{teacher[nameKey]}
 										</h3>

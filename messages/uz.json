@@ -73,80 +73,98 @@
 		"scoreLabel": "IELTS 9",
 		"allTeachers": [
 			{
-				"nameEn": "Angus",
-				"nameRu": "Ангус",
-				"image": "Angus.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Jasur",
-				"nameRu": "Жасур",
-				"image": "Jasur.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Nazira",
-				"nameRu": "Назира",
-				"image": "NAZIRA.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Otabek",
-				"nameRu": "Отабек",
-				"image": "Otabek.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Shahzoda",
-				"nameRu": "Шахзода",
-				"image": "SHAHZODA.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Tesni",
-				"nameRu": "Тесни",
-				"image": "Tesni.jpeg",
-				"folder": "niners",
-				"ielts9": true
-			},
-			{
-				"nameEn": "Javokhir",
-				"nameRu": "Жавохир",
-				"image": "Javokhir.jpeg",
-				"folder": "team",
-				"ielts9": false
-			},
-			{
-				"nameEn": "Nodir",
-				"nameRu": "Нодир",
-				"image": "Nodir.jpeg",
-				"folder": "team",
-				"ielts9": false
-			},
-			{
-				"nameEn": "Shahrukh",
-				"nameRu": "Шахрух",
-				"image": "Shahrukh.jpeg",
-				"folder": "team",
-				"ielts9": false
-			},
-			{
-				"nameEn": "Siyovush",
-				"nameRu": "Сиёвуш",
+				"nameEn": "Mr. Siyavush",
+				"nameRu": "Mr. Siyavush",
 				"image": "Siyovush.jpeg",
 				"folder": "team",
-				"ielts9": false
+				"ielts9": false,
+				"role": "IELTS o'qituvchisi / General English"
+			},
+			{
+				"nameEn": "Mr. Jasur",
+				"nameRu": "Mr. Jasur",
+				"image": "Jasur.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "IELTS o'qituvchisi"
+			},
+			{
+				"nameEn": "Ms. Shaxzoda",
+				"nameRu": "Ms. Shaxzoda",
+				"image": "SHAHZODA.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Nodir",
+				"nameRu": "Mr. Nodir",
+				"image": "Nodir.jpeg",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Javoxir",
+				"nameRu": "Mr. Javoxir",
+				"image": "Javokhir.jpeg",
+				"folder": "team",
+				"ielts9": false,
+				"role": "IELTS o'qituvchisi / General English"
+			},
+			{
+				"nameEn": "Ms. Nazira",
+				"nameRu": "Ms. Nazira",
+				"image": "NAZIRA.jpeg",
+				"folder": "niners",
+				"ielts9": true,
+				"role": "TOEFL / IELTS o'qituvchisi"
+			},
+			{
+				"nameEn": "Ms. Jasmina",
+				"nameRu": "Ms. Jasmina",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "English KIDS"
+			},
+			{
+				"nameEn": "Mr. Azam",
+				"nameRu": "Mr. Azam",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Said",
+				"nameRu": "Mr. Said",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English"
+			},
+			{
+				"nameEn": "Mr. Shaxruz",
+				"nameRu": "Mr. Shaxruz",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English / English KIDS"
+			},
+			{
+				"nameEn": "Ms. Bahora",
+				"nameRu": "Ms. Bahora",
+				"image": "",
+				"folder": "team",
+				"ielts9": false,
+				"role": "General English / English KIDS"
 			}
 		]
 	},
 	"branches": {
 		"title": "Sizga eng yaqin filial",
-		"subtitle": "Samarqand bo'ylab 8 ta zamonaviy kampus tarmog'i.",
+		"subtitle": "Samarqand bo'ylab 10 ta zamonaviy kampus tarmog'i.",
 		"mapRouteText": "Yo'nalish qurish",
 		"yandexMaps": "Yandex Xarita",
 		"list": [
@@ -161,40 +179,40 @@
 		]
 	},
 	"methodology": {
-		"title": "Metodika",
+		"title": "Bizning metodikamiz",
 		"subtitle": "Sizni jim tinglovchidan ishonchli so'zlashuvchiga qanday olib chiqamiz.",
 		"steps": [
 			{
-				"title": "Innovatsion o'qitish metodikasi",
-				"desc": "Xorijiy universitetlar tajribasiga asoslangan, xalqaro ta'lim standartlariga mos metodika — tilni qisqa vaqt ichida yuqori darajagacha olib chiqishga yordam beradi."
+				"title": "Eng yaxshi metodika",
+				"desc": "Xorijiy universitetlar bilan birgalikda ishlab chiqilgan, xalqaro standartlarga mos — qisqa muddatda yuqori darajaga erishish."
 			},
 			{
-				"title": "Barcha qulayliklar",
-				"desc": "Sinfxonalar zamonaviy jihozlangan; mustaqil mashg'ulot uchun alohida co-working zonasi mavjud."
+				"title": "Sertifikatlangan o'qituvchilar",
+				"desc": "O'qituvchilarimiz CELTA va IELTS 9.0 xalqaro sertifikatlariga ega va sizga ham shunday yuqori natijalarga erishishga yordam beradi."
 			},
 			{
-				"title": "Nutq amaliyoti",
-				"desc": "Asosiy darslardan tashqari suhbat nutqini rivojlantirish uchun alohida amaliy mashg'ulotlar o'tkaziladi."
+				"title": "Xorijiy o'qituvchilar",
+				"desc": "Ona tili ingliz tili bo'lgan o'qituvchilar bilan suhbatlashish imkoniyati."
 			},
 			{
-				"title": "Darslar tartibi",
-				"desc": "Ingliz tili haftasiga 4 marta, har dars 90 daqiqa. A1 dan boshlab IELTSga tayyorlov — ona tili inglizcha so'zlovchi bilan. Academic Support uchun markazga har kuni kelish mumkin."
+				"title": "Qulay jadval",
+				"desc": "Darslar haftada 4 marta bo'ladi: 3 marta asosiy o'qituvchi bilan, 1 marta xorijiy o'qituvchi bilan."
 			},
 			{
-				"title": "Kafolatlangan muvaffaqiyat",
-				"desc": "Bitiruvchilarimiz dunyoning yetakchi universitetlarida o'qiydi; talabalarning taxminan 90% qismi IELTSdan kerakli ball oldi."
+				"title": "Natijalar",
+				"desc": "1000+ o'quvchimiz IELTS 7.0 va undan yuqori ball oldi, 100 dan ortiq talabamiz dunyoning TOP-100 universitetlarida o'qimoqda."
 			},
 			{
 				"title": "Ko'p qirrali ta'lim",
 				"desc": "Yakshanbalari ingliz tilida kino kechalari, munozaralar va qo'shiq, shuningdek mahalliy va xorijiy spikerlar seminarlari va treninglari."
 			},
 			{
-				"title": "Darsdagi motivatsiya",
-				"desc": "Faol o'quvchilar «polyglot dollarlari» oladi va ularni har oyning oxirgi yakshanbasidagi auksionda qimmatbaho sovg'alarga almashtiradi."
+				"title": "Motivatsiya",
+				"desc": "Polyglotda faol o'quvchilar ichki valyuta — Polyglot Dollars — to'playdi va uni sovg'alarga almashtiradi."
 			},
 			{
-				"title": "Ota-onalar nazorati",
-				"desc": "Farzandlari muvaffaqiyati haqida muntazam qo'ng'iroq va SMS orqali xabar beriladi."
+				"title": "Ota-onalar uchun",
+				"desc": "Farzandingiz o'zlashtirishi ustidan to'liq nazorat — muntazam qo'ng'iroqlar va SMS-xabarlar."
 			}
 		]
 	},
@@ -221,19 +239,27 @@
 		]
 	},
 	"faq": {
-		"title": "Savollar va Javoblar",
+		"title": "Ko'p so'raladigan savollar",
 		"questions": [
 			{
-				"q": "IELTS 7.0 ga qancha vaqt ketadi?",
-				"a": "Odatda 6–9 oy intensiv mashg'ulot talab qilinadi — bu boshlang'ich darajangizga bog'liq."
+				"q": "O'qituvchilaringiz sertifikatlangan mi?",
+				"a": "Ha, o'qituvchilarimizning 100% CELTA, DELTA va boshqa xalqaro sertifikatlarga ega."
 			},
 			{
-				"q": "O'qituvchilaringiz sertifikatlanganmi?",
-				"a": "Ha, xodimlarimizning 100% qismi CELTA, DELTA yoki shunga teng xalqaro sertifikatlarga ega."
+				"q": "Filial almashtira olamanmi?",
+				"a": "Albatta, siz Polyglotning 10 ta filialidan istalganiga o'tishingiz mumkin."
 			},
 			{
-				"q": "Filialni almashtira olamanmi?",
-				"a": "Albatta. Samarqanddagi 8 ta kampusimizdan istalganiga o'tishingiz mumkin."
+				"q": "Polyglotda necha yoshdan o'qish mumkin?",
+				"a": "Kids guruhlariga 6 yoshdan qabul qilamiz."
+			},
+			{
+				"q": "Guruhda nechta o'quvchi bo'ladi?",
+				"a": "Darslar 15 kishigacha bo'lgan kichik guruhlarda o'tiladi."
+			},
+			{
+				"q": "Ona tili ingliz tili bo'lgan o'qituvchilar bilan darslar bormi?",
+				"a": "Ha, barcha General English kurslari uchun xorijiy o'qituvchi bilan darslar nazarda tutilgan."
 			}
 		]
 	},
@@ -648,9 +674,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Javokhir",
-					"image": "Javokhir.jpeg",
-					"bio": "Bolalar ingliz tili o'qituvchisi"
+					"name": "Mr. Said",
+					"image": "",
+					"bio": "General English o'qituvchisi"
 				}
 			},
 			{
@@ -776,8 +802,8 @@
 					}
 				],
 				"teacher": {
-					"name": "Nodir",
-					"image": "Nodir.jpeg",
+					"name": "Mr. Azam",
+					"image": "",
 					"bio": "General English o'qituvchisi"
 				}
 			},
@@ -904,8 +930,8 @@
 					}
 				],
 				"teacher": {
-					"name": "Shahrukh",
-					"image": "Shahrukh.jpeg",
+					"name": "Mr. Nodir",
+					"image": "Nodir.jpeg",
 					"bio": "General English o'qituvchisi"
 				}
 			},
@@ -1028,9 +1054,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Siyovush",
+					"name": "Mr. Siyavush",
 					"image": "Siyovush.jpeg",
-					"bio": "B1–B2+ o'qituvchisi"
+					"bio": "IELTS o'qituvchisi / General English"
 				}
 			},
 			{
@@ -1152,9 +1178,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Siyovush",
-					"image": "Siyovush.jpeg",
-					"bio": "B1–B2+ o'qituvchisi"
+					"name": "Mr. Javoxir",
+					"image": "Javokhir.jpeg",
+					"bio": "IELTS o'qituvchisi / General English"
 				}
 			},
 			{
@@ -1252,9 +1278,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Siyovush",
-					"image": "Siyovush.jpeg",
-					"bio": "B1–B2+ o'qituvchisi"
+					"name": "Ms. Shaxzoda",
+					"image": "niners/SHAHZODA.jpeg",
+					"bio": "General English o'qituvchisi"
 				}
 			},
 			{
@@ -1352,9 +1378,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Siyovush",
+					"name": "Mr. Siyavush",
 					"image": "Siyovush.jpeg",
-					"bio": "B1–B2+ o'qituvchisi"
+					"bio": "IELTS o'qituvchisi / General English"
 				}
 			},
 			{
@@ -1452,9 +1478,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Javokhir",
-					"image": "Javokhir.jpeg",
-					"bio": "Bolalar ingliz tili o'qituvchisi"
+					"name": "Ms. Jasmina",
+					"image": "",
+					"bio": "English KIDS o'qituvchisi"
 				}
 			},
 			{
@@ -1552,9 +1578,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Nodir",
-					"image": "Nodir.jpeg",
-					"bio": "Bolalar ingliz tili o'qituvchisi"
+					"name": "Ms. Bahora",
+					"image": "",
+					"bio": "General English / English KIDS o'qituvchisi"
 				}
 			},
 			{
@@ -1652,9 +1678,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Shahrukh",
-					"image": "Shahrukh.jpeg",
-					"bio": "Bolalar ingliz tili o'qituvchisi"
+					"name": "Mr. Shaxruz",
+					"image": "",
+					"bio": "General English / English KIDS o'qituvchisi"
 				}
 			},
 			{
@@ -1700,9 +1726,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Otabek",
-					"image": "niners/Otabek.jpeg",
-					"bio": "CEFR/DTM o'qituvchisi, Band 9.0"
+					"name": "Mr. Siyavush",
+					"image": "Siyovush.jpeg",
+					"bio": "IELTS o'qituvchisi / General English"
 				}
 			},
 			{
@@ -1748,9 +1774,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Angus",
-					"image": "niners/Angus.jpeg",
-					"bio": "TOEFL o'qituvchisi, Band 9.0"
+					"name": "Ms. Nazira",
+					"image": "niners/NAZIRA.jpeg",
+					"bio": "TOEFL / IELTS o'qituvchisi"
 				}
 			},
 			{
@@ -1796,9 +1822,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Nazira",
-					"image": "niners/NAZIRA.jpeg",
-					"bio": "Duolingo o'qituvchisi, Band 9.0"
+					"name": "Ms. Shaxzoda",
+					"image": "niners/SHAHZODA.jpeg",
+					"bio": "General English o'qituvchisi"
 				}
 			},
 			{
@@ -1906,9 +1932,9 @@
 					}
 				],
 				"teacher": {
-					"name": "Jasur",
+					"name": "Mr. Jasur",
 					"image": "niners/Jasur.jpeg",
-					"bio": "IELTS o'qituvchisi, Band 9.0"
+					"bio": "IELTS o'qituvchisi"
 				}
 			}
 		]

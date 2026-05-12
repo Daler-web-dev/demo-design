@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 type Position = { title: string; type: string; requirement: string; desc: string };
 
-const TELEGRAM_URL = "https://t.me/polyglot_careers";
+const TELEGRAM_URL = "https://t.me/polyglotlanguageschool";
 
 export default function VacanciesSection() {
 	const { t } = useLanguage();
