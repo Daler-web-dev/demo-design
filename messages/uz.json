@@ -236,7 +236,7 @@
 			},
 			{
 				"title": "Darsdan tashqari",
-				"desc": "Yakshanbalari: inglizcha kino, munozaralar, qo'shiqlar va xorijiy mehmonlar bilan treninglar."
+				"desc": "Yakshanba kunlari: inglizcha kino, munozaralar, qo'shiqlar va xorijiy mehmonlar bilan treninglar."
 			},
 			{
 				"title": "Motivatsiya",
@@ -551,19 +551,19 @@
 			{
 				"value": "General English",
 				"label": "General_English",
-				"duration": "From Beginning to Fluency",
+				"duration": "Boshlang‘ichdan erkin darajagacha",
 				"iconId": "BookOpen"
 			},
 			{
 				"value": "IELTS Intensive",
 				"label": "IELTS_Intensive",
-				"duration": "From Intermediate to Advanced",
+				"duration": "O‘rta darajadan yuqori darajagacha",
 				"iconId": "Target"
 			},
 			{
 				"value": "English kids",
 				"label": "English_kids",
-				"duration": "From Foundation to Beginner",
+				"duration": "Asosiy tayyorgarlikdan boshlang‘ich darajagacha",
 				"iconId": "Smile"
 			},
 			{
@@ -589,118 +589,118 @@
 			{
 				"id": "azero-pre-elementary",
 				"image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=800&q=80",
-				"title": "Azero Pre-Elementary",
+				"title": "A0 Pre-Elementary",
 				"description": "Asosiy dastur, faqatgina ingliz tilida o'rganish kerak bo'lgan o'quvchilar uchun.",
-				"duration": "2 месяца (40 занятий)",
+				"duration": "2 oy (40 dars)",
 				"outcomes": [
-					"Уверенно писать и читать даже незнакомые слова ",
-					"На базовом уровне описывать что и кто находится рядом ",
-					"Использовать минимум 700 слов на английском языке ",
-					"Письменно излагать свои мысли в письме кому-либо ",
-					"Возможность перейти на А2 (минуя А1+) при результате теста 85%+ (для 15+)"
+					"Noma'lum so'zlarni ham ishonch bilan yozish va o'qish",
+					"Asosiy darajada yonidagi narsa va odamlarni tasvirlash",
+					"Ingliz tilida kamida 700 so'zdan foydalanish",
+					"Xat yozish orqali fikrlarini yozma bayon qilish",
+					"Test natijasi 85%+ bo'lganda A2 ga (A1+ ni o'tkazib) o'tish imkoniyati (15+ yoshlilar uchun)"
 				],
 				"level": "Azero",
 				"category": "English_kids",
 				"modules": [
 					{
-						"title": "Учебная программа 1-го и 2-го месяца",
-						"description": "24 занятия с основным учителем, а также уроки с ассистентами и иностранными преподавателями. ",
+						"title": "1 va 2-oy o'quv dasturi",
+						"description": "24 dars asosiy o'qituvchi bilan, hamda assistentlar va xorijiy o'qituvchilar bilan darslar.",
 						"lessons": [
 							{
-								"title": "Present Simple с 'to be' (ед. число)",
-								"activity": "Говорение: Представление друга "
+								"title": "Present Simple 'to be' bilan (birlik son)",
+								"activity": "Gapirish: Do'stni tanishtirish"
 							},
 							{
-								"title": "Описание профессий и приветствия",
-								"activity": "Говорение: Ударение в словах и интонация "
+								"title": "Kasblar va salomlashuvlarni tasvirlash",
+								"activity": "Gapirish: So'zlarda urg'u va intonatsiya"
 							},
 							{
-								"title": "Present Simple с 'to be' (мн. число)",
-								"activity": "Говорение: Любимый музыкант "
+								"title": "Present Simple 'to be' bilan (ko'plik son)",
+								"activity": "Gapirish: Sevimli musiqachi"
 							},
 							{
-								"title": "Wh- вопросы",
-								"activity": "Говорение: Обмен информацией [cite: 31]"
+								"title": "Wh- savollar",
+								"activity": "Gapirish: Ma'lumot almashish"
 							},
 							{
-								"title": "Существительные и указательные местоимения",
-								"activity": "Говорение: Разговор в гардеробе [cite: 32]"
+								"title": "Otlar va ko'rsatish olmoshlari",
+								"activity": "Gapirish: Kiyim do'konida suhbat"
 							},
 							{
-								"title": "Конструкция Has got / Have got",
-								"activity": "Говорение: Члены семьи [cite: 33]"
+								"title": "Has got / Have got qurilmasi",
+								"activity": "Gapirish: Oila a'zolari"
 							},
 							{
-								"title": "Present Simple (Действие/Мн. число)",
-								"activity": "Аудирование и говорение о распорядке дня [cite: 34]"
+								"title": "Present Simple (Harakat/Ko'plik son)",
+								"activity": "Tinglash va kundalik tartib haqida gapirish"
 							},
 							{
-								"title": "Вопросы в Present Simple",
-								"activity": "Чтение и говорение о животных [cite: 35]"
+								"title": "Present Simple da savollar",
+								"activity": "O'qish va hayvonlar haqida gapirish"
 							},
 							{
-								"title": "Present Simple (Действие/Ед. число)",
-								"activity": "Говорение: Свободное время [cite: 36]"
+								"title": "Present Simple (Harakat/Birlik son)",
+								"activity": "Gapirish: Bo'sh vaqt"
 							},
 							{
-								"title": "Наречия частоты",
-								"activity": "Чтение и обсуждение привычек в еде [cite: 37]"
+								"title": "Chastotlik ravishlar",
+								"activity": "O'qish va ovqatlanish odatlari haqida muhokama"
 							},
 							{
-								"title": "There is/are; some и any",
-								"activity": "Описание города [cite: 38]"
+								"title": "There is/are; some va any",
+								"activity": "Shaharni tasvirlash"
 							},
 							{
-								"title": "Вопросы Is there / Are there",
-								"activity": "Аренда жилья [cite: 39]"
+								"title": "Is there / Are there savollari",
+								"activity": "Uy ijarasi"
 							},
 							{
-								"title": "Модальный глагол Can/Can't",
-								"activity": "Опрос класса о способностях [cite: 40]"
+								"title": "Can/Can't modal fe'li",
+								"activity": "Qobiliyatlar haqida sinf so'rovi"
 							},
 							{
-								"title": "Притяжательный падеж 's",
-								"activity": "Аудирование и разговор о талантливом человеке [cite: 41]"
+								"title": "Egalik kelishigi 's",
+								"activity": "Tinglash va iste'dodli inson haqida suhbat"
 							},
 							{
 								"title": "Present Continuous",
-								"activity": "Описание картинки и поиск отличий [cite: 41]"
+								"activity": "Rasmni tasvirlash va farqlarni topish"
 							},
 							{
-								"title": "Порядок прилагательных",
-								"activity": "Разговор об одежде [cite: 41]"
+								"title": "Sifatdoshlar tartibi",
+								"activity": "Kiyim haqida suhbat"
 							},
 							{
 								"title": "Past Simple: was/were",
-								"activity": "Вопросы о знаменитости [cite: 42]"
+								"activity": "Mashhur shaxs haqida savollar"
 							},
 							{
-								"title": "Past Simple: правильные глаголы",
-								"activity": "Квиз о знаменитости [cite: 42]"
+								"title": "Past Simple: to'g'ri fe'llar",
+								"activity": "Mashhur shaxs haqida viktorina"
 							},
 							{
-								"title": "Past Simple: неправильные глаголы",
-								"activity": "Описание мира [cite: 42]"
+								"title": "Past Simple: noto'g'ri fe'llar",
+								"activity": "Dunyoni tasvirlash"
 							},
 							{
-								"title": "Вопросы в Past Simple",
-								"activity": "Вопросы сверстникам о прошлом опыте [cite: 42]"
+								"title": "Past Simple da savollar",
+								"activity": "Tengdoshlarga o'tgan tajriba haqida savollar"
 							},
 							{
-								"title": "Предпочтения (like/love/hate)",
-								"activity": "Занятия в свободное время [cite: 42]"
+								"title": "Afzalliklar (like/love/hate)",
+								"activity": "Bo'sh vaqtda mashg'ulotlar"
 							},
 							{
-								"title": "Объектные местоимения",
-								"activity": "Поиск суперфаната [cite: 43]"
+								"title": "Ob'ekt olmoshlari",
+								"activity": "Superfanni topish"
 							},
 							{
-								"title": "Существительные и путешествия",
-								"activity": "Исчисляемые/неисчисляемые (опыт плохой поездки) [cite: 44]"
+								"title": "Otlar va sayohat",
+								"activity": "Sanaladigan/sanab bo'lmaydigan (yomon safar tajribasi)"
 							},
 							{
-								"title": "Present Continuous (Будущее)",
-								"activity": "Планирование идеального отпуска [cite: 44]"
+								"title": "Present Continuous (Kelajak)",
+								"activity": "Ideal ta'tilni rejalashtirish"
 							}
 						]
 					}
@@ -714,121 +714,121 @@
 			{
 				"id": "a1-plus-beginner",
 				"image": "https://plus.unsplash.com/premium_photo-1770548404170-6e7cbaabf0bf?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-				"title": "A1+ Beginner",
-				"description": "Развитие навыков аудирования, базовое описание повседневной жизни и расширение словаря до 2000+ слов.",
-				"duration": "2 месяца (40 занятий)",
+				"title": "A1",
+				"description": "Tinglash ko'nikmalarini rivojlantirish, kundalik hayotni asosiy darajada tasvirlash va lug'atni 2000+ so'zgacha kengaytirish.",
+				"duration": "2 oy (40 dars)",
 				"outcomes": [
-					"Развитие английского на слух ",
-					"На базовом уровне описывать свою повседневную жизнь и других ",
-					"Использовать минимум +2000 слов на английском языке ",
-					"Письменно излагать свои мысли в письме и онлайн "
+					"Inglizcha tinglash ko'nikmalarini rivojlantirish",
+					"Asosiy darajada o'zining va boshqalarning kundalik hayotini tasvirlash",
+					"Ingliz tilida kamida 2000+ so'zdan foydalanish",
+					"Xat va onlayn fikrlarini yozma bayon qilish"
 				],
-				"level": "A1+",
+				"level": "A1",
 				"category": "General_English",
 				"modules": [
 					{
-						"title": "Учебная программа",
-						"description": "Комплексная программа из 24 занятий с основным учителем, ассистентами и иностранными преподавателями[cite: 8, 9, 10].",
+						"title": "O'quv dasturi",
+						"description": "Asosiy o'qituvchi, assistentlar va xorijiy o'qituvchilar bilan 24 darsdan iborat kompleks dastur.",
 						"lessons": [
 							{
-								"title": "Starter Unit: Основы",
-								"activity": "Алфавит, цвета, числа, дни недели, месяцы "
+								"title": "Starter Unit: Asoslar",
+								"activity": "Alifbo, ranglar, raqamlar, haftaning kunlari, oylar"
 							},
 							{
-								"title": "Урок 1: Глагол to be",
-								"activity": "Чтение/Говорение: Хобби (утверждение и отрицание) "
+								"title": "1-dars: to be fe'li",
+								"activity": "O'qish/Gapirish: Hobbi (tasdiqlash va inkor)"
 							},
 							{
-								"title": "Урок 2: Владение",
-								"activity": "Аудирование/Письмо: Описание картинки, Have/has got, притяжательные прилагательные "
+								"title": "2-dars: Egalik",
+								"activity": "Tinglash/Yozish: Rasmni tasvirlash, Have/has got, egalik sifatdoshlari"
 							},
 							{
-								"title": "Урок 3: Описание людей",
-								"activity": "Чтение/Говорение: Притяжательный падеж 's, правильные и неправильные существительные "
+								"title": "3-dars: Odamlarni tasvirlash",
+								"activity": "O'qish/Gapirish: Egalik kelishigi 's, to'g'ri va noto'g'ri otlar"
 							},
 							{
-								"title": "Урок 4: Вопросы и артикли",
-								"activity": "Письмо: Школьный планер, Wh-вопросы, указательные местоимения, артикли "
+								"title": "4-dars: Savollar va artikllar",
+								"activity": "Yozish: Maktab planeri, Wh-savollar, ko'rsatish olmoshlari, artikllar"
 							},
 							{
-								"title": "Урок 5: Present Simple I",
-								"activity": "Аудирование: True/False/Not mentioned (Утверждение/Отрицание) "
+								"title": "5-dars: Present Simple I",
+								"activity": "Tinglash: To'g'ri/Noto'g'ri/Aytilmagan (Tasdiqlash/Inkor)"
 							},
 							{
-								"title": "Урок 6: Present Simple II",
-								"activity": "Говорение: Как добраться, общие и специальные вопросы "
+								"title": "6-dars: Present Simple II",
+								"activity": "Gapirish: Qanday borish, umumiy va maxsus savollar"
 							},
 							{
-								"title": "Урок 7: Местоположение",
-								"activity": "Чтение: Заголовки, There is/There are, предлоги места "
+								"title": "7-dars: Joylashuv",
+								"activity": "O'qish: Sarlavhalar, There is/There are, joy predloglari"
 							},
 							{
-								"title": "Урок 8: Существительные и предложения",
-								"activity": "Как предлагать и отвечать на предложения, исчисляемые/неисчисляемые, some/any/a/an "
+								"title": "8-dars: Otlar va takliflar",
+								"activity": "Taklif qilish va javob berish, sanaladigan/sanab bo'lmaydigan, some/any/a/an"
 							},
 							{
-								"title": "Урок 9: Способности и частота",
-								"activity": "Запрос и предоставление информации, модальные глаголы: can/can't, наречия частоты "
+								"title": "9-dars: Qobiliyatlar va chastota",
+								"activity": "Ma'lumot so'rash va berish, modal fe'llar: can/can't, chastotlik ravishlar"
 							},
 							{
-								"title": "Урок 10: Предпочтения",
-								"activity": "Презентация: Опросник, повелительное наклонение, like/love/hate + Ving "
+								"title": "10-dars: Afzalliklar",
+								"activity": "Taqdimot: So'rovnoma, buyruq mayli, like/love/hate + Ving"
 							},
 							{
-								"title": "Урок 11: Промежуточное говорение",
-								"activity": "Презентации студентов (говорение) "
+								"title": "11-dars: Oraliq gapirish",
+								"activity": "Talabalar taqdimotlari (gapirish)"
 							},
 							{
-								"title": "Урок 12: Present Continuous I",
-								"activity": "Чтение: Сопоставление характеристик, утверждение и отрицание "
+								"title": "12-dars: Present Continuous I",
+								"activity": "O'qish: Xarakteristikalarni solishtirish, tasdiqlash va inkor"
 							},
 							{
-								"title": "Урок 13: Continuous против Simple",
-								"activity": "Аудирование: Множественный выбор, вопросы, сравнение Simple и Continuous "
+								"title": "13-dars: Continuous Simple ga qarshi",
+								"activity": "Tinglash: Ko'p tanlov, savollar, Simple va Continuous taqqoslash"
 							},
 							{
-								"title": "Урок 14: Прошедшее время To Be",
-								"activity": "Говорение: Спорт, Past Simple глагола to be / There was/were "
+								"title": "14-dars: To Be ning o'tgan zamoni",
+								"activity": "Gapirish: Sport, to be fe'lining Past Simple / There was/were"
 							},
 							{
-								"title": "Урок 15: Past Simple (утверждение)",
-								"activity": "Письмо: Необычные виды спорта, правильные и неправильные глаголы "
+								"title": "15-dars: Past Simple (tasdiqlash)",
+								"activity": "Yozish: Noodatiy sport turlari, to'g'ri va noto'g'ri fe'llar"
 							},
 							{
-								"title": "Урок 16: Past Simple (отрицание)",
-								"activity": "Письмо: Личное заявление "
+								"title": "16-dars: Past Simple (inkor)",
+								"activity": "Yozish: Shaxsiy ariza"
 							},
 							{
-								"title": "Урок 17: Past Simple (вопросы)",
-								"activity": "Говорение: Понимание критериев оценки "
+								"title": "17-dars: Past Simple (savollar)",
+								"activity": "Gapirish: Baholash mezonlarini tushunish"
 							},
 							{
-								"title": "Урок 18: Презентация",
-								"activity": "Урок говорения (презентация) "
+								"title": "18-dars: Taqdimot",
+								"activity": "Gapirish darsi (taqdimot)"
 							},
 							{
-								"title": "Урок 19: Сравнения",
-								"activity": "Чтение: Множественный выбор, сравнительная степень прилагательных "
+								"title": "19-dars: Taqqoslashlar",
+								"activity": "O'qish: Ko'p tanlov, sifatdoshlarning qiyosiy darajasi"
 							},
 							{
-								"title": "Урок 20: Превосходная степень и опыт",
-								"activity": "Аудирование: Заполнение пропусков, превосходная степень, Present Perfect с ever/never "
+								"title": "20-dars: Ustun daraja va tajriba",
+								"activity": "Tinglash: Bo'shliqlarni to'ldirish, ustun daraja, Present Perfect ever/never bilan"
 							},
 							{
-								"title": "Урок 21: Планы на будущее",
-								"activity": "Практика языка, To be going to / предлоги времени "
+								"title": "21-dars: Kelajak rejalari",
+								"activity": "Til amaliyoti, To be going to / vaqt predloglari"
 							},
 							{
-								"title": "Урок 22: Советы и обязательства",
-								"activity": "Письмо в условиях экзамена, Should/shouldn't, must/have to "
+								"title": "22-dars: Maslahatlar va majburiyatlar",
+								"activity": "Imtihon sharoitida yozish, Should/shouldn't, must/have to"
 							},
 							{
-								"title": "Урок 23: Финальный обзор",
-								"activity": "Повторение с основным учителем и академической поддержкой "
+								"title": "23-dars: Yakuniy tahlil",
+								"activity": "Asosiy o'qituvchi va akademik qo'llab-quvvatlash bilan takrorlash"
 							},
 							{
-								"title": "Урок 24: Воркшоп",
-								"activity": "Мастер-класс от старшего преподавателя "
+								"title": "24-dars: Ustaxona",
+								"activity": "Katta o'qituvchidan master-klass"
 							}
 						]
 					}
@@ -842,120 +842,120 @@
 			{
 				"id": "a1-plus-elementary",
 				"image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
-				"title": "A1+ Elementary",
-				"description": "Формирование базового общения и грамматики английского языка.",
-				"duration": "2 месяца (40 занятий)",
+				"title": "A1+",
+				"description": "Ingliz tilining asosiy muloqoti va grammatikasini shakllantirish.",
+				"duration": "2 oy (40 dars)",
 				"outcomes": [
-					"Развить базовую разговорную речь",
-					"Общаться с туристами и путешествовать",
-					"Уверенно вести переписку на английском",
-					"Освоить базовую грамматику английского"
+					"Asosiy so'zlashuv nutqini rivojlantirish",
+					"Turistlar bilan muloqot qilish va sayohat qilish",
+					"Ingliz tilida ishonch bilan yozishma yuritish",
+					"Ingliz tilining asosiy grammatikasini egallash"
 				],
 				"level": "A1+",
 				"category": "General_English",
 				"modules": [
 					{
-						"title": "1-й месяц",
-						"description": "Формирование базового общения и грамматики английского языка.",
+						"title": "1-oy",
+						"description": "Ingliz tilining asosiy muloqoti va grammatikasini shakllantirish.",
 						"lessons": [
 							{
-								"title": "Повторение уровня A1+",
-								"activity": "Говорение: разговор о семье и базовые описания"
+								"title": "A1+ darajasini takrorlash",
+								"activity": "Gapirish: oila haqida suhbat va asosiy tavsiflar"
 							},
 							{
-								"title": "Present Simple (утвердительная и отрицательная форма)",
-								"activity": "Чтение: True / False / Not Mentioned, Аудирование: сопоставление"
+								"title": "Present Simple (tasdiqlash va inkor shakli)",
+								"activity": "O’qish: To’g’ri / Noto’g’ri / Aytilmagan, Tinglash: solishtirish"
 							},
 							{
-								"title": "Наречия частоты / вопросы в Present Simple",
-								"activity": "Говорение: занятия в свободное время"
+								"title": "Chastotlik ravishlar / Present Simple da savollar",
+								"activity": "Gapirish: bo’sh vaqtda mashg’ulotlar"
 							},
 							{
-								"title": "There is / There are, предлоги места",
-								"activity": "Говорение: описание дома и комнаты"
+								"title": "There is / There are, joy predloglari",
+								"activity": "Gapirish: uy va xonani tasvirlash"
 							},
 							{
-								"title": "Present Continuous vs Present Simple",
-								"activity": "Use of English: множественный выбор"
+								"title": "Present Continuous va Present Simple",
+								"activity": "Use of English: ko’p tanlov"
 							},
 							{
-								"title": "Can / Can't",
-								"activity": "Говорение: опасные виды спорта"
+								"title": "Can / Can’t",
+								"activity": "Gapirish: xavfli sport turlari"
 							},
 							{
-								"title": "Наречия образа действия / Have to / Must",
-								"activity": "Письмо: объявление о фитнес-программе"
+								"title": "Harakat ravishi / Have to / Must",
+								"activity": "Yozish: fitnes dasturi haqida e’lon"
 							},
 							{
-								"title": "Past Simple глаголов To Be и Can",
-								"activity": "Письмо: презентация"
+								"title": "To Be va Can fe’llarining Past Simple",
+								"activity": "Yozish: taqdimot"
 							},
 							{
-								"title": "Past Simple (утвердительная форма)",
-								"activity": "Говорение: рассказ о прошлых событиях"
+								"title": "Past Simple (tasdiqlash shakli)",
+								"activity": "Gapirish: o’tgan voqealar haqida hikoya"
 							},
 							{
-								"title": "Past Simple (отрицание и вопросы)",
-								"activity": "Чтение: сопоставление"
+								"title": "Past Simple (inkor va savollar)",
+								"activity": "O’qish: solishtirish"
 							},
 							{
 								"title": "Past Continuous",
-								"activity": "Аудирование: заполнение заметок"
+								"activity": "Tinglash: qaydlarni to’ldirish"
 							},
 							{
-								"title": "Презентация",
-								"activity": "Любимая книга"
+								"title": "Taqdimot",
+								"activity": "Sevimli kitob"
 							},
 							{
-								"title": "Исчисляемые и неисчисляемые существительные",
-								"activity": "Use of English: вставка предложений"
+								"title": "Sanaladigan va sanab bo’lmaydigan otlar",
+								"activity": "Use of English: gaplarni kiritish"
 							},
 							{
-								"title": "A lot of / Much / Many, Should / Shouldn't",
-								"activity": "Письмо: формальный и неформальный стиль"
+								"title": "A lot of / Much / Many, Should / Shouldn’t",
+								"activity": "Yozish: rasmiy va norasmiy uslub"
 							},
 							{
 								"title": "Be going to / Will / Won’t",
-								"activity": "Говорение в парах"
+								"activity": "Juftlikda gapirish"
 							},
 							{
-								"title": "Present Continuous для будущего",
-								"activity": "Говорение: предложения и планы"
+								"title": "Present Continuous kelajak uchun",
+								"activity": "Gapirish: takliflar va rejalar"
 							},
 							{
-								"title": "Сравнительная степень прилагательных",
-								"activity": "Говорение: сравнение фотографий"
+								"title": "Sifatdoshlarning qiyosiy darajasi",
+								"activity": "Gapirish: fotosuratlarni taqqoslash"
 							},
 							{
-								"title": "Превосходная степень прилагательных / артикли",
-								"activity": "Письмо: формальное письмо-мнение"
+								"title": "Sifatdoshlarning ustun darajasi / artikllar",
+								"activity": "Yozish: rasmiy fikr xati"
 							},
 							{
 								"title": "Present Perfect (ever / never)",
-								"activity": "Use of English: диалоги в магазине"
+								"activity": "Use of English: do’konda dialoglar"
 							},
 							{
 								"title": "Present Perfect (already / just / yet)",
-								"activity": "Аудирование: множественный выбор"
+								"activity": "Tinglash: ko’p tanlov"
 							},
 							{
-								"title": "Презентация",
+								"title": "Taqdimot",
 								"activity": ""
 							},
 							{
-								"title": "Passive Voice с by",
-								"activity": "Говорение: биография"
+								"title": "Passive Voice by bilan",
+								"activity": "Gapirish: biografiya"
 							},
 							{
-								"title": "Zero и First Conditional",
-								"activity": "Письмо: абзацы"
+								"title": "Zero va First Conditional",
+								"activity": "Yozish: abzatslar"
 							},
 							{
-								"title": "Финальное повторение",
+								"title": "Yakuniy takrorlash",
 								"activity": ""
 							},
 							{
-								"title": "Мастер-класс старшего преподавателя",
+								"title": "Katta o’qituvchidan master-klass",
 								"activity": ""
 							}
 						]
@@ -971,115 +971,115 @@
 				"id": "b1-pre-intermediate",
 				"image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
 				"title": "B1 Pre-Intermediate",
-				"description": "Развитие уверенного общения и прочной грамматической базы.",
-				"duration": "2 месяца (40 занятий)",
+				"description": "Ishonchli muloqot va mustahkam grammatika bazasini rivojlantirish.",
+				"duration": "2 oy (40 dars)",
 				"outcomes": [
-					"Свободно использовать сложную грамматику в речи и письме",
-					"Участвовать в обсуждениях и конструктивных спорах",
-					"Писать структурированные эссе и формальные письма",
-					"Подготовиться к национальному экзамену уровня B2"
+					"Murakkab grammatikani nutq va yozishda erkin ishlatish",
+					"Muhokamalar va konstruktiv tortishuvlarda qatnashish",
+					"Tuzilgan insholar va rasmiy xatlar yozish",
+					"B2 darajasidagi milliy imtihonga tayyorgarlik ko'rish"
 				],
 				"level": "B1",
 				"category": "General_English",
 				"modules": [
 					{
-						"title": "1-й месяц",
-						"description": "Углубление в базовую грамматику и повседневную лексику.",
+						"title": "1-oy",
+						"description": "Asosiy grammatika va kundalik leksikani chuqurlashtirish.",
 						"lessons": [
 							{
-								"title": "Present Simple vs Present Continuous",
-								"activity": "Чтение: тест с вариантами ответа"
+								"title": "Present Simple va Present Continuous",
+								"activity": "O'qish: javob variantli test"
 							},
 							{
-								"title": "Артикли",
-								"activity": "Говорение: семейные дискуссии и ролевые игры"
+								"title": "Artikllar",
+								"activity": "Gapirish: oilaviy muhokamalar va rolli o'yinlar"
 							},
 							{
 								"title": "Past Simple",
-								"activity": "Рассказы на тему преступлений"
+								"activity": "Jinoyatlar mavzusida hikoyalar"
 							},
 							{
 								"title": "Past Continuous",
-								"activity": "Письмо: понимание критериев оценки"
+								"activity": "Yozish: baholash mezonlarini tushunish"
 							},
 							{
 								"title": "Quantifiers",
-								"activity": "Обсуждение социальных сетей"
+								"activity": "Ijtimoiy tarmoqlar haqida muhokama"
 							},
 							{
-								"title": "Относительные местоимения",
-								"activity": "Обсуждение определений"
+								"title": "Nisbiy olmoshlar",
+								"activity": "Ta'riflarni muhokama qilish"
 							},
 							{
 								"title": "Present Perfect (ever / never / for / since)",
-								"activity": "Понимание темы первой помощи"
+								"activity": "Birinchi yordam mavzusini tushunish"
 							},
 							{
-								"title": "Present Perfect vs Past Simple",
-								"activity": "Письмо: содержание и стиль"
+								"title": "Present Perfect va Past Simple",
+								"activity": "Yozish: mazmun va uslub"
 							},
 							{
-								"title": "Сравнительные и превосходные степени",
-								"activity": "Письмо: мнение о фильмах и ТВ"
+								"title": "Qiyosiy va ustun darajalar",
+								"activity": "Yozish: filmlar va TV haqida fikr"
 							},
 							{
-								"title": "Модификаторы прилагательных",
-								"activity": "Говорение: переговоры"
+								"title": "Sifatdosh modifikatorlari",
+								"activity": "Gapirish: muzokaralar"
 							},
 							{
-								"title": "Презентация",
+								"title": "Taqdimot",
 								"activity": ""
 							},
 							{
 								"title": "Going to / Will / May / Might",
-								"activity": "Разговор о будущем"
+								"activity": "Kelajak haqida suhbat"
 							},
 							{
-								"title": "Zero и First Conditional",
-								"activity": "Письмо: формальное письмо для экзамена"
+								"title": "Zero va First Conditional",
+								"activity": "Yozish: imtihon uchun rasmiy xat"
 							},
 							{
-								"title": "Модальные глаголы обязательства и совета",
-								"activity": "Написание CV"
+								"title": "Majburiyat va maslahat modal fe'llari",
+								"activity": "CV yozish"
 							},
 							{
 								"title": "Second Conditional",
-								"activity": "Говорение: советы"
+								"activity": "Gapirish: maslahatlar"
 							},
 							{
 								"title": "Past Perfect / Used to",
-								"activity": "Описание прошлых событий"
+								"activity": "O'tgan voqealarni tasvirlash"
 							},
 							{
-								"title": "Gerunds vs Infinitives",
-								"activity": "Обсуждение интересов в дружбе"
+								"title": "Gerunds va Infinitives",
+								"activity": "Do'stlikdagi qiziqishlar haqida muhokama"
 							},
 							{
-								"title": "Косвенная речь: утверждения",
-								"activity": "Чтение: упражнение на вставку предложений"
+								"title": "Bilvosita nutq: tasdiqlashlar",
+								"activity": "O'qish: gaplarni kiritish mashqi"
 							},
 							{
-								"title": "Косвенная речь: вопросы",
-								"activity": "Аудирование: заполнение заметок"
+								"title": "Bilvosita nutq: savollar",
+								"activity": "Tinglash: qaydlarni to'ldirish"
 							},
 							{
 								"title": "Passive Voice (Present Simple)",
-								"activity": "Говорение: значение интернета"
+								"activity": "Gapirish: internetning ahamiyati"
 							},
 							{
-								"title": "Passive Voice (другие времена)",
-								"activity": "Обсуждение фотографий"
+								"title": "Passive Voice (boshqa zamonlar)",
+								"activity": "Fotosuratlarni muhokama qilish"
 							},
 							{
-								"title": "Презентация",
+								"title": "Taqdimot",
 								"activity": ""
 							},
 							{
-								"title": "Повторение",
+								"title": "Takrorlash",
 								"activity": ""
 							},
 							{
-								"title": "Мастер-класс старшего преподавателя",
+								"title": "Katta o'qituvchidan master-klass",
 								"activity": ""
 							}
 						]
@@ -1095,115 +1095,115 @@
 				"id": "b1-plus-intermediate",
 				"image": "https://plus.unsplash.com/premium_photo-1661909267383-58991abdca51?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 				"title": "B1+ Intermediate",
-				"description": "Развитие продвинутой грамматики и навыков аргументированной речи.",
-				"duration": "2 месяца (40 занятий)",
+				"description": "Ilg'or grammatika va argumentli nutq ko'nikmalarini rivojlantirish.",
+				"duration": "2 oy (40 dars)",
 				"outcomes": [
-					"Свободно использовать сложную грамматику в речи и письме",
-					"Участвовать в обсуждениях и конструктивных спорах",
-					"Писать структурированные эссе и формальные письма",
-					"Подготовиться к национальному экзамену уровня B2"
+					"Murakkab grammatikani nutq va yozishda erkin ishlatish",
+					"Muhokamalar va konstruktiv tortishuvlarda qatnashish",
+					"Tuzilgan insholar va rasmiy xatlar yozish",
+					"B2 darajasidagi milliy imtihonga tayyorgarlik ko'rish"
 				],
 				"level": "B1+",
 				"category": "General_English",
 				"modules": [
 					{
-						"title": "1-й месяц",
-						"description": "Развитие продвинутой грамматики и навыков аргументированной речи.",
+						"title": "1-oy",
+						"description": "Ilg'or grammatika va argumentli nutq ko'nikmalarini rivojlantirish.",
 						"lessons": [
 							{
-								"title": "Present Simple vs Present Continuous",
-								"activity": "Чтение: True / False / Not Given"
+								"title": "Present Simple va Present Continuous",
+								"activity": "O'qish: To'g'ri / Noto'g'ri / Aytilmagan"
 							},
 							{
 								"title": "State and Action Verbs",
-								"activity": "Аудирование: сопоставление информации, Говорение: описание людей"
+								"activity": "Tinglash: ma'lumotlarni solishtirish, Gapirish: odamlarni tasvirlash"
 							},
 							{
 								"title": "Past Simple / Past Continuous / Past Perfect",
-								"activity": "Говорение: обмен информацией"
+								"activity": "Gapirish: ma'lumot almashish"
 							},
 							{
 								"title": "Used to / Would",
-								"activity": "Говорение: обсуждение жизни в прошлом"
+								"activity": "Gapirish: o'tmishdagi hayotni muhokama qilish"
 							},
 							{
 								"title": "Present Perfect",
-								"activity": "Аудирование: подкаст"
+								"activity": "Tinglash: podcast"
 							},
 							{
 								"title": "Present Perfect Continuous",
-								"activity": "Письмо: объяснение статистики (Writing Task 1)"
+								"activity": "Yozish: statistikani tushuntirish (Writing Task 1)"
 							},
 							{
 								"title": "Future Forms",
-								"activity": "Письмо: рецепт"
+								"activity": "Yozish: retsept"
 							},
 							{
-								"title": "Future Continuous и Future Perfect",
-								"activity": "Говорение: обсуждение рецепта"
+								"title": "Future Continuous va Future Perfect",
+								"activity": "Gapirish: retseptni muhokama qilish"
 							},
 							{
-								"title": "Модальные глаголы: обязанность, запрет, совет, разрешение",
-								"activity": "Письмо: формальное письмо-заявка"
+								"title": "Modal fe'llar: majburiyat, taqiq, maslahat, ruxsat",
+								"activity": "Yozish: rasmiy ariza xati"
 							},
 							{
 								"title": "Zero, First, Second Conditionals",
-								"activity": "Говорение: обсуждение школьных проектов"
+								"activity": "Gapirish: maktab loyihalarini muhokama qilish"
 							},
 							{
-								"title": "Презентация",
+								"title": "Taqdimot",
 								"activity": ""
 							},
 							{
 								"title": "Passive Voice / Have Something Done",
-								"activity": "Говорение: мозговой штурм в команде"
+								"activity": "Gapirish: jamoaviy miyatufoncha"
 							},
 							{
 								"title": "Gerunds and Infinitives",
-								"activity": "Письмо: эссе «за и против»"
+								"activity": "Yozish: 'za va qarshi' insho"
 							},
 							{
 								"title": "Defining Relative Clauses",
-								"activity": "Чтение и анализ журнальной статьи"
+								"activity": "O'qish va jurnal maqolasini tahlil qilish"
 							},
 							{
 								"title": "Non-defining Relative Clauses",
-								"activity": "Говорение: дебаты (суеверия и ритуалы)"
+								"activity": "Gapirish: bahslar (xurofot va marosimlar)"
 							},
 							{
-								"title": "Косвенная речь: утверждения",
-								"activity": "Говорение: отзыв о фильме"
+								"title": "Bilvosita nutq: tasdiqlashlar",
+								"activity": "Gapirish: film haqida taassurot"
 							},
 							{
-								"title": "Косвенная речь: вопросы и команды",
-								"activity": "Письмо: инструкции"
+								"title": "Bilvosita nutq: savollar va buyruqlar",
+								"activity": "Yozish: ko'rsatmalar"
 							},
 							{
-								"title": "Модальные глаголы предположения",
-								"activity": "Говорение: обсуждение теорий заговора"
+								"title": "Taxmin modal fe'llari",
+								"activity": "Gapirish: fitna nazariyalarini muhokama qilish"
 							},
 							{
 								"title": "Third Conditional",
-								"activity": "Письмо: рассказ"
+								"activity": "Yozish: hikoya"
 							},
 							{
-								"title": "Неопределённые местоимения",
-								"activity": "Говорение: диалог в магазине одежды"
+								"title": "Noaniq olmoshlar",
+								"activity": "Gapirish: kiyim do'konida dialog"
 							},
 							{
 								"title": "So / Such / I wish / If only",
-								"activity": "Письмо: формальная жалоба"
+								"activity": "Yozish: rasmiy shikoyat"
 							},
 							{
-								"title": "Презентация",
+								"title": "Taqdimot",
 								"activity": ""
 							},
 							{
-								"title": "Повторение",
+								"title": "Takrorlash",
 								"activity": ""
 							},
 							{
-								"title": "Мастер-класс старшего преподавателя",
+								"title": "Katta o'qituvchidan master-klass",
 								"activity": ""
 							}
 						]
@@ -1225,7 +1225,7 @@
 				"category": "General_English",
 				"outcomes": [
 					"Muhokamalar va bahs-munozaralarda idiomalar va keng lug'at bilan faol ishtirok etish",
-					"Ishga kirish suhbatlarida ishonch bilan qatnashish va kasbiy shartlarni muzokarа qilish",
+					"Ishga kirish suhbatlarida ishonch bilan qatnashish va kasbiy shartlarni muzokara qilish",
 					"Murakkab insholar, hisobotlar va rasmiy shikoyat xatlari yozish",
 					"Passiv fe'lning barcha shakllarini va aralash shart qurilmalarini egallash"
 				],
@@ -1722,7 +1722,7 @@
 				"description": "Milliy DTM imtihoni va xalqaro CEFR sertifikatiga maqsadli tayyorgarlik. Grammatika, lug'at va test strategiyasi.",
 				"duration": "2–3 oy",
 				"level": "B1–B2",
-				"category": "Подготовка_к_CEFR/DTM",
+				"category": "CEFR/DTM_tayyorgarlik",
 				"outcomes": [
 					"CEFR/DTM imtihonining tuzilishi va formatini bilish",
 					"Grammatika va lug'at test topshiriqlarini ishonch bilan bajarish",
@@ -1770,7 +1770,7 @@
 				"description": "TOEFL iBT imtihoniga intensiv tayyorgarlik. To'rtta bo'lim: Reading, Listening, Speaking, Writing.",
 				"duration": "2–3 oy",
 				"level": "B2–C1",
-				"category": "Подготовка_к_TOEFL",
+				"category": "TOEFL_tayyorgarlik",
 				"outcomes": [
 					"TOEFL iBT formatini va talablarini chuqur bilish",
 					"To'rtta bo'limda ishonch bilan ishlash",
@@ -1796,7 +1796,7 @@
 							},
 							{
 								"title": "Writing — mustaqil va integratsiyalashgan insholar",
-								"activity": "Inshо tuzilishi, akademik uslub"
+								"activity": "Insho tuzilishi, akademik uslub"
 							},
 							{
 								"title": "Sinov testlar (Mock Tests)",
@@ -1818,7 +1818,7 @@
 				"description": "Duolingo English Test (DET) ga tez va samarali tayyorgarlik — universitetlar uchun IELTS va TOEFL ning onlayn muqobili.",
 				"duration": "1–2 oy",
 				"level": "B1–C1",
-				"category": "Подготовка_к_Duolingo",
+				"category": "Duolingo_tayyorgarlik",
 				"outcomes": [
 					"DETning adaptiv formati va o'ziga xos xususiyatlarini tushunish",
 					"Barcha topshiriq turlarini mashq qilish: o'qish, tinglash, gapirish, yozish",
@@ -2074,7 +2074,7 @@
 				"title": "Ingliz tili o'qituvchisi",
 				"type": "6/1 yoki 3/4 jadval",
 				"requirement": "IELTS 7.5+ va 1+ yil o'qitish tajribasi",
-				"desc": "Kommunikativ metodikada dars o'tish, General English talabalarini tayyorlash, CRM bilan ishlash va talabalarni motivatsiya qilish. Maosh: 10 000 000 so'mdan."
+				"desc": "Kommunikativ metodikada dars o'tish, General English talabalarini tayyorlash, CRM bilan ishlash va talabalarga motivatsiya berish. Maosh: 10 000 000 so'mdan."
 			},
 			{
 				"title": "Bolalar ingliz tili o'qituvchisi",

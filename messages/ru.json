@@ -20,7 +20,7 @@
 		"badge": "Официальный рейтинг 2024 и 2025",
 		"numberWord": "НОМЕР",
 		"oneWord": "ОДИН.",
-		"descriptionBeforeHighlight": "Официально призван учебным центром",
+		"descriptionBeforeHighlight": "Официально признан учебным центром",
 		"descriptionHighlight": " с лучшими результатами в Узбекистане по версии IDP Uzbekistan.",
 		"videoBadge": "Polyglot School",
 		"videoTitleLine1": "Узнайте историю",
@@ -296,7 +296,7 @@
 		]
 	},
 	"footer": {
-		"rights": "© 2026 Polyglot Network. Лидер образования в Самарканде с 2012 года.",
+		"rights": "© 2026 Polyglot Network. Лидер образования в Самарканде с 2021 года.",
 		"address": "Университетский бульвар 77",
 		"headlineLine1": "FUTURE",
 		"headlineLine2": "SPEAKS",
@@ -531,7 +531,7 @@
 		"finishBtn": "Завершить и анализировать",
 		"completeBadge": "Аудит завершён",
 		"resultSuccessTitle": "Все тесты пройдены",
-		"resultSuccessSubtitle": "В ближайшее время вам перезвонят.",
+		"resultSuccessSubtitle": "Узнать свой результат можно в ресепшене любого филиала или по телефону +998 (55) 705 30 30.",
 		"yourLabel": "Ваш",
 		"standingLabel": "результат.",
 		"metricsTitle": "Показатели диагностики",
@@ -589,7 +589,7 @@
 			{
 				"id": "azero-pre-elementary",
 				"image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=800&q=80",
-				"title": "Azero Pre-Elementary",
+				"title": "A0 Pre-Elementary",
 				"description": "Базовый курс, сфокусированный на простых описаниях, чтении незнакомых слов и формировании словарного запаса в 700+ слов.",
 				"duration": "2 месяца (40 занятий)",
 				"outcomes": [
@@ -714,7 +714,7 @@
 			{
 				"id": "a1-plus-beginner",
 				"image": "https://plus.unsplash.com/premium_photo-1770548404170-6e7cbaabf0bf?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-				"title": "A1+ Beginner",
+				"title": "A1",
 				"description": "Развитие навыков аудирования, базовое описание повседневной жизни и расширение словаря до 2000+ слов.",
 				"duration": "2 месяца (40 занятий)",
 				"outcomes": [
@@ -723,7 +723,7 @@
 					"Использовать минимум +2000 слов на английском языке ",
 					"Письменно излагать свои мысли в письме и онлайн "
 				],
-				"level": "A1+",
+				"level": "A1",
 				"category": "General_English",
 				"modules": [
 					{
@@ -842,7 +842,7 @@
 			{
 				"id": "a1-plus-elementary",
 				"image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
-				"title": "A1+ Elementary",
+				"title": "A1+",
 				"description": "Формирование базового общения и грамматики английского языка.",
 				"duration": "2 месяца (40 занятий)",
 				"outcomes": [
@@ -2045,8 +2045,8 @@
 	"about": {
 		"badge": "О НАС",
 		"title": "Наша история",
-		"subtitle": "Более десяти лет формируем уверенных носителей английского в Самарканде.",
-		"stat1Value": "2012",
+		"subtitle": "Более пяти лет формируем уверенных носителей английского в Самарканде.",
+		"stat1Value": "2021",
 		"stat1Label": "Год основания",
 		"stat2Value": "9",
 		"stat2Label": "Филиалов",

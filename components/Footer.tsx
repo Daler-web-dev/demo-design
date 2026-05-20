@@ -31,7 +31,7 @@ export default function Footer() {
 						</h2>
 						<div className="flex space-x-4">
 							<a
-								href="https://www.instagram.com/polyglot_school_sam/"
+								href="https://www.instagram.com/polyglot_language_school_/"
 								target="_blank"
 								className="p-4 bg-white/5 rounded-2xl hover:bg-gold transition-colors group cursor-pointer"
 							>

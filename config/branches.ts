@@ -47,9 +47,9 @@ export const BRANCHES: Branch[] = [
 	},
 	{
 		id: "marhabo",
-		nameEn: "Marhabo Branch",
-		nameRu: "Филиал Мархабо",
-		address: "Мархабо маҳалласи, Самарқанд",
+		nameEn: "ул. Буюк Ипак Йули, 72(3 этаж)",
+		nameRu: "ул. Буюк Ипак Йули, 72(3 этаж)",
+		address: "Buyuk ipak yo'li ko'chasi, 72(3 qavat)",
 		image: "/locations/marhabo.jpeg",
 		yandexMapUrl: "https://yandex.uz/maps/?text=Polyglot+Samarkand+Marhabo",
 	},
@@ -80,8 +80,8 @@ export const BRANCHES: Branch[] = [
 	},
 	{
 		id: "urgut",
-		nameEn: "Urgut",
-		nameRu: "Ургут",
+		nameEn: "Urgut branch",
+		nameRu: "Ургут филиал",
 		address: "Ургут, ул. Амира Темура(ориентир: автосалон KIA)",
 		image: "/locations/urgut.jpeg",
 		yandexMapUrl: "https://yandex.uz/maps/?text=Urgut+Samarkand",
@@ -89,7 +89,7 @@ export const BRANCHES: Branch[] = [
 	{
 		id: "ielts_hub",
 		nameEn: "Uzbekistan st",
-		nameRu: "Ул Узбекистанская",
+		nameRu: "ул, Узбекистанская (Молодежный креативный городок)",
 		address: "Yoshlar Creative Shaharchasi Самарканд",
 		image: "/ieltshub.jpeg",
 		yandexMapUrl:
