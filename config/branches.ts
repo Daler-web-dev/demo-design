@@ -88,10 +88,10 @@ export const BRANCHES: Branch[] = [
 	},
 	{
 		id: "ielts_hub",
-		nameEn: "Uzbekistan st",
-		nameRu: "ул, Узбекистанская (Молодежный креативный городок)",
-		address: "Yoshlar Creative Shaharchasi Самарканд",
-		image: "/ieltshub.jpeg",
+		nameEn: "IELTS HUB",
+		nameRu: "IELTS HUB",
+		address: "ул, Узбекистанская (Молодежный креативный городок)",
+		image: "/locations/hub.jpeg",
 		yandexMapUrl:
 			"https://yandex.ru/maps?text=39.642667,66.949712&si=qzk6nfbr7691ut1hakv07dnup4",
 	},
