@@ -6,7 +6,7 @@ import { ArrowLeft, Trophy } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const results = Array.from({ length: 24 }, (_, i) => ({
-	file: `result-${String(i + 1).padStart(2, "0")}.jpeg`,
+	file: `result-${String(i + 1).padStart(3, "0")}.jpeg`,
 }));
 
 export default function StudentsPage() {
