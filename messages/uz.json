@@ -446,7 +446,7 @@
 		"viewProgram": "Dasturni ko'rish",
 		"questions": [
 			{
-				"q": "Suhbatda qanday qulay ekaningizni qanday tasvirlar edingiz?",
+				"q": "Ingliz tilini bilish darajangizni qanday baholaysiz?",
 				"options": [
 					{
 						"a": "Alohida so'zlar va ishoralar ishlataman",
@@ -531,7 +531,7 @@
 		"finishBtn": "Yakunlash va tahlil qilish",
 		"completeBadge": "Test yakunlandi",
 		"resultSuccessTitle": "Testlar muvaffaqiyatli yakunlandi",
-		"resultSuccessSubtitle": "Tez orada siz bilan bog'lanamiz.",
+		"resultSuccessSubtitle": "Natijangizni istalgan filial resepshenida yoki +998 (55) 705 30 30 telefon raqami orqali bilib olishingiz mumkin.",
 		"yourLabel": "Sizning",
 		"standingLabel": "natijangiz.",
 		"metricsTitle": "Diagnostika ko'rsatkichlari",
@@ -569,19 +569,19 @@
 			{
 				"value": "CEFR/DTM",
 				"label": "Подготовка_к_CEFR/DTM",
-				"duration": "Asosdan ravon nutqqacha",
+				"duration": "Samarali imtihon tayyorgarligi",
 				"iconId": "Globe"
 			},
 			{
 				"value": "TOEFL",
 				"label": "Подготовка_к_TOEFL",
-				"duration": "O'rta darajadan yuqori darajagacha",
+				"duration": "Samarali imtihon tayyorgarligi",
 				"iconId": "Globe2"
 			},
 			{
 				"value": "Duolingo",
 				"label": "Подготовка_к_Duolingo",
-				"duration": "O'rta darajadan yuqori darajagacha",
+				"duration": "Samarali imtihon tayyorgarligi",
 				"iconId": "Feather"
 			}
 		],
@@ -2101,9 +2101,9 @@
 				"desc": "Kiruvchi va chiquvchi qo'ng'iroqlarni qayta ishlash, kurslar bo'yicha maslahat berish, sinov darslariga yozish va mijozlar bazasini yuritish. Maosh: 3 000 000 so'mdan + bonuslar."
 			},
 			{
-				"title": "Tozalovchi",
+				"title": "Farrosh",
 				"type": "6/1 jadval",
-				"requirement": "Tartiblilik va o'z vaqtidalik",
+				"requirement": "Tartiblilik va o’z vaqtida ishni bajarish",
 				"desc": "O'quv markazida tozalikni saqlash: sinflar, yo'laklar va ofis xonalarini tozalash. Maosh: 3 000 000 so'mdan."
 			}
 		]

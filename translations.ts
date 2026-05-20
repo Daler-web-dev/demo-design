@@ -549,7 +549,7 @@ export const translations: Record<Language, any> = {
 			retake: "Пройти снова",
 			questions: [
 				{
-					q: "Как бы вы описали свой комфорт при общении?",
+					q: "Как бы вы описали свой комфорт при общении Daler?",
 					options: [
 						{ a: "Использую отдельные слова и жесты", score: 1 },
 						{
