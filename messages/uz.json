@@ -20,8 +20,8 @@
 		"badge": "Rasmiy reyting 2024 va 2025",
 		"numberWord": "BIRINCHI",
 		"oneWord": "RAQAM.",
-		"descriptionBeforeHighlight": "IDP Uzbekistan tomonidan ",
-		"descriptionHighlight": "O'zbekistondagi eng yaxshi ta'lim markazi deb e'tirof etilgan.",
+		"descriptionBeforeHighlight": "IDP Uzbekistan talqiniga ko‘ra,",
+		"descriptionHighlight": "O‘zbekistondagi eng yuqori natijalarga ega o‘quv markazi sifatida e’tirof etilgan.",
 		"videoBadge": "Polyglot School",
 		"videoTitleLine1": "Biz haqimizda:",
 		"videoTitleLine2": "O'zbekistonning #1 til maktabi."
@@ -1972,8 +1972,8 @@
 		]
 	},
 	"coursesPage": {
-		"titleLine1": "O'Z YO'LINGIZNI",
-		"titleLine2": "TANLANG.",
+		"titleLine1": "O‘zingizga mos",
+		"titleLine2": "kursni tanlang.",
 		"allLabel": "BARCHASI",
 		"searchPlaceholder": "Kurs qidirish...",
 		"loading": "Yuklanmoqda..."
@@ -2009,7 +2009,7 @@
 		"hoursWeekdays": "Du - Sha: 09:00 - 20:00",
 		"hoursSunday": "Yakshanba: dam olish kuni",
 		"mapTitle": "Interaktiv xarita",
-		"mapDescription": "Bizni Samarqand davlat universiteti yaqinida, Universitet bulvari burchagida topasiz.",
+		"mapDescription": "Samarqand bo‘ylab qulay joylashuvdagi 10 ta filialimiz mavjud.",
 		"showLocations": "Barcha filiallarni ko'rsatish",
 		"questionsTitle": "Aniq savollaringiz bormi?",
 		"questionsSubtitle": "Bizga yozing, 24 soat ichida javob beramiz.",
@@ -2038,6 +2038,7 @@
 		"whyChooseUs": "NIMA UCHUN BIZ",
 		"faqBadge": "FAQ",
 		"studentStatsOverlay": "100 000+ o'quvchi biz bilan IELTS, CEFR va boshqa xalqaro sertifikatlarni oldi.",
+		"ourResultsTitle": "Bizning natijalarimiz",
 		"ctaLine1": "ORZUDAN",
 		"ctaLine2": "NATIJAGA O'TING.",
 		"bookLesson": "Bepul darsga yozilish"

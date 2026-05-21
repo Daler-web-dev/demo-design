@@ -14,9 +14,7 @@ export default function Contact() {
 				<h1 className="text-5xl font-display font-bold text-brand-900 mb-4">
 					{t.nav.contact}
 				</h1>
-				<p className="text-xl text-gray-500">
-					{t.contact.subtitle}
-				</p>
+				<p className="text-xl text-gray-500">{t.contact.subtitle}</p>
 			</section>
 
 			<section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -127,7 +125,7 @@ export default function Contact() {
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
 						<a
-							href="https://t.me/+m0zqMklXRjE2OTgy"
+							href="https://t.me/polyglotlanguageschool"
 							className="bg-brand-900 text-white px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center"
 						>
 							{t.contact.telegramCta}

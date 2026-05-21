@@ -532,23 +532,18 @@ export default function Home() {
 					<div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-3 sm:gap-4 md:h-[600px]">
 						<Link
 							href="/students"
-							className="md:col-span-2 md:row-span-2 rounded-[2rem] sm:rounded-[3.5rem] relative overflow-hidden min-h-[260px] md:min-h-0 group cursor-pointer"
+							className="md:col-span-2 md:row-span-2 rounded-[2rem] sm:rounded-[3.5rem] relative overflow-hidden min-h-[260px] md:min-h-0 group cursor-pointer bg-white transition-colors duration-300 hover:bg-slate-50"
 						>
-							<img
-								src="/students/st0.jpeg"
-								alt="Polyglot students"
-								className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-								loading="lazy"
-							/>
-							<div className="absolute inset-0 bg-gradient-to-t from-brand-950/65 via-transparent to-transparent pointer-events-none" />
-							<div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-colors duration-300 pointer-events-none" />
-							<div className="absolute left-4 right-4 bottom-4 sm:left-6 sm:right-auto sm:bottom-6 sm:max-w-xl rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-3 backdrop-blur-md">
-								<p className="text-xs sm:text-sm md:text-base font-semibold leading-relaxed text-white/90">
-									{t.homePage.studentStatsOverlay}
+							<div className="absolute inset-0 flex flex-col justify-between p-6 sm:p-8 md:p-10">
+								<div className="flex items-center justify-between">
+									<p className="text-[10px] sm:text-xs font-black uppercase tracking-[0.25em] text-brand-700">Polyglot</p>
+									<div className="w-9 h-9 rounded-full bg-brand-900 flex items-center justify-center group-hover:bg-brand-700 transition-colors duration-300">
+										<ArrowUpRight className="w-4 h-4 text-white" />
+									</div>
+								</div>
+								<p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black uppercase tracking-tight text-brand-900 leading-[0.9]">
+									{t.homePage.ourResultsTitle}
 								</p>
-							</div>
-							<div className="absolute top-4 right-4 sm:top-6 sm:right-6 w-10 h-10 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-								<ArrowUpRight className="w-5 h-5 text-white" />
 							</div>
 						</Link>
 						<div className="md:col-span-2 rounded-[2rem] sm:rounded-[3.5rem] relative overflow-hidden min-h-[180px] md:min-h-0">

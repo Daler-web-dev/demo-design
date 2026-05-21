@@ -13,7 +13,7 @@ import { useLanguage } from "@/context/LanguageContext";
 type Step = { title: string; desc: string };
 
 const CARD_ROW_CLASS =
-	"flex-none w-[min(88vw,20rem)] sm:w-[22rem] lg:w-[24rem] p-8 sm:p-10 md:p-12 bg-gold rounded-[2.5rem] sm:rounded-[3.5rem] border-2 border-gold text-brand-900 hover:bg-gold/90 transition-all duration-500 group";
+	"flex-none w-[min(88vw,20rem)] sm:w-[22rem] lg:w-[26rem] p-8 sm:p-10 md:p-12 bg-gold rounded-[2.5rem] sm:rounded-[3.5rem] border-2 border-gold text-brand-900 hover:bg-gold/90 transition-all duration-500 group";
 
 function StepCard({
 	step,
@@ -193,7 +193,16 @@ function useScrollJailTrack(
 			if (tr) tr.style.transform = "";
 			if (inner) inner.style.cssText = "";
 		};
-	}, [enabled, syncMetrics, paintAll, resetToken, sectionRef, innerRef, trackRef, viewportRef]);
+	}, [
+		enabled,
+		syncMetrics,
+		paintAll,
+		resetToken,
+		sectionRef,
+		innerRef,
+		trackRef,
+		viewportRef,
+	]);
 }
 
 export default function MethodologySection() {
@@ -277,7 +286,10 @@ export default function MethodologySection() {
 					className="w-full overflow-x-auto overflow-y-hidden px-6 pb-4 snap-x snap-mandatory"
 					style={{ WebkitOverflowScrolling: "touch" }}
 				>
-					<div ref={trackRef} className="flex gap-4 md:gap-6 w-max pr-6">
+					<div
+						ref={trackRef}
+						className="flex gap-4 md:gap-6 w-max pr-6"
+					>
 						{steps.map((step, i) => (
 							<StepCard key={i} step={step} i={i} snapStart />
 						))}

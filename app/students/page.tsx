@@ -37,7 +37,7 @@ export default function StudentsPage() {
 				: "Success Stories";
 
 	return (
-		<div className="min-h-screen bg-obsidian text-white pt-32 pb-24">
+		<div className="min-h-screen bg-white text-obsidian pt-32 pb-24">
 			<div className="max-w-7xl mx-auto px-6">
 				<Link
 					href="/"

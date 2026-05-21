@@ -47,8 +47,8 @@ export const BRANCHES: Branch[] = [
 	},
 	{
 		id: "marhabo",
-		nameEn: "ул. Буюк Ипак Йули, 72(3 этаж)",
-		nameRu: "ул. Буюк Ипак Йули, 72(3 этаж)",
+		nameEn: "Marhabo filial",
+		nameRu: "Филиал Мархабо",
 		address: "Buyuk ipak yo'li ko'chasi, 72(3 qavat)",
 		image: "/locations/marhabo.jpeg",
 		yandexMapUrl: "https://yandex.uz/maps/?text=Polyglot+Samarkand+Marhabo",

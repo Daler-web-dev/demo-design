@@ -2009,7 +2009,7 @@
 		"hoursWeekdays": "Mon - Sat: 09:00 - 20:00",
 		"hoursSunday": "Sunday: Closed",
 		"mapTitle": "Interactive Map",
-		"mapDescription": "Find us near the Samarkand State University campus, right at the corner of Universitet Boulevard.",
+		"mapDescription": "We have 10 branches across Samarkand — located in the most convenient and accessible areas.",
 		"showLocations": "Show all locations",
 		"questionsTitle": "Have specific questions?",
 		"questionsSubtitle": "Send us a message and we'll reply within 24 hours.",
@@ -2038,6 +2038,7 @@
 		"whyChooseUs": "WHY CHOOSE US",
 		"faqBadge": "FAQ",
 		"studentStatsOverlay": "More than 100,000 students have earned IELTS, CEFR, and other international results with us.",
+		"ourResultsTitle": "Our Results",
 		"ctaLine1": "STOP DREAMING.",
 		"ctaLine2": "START SPEAKING.",
 		"bookLesson": "Book Free Lesson"
