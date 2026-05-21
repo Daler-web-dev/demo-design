@@ -94,13 +94,18 @@ export default function Contact() {
 						</div>
 					</div>
 
-					<div className="bg-gray-200 rounded-[3rem] overflow-hidden h-[500px] relative shadow-inner">
-						<div className="absolute inset-0 bg-brand-100 flex flex-col items-center justify-center p-12 text-center">
-							<MapPin className="w-20 h-20 text-brand-300 mb-6" />
-							<h3 className="text-2xl font-bold text-brand-900 mb-2">
+					<div className="rounded-[3rem] overflow-hidden h-[500px] relative shadow-inner">
+						<img
+							src="/alllocations.jpeg"
+							alt="Polyglot locations"
+							className="absolute inset-0 w-full h-full object-cover object-[0%_80%]"
+						/>
+						<div className="absolute inset-0 bg-brand-950/50" />
+						<div className="absolute inset-x-0 bottom-0 flex flex-col items-center p-10 text-center">
+							<h3 className="text-2xl font-bold text-white mb-2">
 								{t.contact.mapTitle}
 							</h3>
-							<p className="text-brand-700">
+							<p className="text-white/75">
 								{t.contact.mapDescription}
 							</p>
 							<Link
