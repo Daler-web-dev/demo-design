@@ -2041,7 +2041,12 @@
 		"ourResultsTitle": "Our Results",
 		"ctaLine1": "STOP DREAMING.",
 		"ctaLine2": "START SPEAKING.",
-		"bookLesson": "Book Free Lesson"
+		"bookLesson": "Book Free Lesson",
+		"deepAuditCardTitle": "Deep Audit",
+		"deepAuditCardSubtitle": "Find your level",
+		"deepAuditCardTag1": "CEFR",
+		"deepAuditCardTag2": "30 MIN",
+		"deepAuditCardTag3": "98% ACC"
 	},
 	"about": {
 		"badge": "ABOUT",

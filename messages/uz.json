@@ -428,7 +428,7 @@
 		"quickCardDesc": "Nutqdagi qulaylik va asosiy maqsadlaringizning tezkor bahosi.",
 		"quickCardCta": "Boshlash",
 		"deepCardTime": "30 daqiqa",
-		"deepCardTitle": "Chuqur audit",
+		"deepCardTitle": "Testdan o'tish",
 		"deepCardDesc": "To'liq professional test: grammatika, lug'at va mantiq.",
 		"deepCardCta": "Testga o'tish",
 		"startBtn": "Testni boshlash",
@@ -505,7 +505,7 @@
 	"deepAudit": {
 		"backgroundWord": "AUDIT",
 		"titleWord": "Neyro",
-		"titleHighlight": "Chuqur test.",
+		"titleHighlight": "Testdan o'tish.",
 		"subtitle": "Polyglotdan 30 daqiqalik professional baholash: grammatika, lug'at va til mantiq.",
 		"timeLabel": "Vaqt cheklovi",
 		"timeValue": "30 DAQ",
@@ -2041,7 +2041,12 @@
 		"ourResultsTitle": "Bizning natijalarimiz",
 		"ctaLine1": "ORZUDAN",
 		"ctaLine2": "NATIJAGA O'TING.",
-		"bookLesson": "Bepul darsga yozilish"
+		"bookLesson": "Bepul darsga yozilish",
+		"deepAuditCardTitle": "Testdan o'tish",
+		"deepAuditCardSubtitle": "Darajangni bil",
+		"deepAuditCardTag1": "CEFR",
+		"deepAuditCardTag2": "30 DAQ",
+		"deepAuditCardTag3": "98% aniqlik"
 	},
 	"about": {
 		"badge": "BIZ HAQIMIZDA",

@@ -2041,7 +2041,12 @@
 		"ourResultsTitle": "Наши результаты",
 		"ctaLine1": "ХВАТИТ МЕЧТАТЬ.",
 		"ctaLine2": "НАЧНИТЕ ГОВОРИТЬ.",
-		"bookLesson": "Записаться на пробный урок"
+		"bookLesson": "Записаться на пробный урок",
+		"deepAuditCardTitle": "Нейро Аудит",
+		"deepAuditCardSubtitle": "Узнай свой уровень",
+		"deepAuditCardTag1": "CEFR",
+		"deepAuditCardTag2": "30 МИН",
+		"deepAuditCardTag3": "98% точность"
 	},
 	"about": {
 		"badge": "О НАС",

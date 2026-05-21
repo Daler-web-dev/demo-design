@@ -47,10 +47,12 @@ export default function Home() {
 		if (!video) return;
 		video.play().catch(() => {});
 		const onVisible = () => {
-			if (document.visibilityState === "visible") video.play().catch(() => {});
+			if (document.visibilityState === "visible")
+				video.play().catch(() => {});
 		};
 		document.addEventListener("visibilitychange", onVisible);
-		return () => document.removeEventListener("visibilitychange", onVisible);
+		return () =>
+			document.removeEventListener("visibilitychange", onVisible);
 	}, [heroVideoSrc]);
 
 	useEffect(() => {
@@ -536,7 +538,9 @@ export default function Home() {
 						>
 							<div className="absolute inset-0 flex flex-col justify-between p-6 sm:p-8 md:p-10">
 								<div className="flex items-center justify-between">
-									<p className="text-[10px] sm:text-xs font-black uppercase tracking-[0.25em] text-brand-700">Polyglot</p>
+									<p className="text-[10px] sm:text-xs font-black uppercase tracking-[0.25em] text-brand-700">
+										Polyglot
+									</p>
 									<div className="w-9 h-9 rounded-full bg-brand-900 flex items-center justify-center group-hover:bg-brand-700 transition-colors duration-300">
 										<ArrowUpRight className="w-4 h-4 text-white" />
 									</div>
@@ -572,33 +576,86 @@ export default function Home() {
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-brand-950/70 via-brand-950/20 to-transparent pointer-events-none" />
 							<div className="absolute bottom-4 left-4 right-4">
-								<p className="text-[10px] font-black uppercase tracking-[0.2em] text-gold mb-1">Polyglot</p>
-								<p className="text-sm font-black uppercase tracking-tight text-white leading-tight">IELTS Hub</p>
+								<p className="text-[10px] font-black uppercase tracking-[0.2em] text-gold mb-1">
+									Polyglot
+								</p>
+								<p className="text-sm font-black uppercase tracking-tight text-white leading-tight">
+									IELTS Hub
+								</p>
 							</div>
 							<div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 								<ArrowUpRight className="w-4 h-4 text-white" />
 							</div>
 						</Link>
 						<Link
-							href="/events"
-							className="rounded-[1.5rem] sm:rounded-[3rem] relative overflow-hidden min-h-[180px] md:min-h-0 group cursor-pointer bg-brand-800"
+							href="/deep-test"
+							className="rounded-[1.5rem] sm:rounded-[3rem] relative overflow-hidden min-h-[180px] md:min-h-0 group cursor-pointer bg-[#0c0b16]"
 						>
-							<div className="absolute inset-0 bg-gradient-to-br from-indigo-600/30 to-brand-900/80 pointer-events-none" />
+							<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(139,92,246,0.18)_0%,_transparent_65%)] pointer-events-none" />
 							<div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-5">
-								<div>
-									<p className="text-[10px] font-black uppercase tracking-[0.2em] text-gold mb-1">Polyglot</p>
-									<p className="text-sm font-black uppercase tracking-tight text-white leading-tight">Events</p>
+								<div className="flex items-center justify-between">
+									<p className="text-[10px] font-black uppercase tracking-[0.2em] text-gold">
+										Polyglot
+									</p>
+									<div className="w-7 h-7 rounded-full bg-white/10 border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+										<ArrowUpRight className="w-3 h-3 text-white" />
+									</div>
 								</div>
-								<div className="flex flex-wrap gap-1.5">
-									{["Speaking Club", "Workshop", "Open Day"].map((tag) => (
-										<span key={tag} className="text-[9px] font-black uppercase tracking-wider px-2 py-0.5 bg-white/10 border border-white/15 rounded-full text-white/80">
-											{tag}
-										</span>
+								<div className="flex flex-col gap-[5px]">
+									{[
+										{
+											id: "A",
+											level: "A1 – A2",
+											selected: false,
+										},
+										{
+											id: "B",
+											level: "B1 – B2",
+											selected: true,
+										},
+										{
+											id: "C",
+											level: "C1",
+											selected: false,
+										},
+										{
+											id: "D",
+											level: "C2",
+											selected: false,
+										},
+									].map(({ id, level, selected }) => (
+										<div
+											key={id}
+											className={`flex items-center gap-2 px-2.5 py-[5px] rounded-lg border text-[10px] font-bold ${
+												selected
+													? "bg-violet-500/20 border-violet-400/50 text-white"
+													: "bg-white/[0.04] border-white/[0.08] text-white/25"
+											}`}
+										>
+											<span
+												className={`text-[8px] font-black w-3 shrink-0 ${selected ? "text-violet-400" : "text-white/20"}`}
+											>
+												{id}
+											</span>
+											<span className="font-mono tracking-wide">
+												{level}
+											</span>
+											{selected && (
+												<span className="ml-auto text-violet-400 text-[11px] leading-none">
+													✓
+												</span>
+											)}
+										</div>
 									))}
 								</div>
-							</div>
-							<div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-								<ArrowUpRight className="w-4 h-4 text-white" />
+								<div>
+									<p className="text-sm font-black uppercase tracking-tight text-white leading-tight">
+										{t.homePage.deepAuditCardTitle}
+									</p>
+									<p className="text-[10px] text-white/35 font-bold mt-0.5 uppercase tracking-wider">
+										{t.homePage.deepAuditCardSubtitle}
+									</p>
+								</div>
 							</div>
 						</Link>
 					</div>
