@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GeminiAdvisor from "@/components/GeminiAdvisor";
+import NavigationProgress from "@/components/NavigationProgress";
 import {
 	DEEP_TEST_IMMERSIVE_EVENT,
 	type DeepTestImmersiveDetail,
@@ -46,6 +47,7 @@ export default function ClientLayout({
 
 	return (
 		<div className="min-h-screen flex flex-col font-sans selection:bg-gold selection:text-obsidian">
+			<NavigationProgress />
 			{!hideSiteChrome && <Navbar />}
 			<main className="flex-grow">{children}</main>
 			{!hideSiteChrome && <Footer />}
