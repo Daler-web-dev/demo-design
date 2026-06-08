@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from "next-intl";
-import { getLocale } from "next-intl/server";
 import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const BASE = "https://polyglot-school.uz";
 
@@ -69,15 +68,13 @@ export default async function RootLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	const locale = await getLocale();
-
 	return (
-		<html lang={locale}>
+		<html lang="en">
 			<body>
 				<div className="grain" />
-				<NextIntlClientProvider>
+				<LanguageProvider>
 					<ClientLayout>{children}</ClientLayout>
-				</NextIntlClientProvider>
+				</LanguageProvider>
 			</body>
 		</html>
 	);

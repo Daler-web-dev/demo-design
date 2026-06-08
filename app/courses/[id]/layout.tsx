@@ -3,6 +3,10 @@ import en from "@/messages/en.json";
 
 const BASE = "https://polyglot-school.uz";
 
+export function generateStaticParams() {
+	return (en.courses.list as { id: string }[]).map((c) => ({ id: c.id }));
+}
+
 export async function generateMetadata({
 	params,
 }: {
