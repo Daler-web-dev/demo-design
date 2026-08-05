@@ -1,12 +1,13 @@
 "use client";
 
 import React, { createContext, useCallback, useContext, useEffect, useState } from "react";
-import enMessages from "@/messages/en.json";
+import uzMessages from "@/messages/uz.json";
 
 type Locale = "en" | "ru" | "uz";
 type Language = "EN" | "RU" | "UZ";
 
 const DEFAULT_LOCALE: Locale = "uz";
+const DEFAULT_MESSAGES = uzMessages;
 
 const localeToLang: Record<Locale, Language> = {
   en: "EN",
@@ -21,9 +22,9 @@ const langToLocale: Record<Language, Locale> = {
 };
 
 const messageLoaders: Record<Locale, () => Promise<any>> = {
-  en: () => Promise.resolve(enMessages),
+  en: () => import("@/messages/en.json").then((m) => m.default),
   ru: () => import("@/messages/ru.json").then((m) => m.default),
-  uz: () => import("@/messages/uz.json").then((m) => m.default),
+  uz: () => Promise.resolve(uzMessages),
 };
 
 function readLocaleCookie(): Locale | null {
@@ -43,7 +44,7 @@ const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [locale, setLocale] = useState<Locale>(DEFAULT_LOCALE);
-  const [messages, setMessages] = useState<any>(enMessages);
+  const [messages, setMessages] = useState<any>(DEFAULT_MESSAGES);
 
   // Подхватываем сохранённый язык после монтирования (избегаем рассинхронизации с серверным рендером)
   useEffect(() => {

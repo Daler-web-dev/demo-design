@@ -69,7 +69,7 @@ export default async function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang="uz">
 			<body>
 				<div className="grain" />
 				<LanguageProvider>
