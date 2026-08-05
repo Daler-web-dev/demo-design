@@ -6,7 +6,7 @@ import enMessages from "@/messages/en.json";
 type Locale = "en" | "ru" | "uz";
 type Language = "EN" | "RU" | "UZ";
 
-const DEFAULT_LOCALE: Locale = "en";
+const DEFAULT_LOCALE: Locale = "uz";
 
 const localeToLang: Record<Locale, Language> = {
   en: "EN",
